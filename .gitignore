@@ -1,0 +1,8 @@
+*.ipynb_checkpoints
+notebooks/data/*
+notebooks/input/skillcorner/*
+notebooks/input/wyscout/*
+!notebooks/input/wyscout/.gitkeep
+!notebooks/input/skillcorner/.gitkeep
+notebooks/Pipfile
+notebooks/presentation.pptx
