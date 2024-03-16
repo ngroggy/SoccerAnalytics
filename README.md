@@ -74,19 +74,20 @@ Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@et
 
 ### Add ideas on what we could analyse
 
-| Idea | Type | Data Provider | Dataset | Effort | Priority | Notes |
-|-----:|-----:|--------------:|--------:|-------:|---------:|------:|
-| Ball possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which team had how much ball possession in percentage |
-| Player possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which player had the most ball possession per game |
-| third end analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate in which third the ball was most of the time |
-| ball heatmap | Descriptive | Wyscout | match_id.json | Mid | High | Make a heatmap for the ball per game |
-| Player heatmap | Descriptive | Wyscout | match_id.json | High | Low | Make heatmaps for key players |
-| Analyse squad depth | Descriptive | \- | \- | Low | High | Make descriptive analytics on how many players were subbed during games to show options |
-| Endurance check | Descriptive | Wyscout | match_id.json | High | High | Show which player ran how much and thus show endurance of a team |
-| Post-Match Rest Time | Descriptive | \- | \- | Mid | High | Analyse whether there are correlations with endurance for example when there were long travels after a game and little rest time |
-| Sentiment Analysis | Descriptive | Social Media? | \- | High | Low | Include a sentiment analysis for post-match interviews |
-| Type of Goal (in depth) | Descriptive | Wyscout / Skillcorner |  | Mid | High | Analyse from which position the goals were shot, analyse how many passes there were before a goal, how much time there was since first ball possesion and then goal |
-| Type of goal | Descriptive | skillcorner | match_id_dynamic_events.csv | Low | High | Show what the preceding play action was before a goal (penatly, free kick, corner, in game) |
+| Idea | Type | Data Provider | Dataset | Effort | Priority | Notes | Status |
+|-----:|-----:|--------------:|--------:|-------:|---------:|------:|------:|
+| Ball possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which team had how much ball possession in percentage | Done |
+| Player possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which player had the most ball possession per game | Done |
+| third end analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate in which third the ball was most of the time | Done |
+| Type of goal | Descriptive | skillcorner | match_id_dynamic_events.csv | Low | High | Show what the preceding play action was before a goal (penatly, free kick, corner, in game) | TODO |
+| ball heatmap | Descriptive | Wyscout | match_id.json | Mid | High | Make a heatmap for the ball per game | TODO | 
+| Player heatmap | Descriptive | Wyscout | match_id.json | High | Low | Make heatmaps for key players | TODO  |
+| Analyse squad depth | Descriptive | \- | \- | Low | High | Make descriptive analytics on how many players were subbed during games to show options | TODO |
+| Endurance check | Descriptive | Wyscout | match_id.json | High | High | Show which player ran how much and thus show endurance of a team | TODO |
+| Post-Match Rest Time | Descriptive | \- | \- | Mid | High | Analyse whether there are correlations with endurance for example when there were long travels after a game and little rest time | TODO |
+| Sentiment Analysis | Descriptive | Social Media? | \- | High | Low | Include a sentiment analysis for post-match interviews | TODO |
+| Type of Goal (in depth) | Descriptive | Wyscout / Skillcorner |  | Mid | High | Analyse from which position the goals were shot, analyse how many passes there were before a goal, how much time there was since first ball possesion and then goal | TODO |
+
 
 ### Hints (delete after reading)
 

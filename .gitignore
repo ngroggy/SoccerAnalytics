@@ -2,6 +2,7 @@
 notebooks/data/*
 notebooks/input/skillcorner/*
 notebooks/input/wyscout/*
+notebooks/input/eventvideo/*
 !notebooks/input/wyscout/.gitkeep
 !notebooks/input/skillcorner/.gitkeep
 notebooks/Pipfile
