@@ -31,6 +31,8 @@ Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@et
 
 <!------------ START YOUR REPORT BELOW THIS LINE --------------->
 
+Example slide: https://www.fifatrainingcentre.com/media/native/world-cup-2022/report_133009.pdf
+
 # Introduction to Slovenia
 
 Introduce the context of the match, previous matches on Slovenia. Context of the game.....
@@ -66,7 +68,8 @@ How to they like to play? Do they like long passes, long board, pass behind? How
 - analyze run frequency, location, utilization
 - create pitch control maps
 - space control and creation through movement
-
+- third end analysis 
+- ball heatmap
 
 # Out of possesion
 
@@ -83,7 +86,8 @@ Same but when the team is not on possession? Do they press? Are they aggressive 
 - how does the goalkeeper plays
 - Player heatmap
 - check and analyze offsides and near-offsides
-
+- third end analysis 
+- ball heatmap
 # Set plays
 
 Corners (inswing vs outswing), penalty, long throws,.... What kind of set plays are dangerous?
@@ -129,17 +133,12 @@ Conclusion
 # Things to brainstorm
 
 
-Look at this example: https://www.fifatrainingcentre.com/media/native/world-cup-2022/report_133009.pdf
 
 
 
 
 
 
-
-- third end analysis 
-
-- ball heatmap
 
 
 
