@@ -31,15 +31,117 @@ Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@et
 
 <!------------ START YOUR REPORT BELOW THIS LINE --------------->
 
-• estimate velocity, acceleration, curvature
-• create heatmaps and trajectories
-• ball speed as a proxy for match speed
-• trajectory smoothing, simplification, classification
-• filter for types of runs, compare to SkillCorner
-• analyze run frequency, location, utilization
-• check and analyze offsides and near-offsides
-• create pitch control maps
-• space control and creation through movement
+# Introduction to Slovenia
+
+Introduce the context of the match, previous matches on Slovenia. Context of the game.....
+
+# Formation & lineups
+
+Basic components, what is the line up. Is it consistent. Suspension, injuries....
+
+Do they play the same against all the differents teams?
+
+- slide 3 example
+- ball speed as a proxy for match speed
+- possention
+- Player heatmap
+- Ball possession Analysis
+
+# Possession
+
+How to they like to play? Do they like long passes, long board, pass behind? How do they create goals? Do they play left side because one player is good? Are they direct when they attack?
+
+- slide 4 example
+- in possesion line height
+- line break
+- passing network (use their script)
+- attempt at goal
+- crosses 
+- create heatmaps and trajectories
+- filter for types of runs, compare to SkillCorner
+- passes
+- pass completion
+- Player heatmap
+- trajectory smoothing, simplification, classification
+- analyze run frequency, location, utilization
+- create pitch control maps
+- space control and creation through movement
+
+
+# Out of possesion
+
+Same but when the team is not on possession? Do they press? Are they aggressive when they don't have the ball? 
+
+- slide 4 example
+- total pressures
+- direct pressures
+- avg pressure duration
+- forced turnovers
+- ball recovery time
+- puhsing on into pressing
+- aerial game
+- how does the goalkeeper plays
+- Player heatmap
+- check and analyze offsides and near-offsides
+
+# Set plays
+
+Corners (inswing vs outswing), penalty, long throws,.... What kind of set plays are dangerous?
+
+Example: If the teams scores a lot with corners ==> Notify it
+
+- corners
+- penalties
+- free kicks (direct vs indirect - create visualisation map)
+- who shots
+- trajectory smoothing, simplification, classification
+- Type of goal
+
+# Individual players
+
+Characteristics of each individual player.
+
+- possesion
+- distribution
+- offers & receptions
+- physical data sprints / avg runs / top speed and so on
+- estimate velocity, acceleration, curvature- estimate velocity, acceleration, curvature
+- Endurance check 
+- Player possession Analysis
+
+# Strengths of Slovenia
+
+What are they doing well?
+
+
+# Weaknesses of Slovenia
+
+What are they doing less well?
+
+# Match tactics we can use
+
+Suggestions of tactics that can work very well.
+
+# Conclusion
+
+Conclusion
+
+# Things to brainstorm
+
+
+Look at this example: https://www.fifatrainingcentre.com/media/native/world-cup-2022/report_133009.pdf
+
+
+
+
+
+
+
+- third end analysis 
+
+- ball heatmap
+
+
 
 
 ### Qualifier Games Slovenia
