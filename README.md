@@ -45,7 +45,7 @@ Do they play the same against all the differents teams?
 
 - slide 3 example
 - ball speed as a proxy for match speed
-- possention
+- possetion
 - Player heatmap
 - Ball possession Analysis
 
@@ -70,6 +70,13 @@ How to they like to play? Do they like long passes, long board, pass behind? How
 - space control and creation through movement
 - third end analysis 
 - ball heatmap
+
+```python
+third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
+total_possession = third_possession['possession_duration'].sum()
+third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
+print(third_possession[['channel_end','third_end', 'possession_percentage']])
+```
 
 # Out of possesion
 
@@ -101,6 +108,8 @@ Example: If the teams scores a lot with corners ==> Notify it
 - trajectory smoothing, simplification, classification
 - Type of goal
 
+
+
 # Individual players
 
 Characteristics of each individual player.
@@ -109,9 +118,22 @@ Characteristics of each individual player.
 - distribution
 - offers & receptions
 - physical data sprints / avg runs / top speed and so on
+
+```python
+# Skillcorner
+print(physical_df[['player_name','Distance', 'Count High Acceleration','Sprinting Distance','PSV-99']])
+```
+- Dangerous runs & types of runs
+
+```python
+print(dynamic_events['event_subtype'].unique())
+print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name', 'time_start']])
+```
+
 - estimate velocity, acceleration, curvature- estimate velocity, acceleration, curvature
 - Endurance check 
 - Player possession Analysis
+
 
 # Strengths of Slovenia
 
