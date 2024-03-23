@@ -10,13 +10,15 @@ Repo for Group B9
 
 ## Introduction
 
-Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
+Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Euro 23) we won with 2-1 in a complicated game. In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match. 
 
 Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
 ![alt text](composition.png)
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
+
+## Statistics of Slovenia's recent games 
 
 
 ## Idea for report structure:
