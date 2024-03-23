@@ -12,7 +12,7 @@ Repo for Group B9
 
 Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
 
-Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Kevin Kampl and Jaka Bijol. Given their midfield roles, it's reasonable to anticipate Slovenia boasting a strong midfield presence.
+Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield roles, it's reasonable to anticipate Slovenia boasting a strong midfield presence.
 
 ## Idea for report structure:
 - Introduction to the 2 teams (Francois, Loris)
