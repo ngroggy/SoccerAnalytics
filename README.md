@@ -154,18 +154,12 @@ def compute_value():
 
 
 
-### Player heatmaps 
-
-
-<details>
-<summary> Code </summary>
+### Player heatmap
 
 
 ```python
 # Add script to generate player heatmap
 ```
-
-</details>
 
 
 ## In possesion - attack of Slovenia
@@ -178,14 +172,9 @@ TODO: Add same distribution like in the picture
 
 ![alt text](in.png)
 
-<details>
-<summary> Code </summary>
-
 ```python
 # Add script
 ```
-
-</details>
 
 #### Ball heatmap
 
