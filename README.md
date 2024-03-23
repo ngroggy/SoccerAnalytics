@@ -18,15 +18,10 @@ Based on information from multiple sources, it's seems evident that Slovenia's t
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
 
-### Qualifier Games Slovenia
+### Last 5 qualifier games slovenia
 
 | wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
 |--------:|------------:|------|------|------|------------|------------|-------|
-| 5414103 |  | 2023-03-23 | Kazakhstan | Slovenia  | 1 | 2 |  |
-| 5414128 |  | 2023-03-26 | Slovenia | San Marino | 2 | 0 |  |
-| 5414156 |  | 2023-06-16| Finland | Slovenia | 2 | 0 |  |
-| 5414180 | | 2023-06-19 | Slovenia | Denmark | 1 | 1 |  |
-| 5414203 |  | 2023-09-07 | Slovenia | Northern Ireland | 4 | 2 |  |
 | 5414226 | 1385659 | 2023-09-10 | San Marino | Slovenia | 0 | 4 |  |
 | 5414260| 1381446 | 2023-10-14 | Slovenia | Finland | 1 | 3 |  |
 | 5414284 | 1381466 | 2023-10-17 | Northern Ireland | Slovenia | 0 | 1 |  |
