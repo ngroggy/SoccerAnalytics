@@ -62,7 +62,7 @@ TODO: Analyse data with python & write report then
 
 #### Help from other players
 
-## Players to observe
+## Statistics of the players - sorted by value according to : 
 
 ## Weaknesses & Tactic to adopt
 
