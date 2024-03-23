@@ -68,12 +68,84 @@ TODO: Analyse data with python & write report then
 
 ## Conclusion
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Appendix
 
 ## Good resources
 - [Soccermatics](https://soccermatics.readthedocs.io/en/latest/gallery/lesson1/plot_PlottingPasses.html) 
 - [Soccer Analytics Handbook ](https://github.com/devinpleuler/analytics-handbook)https://github.com/devinpleuler/analytics-handbook
 - [Edd Webster Football Analytics](https://github.com/eddwebster/football_analytics?tab=readme-ov-file#-python): Overview of many resources
+
+
 
 #### Appendix
 
