@@ -25,7 +25,7 @@ After analyzing their recent match against Malta, it's evident that Slovenia emp
 
 ### 1.3 Injured & suspended players
 
-TODO: Fill this section 
+Currently Benjamin Verbič is injured and doesn't have an official return date. No suspension need to be taken into account at this point.
 
 ## 2. Statistics of Slovenia's recent games 
 
