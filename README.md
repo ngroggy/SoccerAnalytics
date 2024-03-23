@@ -42,11 +42,11 @@ TODO: Add statistics on the picture - aggregate from previous matches
 
 #### Ball possession
 
-´´´python
+```python
 # add script here
 def compute_value():
   reuturn 1
-´´´
+```
 
 #### Attemps at goal
 
