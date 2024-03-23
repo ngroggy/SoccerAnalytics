@@ -1,7 +1,9 @@
 # Preparation Denmark to play against Slovenia !
 
 
-## Introduction
+## 1. Introduction
+
+### 1.1 General comments 
 
 Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Qualifiers Euro 23) we won with 2-1 in a complicated game while we got a draw 6 month earlier with 1-1 (Qualifiers Euro 23). In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match. 
 
@@ -11,7 +13,7 @@ Based on information from multiple sources, it's seems evident that Slovenia's t
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
 
-### Last 5 qualifier games slovenia
+### 1.2 Last 5 qualifier games slovenia
 
 | wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
 |--------:|------------:|------|------|------|------------|------------|-------|
@@ -21,13 +23,13 @@ After analyzing their recent match against Malta, it's evident that Slovenia emp
 | 5414302 | 1381485 | 2023-11-17 | Denmark | Slovenia | 2 | 1 |  |
 | 5414324 | 1381505 | 2023-11-20 | Slovenia | Kazakhstan | 2 | 1 |  |
 
-#### Injured & suspended players
+### 1.3 Injured & suspended players
 
-TODO: Have a look at who is injured
+TODO: Fill this section 
 
-## Statistics of Slovenia's recent games 
+## 2. Statistics of Slovenia's recent games 
 
-### Formation and line up 
+### 2.1 Formation and line up 
 
 We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
 
@@ -37,7 +39,7 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 
 **Cons :** In a 4-4-2 formation, teams may struggle to control the midfield, especially against opponents using a midfield trio, leading to less possession. Additionally, the 4-4-2 lacks defensive depth, as players within the same line may leave gaps. Despite being compact, this formation is vulnerable to line-breaking passes, making it easier for opponents to bypass multiple players at once. Defensive setups like the 4-1-4-1 offer better coverage between the lines.When attacking, the midfield and defensive lines align closely, restricting forward passing options. This setup can limit the team's ability to create passing opportunities compared to formations with players spread across different lines.
 
-### Key statistics
+### 2.2 Key statistics
 
 TODO: Add statistics on the picture - aggregate from previous matches 
 
@@ -148,7 +150,7 @@ def compute_value():
 
 
 
-### Player heatmap
+### 2.3 Player heatmap
 
 
 ```python
@@ -156,11 +158,11 @@ def compute_value():
 ```
 
 
-## In possesion - attack of Slovenia
+## 3. In possesion - attack of Slovenia
 
 
 
-#### Attacking formation & style:
+### 3.1 Attacking formation & style:
 
 TODO: Add same distribution like in the picture
 
@@ -170,24 +172,21 @@ TODO: Add same distribution like in the picture
 # Add script
 ```
 
-#### Ball heatmap
+### 3.2 Passing network & ball heatmap
 
 ```python
+# Add script
+```
+
+```python
+# This script isn't complete
 third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
 total_possession = third_possession['possession_duration'].sum()
 third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
 print(third_possession[['channel_end','third_end', 'possession_percentage']])
 ```
 
-
-#### Passing network
-
-
-```python
-# Add script
-```
-
-
+### 3.3 Typical tactical moves
 
 #### Line breaks
 
@@ -195,12 +194,14 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 #### Crosses
 
-#### Key players involved in chances and goals
+#### Shots & shots on target
+
+### 3.4 Key players in attack
 
 - analyze run frequency, location, utilization
 - analyse type of runs
 
-#### Shots & shots on target
+
 
 
 
