@@ -44,12 +44,6 @@ How to they like to play? Do they like long passes, long board, pass behind? How
 - filter for types of runs, compare to SkillCorner
 
 
-```python
-third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
-total_possession = third_possession['possession_duration'].sum()
-third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
-print(third_possession[['channel_end','third_end', 'possession_percentage']])
-```
 
 # Out of possesion
 
@@ -63,7 +57,7 @@ Same but when the team is not on possession? Do they press? Are they aggressive 
 - ball recovery time
 - puhsing on into pressing
 - aerial game
-- how does the goalkeeper plays
+
 - Player heatmap
 - check and analyze offsides and near-offsides
 - third end analysis 
