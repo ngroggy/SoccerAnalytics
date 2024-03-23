@@ -6,7 +6,7 @@ Repo for Group B9
 - Daten verstehen
 - Erste Ideen, welche Dataen zu analysieren
 
-# Preparation Denmark to play against Slovenia ![Slovenia](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/si.png "Slovenia")****
+# Preparation Denmark to play against Slovenia ![Slovenia](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/si.png "Slovenia")
 
 ### Introduction
 
