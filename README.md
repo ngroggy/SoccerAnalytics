@@ -8,7 +8,7 @@ Repo for Group B9
 
 # Preparation Denmark to play against Slovenia !
 
-### Introduction
+## Introduction
 
 Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
 
