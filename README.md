@@ -1,9 +1,3 @@
-# SoccerAnalytics
-Repo for Group B9
-
-
-
-
 # Preparation Denmark to play against Slovenia !
 
 
