@@ -40,9 +40,19 @@ TODO: Add statistics on the picture - aggregate from previous matches
 
 ![alt text](statistics.png)
 
-#### Ball possetion
+#### Ball possession
 
-TODO: Add script for ball possesion
+´´´python
+# add script here
+def compute_value():
+  reuturn 1
+´´´
+
+#### Attemps at goal
+
+TODO: Add script
+
+
 
 ## In possesion - attack of Slovenia
 
