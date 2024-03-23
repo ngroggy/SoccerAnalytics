@@ -196,9 +196,14 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 #### Shots & shots on target
 
+
+
+
+
 ## Out of possesion - defense of Slovenia
 
-#### Typical defensive formation & style
+### Typical defensive formation & style
+
 
 TODO: Add same distribution like in the picture
 
@@ -208,12 +213,120 @@ TODO: Add same distribution like in the picture
 # Add script to type of play out of possesion
 ```
 
+Add player heatmap
 
-#### Pressing
+```python
+# Add script to type of play out of possesion
+```
+
+### Statistics
+
+TODO: Add values like in the picture
+
+![alt text](in.png)
+
+```python
+# Add script to generate staticsitws
+```
+
+##### Total pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Direct pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Average pressures duartion
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Forced turnovers
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Ball recovery time
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pusing into pressing
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing on
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing direction inside
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing direction outside
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
 
 #### Duel performance of the players
 
 #### Help from other players
+
+#### Goal keeper behaviours
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -231,6 +344,9 @@ TODO: Who shots, which direction statistically?
 ##### Free kicks
 
 TODO: Who shots, who does what. Any Danger? How do they shot normally?
+
+
+
 
 
 
