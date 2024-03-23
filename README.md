@@ -174,6 +174,15 @@ TODO: Add same distribution like in the picture
 # Add script for generating the passing network 
 ```
 
+#### Ball heatmap
+
+```python
+third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
+total_possession = third_possession['possession_duration'].sum()
+third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
+print(third_possession[['channel_end','third_end', 'possession_percentage']])
+```
+
 #### Line breaks
 
 #### Attemps at goal
