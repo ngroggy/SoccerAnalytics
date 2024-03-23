@@ -48,10 +48,93 @@ def compute_value():
   reuturn 1
 ```
 
-#### Attemps at goal
+#### Attemps at Goal (on target)
 
-TODO: Add script
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
 
+#### Total passes
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Pass completion
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Completed line breks
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Reception in the final third
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Crosses
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Ball progressions
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Defensive pressures - direct pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Forced turnover
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### Total distance covered
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+#### High speed distance covered
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
 
 
 ## In possesion - attack of Slovenia
