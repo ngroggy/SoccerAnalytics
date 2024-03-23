@@ -1,12 +1,11 @@
 # SoccerAnalytics
 Repo for Group B9
 
-<details>
-<summary> Data </summary>
+
+
 
 # Preparation Denmark to play against Slovenia !
 
-</details>
 
 ## Introduction
 
@@ -51,6 +50,9 @@ TODO: Add statistics on the picture - aggregate from previous matches
 ![alt text](statistics.png)
 
 TODO: Write small analysis with the values
+
+<details>
+<summary> Codes </summary>
 
 ##### Ball possession
 
@@ -147,6 +149,10 @@ def compute_value():
 def compute_value():
   reuturn 1
 ```
+
+</details>
+
+
 
 ### Player heatmaps 
 
