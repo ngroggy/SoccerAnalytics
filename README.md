@@ -25,25 +25,25 @@ The commit type can include the following:
 - Erste Ideen, welche Dataen zu analysieren
 
 ## Idea for report structure:
-- Introduction to the 2 teams
+- Introduction to the 2 teams (Francois, Loris)
   - FIFA/UEFA current ranking and evolution
   - common formation (starting 11, main substitutes and change of formation)
   - important/most valuable players, weak players 
   - general interesting stats (e.g. injured players, recent performance in friendly games)
   - ...
 
-- Analysis of recent games between the 2 teams in the Qualifiers (2:1, 1:1)
+- Analysis of recent games between the 2 teams in the Qualifiers (2:1, 1:1) (Yves)
   - General stats (Possession, Shots, Shots on Target, Expected goals etc.)
   - ...
 
-- Attack of Slovenia
+- Attack of Slovenia (Nic, Grégory)
   - Attacking style (e.g. counter attacks)
   - key players involved in chances and goals
   - amount of passes before attempted shots
   - recurring structure of attacks
   - ...
 
-- Defense of Slovenia
+- Defense of Slovenia (Nic, Grégory)
   - Formation
   - help from non-defense players
   - Weakness (how did they concede goals?)
