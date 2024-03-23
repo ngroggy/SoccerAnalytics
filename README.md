@@ -18,7 +18,13 @@ Based on information from multiple sources, it's seems evident that Slovenia's t
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
 
+#### Injured players
+
+TODO: Have a look at who is injured
+
 ## Statistics of Slovenia's recent games 
+
+#### Team composition
 
 We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
 
@@ -28,41 +34,42 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 
 **Cons :** In a 4-4-2 formation, teams may struggle to control the midfield, especially against opponents using a midfield trio, leading to less possession. Additionally, the 4-4-2 lacks defensive depth, as players within the same line may leave gaps. Despite being compact, this formation is vulnerable to line-breaking passes, making it easier for opponents to bypass multiple players at once. Defensive setups like the 4-1-4-1 offer better coverage between the lines.When attacking, the midfield and defensive lines align closely, restricting forward passing options. This setup can limit the team's ability to create passing opportunities compared to formations with players spread across different lines.
 
+#### Ball possetion
 
-## Idea for report structure:
-- Introduction to the 2 teams (Francois, Loris)
-  - FIFA/UEFA current ranking and evolution
-  - common formation (starting 11, main substitutes and change of formation)
-  - important/most valuable players, weak players 
-  - general interesting stats (e.g. injured players, recent performance in friendly games)
-  - ...
+TODO: Add script for ball possesion
 
-- Analysis of recent games between the 2 teams in the Qualifiers (2:1, 1:1) (Yves)
-  - General stats (Possession, Shots, Shots on Target, Expected goals etc.)
-  - ...
+## In possesion - attack of Slovenia
 
-- Attack of Slovenia (Nic, Grégory)
-  - Attacking style (e.g. counter attacks)
-  - key players involved in chances and goals
-  - amount of passes before attempted shots
-  - recurring structure of attacks
-  - ...
+#### Attacking style (e.g. counter attacks) & structure of the attacks:
 
-- Defense of Slovenia (Nic, Grégory)
-  - Formation
-  - help from non-defense players
-  - Weakness (how did they concede goals?)
-  - ...
+TODO: Analyse data with python & write report then
 
-- Distribution and control of Slovenia
-  - heat map of possession
-  - player with best/worst passing accuracy
-  - players with best/worst duel performance
-  - ...
+#### Key players involved in chances and goals
 
-- Gameplan for Denmark:
-  - ...
- 
+#### Passing network
+
+#### Shots & shots on target
+
+#### Set plays
+
+## Out of possesion - defense of Slovenia
+
+#### Typical defensive formation
+
+#### Pressing
+
+#### Duel performance of the players
+
+#### Help from other players
+
+## Players to observe
+
+## Weaknesses & Tactic to adopt
+
+## Conclusion
+
+# Appendix
+
 ## Good resources
 - [Soccermatics](https://soccermatics.readthedocs.io/en/latest/gallery/lesson1/plot_PlottingPasses.html) 
 - [Soccer Analytics Handbook ](https://github.com/devinpleuler/analytics-handbook)https://github.com/devinpleuler/analytics-handbook
