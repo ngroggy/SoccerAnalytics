@@ -189,14 +189,11 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 #### Passing network
 
 
-<details>
-<summary> Code </summary>
-
 ```python
 # Add script
 ```
 
-</details>
+
 
 #### Line breaks
 
