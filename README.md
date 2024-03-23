@@ -40,6 +40,8 @@ TODO: Add statistics on the picture - aggregate from previous matches
 
 ![alt text](statistics.png)
 
+TODO: Write small analysis with the values
+
 ##### Ball possession
 
 ```python
@@ -48,7 +50,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Attemps at Goal (on target)
+##### Attemps at Goal (on target)
 
 ```python
 # add script here
@@ -56,7 +58,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Total passes
+##### Total passes
 
 ```python
 # add script here
@@ -64,7 +66,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Pass completion
+##### Pass completion
 
 ```python
 # add script here
@@ -72,7 +74,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Completed line breks
+##### Completed line breks
 
 ```python
 # add script here
@@ -80,7 +82,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Reception in the final third
+##### Reception in the final third
 
 ```python
 # add script here
@@ -88,7 +90,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Crosses
+##### Crosses
 
 ```python
 # add script here
@@ -96,7 +98,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Ball progressions
+##### Ball progressions
 
 ```python
 # add script here
@@ -104,7 +106,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Defensive pressures - direct pressures
+##### Defensive pressures - direct pressures
 
 ```python
 # add script here
@@ -112,7 +114,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Forced turnover
+##### Forced turnover
 
 ```python
 # add script here
@@ -120,7 +122,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### Total distance covered
+##### Total distance covered
 
 ```python
 # add script here
@@ -128,7 +130,7 @@ def compute_value():
   reuturn 1
 ```
 
-#### High speed distance covered
+##### High speed distance covered
 
 ```python
 # add script here
