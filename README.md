@@ -164,6 +164,8 @@ def compute_value():
 
 ## In possesion - attack of Slovenia
 
+
+
 #### Attacking formation & style:
 
 TODO: Add same distribution like in the picture
@@ -174,12 +176,6 @@ TODO: Add same distribution like in the picture
 # Add script to type of play in possession
 ```
 
-#### Passing network
-
-```python
-# Add script for generating the passing network 
-```
-
 #### Ball heatmap
 
 ```python
@@ -188,6 +184,14 @@ total_possession = third_possession['possession_duration'].sum()
 third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
 print(third_possession[['channel_end','third_end', 'possession_percentage']])
 ```
+
+
+#### Passing network
+
+```python
+# Add script for generating the passing network 
+```
+
 
 #### Line breaks
 
@@ -234,6 +238,10 @@ TODO: Add values like in the picture
 ```python
 # Add script to generate staticsitws
 ```
+
+
+<details>
+<summary> Codes </summary>
 
 ##### Total pressures
 
@@ -307,17 +315,13 @@ def compute_value():
   reuturn 1
 ```
 
+</details>
+
 #### Duel performance of the players
 
 #### Help from other players
 
 #### Goal keeper behaviours
-
-
-
-
-
-
 
 
 
