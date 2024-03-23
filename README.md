@@ -223,7 +223,7 @@ Add player heatmap
 
 TODO: Add values like in the picture
 
-![alt text](in.png)
+![alt text](defensive.png)
 
 ```python
 # Add script to generate staticsitws
