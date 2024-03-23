@@ -188,13 +188,13 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 ### 3.3 Typical tactical moves
 
-#### Line breaks
+#### 3.3.1 Line breaks
 
-#### Attemps at goal
+#### 3.3.2 Attemps at goal
 
-#### Crosses
+#### 3.3.3 Crosses
 
-#### Shots & shots on target
+#### 3.3.4 Shots & shots on target
 
 ### 3.4 Key players in attack
 
@@ -205,9 +205,9 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 
 
-## Out of possesion - defense of Slovenia
+## 4 Out of possesion - defense of Slovenia
 
-### Typical defensive formation & style
+### 4.1 Typical defensive formation & style
 
 
 TODO: Add same distribution like in the picture
@@ -224,7 +224,7 @@ Add player heatmap
 # Add script to type of play out of possesion
 ```
 
-### Statistics
+### 4.2 Statistics
 
 TODO: Add values like in the picture
 
@@ -312,51 +312,26 @@ def compute_value():
 
 </details>
 
-#### Duel performance of the players
+### 4.3 Duel performance of the players
 
-#### Help from other players
+### 4.4 Goal keeper behaviour
 
-#### Goal keeper behaviours
+## 5. Set plays
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Set plays
-
-##### Corners
+### 5.1 Corners
 
 TODO: Who shots, any danger? (inswing vs outswing)
 
-##### Penalties
+### 5.2 Penalties
 
 TODO: Who shots, which direction statistically?
 
-##### Free kicks
+### 5.3 Free kicks
 
 TODO: Who shots, who does what. Any Danger? How do they shot normally?
 
 
-
-
-
-
-
-## Statistics of the players - sorted by value (in dollars) according to find website : 
+## 6 Statistics of the players - sorted by value (in dollars) according to find website : 
 
 - possesion
 - distribution
@@ -379,8 +354,8 @@ print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name
 ```
 
 
-## Weaknesses & Tactic to adopt
+## 7 Weaknesses & Tactic to adopt
 
-## Conclusion
+TODO: Write this at the end when everything is done - probably not important for the first draft
 
 
