@@ -18,6 +18,21 @@ Based on information from multiple sources, it's seems evident that Slovenia's t
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
 
+### Qualifier Games Slovenia
+
+| wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
+|--------:|------------:|------|------|------|------------|------------|-------|
+| 5414103 |  | 2023-03-23 | Kazakhstan | Slovenia  | 1 | 2 |  |
+| 5414128 |  | 2023-03-26 | Slovenia | San Marino | 2 | 0 |  |
+| 5414156 |  | 2023-06-16| Finland | Slovenia | 2 | 0 |  |
+| 5414180 | | 2023-06-19 | Slovenia | Denmark | 1 | 1 |  |
+| 5414203 |  | 2023-09-07 | Slovenia | Northern Ireland | 4 | 2 |  |
+| 5414226 | 1385659 | 2023-09-10 | San Marino | Slovenia | 0 | 4 |  |
+| 5414260| 1381446 | 2023-10-14 | Slovenia | Finland | 1 | 3 |  |
+| 5414284 | 1381466 | 2023-10-17 | Northern Ireland | Slovenia | 0 | 1 |  |
+| 5414302 | 1381485 | 2023-11-17 | Denmark | Slovenia | 2 | 1 |  |
+| 5414324 | 1381505 | 2023-11-20 | Slovenia | Kazakhstan | 2 | 1 |  |
+
 #### Injured & suspended players
 
 TODO: Have a look at who is injured
@@ -144,23 +159,51 @@ def compute_value():
 # Add script to generate player heatmap
 ```
 
+
+
 ## In possesion - attack of Slovenia
 
-#### Attacking style (e.g. counter attacks) & structure of the attacks:
+#### Attacking formation & style:
 
-TODO: Analyse data with python & write report then
+TODO: Add same distribution like in the picture
 
-#### Key players involved in chances and goals
+![alt text](in.png)
+
+```python
+# Add script to type of play in possession
+```
 
 #### Passing network
 
-#### Shots & shots on target
+```python
+# Add script for generating the passing network 
+```
 
-#### Set plays
+#### Line breaks
+
+#### Attemps at goal
+
+#### Crosses
+
+#### Key players involved in chances and goals
+
+- analyze run frequency, location, utilization
+- analyse type of runs
+
+#### Shots & shots on target
 
 ## Out of possesion - defense of Slovenia
 
-#### Typical defensive formation
+#### Typical defensive formation & style
+
+TODO: Add same distribution like in the picture
+
+![alt text](in.png)
+
+```python
+# Add script to type of play out of possesion
+```
+
 
 #### Pressing
 
@@ -168,7 +211,48 @@ TODO: Analyse data with python & write report then
 
 #### Help from other players
 
-## Statistics of the players - sorted by value according to : 
+
+
+
+## Set plays
+
+##### Corners
+
+TODO: Who shots, any danger? (inswing vs outswing)
+
+##### Penalties
+
+TODO: Who shots, which direction statistically?
+
+##### Free kicks
+
+TODO: Who shots, who does what. Any Danger? How do they shot normally?
+
+
+
+
+## Statistics of the players - sorted by value (in dollars) according to find website : 
+
+- possesion
+- distribution
+- offers & receptions
+- physical data sprints / avg runs / top speed and so on
+- Endurance check
+
+
+```python
+# Skillcorner
+print(physical_df[['player_name','Distance', 'Count High Acceleration','Sprinting Distance','PSV-99']])
+```
+
+- Dangerous runs & types of runs
+
+```python
+# Example to see all supports runs
+print(dynamic_events['event_subtype'].unique())
+print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name', 'time_start']])
+```
+
 
 ## Weaknesses & Tactic to adopt
 
