@@ -156,10 +156,16 @@ def compute_value():
 
 ### Player heatmaps 
 
+
+<details>
+<summary> Code </summary>
+
+
 ```python
 # Add script to generate player heatmap
 ```
 
+</details>
 
 
 ## In possesion - attack of Slovenia
@@ -172,9 +178,14 @@ TODO: Add same distribution like in the picture
 
 ![alt text](in.png)
 
+<details>
+<summary> Code </summary>
+
 ```python
-# Add script to type of play in possession
+# Add script
 ```
+
+</details>
 
 #### Ball heatmap
 
@@ -188,10 +199,15 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 #### Passing network
 
+
+<details>
+<summary> Code </summary>
+
 ```python
-# Add script for generating the passing network 
+# Add script
 ```
 
+</details>
 
 #### Line breaks
 
@@ -205,8 +221,6 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 - analyse type of runs
 
 #### Shots & shots on target
-
-
 
 
 
