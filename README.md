@@ -18,13 +18,13 @@ Based on information from multiple sources, it's seems evident that Slovenia's t
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
 
-#### Injured players
+#### Injured & suspended players
 
 TODO: Have a look at who is injured
 
 ## Statistics of Slovenia's recent games 
 
-### Team composition
+### Formation and line up 
 
 We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
 
@@ -137,6 +137,8 @@ def compute_value():
 def compute_value():
   reuturn 1
 ```
+
+### Player heatmaps 
 
 
 ## In possesion - attack of Slovenia
