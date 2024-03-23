@@ -6,6 +6,14 @@ Repo for Group B9
 - Daten verstehen
 - Erste Ideen, welche Dataen zu analysieren
 
+# Preparation Denmark to play against Slovenia
+
+![Slovenia](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/si.png "Slovenia")
+
+### Introduction
+
+Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
+
 ## Idea for report structure:
 - Introduction to the 2 teams (Francois, Loris)
   - FIFA/UEFA current ranking and evolution
