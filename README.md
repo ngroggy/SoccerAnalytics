@@ -41,11 +41,9 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 
 ### 2.2 Key statistics
 
-TODO: Add statistics on the picture - aggregate from previous matches 
+TODO: First fill the codes, then we can interpret the values and write the analysis
 
 ![alt text](statistics.png)
-
-TODO: Write small analysis with the values
 
 <details>
 <summary> Codes </summary>
@@ -148,8 +146,6 @@ def compute_value():
 
 </details>
 
-
-
 ### 2.3 Player heatmap
 
 
@@ -157,10 +153,7 @@ def compute_value():
 # Add script to generate player heatmap
 ```
 
-
 ## 3. In possesion - attack of Slovenia
-
-
 
 ### 3.1 Attacking formation & style:
 
@@ -201,14 +194,9 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 - analyze run frequency, location, utilization
 - analyse type of runs
 
-
-
-
-
 ## 4 Out of possesion - defense of Slovenia
 
 ### 4.1 Typical defensive formation & style
-
 
 TODO: Add same distribution like in the picture
 
@@ -226,14 +214,13 @@ Add player heatmap
 
 ### 4.2 Statistics
 
-TODO: Add values like in the picture
+TODO: Create scripts to generate the values and then we analyse the results
 
 ![alt text](defensive.png)
 
 ```python
 # Add script to generate staticsitws
 ```
-
 
 <details>
 <summary> Codes </summary>
@@ -329,7 +316,6 @@ TODO: Who shots, which direction statistically?
 ### 5.3 Free kicks
 
 TODO: Who shots, who does what. Any Danger? How do they shot normally?
-
 
 ## 6 Statistics of the players - sorted by value (in dollars) according to find website : 
 
