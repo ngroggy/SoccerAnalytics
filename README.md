@@ -140,6 +140,9 @@ def compute_value():
 
 ### Player heatmaps 
 
+```python
+# Add script to generate player heatmap
+```
 
 ## In possesion - attack of Slovenia
 
