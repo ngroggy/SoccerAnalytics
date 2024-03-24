@@ -45,6 +45,8 @@ TODO: First fill the codes, then we can interpret the values and write the analy
 
 ![alt text](statistics.png)
 
+![alt text](notebooks/plots/key_statistics.png)
+
 <details>
 <summary> Codes </summary>
 
@@ -169,7 +171,7 @@ TODO: Add same distribution like in the picture
 
 #### TODO: Analyse passing network
 
-![alt text](notebooks/passing_network.png)
+![alt text](notebooks/plots/passing_network.png)
 
 
 ```python
