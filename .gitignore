@@ -7,3 +7,4 @@ notebooks/input/wyscout/*
 notebooks/results/*
 notebooks/Pipfile
 notebooks/presentation.pptx
+notebooks/input*

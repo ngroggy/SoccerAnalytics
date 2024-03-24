@@ -167,6 +167,11 @@ TODO: Add same distribution like in the picture
 
 ### 3.2 Passing network & ball heatmap
 
+#### TODO: Analyse passing network
+
+![alt text](passing_network.png)
+
+
 ```python
 # Add script
 ```
