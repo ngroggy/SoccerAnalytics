@@ -1,131 +1,347 @@
-# SoccerAnalytics
-Repo for Group B9
-
-<!---------------- HEADER SECTION -------------------->
-<details><summary>Project Group</summary>
-
-_Please fill in the following table._
-
-| handle      | name               |
-| ----------- | ------------------ |
-| @dgregory   | Grégory de Meurichy|
-| @ngrogg     | Nic Grogg          |
-| @grloris    | Loris Griesbaum    |
-| @ygoergen        | Yves Görgen             |
-| @fcosta          | François Costa               |
-</details>
-
-<details>
-<summary>TA Comments</summary>
-
-Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
-
-- [ ] when saving, please indicate what you changed in a meaningful commit messages
-- [ ] draft due: **Monday, April 8**
-- [ ] final version due: **Friday, May 24** 
-</details>
+# Preparation Denmark to play against Slovenia !
 
 
-# Match \#06 (SVN-DEN): preparing Denmark to play against Slovenia
+## 1. Introduction
 
+### 1.1 General comments 
 
-<!------------ START YOUR REPORT BELOW THIS LINE --------------->
+Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Qualifiers Euro 23) we won with 2-1 in a complicated game while we got a draw 6 month earlier with 1-1 (Qualifiers Euro 23). In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match. 
 
-• estimate velocity, acceleration, curvature
-• create heatmaps and trajectories
-• ball speed as a proxy for match speed
-• trajectory smoothing, simplification, classification
-• filter for types of runs, compare to SkillCorner
-• analyze run frequency, location, utilization
-• check and analyze offsides and near-offsides
-• create pitch control maps
-• space control and creation through movement
+Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
+![alt text](composition.png)
 
-### Qualifier Games Slovenia
+After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
+
+### 1.2 Last 5 qualifier games slovenia
 
 | wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
 |--------:|------------:|------|------|------|------------|------------|-------|
-| 5414103 |  | 2023-03-23 | Kazakhstan | Slovenia  | 1 | 2 |  |
-| 5414128 |  | 2023-03-26 | Slovenia | San Marino | 2 | 0 |  |
-| 5414156 |  | 2023-06-16| Finland | Slovenia | 2 | 0 |  |
-| 5414180 | | 2023-06-19 | Slovenia | Denmark | 1 | 1 |  |
-| 5414203 |  | 2023-09-07 | Slovenia | Northern Ireland | 4 | 2 |  |
 | 5414226 | 1385659 | 2023-09-10 | San Marino | Slovenia | 0 | 4 |  |
 | 5414260| 1381446 | 2023-10-14 | Slovenia | Finland | 1 | 3 |  |
 | 5414284 | 1381466 | 2023-10-17 | Northern Ireland | Slovenia | 0 | 1 |  |
 | 5414302 | 1381485 | 2023-11-17 | Denmark | Slovenia | 2 | 1 |  |
 | 5414324 | 1381505 | 2023-11-20 | Slovenia | Kazakhstan | 2 | 1 |  |
 
-### Qualifier Games Denmark
+### 1.3 Injured & suspended players
 
-| wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
-|--------:|------------:|------|------|------|------------|------------|-------|
-| 5414106 |  | 2023-03-23 | Denmark | Finland | 3 | 1 |  |
-| 5414126 |  | 2023-03-26 | Kazakhstan | Denmark | 3 | 2 |  |
-| 5414155 |  | 2023-06-16 | Denmark | Northern Ireland | 1 | 0 |  |
-| 5414180 | | 2023-06-19 | Slovenia | Denmark | 1 | 1 |  |
-| 5414202 |  | 2023-09-07 | Denmark| San Marino| 4 | 0 |  |
-| 5414221 | 1381405 | 2023-09-10 | Finland | Denmark | 0 | 1|  |
-| 5414263 | 1381448 | 2023-10-14 | Denmark | Kazakhstan | 3 | 1 |  |
-| 5414286 | 1385733| 2023-10-17 | San Marino | Denmark | 1 | 2 |  |
-| 5414302 | 1381485 | 2023-11-17 | Denmark | Slovenia | 2 | 1 |  |
-| 5414323 | 1381506 | 2023-11-20 | Northern Ireland | Denmark | 2 | 0 |  |
+Currently Benjamin Verbič is injured and doesn't have an official return date. No suspension need to be taken into account at this point.
 
-### Add ideas on what we could analyse
+## 2. Statistics of Slovenia's recent games 
 
-| Idea | Type | Data Provider | Dataset | Effort | Priority | Notes |
-|-----:|-----:|--------------:|--------:|-------:|---------:|------:|
-| Ball possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which team had how much ball possession in percentage |
-| Player possession Analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate which player had the most ball possession per game |
-| third end analysis | Descriptive | Skillcorner | match_id_dynamic_events.csv | Low | High | calculate in which third the ball was most of the time |
-| ball heatmap | Descriptive | Wyscout | match_id.json | Mid | High | Make a heatmap for the ball per game |
-| Player heatmap | Descriptive | Wyscout | match_id.json | High | Low | Make heatmaps for key players |
-| Analyse squad depth | Descriptive | \- | \- | Low | High | Make descriptive analytics on how many players were subbed during games to show options |
-| Endurance check | Descriptive | Wyscout | match_id.json | High | High | Show which player ran how much and thus show endurance of a team |
-| Post-Match Rest Time | Descriptive | \- | \- | Mid | High | Analyse whether there are correlations with endurance for example when there were long travels after a game and little rest time |
-| Sentiment Analysis | Descriptive | Social Media? | \- | High | Low | Include a sentiment analysis for post-match interviews |
-| Type of Goal (in depth) | Descriptive | Wyscout / Skillcorner |  | Mid | High | Analyse from which position the goals were shot, analyse how many passes there were before a goal, how much time there was since first ball possesion and then goal |
-| Type of goal | Descriptive | skillcorner | match_id_dynamic_events.csv | Low | High | Show what the preceding play action was before a goal (penatly, free kick, corner, in game) |
+### 2.1 Formation and line up 
 
-### Hints (delete after reading)
+We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
 
-Your task is to populate this page with an opposition analysis.
-You have been assigned an opponent, and you have access to data from the European Qualifiers and from friendlies of the hosts.
+Here is a quick refresh of the pros and cons of 4-4-2:
 
-Based on an analysis of the opponent team's behaviors, you are asked to formulate expectations about the players they are likely to field, the formations they might use, their strategies for set pieces, and so on. Ideally, you would conclude with recommendations for the coaching staff of your team, informing them about key aspects of the opponent's behaviors and possible measures to counter them.
+**Pros :** With a strong defense, wide attack, and quick movement into the opponent's territory, the 4-4-2 excels in counter-attacks. Defensively, it allows for a compact setup with two lines of four players, while the forwards remain poised for quick offensive opportunities. The presence of two strikers presents a unique challenge for defenders, as it reduces time and space on the ball and increases the threat of one-on-one situations. Additionally, passing out from the back becomes more challenging with constant pressure from two attackers.
 
-Please start by 
+**Cons :** In a 4-4-2 formation, teams may struggle to control the midfield, especially against opponents using a midfield trio, leading to less possession. Additionally, the 4-4-2 lacks defensive depth, as players within the same line may leave gaps. Despite being compact, this formation is vulnerable to line-breaking passes, making it easier for opponents to bypass multiple players at once. Defensive setups like the 4-1-4-1 offer better coverage between the lines.When attacking, the midfield and defensive lines align closely, restricting forward passing options. This setup can limit the team's ability to create passing opportunities compared to formations with players spread across different lines.
 
-- [ ] entering your @handles and names in the Project Group section at the top of the page
+### 2.2 Key statistics
+
+TODO: First fill the codes, then we can interpret the values and write the analysis
+
+![alt text](statistics.png)
+
+<details>
+<summary> Codes </summary>
+
+##### Ball possession
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Attemps at Goal (on target)
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Total passes
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pass completion
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Completed line breks
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Reception in the final third
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Crosses
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Ball progressions
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Defensive pressures - direct pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Forced turnover
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Total distance covered
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### High speed distance covered
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+</details>
+
+### 2.3 Player heatmap
 
 
-You are welcome to focus on whatever analyses resonate with you or may be interesting about this opponent. 
-Be creative, look around what other groups are doing, and offer any code examples of general interest in the [snippet repository](https://gitlab.ethz.ch/socceranalytics/uefa-euro-2024/-/snippets).
+```python
+# Add script to generate player heatmap
+```
 
-For each figure, chart, or analysis you include, please link to the source of information and the code you used for it. This can be external libraries or some of the snippets provided by yourself or others. 
-You may also want to create additional wiki pages to provide more extensive background on an idea.
+## 3. In possesion - attack of Slovenia
+
+### 3.1 Attacking formation & style:
+
+TODO: Add same distribution like in the picture
+
+![alt text](in.png)
+
+```python
+# Add script
+```
+
+### 3.2 Passing network & ball heatmap
+
+```python
+# Add script
+```
+
+```python
+# This script isn't complete
+third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
+total_possession = third_possession['possession_duration'].sum()
+third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
+print(third_possession[['channel_end','third_end', 'possession_percentage']])
+```
+
+### 3.3 Typical tactical moves
+
+#### 3.3.1 Line breaks
+
+#### 3.3.2 Attemps at goal
+
+#### 3.3.3 Crosses
+
+#### 3.3.4 Shots & shots on target
+
+### 3.4 Key players in attack
+
+- analyze run frequency, location, utilization
+- analyse type of runs
+
+## 4 Out of possesion - defense of Slovenia
+
+### 4.1 Typical defensive formation & style
+
+TODO: Add same distribution like in the picture
+
+![alt text](in.png)
+
+```python
+# Add script to type of play out of possesion
+```
+
+Add player heatmap
+
+```python
+# Add script to type of play out of possesion
+```
+
+### 4.2 Statistics
+
+TODO: Create scripts to generate the values and then we analyse the results
+
+![alt text](defensive.png)
+
+```python
+# Add script to generate staticsitws
+```
+
+<details>
+<summary> Codes </summary>
+
+##### Total pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Direct pressures
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Average pressures duartion
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Forced turnovers
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Ball recovery time
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pusing into pressing
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing on
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing direction inside
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+##### Pushing direction outside
+
+```python
+# add script here
+def compute_value():
+  reuturn 1
+```
+
+</details>
+
+### 4.3 Duel performance of the players
+
+### 4.4 Goal keeper behaviour
+
+## 5. Set plays
+
+### 5.1 Corners
+
+TODO: Who shots, any danger? (inswing vs outswing)
+
+### 5.2 Penalties
+
+TODO: Who shots, which direction statistically?
+
+### 5.3 Free kicks
+
+TODO: Who shots, who does what. Any Danger? How do they shot normally?
+
+## 6 Statistics of the players - sorted by value (in dollars) according to find website : 
+
+- possesion
+- distribution
+- offers & receptions
+- physical data sprints / avg runs / top speed and so on
+- Endurance check
 
 
-## Best practices GIT:
+```python
+# Skillcorner
+print(physical_df[['player_name','Distance', 'Count High Acceleration','Sprinting Distance','PSV-99']])
+```
 
-See [freecodecamp](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) for more detailed instructions.
+- Dangerous runs & types of runs
 
-The commit type can include the following:
+```python
+# Example to see all supports runs
+print(dynamic_events['event_subtype'].unique())
+print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name', 'time_start']])
+```
 
-```feat``` – a new feature is introduced with the changes  
-```fix``` – a bug fix has occurred  
-```chore``` – changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)  
-```refactor``` – refactored code that neither fixes a bug nor adds a feature  
-```docs``` – updates to documentation such as a the README or other markdown files  
-```style``` – changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.  
-```test``` – including new or correcting previous tests  
-```perf``` – performance improvements  
-```ci``` – continuous integration related  
-```build``` – changes that affect the build system or external   dependencies
-```revert``` – reverts a previous commit  
 
-## To-Do's:
-- Skripte verstehen und zum laufen bringen (Github, Jupyter-Notebook, Python)
-- Daten verstehen
-- Erste Ideen, welche Dataen zu analysieren
+## 7 Weaknesses & Tactic to adopt
+
+TODO: Write this at the end when everything is done - probably not important for the first draft
+
+

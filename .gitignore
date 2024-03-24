@@ -4,5 +4,6 @@ notebooks/input/skillcorner/*
 notebooks/input/wyscout/*
 !notebooks/input/wyscout/.gitkeep
 !notebooks/input/skillcorner/.gitkeep
+notebooks/results/*
 notebooks/Pipfile
 notebooks/presentation.pptx
