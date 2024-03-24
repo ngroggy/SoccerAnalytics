@@ -169,7 +169,7 @@ TODO: Add same distribution like in the picture
 
 #### TODO: Analyse passing network
 
-![alt text](passing_network.png)
+![alt text](notebooks/passing_network.png)
 
 
 ```python
