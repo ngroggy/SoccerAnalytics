@@ -319,18 +319,88 @@ TODO: Who shots, who does what. Any Danger? How do they shot normally?
 
 ## 6 Statistics of the players - sorted by value (in dollars) according to find website : 
 
+# TODO: Fix and keep only slovenian players
+
+| Player name                |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin          |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Andreas Christensen        |       9213 |                784 |            296 |                  131 |               3 |        31.8 |
+| Benjamin Verbič            |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
+| Benjamin Šeško             |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+| Christian Nørgaard         |       6582 |               1295 |            362 |                   98 |               2 |        30.3 |
+| Erik Janža                 |       6943 |                833 |            363 |                  115 |               8 |        28.1 |
+| Jaka Bijol                 |       9688 |               1061 |            355 |                   57 |               6 |        27.1 |
+| Jan Mlakar                 |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
+| Jannik Vestergaard         |       9585 |                976 |            394 |                   90 |               5 |        27.5 |
+| Jasmin Kurtič              |       4454 |                922 |            117 |                    0 |               2 |        22.9 |
+| Jesper Grænge Lindstrøm    |        618 |                118 |             24 |                   15 |               1 |        28.9 |
+| Joachim Christian Andersen |      10252 |               1349 |            486 |                  106 |               4 |        27.2 |
+| Joakim Maehle              |      11743 |               1825 |            755 |                  169 |               9 |        27.8 |
+| Jon Gorenc- tankovič       |       2986 |                546 |            185 |                   12 |               2 |        24.6 |
+| Jonas Older Wind           |       9451 |               1324 |            556 |                   83 |               7 |        26.3 |
+| Kasper Dolberg             |       1389 |                255 |            141 |                    5 |               2 |        25.1 |
+| Mathias Jensen             |       6048 |               1077 |            352 |                   70 |               8 |        26.3 |
+| Miha Blažič                |      10579 |               1368 |            333 |                   67 |               5 |        25.9 |
+| Miha Zajc                  |       1266 |                223 |             90 |                    6 |               0 |        25.2 |
+| Morten Due Hjulmand        |       2628 |                592 |            121 |                   35 |               2 |        29.4 |
+| Pierre-Emile Højbjerg      |      11267 |               1802 |            596 |                  158 |              11 |        27.6 |
+| Rasmus Nissen Kristensen   |       1204 |                233 |             74 |                   10 |               0 |        28.8 |
+| Sandi Lovrič               |       2926 |                498 |            153 |                   52 |               2 |        29.6 |
+| Thomas Delaney             |       9488 |               1673 |            611 |                  184 |               6 |        27.9 |
+| Timi Max Elšnik            |       7857 |               1185 |            367 |                   27 |               3 |        25.3 |
+| Vanja Drkušić              |       3954 |                597 |            264 |                  101 |               0 |        29.4 |
+| Victor Bernth Kristiansen  |      10616 |               1621 |            686 |                  247 |              17 |        28.8 |
+| Yussuf Yurary Poulsen      |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+| Žan Karničnik              |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+| Žan Vipotnik               |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+### Top 3 Player name
+| Player name           |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Žan Vipotnik          |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+| Žan Karničnik         |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+| Yussuf Yurary Poulsen |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+### Top 3 Distance
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Joakim Maehle     |      11743 |               1825 |            755 |                  169 |               9 |        27.8 |
+| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+### Top 3 Running Distance
+| Player name           |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin     |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Joakim Maehle         |      11743 |               1825 |            755 |                  169 |               9 |        27.8 |
+| Pierre-Emile Højbjerg |      11267 |               1802 |            596 |                  158 |              11 |        27.6 |
+### Top 3 HSR Distance
+| Player name               |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Joakim Maehle             |      11743 |               1825 |            755 |                  169 |               9 |        27.8 |
+| Yussuf Yurary Poulsen     |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+| Victor Bernth Kristiansen |      10616 |               1621 |            686 |                  247 |              17 |        28.8 |
+### Top 3 Sprinting Distance
+| Player name               |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Yussuf Yurary Poulsen     |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+| Victor Bernth Kristiansen |      10616 |               1621 |            686 |                  247 |              17 |        28.8 |
+| Benjamin Šeško            |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+### Top 3 Accelerations
+| Player name               |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Victor Bernth Kristiansen |      10616 |               1621 |            686 |                  247 |              17 |        28.8 |
+| Žan Vipotnik              |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+| Yussuf Yurary Poulsen     |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+### Top 3 Max speed
+| Player name           |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Andreas Christensen   |       9213 |                784 |            296 |                  131 |               3 |        31.8 |
+| Benjamin Šeško        |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+| Yussuf Yurary Poulsen |      10763 |               1600 |            721 |                  429 |              13 |        30.6 |
+
+# TODO: Left
 - possesion
 - distribution
 - offers & receptions
 - physical data sprints / avg runs / top speed and so on
-- Endurance check
-
-
-```python
-# Skillcorner
-print(physical_df[['player_name','Distance', 'Count High Acceleration','Sprinting Distance','PSV-99']])
-```
-
 - Dangerous runs & types of runs
 
 ```python
