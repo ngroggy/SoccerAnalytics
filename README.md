@@ -317,7 +317,10 @@ TODO: Who shots, which direction statistically?
 
 TODO: Who shots, who does what. Any Danger? How do they shot normally?
 
-## 6 Statistics of the players - sorted by value (in dollars) according to find website : 
+## 6 Statistics of the players : 
+
+### Physical data
+
 | Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
 | Adam Gnezda Čerin    |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
