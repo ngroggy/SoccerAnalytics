@@ -163,20 +163,11 @@ TODO: Add same distribution like in the picture
 
 ![alt text](in.png)
 
-```python
-# Add script
-```
-
 ### 3.2 Passing network & ball heatmap
 
 #### TODO: Analyse passing network
 
 ![alt text](notebooks/plots/passing_network.png)
-
-
-```python
-# Add script
-```
 
 ```python
 # This script isn't complete
@@ -188,20 +179,30 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 ### 3.3 Typical tactical moves
 
-#### 3.3.1 Line breaks
+#### 3.3.1 Long passes
 
-#### 3.3.2 Attemps at goal
+![alt text](notebooks/plots/long_passes_map.png)
 
-#### 3.3.3 Crosses
+#### 3.3.2 Crosses
 
-#### 3.3.4 Shots & shots on target
+![alt text](notebooks/plots/crosses_map.png)
 
-![alt text](notebooks/plots/shots_heatmap.png)
+#### 3.3.3 Shots & shots on target
 
-### 3.4 Key players in attack
+![alt text](notebooks/plots/shots_map.png)
 
-- analyze run frequency, location, utilization
-- analyse type of runs
+#### 3.3.4 Duels
+
+![alt text](notebooks/plots/duels_map.png)
+
+#### 3.3.5 Interceptions
+
+![alt text](notebooks/plots/interception_map.png)
+
+#### 3.3.6 Fouls
+
+![alt text](notebooks/plots/foul_map.png)
+
 
 ## 4 Out of possesion - defense of Slovenia
 
