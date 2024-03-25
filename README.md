@@ -196,6 +196,8 @@ print(third_possession[['channel_end','third_end', 'possession_percentage']])
 
 #### 3.3.4 Shots & shots on target
 
+![alt text](notebooks/plots/shots_heatmap.png)
+
 ### 3.4 Key players in attack
 
 - analyze run frequency, location, utilization
