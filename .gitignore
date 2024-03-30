@@ -8,3 +8,6 @@ notebooks/results/*
 notebooks/Pipfile
 notebooks/presentation.pptx
 notebooks/input*
+
+.vscode
+notebooks/src/__pycache__/*
