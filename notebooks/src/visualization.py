@@ -13,10 +13,10 @@ def add_value_labels(ax, values, labels, y_pos, is_left=True):
     """ Add value labels to the bars """
     for i, (value, label) in enumerate(zip(values, labels)):
         if is_left:
-            ax.text(value - 0.05, y_pos[i], str(label),
+            ax.text(min(value - 0.05, -0.2), y_pos[i], str(label),
                     va='center', ha='right', color='black', fontsize=10)
         else:
-            ax.text(value + 0.05, y_pos[i], str(label),
+            ax.text(max(value + 0.05, 0.2), y_pos[i], str(label),
                     va='center', ha='left', color='black', fontsize=10)
 
 
@@ -47,6 +47,15 @@ def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=No
     fig.patch.set_facecolor('white')
 
     # Draw bars for team 1 and team 2
+
+    # Fix for bar centering issue
+    if 1.0 not in team_1_values:
+        hval_idx = np.argmax(np.asarray(original_team_1_values))
+        team_1_values[hval_idx] = 1.0
+    if 1.0 not in team_2_values:
+        hval_idx = np.argmax(np.asarray(original_team_2_values))
+        team_2_values[hval_idx] = 1.0
+        
     ax.barh(y_pos, team_1_values, color=team1_color, alpha=0.6)
     ax.barh(y_pos, [-value for value in team_2_values],
             color=team2_color, alpha=0.6)
