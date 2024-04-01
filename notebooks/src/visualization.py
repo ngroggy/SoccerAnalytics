@@ -4,7 +4,7 @@ import numpy as np
 
 def normalize_value(key, value, compare_value, perc_categories=None):
     """ Normalize or pass the value through based on category """
-    if key not in perc_categories:
+    if key not in perc_categories and max(value, compare_value) >= 0.001:
         return value / max(value, compare_value)
     return value
 
@@ -13,10 +13,10 @@ def add_value_labels(ax, values, labels, y_pos, is_left=True):
     """ Add value labels to the bars """
     for i, (value, label) in enumerate(zip(values, labels)):
         if is_left:
-            ax.text(max(values) - 0.05, y_pos[i], str(label),
+            ax.text(value - 0.05, y_pos[i], str(label),
                     va='center', ha='right', color='black', fontsize=10)
         else:
-            ax.text(max(values) + 0.05, y_pos[i], str(label),
+            ax.text(value + 0.05, y_pos[i], str(label),
                     va='center', ha='left', color='black', fontsize=10)
 
 
@@ -52,9 +52,8 @@ def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=No
             color=team2_color, alpha=0.6)
 
     # Add data labels inside the bars (categories)
-    midpoint = (max(team_1_values) - max(team_2_values)) / 2.0
     for y, category in zip(y_pos, categories):
-        ax.text(midpoint, y, category, va='center',
+        ax.text(0, y, category, va='center',
                 ha='center', color='black', fontsize=10)
 
     # Add value labels to the bars (team values)
