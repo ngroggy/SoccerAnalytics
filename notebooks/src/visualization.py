@@ -21,7 +21,7 @@ def add_value_labels(ax, values, labels, y_pos, is_left=True):
 
 
 def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=None, perc_categories=None, title="", subtitle="",
-                        team1_color='red', team2_color='blue'):
+                        team1_color='red', team2_color='blue', saveplt=False, savepath=None):
     """ Display a bar chart comparing the match statistics between two teams"""
 
     # Normalizing values within each category between the teams, except for percentage categories
@@ -95,4 +95,8 @@ def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=No
     ax.legend().set_visible(False)
 
     plt.tight_layout()
+
+    if saveplt is True and savepath is not None:
+        plt.savefig(savepath, dpi=400)
+
     plt.show()
