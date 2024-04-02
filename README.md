@@ -198,7 +198,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 #### Create an array with players you want to see
 
-```
+```python
   player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
     for pl in player:
         df_player = df[df['player.name'] == pl]
