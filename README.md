@@ -148,7 +148,7 @@ def compute_value():
 
 </details>
 
-### 2.3 Player 
+### 2.3 Player Heatmap
 
 <div style="display:flex;">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
