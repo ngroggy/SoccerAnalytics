@@ -148,7 +148,15 @@ def compute_value():
 
 </details>
 
-### 2.3 Player Heatmap
+### 2.3 Attacking Players Heatmap
+
+In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. 
+
+<div style="display:flex;">
+    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
+    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:32%;">
+</div>
 
 <div style="display:flex;">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
@@ -157,10 +165,10 @@ def compute_value():
 </div>
 
 <details>
-  <python>Click to expand</python>
- # Add script to generate player heatmap
+  <python> Code </python>
 
-# Create an array with players you want to see
+#### Create an array with players you want to see
+
 player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
 for pl in player:
     df_player = df[df['player.name'] == pl]
