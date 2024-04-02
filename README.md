@@ -151,17 +151,10 @@ def compute_value():
 ### 2.3 Player 
 
 <div style="display:flex;">
-    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:33%;">
-    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:33%;">
-    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:33%;">
+    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
+    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:32%;">
 </div>
-
-
-![alt text](notebooks/plots/B_Šeško_Heatmaps.png)
-
-![alt text](notebooks/plots/Ž_Karničnik_Heatmaps.png)
-
-![alt text](notebooks/plots/J_Kurtič_Heatmaps.png)
 
 
 ```python
