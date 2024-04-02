@@ -148,15 +148,58 @@ def compute_value():
 
 </details>
 
-### 2.3 Player heatmap
+### 2.3 Player Heatmap
 
-![alt text](notebooks/plots/B. Šeško_Heatmaps.png)
-![alt text](notebooks/plots/Ž. Karničnik_Heatmaps.png)
-![alt text](notebooks/plots/J. Kurtič_Heatmaps.png)
+<div style="display:flex;">
+    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
+    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:32%;">
+</div>
 
+<details>
+  <python>Click to expand</python>
+ # Add script to generate player heatmap
 
-```python
-# Add script to generate player heatmap
+# Create an array with players you want to see
+player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
+for pl in player:
+    df_player = df[df['player.name'] == pl]
+        
+    # Pitch     
+    pitch = VerticalPitch(pitch_color='#2f8c58', 
+                          line_color='white', 
+                          pitch_type='wyscout')
+    
+    fig, ax = pitch.grid(grid_height=0.9, title_height=0.06, axis=False,
+                         endnote_height=0.04, title_space=0, endnote_space=0)
+
+    # Heatmap as Kernel Density Estimation
+    pitch.kdeplot(
+    x=df_player['location.x'],
+    y=df_player['location.y'],
+    shade = True,
+    shade_lowest=False,
+    alpha=.5,
+    n_levels=10,
+    cmap = 'coolwarm',
+    ax=ax['pitch']
+    )
+
+    legend_elements = [Line2D([0], [0], color='w', markerfacecolor='k', marker='o', label=pl)]
+
+    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,  
+               handlelength=2, labelspacing=1.2, fontsize=10)
+    
+    def replace_dot_space_with_underscore(pl):
+        return pl.replace(". ", "_")
+    
+    pl = replace_dot_space_with_underscore(pl)
+    
+    plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
+    plt.show()
+</details>
+
+    
 ```
 
 ## 3. In possesion - attack of Slovenia
