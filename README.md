@@ -151,7 +151,7 @@ def compute_value():
 ### 2.3 Player heatmap
 
 <div style="display:flex;">
-    <img src=(notebooks/plots/B_Šeško_Heatmaps.png) alt="Image 1" style="width:33%;">
+    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:33%;">
     <img src=(notebooks/plots/Ž_Karničnik_Heatmaps.png) alt="Image 2" style="width:33%;">
     <img src=(notebooks/plots/J_Kurtič_Heatmaps.png) alt="Image 3" style="width:33%;">
 </div>
