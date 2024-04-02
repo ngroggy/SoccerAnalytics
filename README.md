@@ -166,9 +166,20 @@ TODO: Add same distribution like in the picture
 ![alt text](notebooks/plots/passing_network.png)
 
 
+```python
+# This script isn't complete
+third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
+total_possession = third_possession['possession_duration'].sum()
+third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
+print(third_possession[['channel_end','third_end', 'possession_percentage']])
+```
+
+
 ### Attacking Players Heatmap
 
-In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. These images show that the attacking play is more likely to be down the right side, namely through Vipotnik, Verbic and Mlakar. It is also obvious that Slovenian was mostly busy defending and Sesko therefore received little support on the left.  
+In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. From these images there is a soft tendency that the attacking play is more on the right side, through Vipotnik and Verbic/Mlakar. Mlakar and Verbic kept changing their starting positions during the game. Only on the counterattacks do they act as offensive wingers and only then do they give the strikers the opportunity to move into the center. The outside midfielders are therefore very defensively prepared for this game and help out the full-backs.
+
+It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed. 
 
 <div style="display:flex;">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
@@ -227,14 +238,6 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 
 </details>
 
-
-```python
-# This script isn't complete
-third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
-total_possession = third_possession['possession_duration'].sum()
-third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
-print(third_possession[['channel_end','third_end', 'possession_percentage']])
-```
 
 ### 3.3 Typical tactical moves
 
