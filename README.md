@@ -148,32 +148,50 @@ def compute_value():
 
 </details>
 
-### 2.3 Attacking Players Heatmap
 
-In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. 
+## 3. In possesion - attack of Slovenia
+
+### 3.1 Attacking formation & style:
+
+TODO: Add same distribution like in the picture
+
+![alt text](in.png)
+
+### 3.2 Passing network & Player Heatmap
+
+### Passing network
+
+#### TODO: Analyse passing network
+
+![alt text](notebooks/plots/passing_network.png)
+
+
+### Attacking Players Heatmap
+
+In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. These images show that the attacking play is more likely to be down the right side, namely through Vipotnik, Verbic and Mlakar. It is also obvious that Slovenian was mostly busy defending and Sesko therefore received little support on the left.  
 
 <div style="display:flex;">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
     <img src="notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/J_Mlakar_Heatmaps" alt="Image 3" style="width:32%;">
+    <img src="notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:32%;">
 </div>
 
 <div style="display:flex;">
-    <img src="notebooks/plots/A_Čerin_Heatmaps_Heatmaps.png" alt="Image 1" style="width:32%;">
-    <img src="notebooks/plots/B_Verbič_Heatmaps_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/T_Elšnik_Heatmaps_Heatmaps.png" alt="Image 3" style="width:32%;">
+    <img src="notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:32%;">
+    <img src="notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:32%;">
 </div>
 
 <details>
-  <python> Code </python>
+  <summary> Codes </summary>
 
 #### Create an array with players you want to see
 
-player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
-for pl in player:
-    df_player = df[df['player.name'] == pl]
-        
-    # Pitch     
+```
+  player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
+    for pl in player:
+        df_player = df[df['player.name'] == pl]
+            
     pitch = VerticalPitch(pitch_color='#2f8c58', 
                           line_color='white', 
                           pitch_type='wyscout')
@@ -205,24 +223,10 @@ for pl in player:
     
     plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
     plt.show()
-</details>
-
-    
 ```
 
-## 3. In possesion - attack of Slovenia
+</details>
 
-### 3.1 Attacking formation & style:
-
-TODO: Add same distribution like in the picture
-
-![alt text](in.png)
-
-### 3.2 Passing network & ball heatmap
-
-#### TODO: Analyse passing network
-
-![alt text](notebooks/plots/passing_network.png)
 
 ```python
 # This script isn't complete
@@ -276,6 +280,10 @@ Add player heatmap
 ```python
 # Add script to type of play out of possesion
 ```
+
+#### Defense Player Heatmap
+
+
 
 ### 4.2 Statistics
 
