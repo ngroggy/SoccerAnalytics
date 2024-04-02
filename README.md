@@ -154,14 +154,14 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 
 <div style="display:flex;">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
-    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:32%;">
+    <img src="notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/J_Mlakar_Heatmaps" alt="Image 3" style="width:32%;">
 </div>
 
 <div style="display:flex;">
-    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
-    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/J_Kurtič_Heatmaps.png" alt="Image 3" style="width:32%;">
+    <img src="notebooks/plots/A_Čerin_Heatmaps_Heatmaps.png" alt="Image 1" style="width:32%;">
+    <img src="notebooks/plots/B_Verbič_Heatmaps_Heatmaps.png" alt="Image 2" style="width:32%;">
+    <img src="notebooks/plots/T_Elšnik_Heatmaps_Heatmaps.png" alt="Image 3" style="width:32%;">
 </div>
 
 <details>
