@@ -11,3 +11,7 @@ notebooks/input*
 
 .vscode
 notebooks/src/__pycache__/*
+
+# temporary file structure ignore
+notebooks/5-SetPlays/*
+!notebooks/5-SetPlays/README.md
