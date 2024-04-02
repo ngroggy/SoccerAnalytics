@@ -161,7 +161,8 @@ TODO: Add same distribution like in the picture
 
 ### Passing network
 
-Ein Blick auf das Pass Netzwerk von Slovenien widerspiegelt die Statistiken von Kapitel 2. Slovenien wurde hinten hineingedrängt und konnte selten einen erfolgreichen Aufbau zwischen Verteidigung und Mittelfeld gestalten was auf die vielen Pässe zwischen den beiden Innenverteidiger (Bijol und Blazic) und Oblak hinweist. Dänemark hat es geschafft das Mittelfeld und den Sturm vom Spiel zu isolieren, somit lag der Verteidigung nur 
+A look at Slovenia's passing network mirrors the statistics from chapter 2. Slovenia were pushed in behind and were rarely able to create a successful build-up between defence and midfield, which points to the many passes between the two centre-backs (Bijol and Blazic) and Oblak. Denmark managed to isolate the midfield and attack from the game, leaving the defence with only the pass to the centre-back or goalkeeper.
+
 
 ![alt text](notebooks/plots/passing_network.png)
 
