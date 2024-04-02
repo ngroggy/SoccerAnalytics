@@ -150,7 +150,9 @@ def compute_value():
 
 ### 2.3 Player heatmap
 
-![alt text]((notebooks/plots/B. Šeško_Heatmaps.png)) / ![alt text]((notebooks/plots/Ž. Karničnik_Heatmaps.png))/ ![alt text]((notebooks/plots/J. Kurtič_Heatmaps.png))
+![alt text](notebooks/plots/B. Šeško_Heatmaps.png)
+![alt text](notebooks/plots/Ž. Karničnik_Heatmaps.png)
+![alt text](notebooks/plots/J. Kurtič_Heatmaps.png)
 
 
 ```python
