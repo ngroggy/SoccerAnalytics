@@ -245,13 +245,19 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 #### 3.3.1 Long passes
 
+The long balls from the central defenders or Oblak are very distributed across Denmark's half, but generally with a higher error rate on the left. However, very deep balls into the Danish penalty area arrive much better and more often on the left, which is a weakness in Denmark's play.
+
 ![alt text](notebooks/plots/long_passes_map.png)
 
 #### 3.3.2 Crosses
 
+There is no preferred side in the flank play and a clear key player.
+
 ![alt text](notebooks/plots/crosses_map.png)
 
 #### 3.3.3 Shots & shots on target
+
+What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending.
 
 ![alt text](notebooks/plots/shots_map.png)
 
