@@ -183,16 +183,16 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 
 It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed. 
 
-<div style="display:flex;">
-    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:32%;">
-    <img src="notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:32%;">
-</div>
+<p align="center">
+    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:24%; display:inline-block;margin-right: 2%;">
+    <img src="notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:24%; display:inline-block;">
+  </p>
 
 <div style="display:flex;">
-    <img src="notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:32%;">
-    <img src="notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:32%;">
-    <img src="notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:32%;">
+    <img src="notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:24%;">
 </div>
 
 <details>
@@ -285,8 +285,8 @@ Add player heatmap
 <div style="display:flex;">
     <img src="notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
     <img src="notebooks/plots/J_Bijol_Heatmaps.png" alt="Image 2" style="width:24%;">
-    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
     <img src="notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
 </div>
 ```python
 # Add script to type of play out of possesion
