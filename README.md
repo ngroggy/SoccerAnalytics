@@ -282,6 +282,12 @@ TODO: Add same distribution like in the picture
 
 Add player heatmap
 
+<div style="display:flex;">
+    <img src="notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="notebooks/plots/J_Bijol_Heatmaps.png" alt="Image 2" style="width:24%;">
+    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
+</div>
 ```python
 # Add script to type of play out of possesion
 ```
