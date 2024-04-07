@@ -1064,7 +1064,7 @@ In this section the players of the match Denmark-Slovenia on 17.11.2023 are anal
 #### 4.3.1 Total duels and duels won: Slovenia
 The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
 
-![alt text](notebooks/plots/4-defense/duel_performance_svn.png)
+![alt text](notebooks/plots/4-defense/duel_performance_svn2.png)
 
 #### 4.3.2 Duels won percentage: Slovenia
 It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
@@ -1084,6 +1084,107 @@ In the plot below the stats of Denmark are shown.
 
 ![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk.png)
 
+```python
+# For simplicitiy the code is given for Slovenia only, by changing Slovenia to Denmark it can be analyzed for Denmark too
+import pandas as pd
+import json
+from IPython.display import display
+import zipfile
+from pathlib import Path
+from datetime import datetime, timedelta
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
+
+# specfic soccer analysis packages
+from mplsoccer import Pitch
+
+# load custom functions
+from src.visualization import *
+from src.dataloader import dataloader
+
+# Load Data from Slovenia-Danemark November 20, 2023
+match_id = "5414302"
+df_events = dataloader(match_id)
+df_events.columns
+
+
+# duel events
+df_duels = df_events[df_events['type.primary'] == 'duel']
+
+# defensive duels slovenia
+df_dduels_svn = df_duels[(df_duels['team.name'] == 'Slovenia') & (df_duels["groundDuel.duelType"] == "defensive_duel")]
+dduels_svn = df_dduels_svn.shape[0]
+
+# get the players who had a duel in the game
+df_dduels_svn_players = df_dduels_svn['player.name'].dropna().unique()
+
+# get the number of duel per player
+df_dduels_svn_player_count = df_dduels_svn['player.name'].dropna().value_counts()
+
+# get the duels that were won
+df_dduelswon_svn = df_dduels_svn[df_dduels_svn['player.name'].notna() & ((df_dduels_svn["groundDuel.stoppedProgress"] == True) | (df_dduels_svn["groundDuel.recoveredPossession"] == True))]
+# duels won per player
+df_dduelwon_svn_player_count = df_dduelswon_svn['player.name'].value_counts()
+
+
+aligned_counts_svn = pd.concat([df_dduels_svn_player_count, df_dduelwon_svn_player_count], axis=1, keys=['total_duels', 'duels_won']).fillna(0)
+aligned_counts_svn['percentage_won'] = ((aligned_counts_svn['duels_won']) / (aligned_counts_svn['total_duels']) * 100).round(0)
+
+# -------------------------------------------------------------------------------------
+# Plot 1 Slovenia
+# Set Seaborn theme and color palette
+sns.set_theme(style="darkgrid")
+palette = sns.color_palette("viridis", len(aligned_counts_svn))
+
+# Plotting the data using Seaborn and Matplotlib
+plt.figure(figsize=(10, 6))
+
+# Plot total duels
+sns.barplot(x=aligned_counts_svn.index, y=aligned_counts_svn['total_duels'], color=palette[3], label='Total Duels')
+
+# Plot duels won
+sns.barplot(x=aligned_counts_svn.index, y=aligned_counts_svn['duels_won'], color=palette[10], label='Duels Won')
+
+# Annotate bars with percentage of duels won
+#for i, (percentage, player) in enumerate(zip(aligned_counts['percentage_won'], aligned_counts.index)):
+#    plt.text(i, aligned_counts.loc[player, 'duels_won'] + 1, f'{percentage}%', ha='center', color='red' if percentage > 75 else 'black')
+
+# Adding labels and title
+plt.xlabel('Player')
+plt.ylabel('Count')
+plt.title('Duel Performance per Player: Slovenia')
+plt.xticks(rotation=45, ha='right')
+
+# Show legend
+plt.legend()
+
+# Save plot to a specified path
+save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/duel_performance_svn.png'  # Specify your desired save path here
+plt.tight_layout()
+plt.savefig(save_path)
+
+
+# Plot 2 Slovenia Sorted Percentage
+# ---------------------------------------------------------------------------------------
+plt.figure(figsize=(10, 6))
+sns.barplot(x=aligned_counts_svn_sorted.index, y=aligned_counts_svn_sorted['percentage_won'], color=palette[3])
+
+# Adding labels and title
+plt.xlabel('Player')
+plt.ylabel('Percentage of Duels Won')
+plt.title('Percentage of Duels Won per Player: Slovenia')
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45, ha='right')
+
+# Save plot to a specified path
+save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/duel_percentage_sorted_svn.png'  # Specify your desired save path here
+plt.tight_layout()
+plt.savefig(save_path)
+
+```
 
 ### 4.4 Goal keeper behaviour
 
