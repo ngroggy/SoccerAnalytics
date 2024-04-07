@@ -818,100 +818,114 @@ plt.show()
 
 ## 6 Statistics of the players :
 
-### Physical data
 
-| Player name          | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :------------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Adam Gnezda Čerin    |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
-| Benjamin Verbič      |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
-| Benjamin Šeško       |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
-| Erik Janža           |     6943 |              833 |          363 |                115 |             8 |      28.1 |
-| Jaka Bijol           |     9688 |             1061 |          355 |                 57 |             6 |      27.1 |
-| Jan Mlakar           |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
-| Jasmin Kurtič        |     4454 |              922 |          117 |                  0 |             2 |      22.9 |
-| Jon Gorenc- tankovič |     2986 |              546 |          185 |                 12 |             2 |      24.6 |
-| Miha Blažič          |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
-| Miha Zajc            |     1266 |              223 |           90 |                  6 |             0 |      25.2 |
-| Sandi Lovrič         |     2926 |              498 |          153 |                 52 |             2 |      29.6 |
-| Timi Max Elšnik      |     7857 |             1185 |          367 |                 27 |             3 |      25.3 |
-| Vanja Drkušić        |     3954 |              597 |          264 |                101 |             0 |      29.4 |
-| Žan Karničnik        |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-| Žan Vipotnik         |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
 
-#### Top 5 Distance
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
+| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
+| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
+| Erik Janža | 6943 | 833 | 363 | 115 | 8 | 28.1 |
+| Jaka Bijol | 9688 | 1061 | 355 | 57 | 6 | 27.1 |
+| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
+| Jasmin Kurtič | 4454 | 922 | 117 | 0 | 2 | 22.9 |
+| Jon Gorenc- tankovič | 2986 | 546 | 185 | 12 | 2 | 24.6 |
+| Miha Blažič | 10579 | 1368 | 333 | 67 | 5 | 25.9 |
+| Miha Zajc | 1266 | 223 | 90 | 6 | 0 | 25.2 |
+| Sandi Lovrič | 2926 | 498 | 153 | 52 | 2 | 29.6 |
+| Timi Max Elšnik | 7857 | 1185 | 367 | 27 | 3 | 25.3 |
+| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
+| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
+| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
+#### Top 3 Player name
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
+| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
+| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
+#### Top 3 Distance
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
+| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
+| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
+#### Top 3 Running Distance
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
+| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
+| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
+#### Top 3 HSR Distance
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
+| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
+| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
+#### Top 3 Sprinting Distance
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
+| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
+| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
+#### Top 3 Accelerations
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
+| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
+| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
+#### Top 3 Max speed
+| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
+| Sandi Lovrič | 2926 | 498 | 153 | 52 | 2 | 29.6 |
+| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
 
-| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
-| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
-| Miha Blažič       |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
-| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
-
-#### Top 5 Running Distance
-
-| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
-| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
-| Miha Blažič       |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
-| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
-
-#### Top 5 HSR Distance
-
-| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
-| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
-| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
-| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
-
-#### Top 5 Sprinting Distance
-
-| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Benjamin Šeško    |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
-| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
-| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
-| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
-
-#### Top 5 Accelerations
-
-| Player name     | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :-------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Žan Vipotnik    |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
-| Benjamin Verbič |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
-| Benjamin Šeško  |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
-| Erik Janža      |     6943 |              833 |          363 |                115 |             8 |      28.1 |
-| Žan Karničnik   |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-
-#### Top 5 Max speed
-
-| Player name    | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-| :------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
-| Benjamin Šeško |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
-| Sandi Lovrič   |     2926 |              498 |          153 |                 52 |             2 |      29.6 |
-| Vanja Drkušić  |     3954 |              597 |          264 |                101 |             0 |      29.4 |
-| Žan Vipotnik   |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
-| Žan Karničnik  |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
-
-##### TODO: Left
-
-- possesion
-- distribution
-- offers & receptions
-- physical data sprints / avg runs / top speed and so on
-- Dangerous runs & types of runs
+<details>
+<summary> Codes</summary>
 
 ```python
-# Example to see all supports runs
-print(dynamic_events['event_subtype'].unique())
-print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name', 'time_start']])
+# Load data
+metadata_df = pd.read_csv(data_dir / f"{match_id}_metadata.csv")
+play_direction_df = pd.read_csv(data_dir / f"{match_id}_play_direction.csv")
+phase_df = pd.read_csv(data_dir / f"{match_id}_phase.csv")
+lineup_df = pd.read_csv(data_dir / f"{match_id}_lineup.csv")
+tracking_df = pd.read_csv(data_dir / f"{match_id}_tracking.csv")
+visible_area_df = pd.read_csv(data_dir / f"{match_id}_visible_area.csv")
+physical_df = pd.read_csv(data_dir / f"{match_id}_physical.csv")
+passes_df = pd.read_csv(data_dir / f"{match_id}_passes.csv")
+on_ball_pressures_df = pd.read_csv(data_dir / f"{match_id}_on_ball_pressures.csv")
+off_ball_runs_df = pd.read_csv(data_dir / f"{match_id}_off_ball_runs.csv")
+max_ball_z = int(tracking_df.z.max())
+
+# Skillcorner
+physical_data = physical_df[['player_name','player_id', 'Distance','Running Distance', 'HSR Distance', 'Sprinting Distance','Count High Acceleration','PSV-99']]
+
+# Rename some columns
+physical_data = physical_data.rename(columns={
+"player_name": "Player name",
+"Count High Acceleration": "Accelerations",
+"PSV-99": "Max speed"
+})
+
+# Exclude danish team
+valid_players = np.array(lineup_df[lineup_df['team_name'] != "Denmark"]['player_id'])
+
+# Sort by values
+physical_data = physical_data.sort_values(by="Player name")
+physical_data = physical_data[physical_data['player_id'].isin(valid_players)].drop(columns=['player_id'])
+
+# Print players
+print(physical_data.to_markdown(index=False))
+
+# Print top 3 each time
+for val in physical_data.keys():
+print(f'#### Top 3 {val}')
+print(physical_data.sort_values(by=val, ascending=False).head(3).to_markdown(index=False))
 ```
+
+</details>
+
 
 ## 7 Weaknesses & Tactic to adopt
 
-TODO: Write this at the end when everything is done - probably not important for the first draft
+This section will be filled out in the final draft 
