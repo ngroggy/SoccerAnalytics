@@ -359,6 +359,77 @@ Assesses a player's influence, considering both connection quantity and quality,
 | J. Bijol|  0.0986 |
 |A. Čerin| 0.0949 |
 
+<details>
+  <summary> Codes </summary>
+
+``` python
+import pandas as pd
+import json
+from IPython.display import display
+import networkx as nx
+import matplotlib.pyplot as plt
+from mplsoccer import VerticalPitch, Pitch
+
+def preprocess_team_pass_data(df_events, team_name):
+    df_passes = df_events[df_events['type.primary'] == 'pass']
+    df_accurate_passes = df_passes[df_passes['pass.accurate'] == True]
+    ap_team = df_accurate_passes[df_accurate_passes['team.name'] == team_name]
+    filtered_passes = ap_team[['player.name', 'pass.recipient.name', 'location.x', 'location.y']].copy()
+    average_positions = ap_team.groupby('player.name').agg({'location.x': 'mean', 'location.y': 'mean'}).reset_index()
+    return filtered_passes, average_positions
+
+def create_weighted_graph(df):
+    G = nx.DiGraph()
+    unique_players = set(df['player.name'])
+    unique_recipients = set(df['pass.recipient.name'])
+
+    for index, row in df.iterrows():
+        player = row['player.name']
+        recipient = row['pass.recipient.name']
+
+        if player is None or recipient is None:
+            continue
+
+        if player not in unique_recipients or recipient not in unique_players:
+            continue
+
+        if G.has_edge(player, recipient):
+            G[player][recipient]['weight'] += 1
+        else:
+            G.add_edge(player, recipient, weight=1)
+
+    return G
+
+def calculate_top_players(G):
+    centrality_measures = {
+        "Degree Centrality": nx.degree_centrality(G),
+        "Betweenness Centrality": nx.betweenness_centrality(G),
+        "Closeness Centrality": nx.closeness_centrality(G),
+        "Eigenvector Centrality": nx.eigenvector_centrality(G),
+        "PageRank Centrality": nx.pagerank(G) 
+    }
+
+    top_players = {}
+    # Loop through each centrality measure
+    for measure, centrality in centrality_measures.items():
+        sorted_centrality = sorted(centrality.items(), key=lambda x: x[1], reverse=True)
+        top_players[measure] = [f"{player}: {centrality_value:.4f}" for player, centrality_value in sorted_centrality[:3]]
+
+    return top_players
+
+
+#example usage
+df_events = pd.read_csv(f"./results/wyscout/5414302_df_events.csv")
+filtered_passes_g, average_positions_g = preprocess_team_pass_data(df_events, 'Slovenia')
+G = create_weighted_graph(filtered_passes_g)
+values = calculate_top_players(G)
+
+for val in values:
+    print(f'#### {val}')
+    print(values[val])
+```
+</details>
+
 ### Attacking Players Heatmap
 
 In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. From the passing Network from chapter 3.1 and the generated images there is a soft tendency that the attacking play is more developped on the right side, through Vipotnik and Verbic/Mlakar. Mlakar and Verbic kept changing their starting positions during the game. Only on the counterattacks do they act as offensive wingers and only then do they give the strikers the opportunity to move into the center. The outside midfielders are therefore very defensively prepared for this game and help out the full-backs.
