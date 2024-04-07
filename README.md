@@ -218,27 +218,24 @@ Closeness Centrality:
 Eigenvector Centrality: 
 
 #### Degree Centrality
- Quantifies received passes relative to total players.
 
-$`C_D(v) = \frac{\text{Number of passes received by } v}{\text{Total number of players}} = \sum_{u \neq v} A_{uv}`$
-['A. Čerin: 1.5333', 'J. Bijol: 1.4667', 'Ž. Karničnik: 1.3333']
+Quantifies received passes relative to total players. $`C_D(v) = \frac{\text{Number of passes received by } v}{\text{Total number of players}} = \sum_{u \neq v} A_{uv}`$
+#### ['A. Čerin: 1.5333', 'J. Bijol: 1.4667', 'Ž. Karničnik: 1.3333']
+
 #### Betweenness Centrality
-Identifies players crucial for ball circulation, calculated by their role in shortest paths between others.
 
-$`C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}`$
-['V. Drkušić: 0.1163', 'A. Čerin: 0.0945', 'Ž. Karničnik: 0.0827']
+Identifies players crucial for ball circulation, calculated by their role in shortest paths between others. $`C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}`$
+#### ['V. Drkušić: 0.1163', 'A. Čerin: 0.0945', 'Ž. Karničnik: 0.0827']
+
 #### Closeness Centrality
- Evaluates proximity to others in the network for efficient pass reception.
 
-$`C_C(v) = \frac{1}{\sum_{u} d(u, v)}`$
-['J. Bijol: 0.7500', 'A. Čerin: 0.7500', 'B. Šeško: 0.7500']
-#### Eigenvector Centrality
-Assesses a player's influence, considering both connection quantity and quality, akin to Google's PageRank algorithm.
+Evaluates proximity to others in the network for efficient pass reception. $`C_C(v) = \frac{1}{\sum_{u} d(u, v)}`$
+#### ['J. Bijol: 0.7500', 'A. Čerin: 0.7500', 'B. Šeško: 0.7500']
 
-$`C_E(v) = \frac{1}{\lambda} \sum_{u} A_{uv} C_E(u)`$
-['B. Šeško: 0.3691', 'A. Čerin: 0.3684', 'Ž. Karničnik: 0.3122']
 #### PageRank Centrality
-['Ž. Karničnik: 0.1125', 'J. Bijol: 0.0986', 'A. Čerin: 0.0949']
+
+Assesses a player's influence, considering both connection quantity and quality, akin to Google's PageRank algorithm. $`C_E(v) = \frac{1}{\lambda} \sum_{u} A_{uv} C_E(u)`$
+#### ['Ž. Karničnik: 0.1125', 'J. Bijol: 0.0986', 'A. Čerin: 0.0949']
 
 ### Attacking Players Heatmap
 
