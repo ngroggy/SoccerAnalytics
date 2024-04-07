@@ -290,11 +290,11 @@ There is no preferred side in the flank play and a clear key player.
 
 #### 3.4.3 Shots & shots on target
 
-What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending.
+What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
 ![alt text](notebooks/plots/shots_map.png)
 
-#### 3.4.4 Duels
+#### 3.4.4 Dribblings
 
 ![alt text](notebooks/plots/duels_map.png)
 
