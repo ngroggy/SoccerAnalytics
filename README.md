@@ -437,6 +437,10 @@ Add player heatmap
 ```
 
 ### 4.3 Duel performance of the players
+In this section the players of the match Denmark-Slovenia on 20.11.2023 are analyzed regarding the duel performance while defending.
+The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable. It can also be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%.
+
+![alt text](notebooks/plots/4-defense/duel_performance_svn.png)
 
 ### 4.4 Goal keeper behaviour
 
