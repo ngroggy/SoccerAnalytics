@@ -1,6 +1,6 @@
 # Preparation Denmark 🇩🇰 to play against Slovenia 🇸🇮 !
 <p align="center">
-    <img src="https://editorial.uefa.com/resources/0274-14e1f183c27e-170c99491100-1000/sloveu.jpeg" alt="Image 2" style="width:60%; display:inline-block;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Teamphoto.png" alt="Image 2" style="width:60%; display:inline-block;">
   </p>
 
 
