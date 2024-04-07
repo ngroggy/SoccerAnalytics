@@ -55,6 +55,10 @@ Despite the apparent control over the game by Denmark, the margin of victory was
   <summary> code </summary>
 
 ```python
+# load data
+match_id = "5414302"
+df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
 team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
 shots_dnk = df_events[(~df_events["shot.isGoal"].isnull()) & (df_events["team.name"] == "Denmark")]
 shots_svn = df_events[(~df_events["shot.isGoal"].isnull()) & (df_events["team.name"] == "Slovenia")]
@@ -94,6 +98,106 @@ svn_data = {'Goals': shots_svn['shot.isGoal'].sum(),
 # if category % do not normalize
 perc_categories = ['Possession', 'Pass accuracy']
 
+
+def normalize_value(key, value, compare_value, perc_categories=None):
+    """ Normalize or pass the value through based on category """
+    if key not in perc_categories and max(value, compare_value) >= 0.001:
+        return value / max(value, compare_value)
+    return value
+
+
+def add_value_labels(ax, values, labels, y_pos, is_left=True):
+    """ Add value labels to the bars """
+    for i, (value, label) in enumerate(zip(values, labels)):
+        if is_left:
+            ax.text(min(value - 0.05, -0.2), y_pos[i], str(label),
+                    va='center', ha='right', color='black', fontsize=10)
+        else:
+            ax.text(max(value + 0.05, 0.2), y_pos[i], str(label),
+                    va='center', ha='left', color='black', fontsize=10)
+
+
+def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=None, perc_categories=None, title="", subtitle="",
+                        team1_color='red', team2_color='blue', saveplt=False, savepath=None):
+    """ Display a bar chart comparing the match statistics between two teams"""
+
+    # Normalizing values within each category between the teams, except for percentage categories
+    normalized_dnk_data = {key: normalize_value(
+        key, value, team2_stats[key], perc_categories) for key, value in team1_stats.items()}
+    normalized_svn_data = {key: normalize_value(
+        key, value, team1_stats[key], perc_categories) for key, value in team2_stats.items()}
+    team_1_values = list(normalized_dnk_data.values())[::-1]
+    team_2_values = list(normalized_svn_data.values())[::-1]
+
+    # Original values for displaying at the end of bars
+    original_team_1_values = list(team1_stats.values())[::-1]
+    original_team_2_values = list(team2_stats.values())[::-1]
+
+    # Categories for the y-axis
+    categories = list(team1_stats.keys())[::-1]
+
+    # The y position for the bars
+    y_pos = np.arange(len(categories))
+
+    # Create the figure and the axes
+    fig, ax = plt.subplots(figsize=(10, len(categories) * 0.5))
+    fig.patch.set_facecolor('white')
+
+    # Draw bars for team 1 and team 2
+
+    # Fix for bar centering issue
+    if 1.0 not in team_1_values:
+        hval_idx = np.argmax(np.asarray(original_team_1_values))
+        team_1_values[hval_idx] = 1.0
+    if 1.0 not in team_2_values:
+        hval_idx = np.argmax(np.asarray(original_team_2_values))
+        team_2_values[hval_idx] = 1.0
+        
+    ax.barh(y_pos, team_1_values, color=team1_color, alpha=0.6)
+    ax.barh(y_pos, [-value for value in team_2_values],
+            color=team2_color, alpha=0.6)
+
+    # Add data labels inside the bars (categories)
+    for y, category in zip(y_pos, categories):
+        ax.text(0, y, category, va='center',
+                ha='center', color='black', fontsize=10)
+
+    # Add value labels to the bars (team values)
+    add_value_labels(ax, team_1_values, original_team_1_values,
+                     y_pos, is_left=False)
+    add_value_labels(ax, [-v for v in team_2_values],
+                     original_team_2_values, y_pos, is_left=True)
+
+    ax.text(1, 1.1, team1_name, transform=ax.transAxes, ha='right',
+            va='bottom', color=team1_color, fontsize=16, fontweight='bold')
+    ax.text(0, 1.1, team2_name, transform=ax.transAxes, ha='left',
+            va='bottom', color=team2_color, fontsize=16, fontweight='bold')
+
+    # Set the labels and title (if needed)
+    ax.set_title(f"{title}", fontsize=18, fontweight='bold', pad=40)
+    ax.text(0.5, 1.02, f"{subtitle}", fontsize=16, fontweight='bold',
+            ha='center', va='bottom', transform=ax.transAxes)
+
+    # Remove the spines and ticks, and add gridlines
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+    ax.xaxis.set_ticks_position('none')
+    ax.yaxis.set_ticks_position('none')
+    ax.yaxis.set_visible(False)
+    ax.xaxis.set_visible(False)
+    plt.axvline(0, color='grey', linewidth=0.8)
+    ax.xaxis.grid(False)
+    ax.legend().set_visible(False)
+
+    plt.tight_layout()
+
+    if saveplt is True and savepath is not None:
+        plt.savefig(savepath, dpi=400)
+
+    plt.show()
+
 # plot statistics
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20',
                     subtitle='2:1', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/2-statistics/key_statistics.png')
@@ -115,6 +219,11 @@ Slovenia's approach to attacking was markedly different from Denmark's, particul
   <summary> code </summary>
   
   ```python
+# load data
+match_id = "5414302"
+df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
+
 team_category_perc = (team_category_counts.div(team_category_counts.sum(axis=1), axis=0)).round(2)
 
 dnk_data = {'Build Up': team_category_perc.loc['Denmark', 'build_up'].round(2),
@@ -136,13 +245,14 @@ svn_data = {'Build Up': team_category_perc.loc['Slovenia', 'build_up'],
 # if category % do not normalize
 perc_categories = ['Build Up', 'Progression', 'Final Third', 'Long Ball', 'Counter Attack', 'Set Piece']
 
+# use functions from 2.2
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Attacking style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_style.png')
 ```
 </details>
 
 
-### 3.1 Attacking efficiency
+### 3.2 Attacking efficiency
 
 The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
@@ -152,6 +262,10 @@ The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 
   <summary> code </summary>
 
 ```python
+# load data
+match_id = "5414302"
+df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
 def calculate_attacking_efficiency(team_name):
 
   team_events = df_events[df_events["possession.team.name"] == team_name]
@@ -190,7 +304,7 @@ svn_data = calculate_attacking_efficiency("Slovenia")
 # if category % do not normalize
 perc_categories = ["Attack With Flank", "Attack With Shot", "Attack With Shot on Goal", "Attack With Goal", "Offensive Duels Won", "Dribbles Won"]
 
-# plot statistics
+# use functions from 2.2
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                 subtitle='Attacking efficiency', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_efficiency.png')
 ```
@@ -759,6 +873,10 @@ The defensive performance of Slovenia in the match clearly illustrates that thei
   <summary> code </summary>
 
 ```python
+# load data
+match_id = "5414302"
+df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
 team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
 
 team2 = 'Denmark'
@@ -782,7 +900,7 @@ svn_data = {'Defensive Duels': df_events[(df_events["groundDuel.duelType"] == "d
 # if category % do not normalize
 perc_categories = []
 
-# plot statistics
+# use functions from 2.2
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Defensive stats', team1_color='blue', team2_color='red',saveplt=True, savepath='plots/4-defense/defense_statistics.png')
 ```
@@ -800,6 +918,10 @@ In terms of their defensive approach, Slovenia opted for a more conservative sty
   <summary> code </summary>
 
 ```python
+# load data
+match_id = "5414302"
+df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
 def calculate_defensive_efficiency(team_name, opponent_name):
 
     team_events = df_events[df_events["team.name"] == team_name]
@@ -852,7 +974,7 @@ svn_data = calculate_defensive_efficiency("Slovenia", "Denmark")
 # if category % do not normalize
 perc_categories = ["Duels Won", "Duels Won Own Third", "Duels Gained Possession", "High Press", "Mid Press", "Low Press"]
 
-# plot statistics
+# use functions fromm 2.2
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Defensive Efficiency & Style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/4-defense/defensive_efficiency_style.png')
 ```
