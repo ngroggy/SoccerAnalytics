@@ -432,6 +432,10 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
     <img src="notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
     <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
 </div>
+
+<details>
+  <summary> Codes </summary>
+  
 ```python
 
 import json
@@ -489,10 +493,9 @@ for pl in player:
     
     plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
     plt.show()
-    
-    
-
 ```
+</details>
+
 
 ### 4.3 Duel performance of the players
 In this section the players of the match Denmark-Slovenia on 20.11.2023 are analyzed regarding the duel performance while defending.
