@@ -1,4 +1,10 @@
-# Preparation Denmark to play against Slovenia !
+# Preparation Denmark to play against Slovenia ! (🇩🇰 DEN - 🇸🇮 SVN)
+
+<p align="center">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.socceroos.com.au%2Fnews%2Fopposition-spotlight-denmark&psig=AOvVaw0MkPkp92gkVsepCxEWNsNI&ust=1712597065802000&source=images&cd=vf" alt="Image 1" style="width:40%; display:inline-block;margin-right: 2%;">
+    <img src="https://editorial.uefa.com/resources/0274-14e1f183c27e-170c99491100-1000/sloveu.jpeg" alt="Image 2" style="width:40%; display:inline-block;">
+  </p>
+
 
 ## 1. Introduction
 
