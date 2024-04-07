@@ -1084,6 +1084,9 @@ In the plot below the stats of Denmark are shown.
 
 ![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk.png)
 
+<details>
+<summary> code</summary>
+
 ```python
 # For simplicitiy the code is given for Slovenia only, by changing Slovenia to Denmark it can be analyzed for Denmark too
 import pandas as pd
@@ -1185,6 +1188,7 @@ plt.tight_layout()
 plt.savefig(save_path)
 
 ```
+</details>
 
 ### 4.4 Goal keeper behaviour
 
