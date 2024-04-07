@@ -221,7 +221,7 @@ from mplsoccer import Pitch
 pitch_length = 120
 pitch_width = 80
 
-data = pd.read_csv(f"./results/wyscout/5414302_df_events.csv")
+data = pd.read_csv(f"results/wyscout/5414302_df_events.csv")
 
 data = data[['location.x', 'location.y', 'pass.endLocation.x', 'pass.endLocation.y', "player.name", "pass.recipient.name","team.name","minute",'player.id']]
 
@@ -419,7 +419,7 @@ def calculate_top_players(G):
 
 
 #example usage
-df_events = pd.read_csv(f"./results/wyscout/5414302_df_events.csv")
+df_events = pd.read_csv(f"results/wyscout/5414302_df_events.csv")
 filtered_passes_g, average_positions_g = preprocess_team_pass_data(df_events, 'Slovenia')
 G = create_weighted_graph(filtered_passes_g)
 values = calculate_top_players(G)
@@ -883,7 +883,7 @@ from matplotlib.lines import Line2D
 
 
 # Import the dataset
-file_path = './input/wyscout/5414302.json'
+file_path = 'input/wyscout/5414302.json'
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file) 
     
@@ -1156,31 +1156,31 @@ This section analyzes the free kicks of the match between Denmark and Slovenia o
 
 If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks.
 
-![fk_map](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
+![fk_map](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
 
 From Slovenia's free-kick map, it can be deduced that Slovenia were pushed back deep into their own half by Denmark's pressing and were sometimes able to get a free-kick out of it. Slovenia also had a direct free-kick from E. Janza, which he was able to convert into a goal. As they are 1 for 1 in goals scored from free kicks, they appear to be very dangerous in this area of the game.
 
-![fk_map](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Denmark_freekick_map.png)
+![fk_map](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Denmark_freekick_map.png)
 
 Denmark's free-kick map shows that the Danes were often stopped by fouls in the build-up to their attacking play, as their free kicks are usually taken at the end of the second third of the pitch. Slovenia also managed to avoid free kicks near their own goal, meaning that Denmark only had one opportunity for an attacking free kick.
 
 It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross.
 
-![fk_avgdst_svn](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
+![fk_avgdst_svn](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
 
 With Slovenia, we see that most of the free kicks were around 80 meters, so neither suitable for a cross nor for a direct shot. But as soon as they were closer than 30 meters, they shot directly and were quite efficient in this game. Since they didn't have an offensive free kick cross, we can't say much about that.
 
-![fk_avgdst_den](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_den.png)
+![fk_avgdst_den](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_den.png)
 
 With Denmark, we see that most of the free kicks were taken around the 70m mark, so they are not suitable for either a cross or a direct shot, but this suggests that they were a bit more offensive than the Slovenians. When they get closer to goal, around the 40-meter mark, they start using the free kicks as crosses. Since they didn't have a direct free kick shot, we can't say much about that.
 
 To see which players shoot free kicks most often, we have listed all players in a diagram.
 
-![fk_player](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png)
+![fk_player](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png)
 
 With Slovenia, you can see that they had a lot of goal kicks and free kicks which defenders like Bijol took, indicating that they were constantly under pressure and in risky situations in their own half around the penalty area.
 
-![fk_player](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_den.png)
+![fk_player](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_den.png)
 
 Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests that they have been fouled mainly in the build-up to their attacking play.
 
