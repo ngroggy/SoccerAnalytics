@@ -703,7 +703,7 @@ plt.savefig("plots/interception_map.png", dpi=400)
 plt.show()
 ```
 
-</details>+
+</details>
 
 #### 3.4.6 Fouls
 
