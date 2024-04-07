@@ -295,15 +295,20 @@ What is striking about this statistic is that only shots were taken from the sec
 ![alt text](notebooks/plots/shots_map.png)
 
 #### 3.4.4 Dribblings
+Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
+Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
 
 ![alt text](notebooks/plots/duels_map.png)
 
 #### 3.4.5 Interceptions
 
+urprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
+
 ![alt text](notebooks/plots/interception_map.png)
 
 #### 3.4.6 Fouls
 
+The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 ![alt text](notebooks/plots/foul_map.png)
 
 ## 4 Out of possesion - defense of Slovenia
