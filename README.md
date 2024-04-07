@@ -424,7 +424,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 ```
 </details>
 
-Add player heatmap
+It's clear to see that the 4-man chain was played consistently throughout the game and that they stayed true to their strategy. In other words, the coach doesn't allow himself to be tempted into plan B, C or D, but draws a clear line. Karnicnik is talented on both feet, which must be taken into account when analyzing the game. In very rare cases, the chain dared to cross the halfway line, but for the majority of the game, it certainly focused solely on defending.
 
 <div style="display:flex;">
     <img src="notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
