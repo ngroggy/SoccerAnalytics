@@ -1072,7 +1072,7 @@ J. Kurtiƒç has a percentage of 100%. It has to be considered here that J. Kurtiƒ
 
 ![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn.png)
 
-#### 4.3.2 Total duels and duels won: Denmark
+#### 4.3.3 Total duels and duels won: Denmark
 Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
 
 ![alt text](notebooks/plots/4-defense/duel_performance_dnk.png)
