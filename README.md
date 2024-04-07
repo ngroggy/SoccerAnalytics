@@ -1,35 +1,34 @@
 # Preparation Denmark to play against Slovenia !
 
-
 ## 1. Introduction
 
-### 1.1 General comments 
+### 1.1 General comments
 
-Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Qualifiers Euro 23) we won with 2-1 in a complicated game while we got a draw 6 month earlier with 1-1 (Qualifiers Euro 23). In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match. 
+Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Qualifiers Euro 23) we won with 2-1 in a complicated game while we got a draw 6 month earlier with 1-1 (Qualifiers Euro 23). In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
 
 Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
 ![alt text](composition.png)
 
-After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks. 
+After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
 
 ### 1.2 Last 5 qualifier games slovenia
 
-| wyscout | skillcorner | date | home | away | Score Home | Score Away | Notes |
-|--------:|------------:|------|------|------|------------|------------|-------|
-| 5414226 | 1385659 | 2023-09-10 | San Marino | Slovenia | 0 | 4 |  |
-| 5414260| 1381446 | 2023-10-14 | Slovenia | Finland | 1 | 3 |  |
-| 5414284 | 1381466 | 2023-10-17 | Northern Ireland | Slovenia | 0 | 1 |  |
-| 5414302 | 1381485 | 2023-11-17 | Denmark | Slovenia | 2 | 1 |  |
-| 5414324 | 1381505 | 2023-11-20 | Slovenia | Kazakhstan | 2 | 1 |  |
+| wyscout | skillcorner | date       | home             | away       | Score Home | Score Away | Notes |
+| ------: | ----------: | ---------- | ---------------- | ---------- | ---------- | ---------- | ----- |
+| 5414226 |     1385659 | 2023-09-10 | San Marino       | Slovenia   | 0          | 4          |       |
+| 5414260 |     1381446 | 2023-10-14 | Slovenia         | Finland    | 1          | 3          |       |
+| 5414284 |     1381466 | 2023-10-17 | Northern Ireland | Slovenia   | 0          | 1          |       |
+| 5414302 |     1381485 | 2023-11-17 | Denmark          | Slovenia   | 2          | 1          |       |
+| 5414324 |     1381505 | 2023-11-20 | Slovenia         | Kazakhstan | 2          | 1          |       |
 
 ### 1.3 Injured & suspended players
 
 Currently Benjamin Verbič is injured and doesn't have an official return date. No suspension need to be taken into account at this point.
 
-## 2. Statistics of Slovenia's recent games 
+## 2. Statistics of Slovenia's recent games
 
-### 2.1 Formation and line up 
+### 2.1 Formation and line up
 
 We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
 
@@ -43,119 +42,144 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 
 TODO: First fill the codes, then we can interpret the values and write the analysis
 
-![alt text](statistics.png)
-
-![alt text](notebooks/plots/key_statistics.png)
+![alt text](notebooks/plots/2-Statistics/key_statistics.png)
 
 <details>
-<summary> Codes </summary>
-
-##### Ball possession
+  <summary> Codes </summary>
 
 ```python
-# add script here
-def compute_value():
-  reuturn 1
-```
+team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
+shots_dnk = df_events[(~df_events["shot.isGoal"].isnull()) & (df_events["team.name"] == "Denmark")]
+shots_svn = df_events[(~df_events["shot.isGoal"].isnull()) & (df_events["team.name"] == "Slovenia")]
+passes_completed = df_events[df_events["type.primary"] == "pass"].groupby(['team.name'])['pass.accurate'].sum()
+possession = df_events.groupby("team.name")["possession.duration"].sum() / df_events["possession.duration"].sum()
 
-##### Attemps at Goal (on target)
+team2 = 'Denmark'
+dnk_data = {'Goals': shots_dnk['shot.isGoal'].sum(),
+            'Shots': shots_dnk.shape[0],
+            'Shots on target': shots_dnk['shot.onTarget'].sum(),
+            'Exp. goals': shots_dnk['shot.xg'].sum().round(2),
+            'Possession': (possession.loc[team2]).round(2), # in percent
+            'Passes': team_type_counts.loc[team2, 'pass'],
+            'Pass accuracy': (passes_completed.loc[team2] / team_type_counts.loc[team2, 'pass']).round(2),
+            'Freekicks': team_type_counts.loc[team2, 'free_kick'],
+            'Corners': team_type_counts.loc[team2, 'corner'],
+            'Infractions': team_type_counts.loc[team2, 'infraction'],
+            'Yellow cards': df_events[(df_events["team.name"] == team2) & (df_events["infraction.yellowCard"] == True)].shape[0],
+            'Red cards': df_events[(df_events["team.name"] == team2) & (df_events["infraction.redCard"] == True)].shape[0],
+            }
 
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
+team1 = 'Slovenia'
+svn_data = {'Goals': shots_svn['shot.isGoal'].sum(),
+            'Shots': shots_svn.shape[0],
+            'Shots on target': shots_svn['shot.onTarget'].sum(),
+            'Exp. goals': shots_svn['shot.xg'].sum().round(2),
+            'Possession': (possession.loc[team1]).round(2), # in percent
+            'Passes': team_type_counts.loc[team1, 'pass'],
+            'Pass accuracy': (passes_completed.loc[team1] / team_type_counts.loc[team1, 'pass']).round(2),
+            'Freekicks': team_type_counts.loc[team1, 'free_kick'],
+            'Corners': team_type_counts.loc[team1, 'corner'],
+            'Infractions': team_type_counts.loc[team1, 'infraction'],
+            'Yellow cards': df_events[(df_events["team.name"] == team1) & (df_events["infraction.yellowCard"] == True)].shape[0],
+            'Red cards': df_events[(df_events["team.name"] == team1) & (df_events["infraction.redCard"] == True)].shape[0],
+            }
 
-##### Total passes
+# if category % do not normalize
+perc_categories = ['Possession', 'Pass accuracy']
 
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Pass completion
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Completed line breks
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Reception in the final third
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Crosses
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Ball progressions
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Defensive pressures - direct pressures
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Forced turnover
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Total distance covered
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### High speed distance covered
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
+# plot statistics
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20',
+                    subtitle='2:1', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/2-statistics/key_statistics.png')
 ```
 
 </details>
-
 
 ## 3. In possesion - attack of Slovenia
 
 ### 3.1 Attacking formation & style:
 
-TODO: Add same distribution like in the picture
+![alt text](notebooks/plots/3-attack/attacking_efficiency.png)
 
-![alt text](in.png)
+![alt text](notebooks/plots/3-attack/attacking_style.png)
+
+<details>
+  <summary> Codes </summary>
+
+### Attacking efficiency
+
+```python
+def calculate_attacking_efficiency(team_name):
+
+    team_events = df_events[df_events["possession.team.name"] == team_name]
+
+    # Attacks
+    with_flank = team_events[(~team_events["possession.attack.flank"].isna())]['possession.id'].nunique()
+    with_shot = team_events[(team_events["possession.attack.withShot"] == True)]['possession.id'].nunique()
+    with_shot_on_target = team_events[(team_events["possession.attack.withShotOnGoal"] == True)]['possession.id'].nunique()
+    with_goal = team_events[(team_events["possession.attack.withGoal"] == True)]['possession.id'].nunique()
+    total_events = team_events["possession.id"].nunique()
+
+    # Offensive Duels
+    offensive_duels = team_events[(team_events["groundDuel.duelType"] == "offensive_duel")]
+    offensive_duels_won = offensive_duels[offensive_duels["groundDuel.keptPossession"] == True]
+
+    # Dribbles
+    dribbles = team_events[(team_events["groundDuel.duelType"] == "dribble")]
+    dribbles_won = dribbles[dribbles["groundDuel.keptPossession"] == True]
+
+
+    return {
+        'Attack With Flank': round(with_flank / total_events, 2),
+        'Attack With Shot': round(with_shot / total_events, 2),
+        'Attack With Shot on Goal': round(with_shot_on_target / total_events, 2),
+        'Attack With Goal': round(with_goal / total_events, 2),
+        'Offensive Duels': round(offensive_duels.shape[0], 2),
+        'Offensive Duels Won': round(offensive_duels_won.shape[0] / offensive_duels.shape[0], 2),
+        'Dribbles': round(dribbles.shape[0], 2),
+        'Dribbles Won': round(dribbles_won.shape[0] / dribbles.shape[0], 2),
+    }
+
+# Use the function to calculate stats for Denmark and Slovenia
+dnk_data = calculate_attacking_efficiency("Denmark")
+svn_data = calculate_attacking_efficiency("Slovenia")
+
+# if category % do not normalize
+perc_categories = ["Attack With Flank", "Attack With Shot", "Attack With Shot on Goal", "Attack With Goal", "Offensive Duels Won", "Dribbles Won"]
+
+# plot statistics
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                    subtitle='Attacking efficiency', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_efficiency.png')
+```
+
+### Attacking style
+
+```python
+team_category_perc = (team_category_counts.div(team_category_counts.sum(axis=1), axis=0)).round(2)
+
+dnk_data = {'Build Up': team_category_perc.loc['Denmark', 'build_up'].round(2),
+            'Progression': team_category_perc.loc['Denmark', 'progression'].round(2),
+            'Final Third': team_category_perc.loc['Denmark', 'final_third_play'].round(2),
+            'Long Ball': team_category_perc.loc['Denmark', 'long_ball'],
+            'Counter Attack': team_category_perc.loc['Denmark', 'counter_attack'],
+            'Set Piece': team_category_perc.loc['Denmark', 'set_piece'],
+}
+
+svn_data = {'Build Up': team_category_perc.loc['Slovenia', 'build_up'],
+            'Progression': team_category_perc.loc['Slovenia', 'progression'],
+            'Final Third': team_category_perc.loc['Slovenia', 'final_third_play'],
+            'Long Ball': team_category_perc.loc['Slovenia', 'long_ball'],
+            'Counter Attack': team_category_perc.loc['Slovenia', 'counter_attack'],
+            'Set Piece': team_category_perc.loc['Slovenia', 'set_piece'],
+}
+
+# if category % do not normalize
+perc_categories = ['Build Up', 'Progression', 'Final Third', 'Long Ball', 'Counter Attack', 'Set Piece']
+
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                    subtitle='Attacking style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_style.png')
+```
+
+</details>
 
 ### 3.2 Passing network & Player Heatmap
 
@@ -163,10 +187,9 @@ TODO: Add same distribution like in the picture
 
 A look at Slovenia's passing network mirrors the statistics from chapter 2. Slovenia were pushed in behind and were rarely able to create a successful build-up between defence and midfield, which points to the many passes between the two centre-backs (Bijol and Blazic) and Oblak. Denmark managed to isolate the midfield and attack from the game, leaving the defence with only the pass to the centre-back or goalkeeper.
 
-Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.  
+Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
 
 ![alt text](notebooks/plots/passing_network.png)
-
 
 ```python
 # This script isn't complete
@@ -176,12 +199,11 @@ third_possession['possession_percentage'] = (third_possession['possession_durati
 print(third_possession[['channel_end','third_end', 'possession_percentage']])
 ```
 
-
 ### Attacking Players Heatmap
 
 In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. From the passing Network from chapter 3.1 and the generated images there is a soft tendency that the attacking play is more developped on the right side, through Vipotnik and Verbic/Mlakar. Mlakar and Verbic kept changing their starting positions during the game. Only on the counterattacks do they act as offensive wingers and only then do they give the strikers the opportunity to move into the center. The outside midfielders are therefore very defensively prepared for this game and help out the full-backs.
 
-It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed. 
+It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
 
 <p align="center">
     <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:24%; display:inline-block;margin-right: 2%;">
@@ -204,11 +226,11 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
   player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
     for pl in player:
         df_player = df[df['player.name'] == pl]
-            
-    pitch = VerticalPitch(pitch_color='#2f8c58', 
-                          line_color='white', 
+
+    pitch = VerticalPitch(pitch_color='#2f8c58',
+                          line_color='white',
                           pitch_type='wyscout')
-    
+
     fig, ax = pitch.grid(grid_height=0.9, title_height=0.06, axis=False,
                          endnote_height=0.04, title_space=0, endnote_space=0)
 
@@ -226,20 +248,19 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
     legend_elements = [Line2D([0], [0], color='w', markerfacecolor='k', marker='o', label=pl)]
 
-    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,  
+    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,
                handlelength=2, labelspacing=1.2, fontsize=10)
-    
+
     def replace_dot_space_with_underscore(pl):
         return pl.replace(". ", "_")
-    
+
     pl = replace_dot_space_with_underscore(pl)
-    
+
     plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
     plt.show()
 ```
 
 </details>
-
 
 ### 3.3 Typical tactical moves
 
@@ -273,18 +294,112 @@ What is striking about this statistic is that only shots were taken from the sec
 
 ![alt text](notebooks/plots/foul_map.png)
 
-
 ## 4 Out of possesion - defense of Slovenia
 
-### 4.1 Typical defensive formation & style
+### 4.1 Statistics
 
-TODO: Add same distribution like in the picture
+![alt text](notebooks/plots/4-defense/defense_statistics.png)
 
-![alt text](in.png)
+<details>
+  <summary> Codes </summary>
 
 ```python
-# Add script to type of play out of possesion
+team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
+
+team2 = 'Denmark'
+dnk_data = {'Defensive Duels': df_events[(df_events["groundDuel.duelType"] == "defensive_duel") & (df_events["team.name"] == team2)]["groundDuel.relatedDuelId"].notna().sum(),
+            'Interceptions': team_type_counts.loc[team2, 'interception'],
+            'Clearances': team_type_counts.loc[team2, 'clearance'],
+            'Fouls': team_type_counts.loc[team2, 'infraction'],
+            'Yellow cards': df_events[(df_events["team.name"] == team2) & (df_events["infraction.yellowCard"] == True)].shape[0],
+            'Red cards': df_events[(df_events["team.name"] == team2) & (df_events["infraction.redCard"] == True)].shape[0],
+            }
+
+team1 = 'Slovenia'
+svn_data = {'Defensive Duels': df_events[(df_events["groundDuel.duelType"] == "defensive_duel") & (df_events["team.name"] == team1)]["groundDuel.relatedDuelId"].notna().sum(),
+            'Interceptions': team_type_counts.loc[team1, 'interception'],
+            'Clearances': team_type_counts.loc[team1, 'clearance'],
+            'Fouls': team_type_counts.loc[team1, 'infraction'],
+            'Yellow cards': df_events[(df_events["team.name"] == team1) & (df_events["infraction.yellowCard"] == True)].shape[0],
+            'Red cards': df_events[(df_events["team.name"] == team1) & (df_events["infraction.redCard"] == True)].shape[0],
+            }
+
+# if category % do not normalize
+perc_categories = []
+
+# plot statistics
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                    subtitle='Defensive stats', team1_color='blue', team2_color='red',saveplt=True, savepath='plots/4-defense/defense_statistics.png')
 ```
+
+<details>
+
+### 4.2 Typical defensive formation & style
+
+![alt text](notebooks/plots/4-defense/defensive_efficiency_style.png)
+
+<details>
+  <summary> Codes </summary>
+
+```python
+def calculate_defensive_efficiency(team_name, opponent_name):
+
+    team_events = df_events[df_events["team.name"] == team_name]
+
+    # Duels
+    defensive_duels = team_events[(team_events["groundDuel.duelType"] == "defensive_duel")]
+    defensive_duels_ownthird = defensive_duels[(defensive_duels["location.x"] < 33.3)]
+    duels_won = defensive_duels[(defensive_duels["groundDuel.stoppedProgress"] == True) | (defensive_duels["groundDuel.recoveredPossession"] == True)].shape[0]
+    duels_won_pos = defensive_duels[(defensive_duels["groundDuel.recoveredPossession"] == True)].shape[0]
+    duels_won_ownthird = defensive_duels_ownthird[(defensive_duels_ownthird["groundDuel.stoppedProgress"] == True) | (defensive_duels_ownthird["groundDuel.recoveredPossession"] == True)].shape[0]
+    total_events = defensive_duels.shape[0]
+    total_events_ownthird = defensive_duels_ownthird.shape[0]
+
+    # ball recovery time avg possession duration of opponent
+    ball_recovery_time = df_events[(df_events["possession.team.name"] == opponent_name)]["possession.duration"].mean()
+
+    # defensive errors = interceptions + offensive duels lost + dribbles lost in own half
+    own_half = df_events[(df_events["location.x"] < 50)]
+    interceptions = own_half[(own_half["type.primary"] == "interception") & (own_half["team.name"] == opponent_name)]
+    offensive_duels_lost = own_half[(own_half["groundDuel.duelType"] == "offensive_duel") & (own_half["team.name"] == team_name) & (own_half["groundDuel.keptPossession"] == False)]
+    dribbles_lost = own_half[(own_half["groundDuel.duelType"] == "offensive_duel") & (own_half["team.name"] == team_name) & (own_half["groundDuel.keptPossession"] == False)]
+    defensive_errors = pd.concat([interceptions, offensive_duels_lost, dribbles_lost]).shape[0]
+
+    # Pressure actions
+    interceptions = team_events[(team_events["type.primary"] == "interception")]
+    clearence = team_events[(team_events["type.primary"] == "clearance")]
+    defensive_duels = team_events[(team_events["groundDuel.duelType"] == "defensive_duel")]
+    pressures = pd.concat([interceptions, clearence, defensive_duels])
+
+    # High press: Pressure in the opposing third
+    high_press = pressures[(pressures["location.x"] > 66.6)]
+    mid_press = pressures[(pressures["location.x"] > 33.3) & (pressures["location.x"] < 66.6)]
+    low_press = pressures[(pressures["location.x"] < 33.3)]
+
+    return {'Duels Won': round(duels_won / total_events, 2),
+            'Duels Won Own Third': round(duels_won_ownthird / total_events_ownthird, 2),
+            'Duels Gained Possession': round(duels_won_pos / total_events, 2),
+            'Ball Recovery Time': round(ball_recovery_time, 2),
+            'Defensive Errors': defensive_errors,
+            'High Press': round(high_press.shape[0] / pressures.shape[0], 2),
+            'Mid Press': round(mid_press.shape[0] / pressures.shape[0], 2),
+            'Low Press': round(low_press.shape[0] / pressures.shape[0], 2),
+            }
+
+
+# Use the function to calculate stats for Denmark and Slovenia
+dnk_data = calculate_defensive_efficiency("Denmark", "Slovenia")
+svn_data = calculate_defensive_efficiency("Slovenia", "Denmark")
+
+# if category % do not normalize
+perc_categories = ["Duels Won", "Duels Won Own Third", "Duels Gained Possession", "High Press", "Mid Press", "Low Press"]
+
+# plot statistics
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                    subtitle='Defensive Efficiency & Style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/4-defense/defensive_efficiency_style.png')
+```
+
+<details>
 
 Add player heatmap
 
@@ -298,97 +413,6 @@ Add player heatmap
 # Add script to type of play out of possesion
 ```
 
-#### Defense Player Heatmap
-
-
-
-### 4.2 Statistics
-
-TODO: Create scripts to generate the values and then we analyse the results
-
-![alt text](defensive.png)
-
-```python
-# Add script to generate staticsitws
-```
-
-<details>
-<summary> Codes </summary>
-
-##### Total pressures
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Direct pressures
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Average pressures duartion
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Forced turnovers
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Ball recovery time
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Pusing into pressing
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Pushing on
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Pushing direction inside
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-##### Pushing direction outside
-
-```python
-# add script here
-def compute_value():
-  reuturn 1
-```
-
-</details>
-
 ### 4.3 Duel performance of the players
 
 ### 4.4 Goal keeper behaviour
@@ -397,7 +421,7 @@ def compute_value():
 
 ### 5.1 Corners
 
-This section analyzes the corners of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Corners are a very important part of the game of football as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking opportunities for the defending team. As can be seen from the following graph of corner events, Denmark was the more dominant team, with regards to corners. 
+This section analyzes the corners of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Corners are a very important part of the game of football as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking opportunities for the defending team. As can be seen from the following graph of corner events, Denmark was the more dominant team, with regards to corners.
 
 ![cornerstats](./notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics.png)
 
@@ -439,7 +463,7 @@ There were no penalties in the match between Denmark and Slovenia on 17.11.2023,
 
 This section analyzes the free kicks of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Free kicks, especially the closer they get to the goal, are a very important part of the game.
 
-If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks. 
+If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks.
 
 ![fk_map](./notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
 
@@ -449,7 +473,7 @@ From Slovenia's free-kick map, it can be deduced that Slovenia were pushed back 
 
 Denmark's free-kick map shows that the Danes were often stopped by fouls in the build-up to their attacking play, as their free kicks are usually taken at the end of the second third of the pitch. Slovenia also managed to avoid free kicks near their own goal, meaning that Denmark only had one opportunity for an attacking free kick.
 
-It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross. 
+It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross.
 
 ![fk_avgdst_svn](./notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
 
@@ -470,7 +494,6 @@ With Slovenia, you can see that they had a lot of goal kicks and free kicks whic
 Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests that they have been fouled mainly in the build-up to their attacking play.
 
 To summarize, Slovenia doesn't seem to get many dangerous free-kicks, but when they do, they are very dangerous. Slovenia seems to try to disrupt the Danish build-up play by fouling the Danes in midfield in the Slovenian half, but not in the attacking positions around the penalty area. Denmark could exploit this by playing more 1-v-1 situations as Slovenia seems to defend passively and does not try to risk a free kick near the goal.
-
 
 <details>
 <summary> Codes</summary>
@@ -535,7 +558,7 @@ fig, ax = pitch.draw()
 
 # Draw every shot and colour it regarding its success
 for i, shot in df_shots_svn.iterrows():
-    
+
     # Position of shot
     [x, y] = shot[['possession.endLocation.x', 'possession.endLocation.y']].to_list()
 
@@ -573,7 +596,7 @@ plt.savefig(f"plots/5-SetPieces/5_1-Corners/{teamname}_shots_corners_map.png", d
 plt.show()
 ```
 
-##### Recipients location map 
+##### Recipients location map
 
 ```python
 # Create Dataframe for the distribution of corner passes for Slowenia
@@ -595,7 +618,7 @@ for i, pass_dst in enumerate([pass_short, pass_parea, pass_long, pass_wide]):
         df_distribution.at[i, "y"] = -1.0
         df_distribution.at[i, "amount"] = -1.0
         continue
-    
+
     df_distribution.at[i, "x"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.x'].to_numpy()).round(1)
     df_distribution.at[i, "y"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.y'].to_numpy()).round(1)
     df_distribution.at[i, "amount"] = df_corners_svn.loc[pass_dst]['pass.endLocation.x'].count()
@@ -632,7 +655,7 @@ team_name = df_corners_svn["team.name"].iloc[0]
 fig.suptitle(f"Corner pass recipient location percentage for {team_name}", fontsize = 12)
 plt.savefig('plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png', dpi=400)
 plt.show()
-     
+
 ```
 
 ##### Free kick average distance
@@ -683,9 +706,8 @@ plt.ylabel('Average Distance [m]')    # Y-axis label
 # Show and save the plot
 plt.savefig('plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png', dpi=400)
 plt.show()
-     
-```
 
+```
 
 ##### Free kick takers
 
@@ -696,7 +718,7 @@ for i, name in enumerate(df_freekicks["player.name"].unique()):
 
     if isinstance(name, float) and np.isnan(name):
         continue
-    
+
     df_fk_amount.at[i, "name"] = name
 
     # Calculate number of passes
@@ -737,13 +759,13 @@ colors=['red', 'orange', 'yellow', 'green']
 for idx, dataset in enumerate([df_freekick_shots, df_freekick_cross, df_freekick_else, df_goalkick]):
     color = colors[idx]
     for i, freekick in dataset.iterrows():
-        
+
         if isinstance(freekick['player.name'], float) and np.isnan(freekick['player.name']):
             continue
 
         # Position of free kick
         [x, y] = freekick[['location.x', 'location.y']].to_list()
-        
+
         shotCircle = plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width), 2, color=color)
 
         plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4, freekick['player.name'])
@@ -767,77 +789,90 @@ plt.show()
 
 </details>
 
-## 6 Statistics of the players : 
+## 6 Statistics of the players :
 
 ### Physical data
 
-| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin    |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
-| Benjamin Verbič      |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
-| Benjamin Šeško       |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
-| Erik Janža           |       6943 |                833 |            363 |                  115 |               8 |        28.1 |
-| Jaka Bijol           |       9688 |               1061 |            355 |                   57 |               6 |        27.1 |
-| Jan Mlakar           |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
-| Jasmin Kurtič        |       4454 |                922 |            117 |                    0 |               2 |        22.9 |
-| Jon Gorenc- tankovič |       2986 |                546 |            185 |                   12 |               2 |        24.6 |
-| Miha Blažič          |      10579 |               1368 |            333 |                   67 |               5 |        25.9 |
-| Miha Zajc            |       1266 |                223 |             90 |                    6 |               0 |        25.2 |
-| Sandi Lovrič         |       2926 |                498 |            153 |                   52 |               2 |        29.6 |
-| Timi Max Elšnik      |       7857 |               1185 |            367 |                   27 |               3 |        25.3 |
-| Vanja Drkušić        |       3954 |                597 |            264 |                  101 |               0 |        29.4 |
-| Žan Karničnik        |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
-| Žan Vipotnik         |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+| Player name          | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :------------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Adam Gnezda Čerin    |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
+| Benjamin Verbič      |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
+| Benjamin Šeško       |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
+| Erik Janža           |     6943 |              833 |          363 |                115 |             8 |      28.1 |
+| Jaka Bijol           |     9688 |             1061 |          355 |                 57 |             6 |      27.1 |
+| Jan Mlakar           |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
+| Jasmin Kurtič        |     4454 |              922 |          117 |                  0 |             2 |      22.9 |
+| Jon Gorenc- tankovič |     2986 |              546 |          185 |                 12 |             2 |      24.6 |
+| Miha Blažič          |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
+| Miha Zajc            |     1266 |              223 |           90 |                  6 |             0 |      25.2 |
+| Sandi Lovrič         |     2926 |              498 |          153 |                 52 |             2 |      29.6 |
+| Timi Max Elšnik      |     7857 |             1185 |          367 |                 27 |             3 |      25.3 |
+| Vanja Drkušić        |     3954 |              597 |          264 |                101 |             0 |      29.4 |
+| Žan Karničnik        |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+| Žan Vipotnik         |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+
 #### Top 5 Distance
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
-| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
-| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
-| Miha Blažič       |      10579 |               1368 |            333 |                   67 |               5 |        25.9 |
-| Žan Vipotnik      |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+
+| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
+| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
+| Miha Blažič       |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
+| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+
 #### Top 5 Running Distance
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
-| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
-| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
-| Miha Blažič       |      10579 |               1368 |            333 |                   67 |               5 |        25.9 |
-| Benjamin Verbič   |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
+
+| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
+| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
+| Miha Blažič       |    10579 |             1368 |          333 |                 67 |             5 |      25.9 |
+| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
+
 #### Top 5 HSR Distance
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
-| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
-| Benjamin Verbič   |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
-| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
-| Žan Vipotnik      |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+
+| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
+| Jan Mlakar        |    10772 |             1675 |          590 |                 81 |             5 |      26.9 |
+| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
+| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+
 #### Top 5 Sprinting Distance
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Benjamin Šeško    |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
-| Benjamin Verbič   |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
-| Žan Vipotnik      |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
-| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
-| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+
+| Player name       | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :---------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Benjamin Šeško    |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
+| Benjamin Verbič   |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
+| Žan Vipotnik      |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+| Žan Karničnik     |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+| Adam Gnezda Čerin |    12318 |             2323 |          675 |                118 |             5 |      27.2 |
+
 #### Top 5 Accelerations
-| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Žan Vipotnik    |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
-| Benjamin Verbič |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
-| Benjamin Šeško  |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
-| Erik Janža      |       6943 |                833 |            363 |                  115 |               8 |        28.1 |
-| Žan Karničnik   |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+
+| Player name     | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :-------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Žan Vipotnik    |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+| Benjamin Verbič |     8654 |             1350 |          564 |                156 |            11 |      27.5 |
+| Benjamin Šeško  |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
+| Erik Janža      |     6943 |              833 |          363 |                115 |             8 |      28.1 |
+| Žan Karničnik   |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
+
 #### Top 5 Max speed
-| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Benjamin Šeško |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
-| Sandi Lovrič   |       2926 |                498 |            153 |                   52 |               2 |        29.6 |
-| Vanja Drkušić  |       3954 |                597 |            264 |                  101 |               0 |        29.4 |
-| Žan Vipotnik   |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
-| Žan Karničnik  |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+
+| Player name    | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| :------------- | -------: | ---------------: | -----------: | -----------------: | ------------: | --------: |
+| Benjamin Šeško |     9439 |             1226 |          462 |                228 |            11 |      31.1 |
+| Sandi Lovrič   |     2926 |              498 |          153 |                 52 |             2 |      29.6 |
+| Vanja Drkušić  |     3954 |              597 |          264 |                101 |             0 |      29.4 |
+| Žan Vipotnik   |    10364 |             1195 |          490 |                149 |            13 |      29.2 |
+| Žan Karničnik  |    11470 |             1751 |          501 |                129 |             7 |      28.4 |
 
 ##### TODO: Left
+
 - possesion
 - distribution
 - offers & receptions
@@ -850,9 +885,6 @@ print(dynamic_events['event_subtype'].unique())
 print(dynamic_events[dynamic_events['event_subtype'] == 'support'][['player_name', 'time_start']])
 ```
 
-
 ## 7 Weaknesses & Tactic to adopt
 
 TODO: Write this at the end when everything is done - probably not important for the first draft
-
-
