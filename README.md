@@ -40,7 +40,10 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 
 ### 2.2 Key statistics
 
-TODO: First fill the codes, then we can interpret the values and write the analysis
+
+We start by analyzing the direct qualifier match between Denmark and Slovenia on November 20, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
+
+Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
 ![alt text](notebooks/plots/2-Statistics/key_statistics.png)
 
@@ -96,64 +99,18 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ## 3. In possesion - attack of Slovenia
 
-### 3.1 Attacking formation & style:
+Our analysis of Slovenia's attacking performance in the European Championship qualifier against Denmark on November 20, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
 
-![alt text](notebooks/plots/3-attack/attacking_efficiency.png)
+### 3.1 Attacking style:
+
+Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
 ![alt text](notebooks/plots/3-attack/attacking_style.png)
 
 <details>
   <summary> Codes </summary>
-
-### Attacking efficiency
-
-```python
-def calculate_attacking_efficiency(team_name):
-
-    team_events = df_events[df_events["possession.team.name"] == team_name]
-
-    # Attacks
-    with_flank = team_events[(~team_events["possession.attack.flank"].isna())]['possession.id'].nunique()
-    with_shot = team_events[(team_events["possession.attack.withShot"] == True)]['possession.id'].nunique()
-    with_shot_on_target = team_events[(team_events["possession.attack.withShotOnGoal"] == True)]['possession.id'].nunique()
-    with_goal = team_events[(team_events["possession.attack.withGoal"] == True)]['possession.id'].nunique()
-    total_events = team_events["possession.id"].nunique()
-
-    # Offensive Duels
-    offensive_duels = team_events[(team_events["groundDuel.duelType"] == "offensive_duel")]
-    offensive_duels_won = offensive_duels[offensive_duels["groundDuel.keptPossession"] == True]
-
-    # Dribbles
-    dribbles = team_events[(team_events["groundDuel.duelType"] == "dribble")]
-    dribbles_won = dribbles[dribbles["groundDuel.keptPossession"] == True]
-
-
-    return {
-        'Attack With Flank': round(with_flank / total_events, 2),
-        'Attack With Shot': round(with_shot / total_events, 2),
-        'Attack With Shot on Goal': round(with_shot_on_target / total_events, 2),
-        'Attack With Goal': round(with_goal / total_events, 2),
-        'Offensive Duels': round(offensive_duels.shape[0], 2),
-        'Offensive Duels Won': round(offensive_duels_won.shape[0] / offensive_duels.shape[0], 2),
-        'Dribbles': round(dribbles.shape[0], 2),
-        'Dribbles Won': round(dribbles_won.shape[0] / dribbles.shape[0], 2),
-    }
-
-# Use the function to calculate stats for Denmark and Slovenia
-dnk_data = calculate_attacking_efficiency("Denmark")
-svn_data = calculate_attacking_efficiency("Slovenia")
-
-# if category % do not normalize
-perc_categories = ["Attack With Flank", "Attack With Shot", "Attack With Shot on Goal", "Attack With Goal", "Offensive Duels Won", "Dribbles Won"]
-
-# plot statistics
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
-                    subtitle='Attacking efficiency', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_efficiency.png')
-```
-
-### Attacking style
-
-```python
+  
+  ```python
 team_category_perc = (team_category_counts.div(team_category_counts.sum(axis=1), axis=0)).round(2)
 
 dnk_data = {'Build Up': team_category_perc.loc['Denmark', 'build_up'].round(2),
@@ -178,10 +135,65 @@ perc_categories = ['Build Up', 'Progression', 'Final Third', 'Long Ball', 'Count
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Attacking style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_style.png')
 ```
-
 </details>
 
-### 3.2 Passing network & Player Heatmap
+
+### 3.1 Attacking efficiency
+
+The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
+
+![alt text](notebooks/plots/3-attack/attacking_efficiency.png)
+
+<details>
+  <summary> Codes </summary>
+
+```python
+def calculate_attacking_efficiency(team_name):
+
+  team_events = df_events[df_events["possession.team.name"] == team_name]
+
+  # Attacks
+  with_flank = team_events[(~team_events["possession.attack.flank"].isna())]['possession.id'].nunique()
+  with_shot = team_events[(team_events["possession.attack.withShot"] == True)]['possession.id'].nunique()
+  with_shot_on_target = team_events[(team_events["possession.attack.withShotOnGoal"] == True)]['possession.id'].nunique()
+  with_goal = team_events[(team_events["possession.attack.withGoal"] == True)]['possession.id'].nunique()
+  total_events = team_events["possession.id"].nunique()
+
+  # Offensive Duels
+  offensive_duels = team_events[(team_events["groundDuel.duelType"] == "offensive_duel")]
+  offensive_duels_won = offensive_duels[offensive_duels["groundDuel.keptPossession"] == True]
+
+  # Dribbles
+  dribbles = team_events[(team_events["groundDuel.duelType"] == "dribble")]
+  dribbles_won = dribbles[dribbles["groundDuel.keptPossession"] == True]
+
+
+  return {
+      'Attack With Flank': round(with_flank / total_events, 2),
+      'Attack With Shot': round(with_shot / total_events, 2),
+      'Attack With Shot on Goal': round(with_shot_on_target / total_events, 2),
+      'Attack With Goal': round(with_goal / total_events, 2),
+      'Offensive Duels': round(offensive_duels.shape[0], 2),
+      'Offensive Duels Won': round(offensive_duels_won.shape[0] / offensive_duels.shape[0], 2),
+      'Dribbles': round(dribbles.shape[0], 2),
+      'Dribbles Won': round(dribbles_won.shape[0] / dribbles.shape[0], 2),
+  }
+  
+# Use the function to calculate stats for Denmark and Slovenia
+dnk_data = calculate_attacking_efficiency("Denmark")
+svn_data = calculate_attacking_efficiency("Slovenia")
+
+# if category % do not normalize
+perc_categories = ["Attack With Flank", "Attack With Shot", "Attack With Shot on Goal", "Attack With Goal", "Offensive Duels Won", "Dribbles Won"]
+
+# plot statistics
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                subtitle='Attacking efficiency', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_efficiency.png')
+```
+</details>
+
+
+### 3.3 Passing network & Player Heatmap
 
 ### Passing network
 
@@ -262,41 +274,45 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 </details>
 
-### 3.3 Typical tactical moves
+### 3.4 Typical tactical moves
 
-#### 3.3.1 Long passes
+#### 3.4.1 Long passes
 
 The long balls from the central defenders or Oblak are very distributed across Denmark's half, but generally with a higher error rate on the left. However, very deep balls into the Danish penalty area arrive much better and more often on the left, which is a weakness in Denmark's play.
 
 ![alt text](notebooks/plots/long_passes_map.png)
 
-#### 3.3.2 Crosses
+#### 3.4.2 Crosses
 
 There is no preferred side in the flank play and a clear key player.
 
 ![alt text](notebooks/plots/crosses_map.png)
 
-#### 3.3.3 Shots & shots on target
+#### 3.4.3 Shots & shots on target
 
 What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending.
 
 ![alt text](notebooks/plots/shots_map.png)
 
-#### 3.3.4 Duels
+#### 3.4.4 Duels
 
 ![alt text](notebooks/plots/duels_map.png)
 
-#### 3.3.5 Interceptions
+#### 3.4.5 Interceptions
 
 ![alt text](notebooks/plots/interception_map.png)
 
-#### 3.3.6 Fouls
+#### 3.4.6 Fouls
 
 ![alt text](notebooks/plots/foul_map.png)
 
 ## 4 Out of possesion - defense of Slovenia
 
+Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 20, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
+
 ### 4.1 Statistics
+
+The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
 
 ![alt text](notebooks/plots/4-defense/defense_statistics.png)
 
@@ -331,10 +347,13 @@ perc_categories = []
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Defensive stats', team1_color='blue', team2_color='red',saveplt=True, savepath='plots/4-defense/defense_statistics.png')
 ```
+</details>
 
-<details>
+### 4.2 Defensive efficiency & style
 
-### 4.2 Typical defensive formation & style
+Slovenia's defensive efforts were markedly more dominant and effective than their attacking endeavors. They outperformed Denmark in terms of winning defensive duels, with a success rate of nearly 80% in their defensive third. Furthermore, Slovenia made fewer defensive errors compared to their opponents, contributing to their solid defensive performance.
+
+In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
 
 ![alt text](notebooks/plots/4-defense/defensive_efficiency_style.png)
 
@@ -398,8 +417,7 @@ perc_categories = ["Duels Won", "Duels Won Own Third", "Duels Gained Possession"
 plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
                     subtitle='Defensive Efficiency & Style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/4-defense/defensive_efficiency_style.png')
 ```
-
-<details>
+</details>
 
 Add player heatmap
 
