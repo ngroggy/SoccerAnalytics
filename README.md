@@ -703,6 +703,8 @@ plt.savefig("plots/interception_map.png", dpi=400)
 plt.show()
 ```
 
+</details>+
+
 #### 3.4.6 Fouls
 
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
@@ -740,6 +742,8 @@ fig.suptitle("Foul map (yellow ==> Yellow Card)", fontsize = 12)
 plt.savefig("plots/foul_map.png", dpi=400)
 plt.show()
 ```
+
+</details>
 
 ## 4 Out of possesion - defense of Slovenia
 
