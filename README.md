@@ -14,13 +14,13 @@ After analyzing their recent match against Malta, it's evident that Slovenia emp
 
 ### 1.2 Last 5 qualifier games slovenia
 
-| wyscout | skillcorner | date       | home             | away       | Score Home | Score Away | Notes |
-| ------: | ----------: | ---------- | ---------------- | ---------- | ---------- | ---------- | ----- |
-| 5414226 |     1385659 | 2023-09-10 | San Marino       | Slovenia   | 0          | 4          |       |
-| 5414260 |     1381446 | 2023-10-14 | Slovenia         | Finland    | 1          | 3          |       |
-| 5414284 |     1381466 | 2023-10-17 | Northern Ireland | Slovenia   | 0          | 1          |       |
-| 5414302 |     1381485 | 2023-11-17 | Denmark          | Slovenia   | 2          | 1          |       |
-| 5414324 |     1381505 | 2023-11-20 | Slovenia         | Kazakhstan | 2          | 1          |       |
+| wyscout | skillcorner | date       | home             | away       | Score Home | Score Away |
+| ------: | ----------: | ---------- | ---------------- | ---------- | ---------- | ---------- |
+| 5414226 |     1385659 | 2023-09-10 | San Marino       | Slovenia   | 0          | 4          |
+| 5414260 |     1381446 | 2023-10-14 | Slovenia         | Finland    | 1          | 3          |
+| 5414284 |     1381466 | 2023-10-17 | Northern Ireland | Slovenia   | 0          | 1          |
+| 5414302 |     1381485 | 2023-11-17 | Denmark          | Slovenia   | 2          | 1          |
+| 5414324 |     1381505 | 2023-11-20 | Slovenia         | Kazakhstan | 2          | 1          |
 
 ### 1.3 Injured & suspended players
 
