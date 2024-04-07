@@ -433,7 +433,65 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
     <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
 </div>
 ```python
-# Add script to type of play out of possesion
+
+import json
+import pandas as pd
+from mplsoccer import Pitch, Sbopen
+from mplsoccer import VerticalPitch,Pitch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.patches import Patch
+from matplotlib.lines import Line2D
+
+
+# Import the dataset
+file_path = './input/wyscout/5414302.json'
+with open(file_path, 'r', encoding='utf-8') as file:
+    data = json.load(file) 
+    
+df = pd.json_normalize(data, record_path=['events'])
+
+
+# Create an array with players you want to see
+player = ['B. Šeško', 'Ž. Vipotnik', 'J. Mlakar', 'T. Elšnik', 'A. Čerin', 'B. Verbič', 'J. Bijol', 'M. Blažič', 'Ž. Karničnik', 'E. Janža' ]
+for pl in player:
+    df_player = df[df['player.name'] == pl]
+        
+    # Pitch     
+    pitch = VerticalPitch(pitch_color='#2f8c58', 
+                          line_color='white', 
+                          pitch_type='wyscout')
+    
+    fig, ax = pitch.grid(grid_height=0.9, title_height=0.06, axis=False,
+                         endnote_height=0.04, title_space=0, endnote_space=0)
+
+    # Heatmap as Kernel Density Estimation
+    pitch.kdeplot(
+    x=df_player['location.x'],
+    y=df_player['location.y'],
+    shade = True,
+    shade_lowest=False,
+    alpha=.5,
+    n_levels=10,
+    cmap = 'coolwarm',
+    ax=ax['pitch']
+    )
+
+    legend_elements = [Line2D([0], [0], color='w', markerfacecolor='k', marker='o', label=pl)]
+
+    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,  
+               handlelength=2, labelspacing=1.2, fontsize=10)
+    
+    def replace_dot_space_with_underscore(pl):
+        return pl.replace(". ", "_")
+    
+    pl = replace_dot_space_with_underscore(pl)
+    
+    plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
+    plt.show()
+    
+    
+
 ```
 
 ### 4.3 Duel performance of the players
