@@ -613,7 +613,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 #### 3.4.1 Long passes
 
-The long balls from the central defenders or Oblak are very distributed across Denmark's half, but generally with a higher error rate on the left. However, very deep balls into the Danish penalty area arrive much better and more often on the left, which is a weakness in Denmark's play.
+The Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
 
 ![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/long_passes_map.png)
 
