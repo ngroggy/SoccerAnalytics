@@ -900,6 +900,7 @@ Based on the provided data, the most dangerous players can be identified across 
 
 **Benjamin Šeško**: While not leading in total distance covered, Šeško shines in sprinting distance and max speed. His explosive acceleration and top speed make him a dangerous forward, capable of breaking through defenses and creating scoring opportunities.
 
+#### Overall values
 | Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
 |:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
 | Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
@@ -917,6 +918,9 @@ Based on the provided data, the most dangerous players can be identified across 
 | Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
 | Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
 | Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
+
+
+In examining the top three players across each specific physical aspect, we gain a better insight into the diverse skill sets present in Slovenia:
 
 #### Top 3 Distance
 | Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
