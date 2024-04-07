@@ -207,13 +207,34 @@ Kranicnik takes on an exciting position in the network. His high pass rate could
 
 ![alt text](notebooks/plots/passing_network.png)
 
-```python
-# This script isn't complete
-third_possession = dynamic_events.groupby(['channel_end', 'third_end'])['possession_duration'].sum().reset_index()
-total_possession = third_possession['possession_duration'].sum()
-third_possession['possession_percentage'] = (third_possession['possession_duration'] / total_possession) * 100
-print(third_possession[['channel_end','third_end', 'possession_percentage']])
-```
+We analyze key centrality metrics and output the 3 strongest players for each metrics:
+
+Betweenness Centrality: Identifies players crucial for ball circulation, calculated by their role in shortest paths between others.
+
+$`C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}`$
+
+Degree Centrality: Quantifies received passes relative to total players.
+
+$`C_D(v) = \frac{\text{Number of passes received by } v}{\text{Total number of players}} = \sum_{u \neq v} A_{uv}`$
+
+Closeness Centrality: Evaluates proximity to others in the network for efficient pass reception.
+
+$`C_C(v) = \frac{1}{\sum_{u} d(u, v)}`$
+
+Eigenvector Centrality: Assesses a player's influence, considering both connection quantity and quality, akin to Google's PageRank algorithm.
+
+$`C_E(v) = \frac{1}{\lambda} \sum_{u} A_{uv} C_E(u)`$
+
+#### Degree Centrality
+['A. Čerin: 1.5333', 'J. Bijol: 1.4667', 'Ž. Karničnik: 1.3333']
+#### Betweenness Centrality
+['V. Drkušić: 0.1163', 'A. Čerin: 0.0945', 'Ž. Karničnik: 0.0827']
+#### Closeness Centrality
+['J. Bijol: 0.7500', 'A. Čerin: 0.7500', 'B. Šeško: 0.7500']
+#### Eigenvector Centrality
+['B. Šeško: 0.3691', 'A. Čerin: 0.3684', 'Ž. Karničnik: 0.3122']
+#### PageRank Centrality
+['Ž. Karničnik: 0.1125', 'J. Bijol: 0.0986', 'A. Čerin: 0.0949']
 
 ### Attacking Players Heatmap
 
