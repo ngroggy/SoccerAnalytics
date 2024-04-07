@@ -1070,8 +1070,6 @@ The plot below shows the duel performance of the players from Slovenia. It can b
 It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
 J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
 
-precentage won the first: neues plot mit precentage: plots
-
 ![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn.png)
 
 #### 4.3.2 Total duels and duels won: Denmark
