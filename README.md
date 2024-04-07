@@ -1058,11 +1058,34 @@ for pl in player:
 </details>
 
 
-### 4.3 Duel performance of the players
+### 4.3 Duel defence performance of the players
 In this section the players of the match Denmark-Slovenia on 17.11.2023 are analyzed regarding the duel performance while defending.
-The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable. It can also be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/duel_performance_svn.png)
+#### 4.3.1 Total duels and duels won: Slovenia
+The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
+
+![alt text](notebooks/plots/4-defense/duel_performance_svn.png)
+
+#### 4.3.2 Duels won percentage: Slovenia
+It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
+J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
+
+precentage won the first: neues plot mit precentage: plots
+
+![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn.png)
+
+#### 4.3.2 Total duels and duels won: Denmark
+Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
+
+![alt text](notebooks/plots/4-defense/duel_performance_dnk.png)
+
+#### 4.3.4 Duels won percentage: Denmark
+With J. Andersen, V. Kristiansen and J. Maehle the defence line of denmark has a percentage of over 65% duels won, which is acceptable but also can be improven.
+It has to be mentioned that Y. Poulsen with a total of 4 duels and 3 duels won has a percentage of won duels of 75%. The help of the strikers in defending mode can have a big impact on whether the game is won or lost.
+In the plot below the stats of Denmark are shown.
+
+![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk.png)
+
 
 ### 4.4 Goal keeper behaviour
 
