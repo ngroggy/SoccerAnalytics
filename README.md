@@ -1,8 +1,8 @@
 # Preparation Denmark to play against Slovenia ! (🇩🇰 DEN - 🇸🇮 SVN)
 
 <p align="center">
-    <img src="https://www.socceroos.com.au/sites/socceroos/files/2022-10/Denmark.jpg" alt="Image 1" style="width:40%; display:inline-block;margin-right: 2%;">
-    <img src="https://editorial.uefa.com/resources/0274-14e1f183c27e-170c99491100-1000/sloveu.jpeg" alt="Image 2" style="width:40%; display:inline-block;">
+    <img src="https://www.socceroos.com.au/sites/socceroos/files/2022-10/Denmark.jpg" alt="Image 1" style="width:40%; display:inline-block;margin-right: 2%; height:750px;">
+    <img src="https://editorial.uefa.com/resources/0274-14e1f183c27e-170c99491100-1000/sloveu.jpeg" alt="Image 2" style="width:40%; display:inline-block;height:750px;">
   </p>
 
 
