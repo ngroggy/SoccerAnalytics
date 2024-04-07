@@ -207,15 +207,9 @@ Kranicnik takes on an exciting position in the network. His high pass rate could
 
 ![alt text](notebooks/plots/passing_network.png)
 
+### Centrality metrics
+
 We analyze key centrality metrics and output the 3 strongest players for each metrics:
-
-Betweenness Centrality: 
-
-Degree Centrality:
-
-Closeness Centrality:
-
-Eigenvector Centrality: 
 
 #### Degree Centrality
 
