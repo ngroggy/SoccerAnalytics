@@ -1320,7 +1320,7 @@ plt.show()
 
 </details>
 
-## 6 Statistics of the players :
+## 6 Physical data :
 
 Based on the provided data, the most dangerous players can be identified across different metrics. These players have a diverse set of skills, combining endurance, speed, and agility, which can pose significant challenges for opposing teams. They have the most dangerous from a physical perspective.
 
