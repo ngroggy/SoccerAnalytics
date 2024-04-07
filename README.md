@@ -45,7 +45,7 @@ Here is a quick refresh of the pros and cons of 4-4-2:
 ### 2.2 Key statistics
 
 
-We start by analyzing the direct qualifier match between Denmark and Slovenia on November 20, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
+We start by analyzing the direct qualifier match between Denmark and Slovenia on November 17, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
 
 Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
@@ -199,7 +199,7 @@ def plot_stats_barchart(team1_stats, team2_stats, team1_name=None, team2_name=No
     plt.show()
 
 # plot statistics
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20',
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-17',
                     subtitle='2:1', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/2-statistics/key_statistics.png')
 ```
 
@@ -207,7 +207,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ## 3. In possesion - attack of Slovenia
 
-Our analysis of Slovenia's attacking performance in the European Championship qualifier against Denmark on November 20, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
+Our analysis of Slovenia's attacking performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
 
 ### 3.1 Attacking style:
 
@@ -246,7 +246,7 @@ svn_data = {'Build Up': team_category_perc.loc['Slovenia', 'build_up'],
 perc_categories = ['Build Up', 'Progression', 'Final Third', 'Long Ball', 'Counter Attack', 'Set Piece']
 
 # use functions from 2.2
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-7 (2:1)',
                     subtitle='Attacking style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_style.png')
 ```
 </details>
@@ -305,7 +305,7 @@ svn_data = calculate_attacking_efficiency("Slovenia")
 perc_categories = ["Attack With Flank", "Attack With Shot", "Attack With Shot on Goal", "Attack With Goal", "Offensive Duels Won", "Dribbles Won"]
 
 # use functions from 2.2
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-17 (2:1)',
                 subtitle='Attacking efficiency', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/3-attack/attacking_efficiency.png')
 ```
 </details>
@@ -861,7 +861,7 @@ plt.show()
 
 ## 4 Out of possesion - defense of Slovenia
 
-Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 20, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
+Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
 
 ### 4.1 Statistics
 
@@ -901,7 +901,7 @@ svn_data = {'Defensive Duels': df_events[(df_events["groundDuel.duelType"] == "d
 perc_categories = []
 
 # use functions from 2.2
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-17 (2:1)',
                     subtitle='Defensive stats', team1_color='blue', team2_color='red',saveplt=True, savepath='plots/4-defense/defense_statistics.png')
 ```
 </details>
@@ -975,7 +975,7 @@ svn_data = calculate_defensive_efficiency("Slovenia", "Denmark")
 perc_categories = ["Duels Won", "Duels Won Own Third", "Duels Gained Possession", "High Press", "Mid Press", "Low Press"]
 
 # use functions fromm 2.2
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-17 (2:1)',
                     subtitle='Defensive Efficiency & Style', team1_color='blue', team2_color='red', saveplt=True, savepath='plots/4-defense/defensive_efficiency_style.png')
 ```
 </details>
@@ -1054,7 +1054,7 @@ for pl in player:
 
 
 ### 4.3 Duel performance of the players
-In this section the players of the match Denmark-Slovenia on 20.11.2023 are analyzed regarding the duel performance while defending.
+In this section the players of the match Denmark-Slovenia on 17.11.2023 are analyzed regarding the duel performance while defending.
 The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable. It can also be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%.
 
 ![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/duel_performance_svn.png)
