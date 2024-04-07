@@ -286,17 +286,127 @@ The long balls from the central defenders or Oblak are very distributed across D
 
 ![alt text](notebooks/plots/long_passes_map.png)
 
+
+<details>
+  <summary> Codes </summary>
+    
+```python
+long_passes = df_events[df_events["type.secondary"].str.contains('long_pass')]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+
+fig, ax = pitch.draw()
+
+for i,shot in long_passes.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    color = "red"
+    if 'loss' in shot['type.secondary']:
+        color = "white"
+    #plot England
+    if (team_name!='Denmark'):
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Long passes map (red ==> success)", fontsize = 12)
+plt.savefig("plots/long_passes_map.png", dpi=400)
+plt.show()
+```
+
+</details>
+
+
+
 #### 3.4.2 Crosses
 
 There is no preferred side in the flank play and a clear key player.
 
 ![alt text](notebooks/plots/crosses_map.png)
 
-#### 3.4.3 Shots & shots on target
+<details>
+  <summary> Codes </summary>
+    
+```python
+crosses = df_events[df_events["type.secondary"].str.contains('cross')]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+fig, ax = pitch.draw()
+
+for i,shot in crosses.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    color = "red"
+    if 'loss' in shot['type.secondary']:
+        color = "white"
+    #plot England
+    if (team_name!='Denmark'):
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Cross map (red ==> success)", fontsize = 12)
+plt.savefig("plots/crosses_map.png", dpi=400)
+plt.show()
+```
+
+</details>
+
+
+#### 3.4.3 Shots 
 
 What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
 ![alt text](notebooks/plots/shots_map.png)
+
+<details>
+  <summary> Codes </summary>
+    
+```python
+shots = df_events[~df_events["shot.isGoal"].isna()]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+fig, ax = pitch.draw()
+
+for i,shot in shots.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    #plot England
+    if (team_name!='Denmark'):
+        color = "white"
+        if goal:
+            color = "red"
+
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Shots map (red ==> goal)", fontsize = 12)
+plt.savefig("plots/shots_map.png", dpi=400)
+plt.show()
+```
+
+</details>
+
+
 
 #### 3.4.4 Dribblings
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
@@ -304,16 +414,117 @@ Verbic's dribbling strength in particular must be emphasized here. There is an i
 
 ![alt text](notebooks/plots/duels_map.png)
 
+<details>
+  <summary> Codes </summary>
+    
+```python
+duels = df_events[df_events["type.primary"].str.contains('duel')]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+
+fig, ax = pitch.draw()
+
+for i,shot in duels.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    color = "red"
+    if 'loss' in shot['type.secondary']:
+        color = "white"
+    #plot England
+    if (team_name!='Denmark'):
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Dribbles map (red ==> success)", fontsize = 12)
+plt.savefig("plots/duels_map.png", dpi=400)
+plt.show()
+```
+
+</details>
+
 #### 3.4.5 Interceptions
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
 ![alt text](notebooks/plots/interception_map.png)
 
+<details>
+  <summary> Codes </summary>
+    
+```python
+interceptions = df_events[df_events["type.primary"].str.contains('interception')]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+
+fig, ax = pitch.draw()
+
+for i,shot in interceptions.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    color = "red"
+    if 'loss' in shot['type.secondary']:
+        color = "white"
+    #plot England
+    if (team_name!='Denmark'):
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Interception map (red ==> success)", fontsize = 12)
+plt.savefig("plots/interception_map.png", dpi=400)
+plt.show()
+```
+
 #### 3.4.6 Fouls
 
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 ![alt text](notebooks/plots/foul_map.png)
+
+<details>
+  <summary> Codes </summary>
+    
+```python
+fouls = df_events[df_events["type.secondary"].str.contains('foul')]
+
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+fig, ax = pitch.draw()
+
+for i,shot in fouls.iterrows():
+    #get the information
+    x=shot['location.x']
+    y=shot['location.y']
+    goal=shot['shot.isGoal']
+    team_name=shot['team.name']
+    #set circlesize
+    circleSize=2
+    color = "white"
+
+    if 'yellow_card' in shot['type.secondary']:
+        color = "yellow"
+
+    #plot England
+    if (team_name!='Denmark'):
+        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
+        ax.add_patch(shotCircle)
+
+#set title
+fig.suptitle("Foul map (yellow ==> Yellow Card)", fontsize = 12)
+plt.savefig("plots/foul_map.png", dpi=400)
+plt.show()
+```
 
 ## 4 Out of possesion - defense of Slovenia
 
