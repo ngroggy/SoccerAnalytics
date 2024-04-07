@@ -892,7 +892,13 @@ plt.show()
 
 ## 6 Statistics of the players :
 
+Based on the provided data, the most dangerous players can be identified across different metrics. These players have a diverse set of skills, combining endurance, speed, and agility, which can pose significant challenges for opposing teams. They have the most dangerous from a physical perspective.
 
+**Adam Gnezda Čerin**: He stands out for his overall distance covered, running distance, and high-speed running distance. His combination of endurance and speed makes him a formidable presence on the field.
+
+**Benjamin Verbič**: Not only does Verbič excel in running and high-speed running distances, but he also demonstrates significant sprinting ability. His capability to cover ground quickly and maintain high speeds makes him a threat to opponents, particularly in quick transitions and counterattacks.
+
+**Benjamin Šeško**: While not leading in total distance covered, Šeško shines in sprinting distance and max speed. His explosive acceleration and top speed make him a dangerous forward, capable of breaking through defenses and creating scoring opportunities.
 
 | Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
 |:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -911,12 +917,7 @@ plt.show()
 | Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
 | Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
 | Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
-#### Top 3 Player name
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
-| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
-| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
+
 #### Top 3 Distance
 | Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -993,8 +994,8 @@ print(physical_data.to_markdown(index=False))
 
 # Print top 3 each time
 for val in physical_data.keys():
-print(f'#### Top 3 {val}')
-print(physical_data.sort_values(by=val, ascending=False).head(3).to_markdown(index=False))
+    print(f'#### Top 3 {val}')
+    print(physical_data.sort_values(by=val, ascending=False).head(3).to_markdown(index=False))
 ```
 
 </details>
