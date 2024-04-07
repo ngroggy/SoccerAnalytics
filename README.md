@@ -210,7 +210,7 @@ Kranicnik takes on an exciting position in the network. His high pass rate could
 <details>
   <summary> Codes </summary>
 
-```python
+``` python
 import pandas as pd
 import numpy as np
 
