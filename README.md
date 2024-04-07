@@ -308,7 +308,9 @@ for i, row in lines_df.iterrows():
 
 plt.savefig('plots/passing_network.png', dpi=400)
 plt.show()
+
 ```
+</details>
 
 ### Centrality metrics
 
