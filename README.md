@@ -52,7 +52,7 @@ Despite the apparent control over the game by Denmark, the margin of victory was
 ![alt text](notebooks/plots/2-Statistics/key_statistics.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ```python
 team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
@@ -112,7 +112,7 @@ Slovenia's approach to attacking was markedly different from Denmark's, particul
 ![alt text](notebooks/plots/3-attack/attacking_style.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
   
   ```python
 team_category_perc = (team_category_counts.div(team_category_counts.sum(axis=1), axis=0)).round(2)
@@ -149,7 +149,7 @@ The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 
 ![alt text](notebooks/plots/3-attack/attacking_efficiency.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ```python
 def calculate_attacking_efficiency(team_name):
@@ -208,7 +208,7 @@ Kranicnik takes on an exciting position in the network. His high pass rate could
 ![alt text](notebooks/plots/passing_network.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ``` python
 import pandas as pd
@@ -360,7 +360,7 @@ Assesses a player's influence, considering both connection quantity and quality,
 |A. Čerin| 0.0949 |
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ``` python
 import pandas as pd
@@ -449,7 +449,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 </div>
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 #### Create an array with players you want to see
 
@@ -503,7 +503,7 @@ The long balls from the central defenders or Oblak are very distributed across D
 
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 long_passes = df_events[df_events["type.secondary"].str.contains('long_pass')]
@@ -546,7 +546,7 @@ There is no preferred side in the flank play and a clear key player.
 ![alt text](notebooks/plots/crosses_map.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 crosses = df_events[df_events["type.secondary"].str.contains('cross')]
@@ -587,7 +587,7 @@ What is striking about this statistic is that only shots were taken from the sec
 ![alt text](notebooks/plots/shots_map.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 shots = df_events[~df_events["shot.isGoal"].isna()]
@@ -630,7 +630,7 @@ Verbic's dribbling strength in particular must be emphasized here. There is an i
 ![alt text](notebooks/plots/duels_map.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 duels = df_events[df_events["type.primary"].str.contains('duel')]
@@ -671,7 +671,7 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 ![alt text](notebooks/plots/interception_map.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 interceptions = df_events[df_events["type.primary"].str.contains('interception')]
@@ -711,7 +711,7 @@ The Slovenians are disciplined and there is a high incidence of fouls in Sloveni
 ![alt text](notebooks/plots/foul_map.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
     
 ```python
 fouls = df_events[df_events["type.secondary"].str.contains('foul')]
@@ -756,7 +756,7 @@ The defensive performance of Slovenia in the match clearly illustrates that thei
 ![alt text](notebooks/plots/4-defense/defense_statistics.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ```python
 team_type_counts = df_events.groupby(['team.name', 'type.primary']).size().unstack(fill_value=0)
@@ -797,7 +797,7 @@ In terms of their defensive approach, Slovenia opted for a more conservative sty
 ![alt text](notebooks/plots/4-defense/defensive_efficiency_style.png)
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
 
 ```python
 def calculate_defensive_efficiency(team_name, opponent_name):
@@ -868,7 +868,7 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 </div>
 
 <details>
-  <summary> Codes </summary>
+  <summary> code </summary>
   
 ```python
 
@@ -978,7 +978,7 @@ After corners, there is often an opportunity to launch a counter-attack if they 
 ![cs_ca](./notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics_with_ca.png)
 
 <details>
-<summary> Codes</summary>
+<summary> code</summary>
 
 ##### Corner events
 
@@ -1146,7 +1146,7 @@ plt.show()
 There were no penalties in the match between Denmark and Slovenia on 17.11.2023, which is why this section is not covered in the first draft.
 
 <details>
-<summary> Codes</summary>
+<summary> code</summary>
 
 </details>
 
@@ -1187,7 +1187,7 @@ Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests
 To summarize, Slovenia doesn't seem to get many dangerous free-kicks, but when they do, they are very dangerous. Slovenia seems to try to disrupt the Danish build-up play by fouling the Danes in midfield in the Slovenian half, but not in the attacking positions around the penalty area. Denmark could exploit this by playing more 1-v-1 situations as Slovenia seems to defend passively and does not try to risk a free kick near the goal.
 
 <details>
-<summary> Codes</summary>
+<summary> code</summary>
 
 ##### Free kick average distance
 
@@ -1390,7 +1390,7 @@ In examining the top three players across each specific physical aspect, we gain
 | Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
 
 <details>
-<summary> Codes</summary>
+<summary> code</summary>
 
 ```python
 # Load data
