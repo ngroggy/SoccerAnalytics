@@ -317,9 +317,12 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### Passing network
 
+In the picture you can see the more passes have been played by a player. The bigger his name circle. The position of the circle was determined by taking the average position of all the passes made by a player. 
+
 A look at Slovenia's passing network mirrors the statistics from chapter 2. Slovenia were pushed in behind and were rarely able to create a successful build-up between defence and midfield, which points to the many passes between the two centre-backs (Bijol and Blazic) and Oblak. Denmark managed to isolate the midfield and attack from the game, leaving the defence with only the pass to the centre-back or goalkeeper.
 
 Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
+
 
 ![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/passing_network.png)
 
