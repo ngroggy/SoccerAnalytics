@@ -49,7 +49,7 @@ We start by analyzing the direct qualifier match between Denmark and Slovenia on
 
 Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
-![alt text](notebooks/plots/2-Statistics/key_statistics.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/2-Statistics/key_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -109,7 +109,7 @@ Our analysis of Slovenia's attacking performance in the European Championship qu
 
 Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
-![alt text](notebooks/plots/3-attack/attacking_style.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-attack/attacking_style.png)
 
 <details>
   <summary> code </summary>
@@ -146,7 +146,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
-![alt text](notebooks/plots/3-attack/attacking_efficiency.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-attack/attacking_efficiency.png)
 
 <details>
   <summary> code </summary>
@@ -205,7 +205,7 @@ A look at Slovenia's passing network mirrors the statistics from chapter 2. Slov
 
 Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
 
-![alt text](notebooks/plots/passing_network.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/passing_network.png)
 
 <details>
   <summary> code </summary>
@@ -437,15 +437,15 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
 
 <p align="center">
-    <img src="notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:24%; display:inline-block;margin-right: 2%;">
-    <img src="notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:24%; display:inline-block;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:24%; display:inline-block;margin-right: 2%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:24%; display:inline-block;">
   </p>
 
 <div style="display:flex;">
-    <img src="notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:24%;">
-    <img src="notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:24%;">
-    <img src="notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:24%;">
 </div>
 
 <details>
@@ -499,7 +499,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 The long balls from the central defenders or Oblak are very distributed across Denmark's half, but generally with a higher error rate on the left. However, very deep balls into the Danish penalty area arrive much better and more often on the left, which is a weakness in Denmark's play.
 
-![alt text](notebooks/plots/long_passes_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/long_passes_map.png)
 
 
 <details>
@@ -543,7 +543,7 @@ plt.show()
 
 There is no preferred side in the flank play and a clear key player.
 
-![alt text](notebooks/plots/crosses_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/crosses_map.png)
 
 <details>
   <summary> code </summary>
@@ -584,7 +584,7 @@ plt.show()
 
 What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
-![alt text](notebooks/plots/shots_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/shots_map.png)
 
 <details>
   <summary> code </summary>
@@ -627,7 +627,7 @@ plt.show()
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
 Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
 
-![alt text](notebooks/plots/duels_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/duels_map.png)
 
 <details>
   <summary> code </summary>
@@ -668,7 +668,7 @@ plt.show()
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
-![alt text](notebooks/plots/interception_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/interception_map.png)
 
 <details>
   <summary> code </summary>
@@ -708,7 +708,7 @@ plt.show()
 #### 3.4.6 Fouls
 
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
-![alt text](notebooks/plots/foul_map.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/foul_map.png)
 
 <details>
   <summary> code </summary>
@@ -753,7 +753,7 @@ Our analysis of Slovenia's defensive performance in the European Championship qu
 
 The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
 
-![alt text](notebooks/plots/4-defense/defense_statistics.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/defense_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -794,7 +794,7 @@ Slovenia's defensive efforts were markedly more dominant and effective than thei
 
 In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
 
-![alt text](notebooks/plots/4-defense/defensive_efficiency_style.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/defensive_efficiency_style.png)
 
 <details>
   <summary> code </summary>
@@ -861,10 +861,10 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 It's clear to see that the 4-man chain was played consistently throughout the game and that they stayed true to their strategy. In other words, the coach doesn't allow himself to be tempted into plan B, C or D, but draws a clear line. Karnicnik is talented on both feet, which must be taken into account when analyzing the game. In very rare cases, the chain dared to cross the halfway line, but for the majority of the game, it certainly focused solely on defending.
 
 <div style="display:flex;">
-    <img src="notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="notebooks/plots/J_Bijol_Heatmaps.png" alt="Image 2" style="width:24%;">
-    <img src="notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/J_Bijol_Heatmaps.png" alt="Image 2" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
 </div>
 
 <details>
@@ -935,7 +935,7 @@ for pl in player:
 In this section the players of the match Denmark-Slovenia on 20.11.2023 are analyzed regarding the duel performance while defending.
 The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable. It can also be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%.
 
-![alt text](notebooks/plots/4-defense/duel_performance_svn.png)
+![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/duel_performance_svn.png)
 
 ### 4.4 Goal keeper behaviour
 
@@ -945,37 +945,37 @@ The plot below shows the duel performance of the players from Slovenia. It can b
 
 This section analyzes the corners of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Corners are a very important part of the game of football as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking opportunities for the defending team. As can be seen from the following graph of corner events, Denmark was the more dominant team, with regards to corners.
 
-![cornerstats](./notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics.png)
+![cornerstats](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics.png)
 
 In total, Denmark received 8 corners and Slovenia only 2. With 8 corners in a match, we can take a closer look at Denmark's offensive tactics and Slovenia's defensive tactics. The statistics of the corners show that 3 of the corners resulted in a shot, 2 of which were on target and 1 was a goal.
 
 If we take a look at the map of the Danes' pass receiver position, we can see more details of their offensive tactics.
 
-![crl_svn](./notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_DEN.png)
+![crl_svn](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_DEN.png)
 
 87.5% of their corners found their target in the middle of the penalty area, while 12.5% were hit far behind the penalty area.
 
 A look at the map of shots after corners shows what happened at the dangerous corners.
 
-![csm_den](./notebooks/plots/5-SetPieces/5_1-Corners/Denmark_shots_corners_map.png)
+![csm_den](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Denmark_shots_corners_map.png)
 
 It is possible to see the shooting positions of the 3 shots after the corners. From this map you can conclude that Denmark is pretty good at generating shooting opportunities after corners if these are whipped into the center of the penalty area. You can also see that Slovenia had trouble defending M. Jensen in aerial duels, as he is their main shot creator from corners with two shots and one goal.
 
 The same analysis can be done for Slovenia as an attacking team. As we can see from the statistics of corner kicks, 1 of the 2 corners resulted in a shot that was not on target.
 
-![crl_svn](./notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png)
+![crl_svn](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png)
 
 As Slovenia only had two corner kicks, they could not try multiple corner kick tactics, and as can be seen from the corner kick recipient locations map, all of their corner kick targets were inside the penalty area.
 
 We can get more information from the shots after corner for Slovenia map.
 
-![csm_svn](./notebooks/plots/5-SetPieces/5_1-Corners/Slovenia_shots_corners_map.png)
+![csm_svn](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Slovenia_shots_corners_map.png)
 
 We see that one of the corners, which was originally targeted at the center of the penalty area, was deflected and immediately taken by M. Zajc as a shot, but not on target and therefore not particularly dangerous.
 
 After corners, there is often an opportunity to launch a counter-attack if they are defended properly. Therefore, we looked at the consecutive counter-attacks after corners for this game, but in this case there were none, as the advanced statistics of corner events show.
 
-![cs_ca](./notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics_with_ca.png)
+![cs_ca](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics_with_ca.png)
 
 <details>
 <summary> code</summary>
@@ -1156,31 +1156,31 @@ This section analyzes the free kicks of the match between Denmark and Slovenia o
 
 If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks.
 
-![fk_map](./notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
+![fk_map](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
 
 From Slovenia's free-kick map, it can be deduced that Slovenia were pushed back deep into their own half by Denmark's pressing and were sometimes able to get a free-kick out of it. Slovenia also had a direct free-kick from E. Janza, which he was able to convert into a goal. As they are 1 for 1 in goals scored from free kicks, they appear to be very dangerous in this area of the game.
 
-![fk_map](./notebooks/plots/5-SetPieces/5_3-FreeKicks/Denmark_freekick_map.png)
+![fk_map](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Denmark_freekick_map.png)
 
 Denmark's free-kick map shows that the Danes were often stopped by fouls in the build-up to their attacking play, as their free kicks are usually taken at the end of the second third of the pitch. Slovenia also managed to avoid free kicks near their own goal, meaning that Denmark only had one opportunity for an attacking free kick.
 
 It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross.
 
-![fk_avgdst_svn](./notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
+![fk_avgdst_svn](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
 
 With Slovenia, we see that most of the free kicks were around 80 meters, so neither suitable for a cross nor for a direct shot. But as soon as they were closer than 30 meters, they shot directly and were quite efficient in this game. Since they didn't have an offensive free kick cross, we can't say much about that.
 
-![fk_avgdst_den](./notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_den.png)
+![fk_avgdst_den](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_den.png)
 
 With Denmark, we see that most of the free kicks were taken around the 70m mark, so they are not suitable for either a cross or a direct shot, but this suggests that they were a bit more offensive than the Slovenians. When they get closer to goal, around the 40-meter mark, they start using the free kicks as crosses. Since they didn't have a direct free kick shot, we can't say much about that.
 
 To see which players shoot free kicks most often, we have listed all players in a diagram.
 
-![fk_player](./notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png)
+![fk_player](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png)
 
 With Slovenia, you can see that they had a lot of goal kicks and free kicks which defenders like Bijol took, indicating that they were constantly under pressure and in risky situations in their own half around the penalty area.
 
-![fk_player](./notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_den.png)
+![fk_player](./https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_den.png)
 
 Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests that they have been fouled mainly in the build-up to their attacking play.
 
