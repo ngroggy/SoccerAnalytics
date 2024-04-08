@@ -1190,8 +1190,6 @@ plt.savefig(save_path)
 ```
 </details>
 
-### 4.4 Goal keeper behaviour
-
 ## 5. Set plays
 
 ### 5.1 Corners
