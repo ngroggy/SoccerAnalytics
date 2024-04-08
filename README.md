@@ -1106,25 +1106,25 @@ In this section the players of the match Denmark-Slovenia on 17.11.2023 are anal
 #### 4.3.1 Total duels and duels won: Slovenia
 The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
 
-![alt text](notebooks/plots/4-defense/duel_performance_svn2.png)
+![alt text](notebooks/plots/4-defense/duel_performance_svn_final.png)
 
 #### 4.3.2 Duels won percentage: Slovenia
 It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
 J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
 
-![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn.png)
+![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn_final.png)
 
 #### 4.3.3 Total duels and duels won: Denmark
 Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
 
-![alt text](notebooks/plots/4-defense/duel_performance_dnk.png)
+![alt text](notebooks/plots/4-defense/duel_performance_dnk_final.png)
 
 #### 4.3.4 Duels won percentage: Denmark
 With J. Andersen, V. Kristiansen and J. Maehle the defence line of denmark has a percentage of over 65% duels won, which is acceptable but also can be improven.
 It has to be mentioned that Y. Poulsen with a total of 4 duels and 3 duels won has a percentage of won duels of 75%. The help of the strikers in defending mode can have a big impact on whether the game is won or lost.
 In the plot below the stats of Denmark are shown.
 
-![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk.png)
+![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk_final.png)
 
 <details>
 <summary> code</summary>
@@ -1228,6 +1228,159 @@ plt.xticks(rotation=45, ha='right')
 save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/duel_percentage_sorted_svn.png'  # Specify your desired save path here
 plt.tight_layout()
 plt.savefig(save_path)
+
+```
+</details>
+
+### 4.4 Goalkeeper behaviour
+
+To the analysis of the defense the goal keeper needs also to be considered. He is a main part of the defense not only that he is the last man who can save a shot on target but also for his view over the pitch. He can manage his defense optimal and help the defense to understand the play style of the opponent strikers. In the first part the shot parried per goalkeeper are analysed and in the second part the passes played per goalkeeper.
+
+#### 4.4.1 Shots parried per goalkeeper
+
+It can be seen in the following plot that Denmark had a total of 8 shot on target and 2 goals scored. For J. Oblak, the goalkeeper of Slovenia, it therefore makes a percentage of parried shots on targets of 75%.
+With a percentage parried of 0% K. Schmeichel the goalkeeper of Denmark does not have a good statistic only regarding the game from November 17, 2023. With a shot on target of 1 and 1 scored goal the Slovenien strikers where 100% effective when the shot was on target.
+The plot below shos cases these stats.
+
+![alt text](notebooks/plots/4-defense/Shots_parried.png)
+
+<details>
+<summary> code</summary>
+
+```python
+# The import part is the same as in Section 4.3
+
+# Goalkeeper events: Shot on Target
+df_goalkeeper = df_events[(df_events['shot.onTarget'] == True)]
+#display(df_goalkeeper)
+
+# Shot on target from Denmark (In final version the goalkeeper is not hard coded)
+df_ontarget_dnk = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'J. Oblak')]
+df_ontarget_dnk_count = df_ontarget_dnk.shape[0]
+#print("Shot on Target from Denmark")
+#print(df_ontarget_dnk_count)
+
+# Shot on target from Slovenia
+df_ontarget_svn = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'K. Schmeichel')]
+df_ontarget_svn_count = df_ontarget_svn.shape[0]
+#print("Shot on Target from Slovenia")
+#print(df_ontarget_svn_count)
+
+# Shot is Goal Denmark
+df_isgoal_dnk = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'J. Oblak')]
+df_isgoal_dnk_count = df_isgoal_dnk.shape[0]
+#print("Shot is Goal from Denmark")
+#print(df_isgoal_dnk_count)
+
+# Shot is Goal Slovenia
+df_isgoal_svn = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'K. Schmeichel')]
+df_isgoal_svn_count = df_isgoal_svn.shape[0]
+#print("Shot is Goal from Slovenia")
+#print(df_isgoal_svn_count)
+
+# percentage parried K. Schmeichel
+df_parried_dnk = 100 - (df_isgoal_svn_count / df_ontarget_svn_count * 100)
+#print(df_parried_dnk)
+
+# percentage parried J. Oblak
+df_parried_svn = 100 - (df_isgoal_dnk_count / df_ontarget_dnk_count * 100)
+#print(df_parried_svn)
+
+
+# Create Plots
+# ------------------------------------------------------------------
+dnk_data = {'Shots on Target': df_ontarget_dnk_count,
+            'Shot is Goal': df_isgoal_dnk_count,
+            'Percentage Parried by Opponent Goalkeeper': df_parried_svn,
+            }
+svn_data = {'Shots on Target': df_ontarget_svn_count,
+            'Shot is Goal': df_isgoal_svn_count,
+            'Percentage Parried by Opponent Goalkeeper': df_parried_dnk,
+            }
+
+perc_categories = []
+
+plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
+                    subtitle='Shots Parried by Goalkeeper', team1_color='blue', team2_color='red',saveplt=True, savepath='C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/Shots_parried.png')
+
+```
+</details>
+
+#### 4.4.2 Passes played per goalkeeper
+
+Like mentioned above the goalkeeper is a main part of the defense. With the ability to really take part in the game and create possible pass stations the goalkeeper can be the one additional man in the defense line. It is possible to make changes of side or also launch a quick attack with a long shot of the goalkeeper.
+In the following chart it can be seen that K. Schmeichel had a total of 24 passes. He was often used to calm down the defense and waiting for the right time to launch an attack. Furthermore with a total of 10 high and long passes K. Schmeichel made some passes near and over the own pitch half to start an attack.
+J. Oblak had a total of 18 passes and only 5 high and long passes. This reflects that Slovenia had its main focus on defending and was not often able to get out of their half.
+
+![alt text](notebooks/plots/4-defense/goalkeeper_passes_final.png)
+
+<details>
+<summary> code</summary>
+
+```python
+# The import part is the same as in Section 4.3
+
+# Passes from Denmark Goalkeeper K. Schmeichel
+passes_goalkeeper_dnk = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'K. Schmeichel')].shape[0]
+print(passes_goalkeeper_dnk)
+long_high_passes_goalkeeper_dnk = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'K. Schmeichel') & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
+print(long_high_passes_goalkeeper_dnk)
+
+# Passes from Slovenian Goalkeeper J. Oblak
+passes_goalkeeper_svn = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'J. Oblak')].shape[0]
+print(passes_goalkeeper_svn)
+long_high_passes_goalkeeper_svn = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'J. Oblak') & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
+print(long_high_passes_goalkeeper_svn)
+
+
+# Plot Data
+# 1 Prepare Data
+# Create dataframe for goalkeeper name and passes played
+df_passes_gk = pd.DataFrame(columns=['name', 'passes'])
+
+# Assign names
+df_passes_gk.at[0, 'name'] = 'K. Schmeichel passes'
+df_passes_gk.at[1, 'name'] = 'K. Schmeichel high/long passes'
+df_passes_gk.at[2, 'name'] = 'J. Oblak passes'
+df_passes_gk.at[3, 'name'] = 'J. Oblak high/long passes'
+
+# Assign calculated passes
+df_passes_gk.at[0, 'passes'] = passes_goalkeeper_dnk
+df_passes_gk.at[1, 'passes'] = long_high_passes_goalkeeper_dnk
+df_passes_gk.at[2, 'passes'] = passes_goalkeeper_svn
+df_passes_gk.at[3, 'passes'] = long_high_passes_goalkeeper_svn
+
+# 2 Plot Data
+# Set Seaborn theme and color palette
+sns.set_theme(style="darkgrid")
+# palette = sns.color_palette("viridis", len(df_passes_gk))
+palette = sns.color_palette("viridis", len(aligned_counts_svn))
+
+# Plotting the data using Seaborn and Matplotlib
+plt.figure(figsize=(10, 6))
+
+# Plot percentage of duels won per player
+sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[10])
+
+ax = sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[10])
+# Adding labels and title
+plt.xlabel('Goalkeeper')
+plt.ylabel('Number of Passes')
+plt.title('Total Passes per Goalkeepers')
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45, ha='right')
+
+# Customize x-axis labels
+ax.set_xticklabels(['K. Schmeichel\nPasses', 'K. Schmeichel\nHigh/long passes', 'J. Oblak\nPasses', 'J. Oblak\nHigh/long passes'])
+
+# Save plot to a specified path
+save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/goalkeeper_passes_final.png'  # Specify your desired save path here
+plt.tight_layout()
+plt.savefig(save_path)
+
+# Show plot
+plt.show()
 
 ```
 </details>
