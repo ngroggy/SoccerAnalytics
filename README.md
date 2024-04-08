@@ -1,7 +1,49 @@
+<!---------------- HEADER SECTION -------------------->
+<details><summary>Project Group</summary>
+
+_Please fill in the following table._
+
+| handle      | name               |
+| ----------- | ------------------ |
+| @dgregory   | Grégory de Meurichy|
+| @ngrogg     | Nic Grogg          |
+| @grloris    | Loris Griesbaum    |
+| @ygoergen        | Yves Görgen             |
+| @fcosta          | François Costa               |
+</details>
+
+<details>
+<summary>TA Comments</summary>
+
+Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
+
+- [ ] when saving, please indicate what you changed in a meaningful commit messages
+- [ ] draft due: **Monday, April 8**
+- [ ] final version due: **Friday, May 24** 
+</details>
+
+### Comments for the TA
+
+Hello Ivana,
+
+In our preliminary draft, we've chosen to consolidate statistics from a specific previous game in Slovenia, with our main focus on extracting and elucidating the data.
+
+For the final version, we plan to:
+
+1. Gather statistics for all previous matches.
+2. Potentially include more advanced metrics like pitch control.
+3. Not only describe the statistics but also analyze them, illustrating situations in which Slovenia could be strong or expose weaknesses.
+
+# Match \#06 (SVN-DEN): preparing Denmark to play against Slovenia
+
+
+<!------------ START YOUR REPORT BELOW THIS LINE --------------->
 # Preparation Denmark 🇩🇰 to play against Slovenia 🇸🇮 !
 <p align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Teamphoto.png" alt="Image 2" style="width:60%; display:inline-block;">
-  </p>
+![Teamphoto](uploads/dcb4d4858962b5f92e6d2296b9d8bb79/Teamphoto.png)
+</p>
+
+
 
 
 ## 1. Introduction
@@ -14,7 +56,8 @@ Our preparation for the group match of the European Championship consists in a f
 
 Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/LineUp.png)
+![LineUp](uploads/1677c009d8c824e071244302e88e9374/LineUp.png)
+
 
 After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
 
@@ -51,7 +94,7 @@ We start by analyzing the direct qualifier match between Denmark and Slovenia on
 
 Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/2-Statistics/key_statistics.png)
+![key_statistics](uploads/ad439dbaebe9cea015aefcd5e2bc5c75/key_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -215,7 +258,7 @@ Our analysis of Slovenia's attacking performance in the European Championship qu
 
 Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-attack/attacking_style.png)
+![attacking_style](uploads/5f9291eff54bbfe0fbf6c9cb803f6803/attacking_style.png)
 
 <details>
   <summary> code </summary>
@@ -258,7 +301,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-attack/attacking_efficiency.png)
+![attacking_efficiency](uploads/c016c0038385df6ea41ffa43fa14274d/attacking_efficiency.png)
 
 <details>
   <summary> code </summary>
@@ -323,8 +366,7 @@ A look at Slovenia's passing network mirrors the statistics from chapter 2. Slov
 
 Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
 
-
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/passing_network.png)
+![passing_network](uploads/8becf0341d7abb4438f3fbfcf7ce821d/passing_network.png)
 
 <details>
   <summary> code </summary>
@@ -618,8 +660,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 The Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/long_passes_map.png)
-
+![long_passes_map](uploads/aac4e51579877e742696cb259e19e0b2/long_passes_map.png)
 
 <details>
   <summary> code </summary>
@@ -662,7 +703,7 @@ plt.show()
 
 There is no preferred side in the flank play and a clear key player.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/crosses_map.png)
+![crosses_map](uploads/0076833843da739895f217c8e2df80c8/crosses_map.png)
 
 <details>
   <summary> code </summary>
@@ -703,7 +744,7 @@ plt.show()
 
 What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/shots_map.png)
+![shots_map](uploads/192afb5cc369a2c52711a4cb88d9427c/shots_map.png)
 
 <details>
   <summary> code </summary>
@@ -746,7 +787,7 @@ plt.show()
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
 Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/duels_map.png)
+![duels_map](uploads/2fc39c9157c2ac1c56d621fa45b3084c/duels_map.png)
 
 <details>
   <summary> code </summary>
@@ -787,7 +828,7 @@ plt.show()
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/interception_map.png)
+![interception_map](uploads/012ba0113673167beb5850f8704c82b3/interception_map.png)
 
 <details>
   <summary> code </summary>
@@ -827,7 +868,8 @@ plt.show()
 #### 3.4.6 Fouls
 
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/foul_map.png)
+
+![foul_map](uploads/c9c55063e36ed5d9f5c967196e3bd961/foul_map.png)
 
 <details>
   <summary> code </summary>
@@ -1686,6 +1728,78 @@ for val in physical_data.keys():
 </details>
 
 
-## 7 Weaknesses & Tactic to adopt
 
-This section will be filled out in the final draft 
+## 7 Fifa ranking, monetary values of the players
+
+#### Fifa rating
+
+![slovenia](uploads/6fcecaa356e75c1f10dc1366a7fed302/slovenia.png)
+
+An examination of Slovenia's FIFA ratings over the past four years reveals a small progression. In the most recent year, Slovenia has risen from 64th to 56th place, indicating a correction towards their average rank. Based on their rating, it appears that Slovenia may not pose as formidable a challenge for strong opponents. For instance, we, Denmark,  holds the 22nd position, suggesting that from this standpoint, the match seems to be in our favor.
+
+#### Transfer value
+
+According to the website Transfermarkt, two players hold considerable value for the Slovenian team: Jan Oblak and Benjamin Šeško. 
+
+![jan](uploads/69bb2799d97161bafdcf0dcd62333274/jan.png)
+
+Jan Oblak, valued at 30€ million, is a standout goalkeeper renowned for his exceptional shot-stopping abilities and commanding presence in the penalty area. He is widely considered one of the best goalkeepers in the world and provides Slovenia with a solid defensive foundation.
+
+![benjamin](uploads/fc16fc1998851a63d4c4f08654281cf5/benjamin.png)
+
+Benjamin Šeško, valued at 40€ million, is a promising young talent known for his prowess as a forward. Despite his relatively young age, Šeško has shown great potential with his goal-scoring ability and versatility on the field.
+
+Given their significant value and potential impact on the team, Jan Oblak and Benjamin Šeško are expected to be the two players to watch closely during Slovenia's matches.
+
+#### Fifa 24 - the video game
+
+In FIFA 24, the Slovenian national team boasts six players with ratings surpassing 75, indicating their proficiency within the virtual football realm. Here's a summary of each player's strengths based on the video.
+
+![fifa_game](uploads/cfc8a7fbaf14c417d101d142853f1b51/fifa_game.png)
+
+1. **Jan Oblak (Goalkeeper):**
+    Jan Oblak is a top goalie in FIFA 24. He's really good at stopping shots, controlling his area, and staying consistent. Oblak stops a lot of shots, which makes it hard for the other team to score.
+
+2. **Kevin Kampl (Midfielder):**
+    Kevin Kampl is a versatile midfielder in FIFA 24. He's good at passing, keeping possession, and defending. Kampl is smart on the field and knows where to be to help his team. He's good at starting attacks and stopping the other team's attacks.
+
+3. **Jaka Bijol (Defender):**
+Jaka Bijol is a strong defender in FIFA 24. He's solid in defense and good in the air. Bijol reads the game well and makes important tackles to stop the other team's attacks. He brings stability and reliability to Slovenia's defense.
+
+4. **Sandi Lovrić (Midfielder):**
+Sandi Lovrić is an important midfielder in FIFA 24. He's known for his skill and vision. Lovrić creates chances for his team with his smart passes and playmaking ability. He controls the pace of the game and helps his team attack effectively.
+
+5. **Benjamin Šeško (Forward):**
+    Benjamin Šeško is a young forward who's great at scoring goals in FIFA 24. Even though he's young, he's quick and skillful. He's good at getting past defenders and creating chances to score. Šeško's ability to find the goal and finish chances makes him a dangerous player.
+
+6. **Miha Zajc (Midfielder):**
+    Miha Zajc is another talented midfielder in FIFA 24. He's skilled with the ball and can score goals from midfield. Zajc adds creativity and energy to his team's midfield play. His ability to score goals from midfield positions makes him a threat to the other team.
+
+
+
+These six players, each excelling in their respective positions, form the backbone of the Slovenian team in FIFA 24 and are therefore the players to watch.
+
+## 9 Weaknesses & Tactic to adopt
+
+#### General tactic
+
+Slovenia typically adopts a balanced tactical approach, focusing on organized defending while looking to exploit counterattacking opportunities. They often maintain a compact defensive shape, with midfielders dropping deep to provide defensive cover and limit space for the opposition. Quick transitions from defense to attack, utilizing the pace and skill of players like Šeško, are a key aspect of Slovenia's gameplay.
+
+#### Strengths
+
+**Solid Defense**: Led by the commanding presence of Jan Oblak in goal, Slovenia boasts a resilient defense capable of frustrating opposing attackers and keeping clean sheets.
+
+**Creative Midfield**: Josip Iličić's playmaking abilities combined with the technical skill of midfielders like Miha Zajc provide Slovenia with creativity and flair in midfield.
+
+**Attacking Threat**: With Benjamin Šeško leading the frontline, Slovenia poses a potent attacking threat, capable of scoring goals in many situations.
+
+#### Weaknesses
+
+**Lack of Depth**: While Slovenia possesses quality in key positions, their squad depth may be a concern, especially in midfield and defensive areas.
+
+**Vulnerability to High Pressure**: Slovenia's reliance on quick transitions leaves them susceptible to high-pressing opponents who disrupt their build-up play and force turnovers in dangerous areas.
+
+**Inexperience in Key Areas**: Despite the presence of talented individuals, Slovenia may lack experience in high-pressure situations, particularly in international competitions, which could affect their decision-making and composure.
+
+
+
