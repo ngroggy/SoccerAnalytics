@@ -1731,13 +1731,13 @@ for val in physical_data.keys():
 
 ## 7 Fifa ranking, monetary values of the players
 
-#### Fifa rating
+### 7.1 Fifa rating
 
 ![slovenia](uploads/6fcecaa356e75c1f10dc1366a7fed302/slovenia.png)
 
 An examination of Slovenia's FIFA ratings over the past four years reveals a small progression. In the most recent year, Slovenia has risen from 64th to 56th place, indicating a correction towards their average rank. Based on their rating, it appears that Slovenia may not pose as formidable a challenge for strong opponents. For instance, we, Denmark,  holds the 22nd position, suggesting that from this standpoint, the match seems to be in our favor.
 
-#### Transfer value
+### 7.2 Transfer value
 
 According to the website Transfermarkt, two players hold considerable value for the Slovenian team: Jan Oblak and Benjamin Šeško. 
 
@@ -1749,11 +1749,11 @@ Jan Oblak, valued at 30€ million, is a standout goalkeeper renowned for his ex
 
 Benjamin Šeško, valued at 40€ million, is a promising young talent known for his prowess as a forward. Despite his relatively young age, Šeško has shown great potential with his goal-scoring ability and versatility on the field.
 
-Given their significant value and potential impact on the team, Jan Oblak and Benjamin Šeško are expected to be the two players to watch closely during Slovenia's matches.
+Given their significant value and potential impact on the team, Jan Oblak and Benjamin Šeško are expected to be two players to watch closely during Slovenia's matches.
 
 #### Fifa 24 - the video game
 
-In FIFA 24, the Slovenian national team boasts six players with ratings surpassing 75, indicating their proficiency within the virtual football realm. Here's a summary of each player's strengths based on the video.
+In FIFA 24, the Slovenian national team boasts six players with ratings surpassing 75, indicating their proficiency within the virtual football game. Here's a summary of each player's strengths based on their analysis.
 
 ![fifa_game](uploads/cfc8a7fbaf14c417d101d142853f1b51/fifa_game.png)
 
@@ -1775,17 +1775,15 @@ Sandi Lovrić is an important midfielder in FIFA 24. He's known for his skill an
 6. **Miha Zajc (Midfielder):**
     Miha Zajc is another talented midfielder in FIFA 24. He's skilled with the ball and can score goals from midfield. Zajc adds creativity and energy to his team's midfield play. His ability to score goals from midfield positions makes him a threat to the other team.
 
-
-
-These six players, each excelling in their respective positions, form the backbone of the Slovenian team in FIFA 24 and are therefore the players to watch.
+These six players, each excelling in their respective positions, form the strongest part of the Slovenian team in FIFA 24 and are therefore players to watch.
 
 ## 9 Weaknesses & Tactic to adopt
 
-#### General tactic
+## 9.1 General tactic
 
 Slovenia typically adopts a balanced tactical approach, focusing on organized defending while looking to exploit counterattacking opportunities. They often maintain a compact defensive shape, with midfielders dropping deep to provide defensive cover and limit space for the opposition. Quick transitions from defense to attack, utilizing the pace and skill of players like Šeško, are a key aspect of Slovenia's gameplay.
 
-#### Strengths
+## 9.2 Strengths
 
 **Solid Defense**: Led by the commanding presence of Jan Oblak in goal, Slovenia boasts a resilient defense capable of frustrating opposing attackers and keeping clean sheets.
 
@@ -1793,7 +1791,7 @@ Slovenia typically adopts a balanced tactical approach, focusing on organized de
 
 **Attacking Threat**: With Benjamin Šeško leading the frontline, Slovenia poses a potent attacking threat, capable of scoring goals in many situations.
 
-#### Weaknesses
+## 9.3 Weaknesses
 
 **Lack of Depth**: While Slovenia possesses quality in key positions, their squad depth may be a concern, especially in midfield and defensive areas.
 
