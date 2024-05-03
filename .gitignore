@@ -11,3 +11,4 @@ notebooks/input*
 
 .vscode
 notebooks/src/__pycache__/*
+.idea
