@@ -410,9 +410,6 @@ A look at Slovenia's passing network mirrors the statistics from chapter 2. Slov
 
 Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
 
-| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-|![passing_network_Kazakhstan](uploads/47376c9abd631afccf095b46d13f00fb/passing_network_Kazakhstan.png)|![passing_network_Denmark](uploads/846924fd564a7d6345bed50f86a329da/passing_network_Denmark.png)|![passing_network_N_Ireland](uploads/672223d2abaa1bebac3c8933156b946c/passing_network_N_Ireland.png)|![passing_network_Finland](uploads/ee4ca54920803fd55979c7bcc01299d3/passing_network_Finland.png)|![passing_network_San_Marino](uploads/4341cb6b87eb685965e8f4a5a4624d2b/passing_network_San_Marino.png)|
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
