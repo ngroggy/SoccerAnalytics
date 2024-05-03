@@ -702,7 +702,8 @@ The Slovenians' great strength lies in the long passes from their two central de
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![long_passes_map_Kazakhstan](uploads/b5868ef5c95e6dfca745341a72999aec/long_passes_map_Kazakhstan.png)|![long_passes_map_Denmark](uploads/06cd595873444b242340534c4a1cceb9/long_passes_map_Denmark.png)|![long_passes_map_N_Ireland](uploads/db3d8f3215d2a7c93da6846c497fbc69/long_passes_map_N_Ireland.png)|![long_passes_map_Finland](uploads/3b560608d7e5145b9e6882681e284495/long_passes_map_Finland.png)|![interception_map_San_Marino](uploads/cd4aa112101325dcf6b9d27c401b0a8d/interception_map_San_Marino.png)|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
+
 
 #### 3.4.2 Crosses
 
@@ -710,7 +711,8 @@ There is no preferred side in the flank play and a clear key player.
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![crosses_map_Kazakhstan](uploads/f1e0a26f9456e4bd5e0319eafcf325e2/crosses_map_Kazakhstan.png)|![crosses_map_Denmark](uploads/4612f402c332705126f4d0f3873177cc/crosses_map_Denmark.png)|![crosses_map_N_Ireland](uploads/45b20f790ca925a5df7fd4336ca52364/crosses_map_N_Ireland.png)|![crosses_map_Finland](uploads/4df67e62a7b576564fec2433408b9b06/crosses_map_Finland.png)|![crosses_map_San_Marino](uploads/ba1aee325ff9773183dd732b6f333947/crosses_map_San_Marino.png)|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
+
 
 #### 3.4.3 Shots 
 
@@ -718,7 +720,9 @@ What is striking about this statistic is that only shots were taken from the sec
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![shots_map_Kazakhstan](uploads/9d5aa7bfe33568cf84c9a468bfdc6f07/shots_map_Kazakhstan.png)|![shots_map_Denmark](uploads/f7dd2a4e61210fe07f72322c672456ab/shots_map_Denmark.png)|![shots_map_N_Ireland](uploads/71304fac3c59704ec19198a1b30ecab2/shots_map_N_Ireland.png)|![shots_map_Finland](uploads/497bd1068649ce0ca19fa5002cec6c30/shots_map_Finland.png)|![shots_map_San_Marino](uploads/80d2f2b529891fa547f9ddc9a9cf123a/shots_map_San_Marino.png)|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
+
+
 
 #### 3.4.4 Dribblings
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
@@ -726,7 +730,8 @@ Verbic's dribbling strength in particular must be emphasized here. There is an i
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![duel_map_Kazakhstan](uploads/065671c072dc61dc149c888f0b4d7e74/duel_map_Kazakhstan.png)|![duel_map_Denmark](uploads/ba184ff4b0298660794161ae7db36c2b/duel_map_Denmark.png)|![duel_map_N_Ireland](uploads/a9c8431fc4276314216c29cf25e208e6/duel_map_N_Ireland.png)|![fouls_map_Finland](uploads/ede0cb3ce4849306fb2a13d088050bca/fouls_map_Finland.png)|![duel_map_San_Marino](uploads/7707235a262e826885b07ff840efa4d3/duel_map_San_Marino.png)|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
+
 
 #### 3.4.5 Interceptions
 
@@ -734,13 +739,16 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![interception_map_Kazakhstan](uploads/eafbc580d6697f0ac954d7ef5fd33402/interception_map_Kazakhstan.png)|![interception_map_Denmark](uploads/b2850a7157e79cd0a1625f423e2d9b86/interception_map_Denmark.png)|![interception_map_N_Ireland](uploads/0ec6dcec502e7411e1450d8336ee3928/interception_map_N_Ireland.png)|![duel_map_Finland](uploads/9e4ca68a9697b7618c670f217f2d2a2d/duel_map_Finland.png)|![interception_map_San_Marino](uploads/fa47886083cd6343275db14d08c839a5/interception_map_San_Marino.png)|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
+
+
+
 
 #### 3.4.6 Fouls
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|![fouls_map_Kazakhstan](uploads/5d20a3de9882ecac24a9b86ef61cef62/fouls_map_Kazakhstan.png)|![fouls_map_Denmark](uploads/7b0cf0e5d5c23638c52f5336debf03f0/fouls_map_Denmark.png)|![fouls_map_N_Ireland](uploads/103ce6597298056036704881c7c07732/fouls_map_N_Ireland.png)|![fouls_map_Finland](uploads/45a0ebba651eed5b5708d4968483ee87/fouls_map_Finland.png)||![fouls_map_San_Marino](uploads/0fbd8d67c76c4b688c9702fbb68546b4/fouls_map_San_Marino.png)
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|
 
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
