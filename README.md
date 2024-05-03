@@ -707,6 +707,7 @@ The Slovenians' great strength lies in the long passes from their two central de
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
@@ -720,6 +721,7 @@ There is no preferred side in the flank play and a clear key player.
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
@@ -732,6 +734,7 @@ What is striking about this statistic is that only shots were taken from the sec
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
@@ -744,6 +747,7 @@ Verbic's dribbling strength in particular must be emphasized here. There is an i
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
@@ -755,6 +759,7 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
@@ -764,6 +769,7 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
 | Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
