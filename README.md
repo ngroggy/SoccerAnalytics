@@ -13,14 +13,27 @@ _Please fill in the following table._
 </details>
 
 <details>
-<summary>TA Comments</summary>
+<summary>TA Comments :warning: April 19 </summary>
 
 Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
 
 - [ ] when saving, please indicate what you changed in a meaningful commit messages
-- [ ] draft due: **Monday, April 8**
+- [x] draft due: **Monday, April 8**
+- Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
+- You make some claims about 442 formations but it is not clear where you are taking this from.
+- Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
+- Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
+- Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
+- Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
+- You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
+- Some of your set piece analysis might be more informative when including other matches (see comment above).
+- Nice that you have a summary at the end of the report with weaknesses and suggested tactics
+- Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
 - [ ] final version due: **Friday, May 24** 
 </details>
+
+
+
 
 ### Comments for the TA
 
@@ -33,6 +46,20 @@ For the final version, we plan to:
 1. Gather statistics for all previous matches.
 2. Potentially include more advanced metrics like pitch control.
 3. Not only describe the statistics but also analyze them, illustrating situations in which Slovenia could be strong or expose weaknesses.
+
+
+### TODOs:
+
+- [ ] Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
+- [x] You make some claims about 442 formations but it is not clear where you are taking this from.
+- [ ] Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
+- [ ] Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
+- [ ] Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
+- [ ] Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
+- [ ] You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
+- [ ] Some of your set piece analysis might be more informative when including other matches (see comment above).
+- [ ] Nice that you have a summary at the end of the report with weaknesses and suggested tactics
+- [x] Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
 
 # Match \#06 (SVN-DEN): preparing Denmark to play against Slovenia
 
@@ -56,10 +83,7 @@ Our preparation for the group match of the European Championship consists in a f
 
 Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
-![LineUp](uploads/1677c009d8c824e071244302e88e9374/LineUp.png)
-
-
-After analyzing their recent match against Malta, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
+After analyzing their recent matches, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
 
 ### 1.2 Last 5 qualifier games slovenia
 
@@ -79,13 +103,33 @@ Currently Benjamin Verbič is injured and doesn't have an official return date. 
 
 ### 2.1 Formation and line up
 
-We start first by analysing the common composition of Slovenia. In the last 9 games against Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 8 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
+We start first by analysing the common composition of Slovenia. In the last 10 games against Portugal, Malta, USA, Kazakhstan, Denamrk, North Ireland and Finland, Slovenia used 9 times a 4-4-2 composition and the only modified composition was when Benjamin Sesko wasn't available. Therefore we can excpect the composition to be probably the same. Here is a quick recap of pro ans cons of the 4-4-2 composition.
+
+| 26 Mar vs Portugal | 21 Mar vs Malta | 20 Jan vs USA | 20 Nov vs Kazakhstan | 17 Nov vs Denmark |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![vs_portugal](uploads/a0f20c331963edf02f6298edc7fd9744/vs_portugal.png) | ![vs_malta](uploads/0343977259e92b21fc9084a2b899c27b/vs_malta.png)|![vs_usa](uploads/c7cef98b8e18248667adee6c0cfb168e/vs_usa.png) | ![vs_khazakhtan](uploads/4e8a07126922117730e2f33efeb3aaf3/vs_khazakhtan.png)|![vs_denmark](uploads/eebe07a8839e6b121098b6a9b537adfe/vs_denmark.png) |
+
+|17 Oct vs N. Ireland | 14 Oct vs Finland | 10 Sep vs San Marino | 7 Sep vs N. Ireland | 19 Jun vs Denmark |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![vs_portugal](uploads/a0f20c331963edf02f6298edc7fd9744/vs_portugal.png) | ![vs_malta](uploads/0343977259e92b21fc9084a2b899c27b/vs_malta.png)|![vs_usa](uploads/c7cef98b8e18248667adee6c0cfb168e/vs_usa.png) | ![vs_khazakhtan](uploads/4e8a07126922117730e2f33efeb3aaf3/vs_khazakhtan.png)|![vs_denmark](uploads/eebe07a8839e6b121098b6a9b537adfe/vs_denmark.png) |
 
 Here is a quick refresh of the pros and cons of 4-4-2:
 
 **Pros :** With a strong defense, wide attack, and quick movement into the opponent's territory, the 4-4-2 excels in counter-attacks. Defensively, it allows for a compact setup with two lines of four players, while the forwards remain poised for quick offensive opportunities. The presence of two strikers presents a unique challenge for defenders, as it reduces time and space on the ball and increases the threat of one-on-one situations. Additionally, passing out from the back becomes more challenging with constant pressure from two attackers.
 
 **Cons :** In a 4-4-2 formation, teams may struggle to control the midfield, especially against opponents using a midfield trio, leading to less possession. Additionally, the 4-4-2 lacks defensive depth, as players within the same line may leave gaps. Despite being compact, this formation is vulnerable to line-breaking passes, making it easier for opponents to bypass multiple players at once. Defensive setups like the 4-1-4-1 offer better coverage between the lines.When attacking, the midfield and defensive lines align closely, restricting forward passing options. This setup can limit the team's ability to create passing opportunities compared to formations with players spread across different lines.
+
+<details><summary>Sources</summary>
+
+Images: They are screenshot of Google Chrome output when we type : Last games of slovenia
+
+1. [Coachesvoice](https://www.coachesvoice.com/cv/4-4-2-football-tactics-ferguson-simeone-hasenhuttl-dyche/#:~:text=There%20can%20also%20be%20a,out%20four%20players%20at%20once.)
+2. [Jobs in football](https://jobsinfootball.com/blog/tactics/4-4-2-formation/)
+3. [Build line up](https://www.buildlineup.com/articles/1/football-formation-4-4-2)
+4. [Coachesvoice](https://www.coachesvoice.com/cv/4-4-2-diamond-football-tactics-explained-klopp-potter-allegri/)
+5. [Comment jouer le 4-4-2 (in french)](https://www.entrainement-foot.fr/blog/tactique-comment-jouer-en-4-4-2-guide-complet#)
+
+</details>
 
 ### 2.2 Key statistics
 
@@ -366,7 +410,14 @@ A look at Slovenia's passing network mirrors the statistics from chapter 2. Slov
 
 Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
 
-![passing_network](uploads/8becf0341d7abb4438f3fbfcf7ce821d/passing_network.png)
+
+|Kazakhstan|Denmark|N_Ireland|
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
+|Finland|San_Marino|N_Ireland_2|
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 <details>
   <summary> code </summary>
@@ -597,17 +648,9 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 
 It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
 
-<p align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/B_Šeško_Heatmaps.png" alt="Image 1" style="width:24%; display:inline-block;margin-right: 2%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Ž_Vipotnik_Heatmaps.png" alt="Image 2" style="width:24%; display:inline-block;">
-  </p>
+![FrontRow](uploads/b5f78ba57adbbe3d904a1d29f327af50/FrontRow.png)
 
-<div style="display:flex;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/J_Mlakar_Heatmaps.png" alt="Image 3" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/T_Elšnik_Heatmaps.png" alt="Image 3" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_Čerin_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/B_Verbič_Heatmaps.png" alt="Image 2" style="width:24%;">
-</div>
+![SecondRow](uploads/4e84976150b60afde79ac028f1cee00f/SecondRow.png)
 
 <details>
   <summary> code </summary>
@@ -660,42 +703,14 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 The Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
 
-![long_passes_map](uploads/aac4e51579877e742696cb259e19e0b2/long_passes_map.png)
 
-<details>
-  <summary> code </summary>
-    
-```python
-long_passes = df_events[df_events["type.secondary"].str.contains('long_pass')]
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-
-fig, ax = pitch.draw()
-
-for i,shot in long_passes.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
-    color = "red"
-    if 'loss' in shot['type.secondary']:
-        color = "white"
-    #plot England
-    if (team_name!='Denmark'):
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
-        ax.add_patch(shotCircle)
-
-#set title
-fig.suptitle("Long passes map (red ==> success)", fontsize = 12)
-plt.savefig("plots/long_passes_map.png", dpi=400)
-plt.show()
-```
-
-</details>
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 
 
@@ -703,205 +718,145 @@ plt.show()
 
 There is no preferred side in the flank play and a clear key player.
 
-![crosses_map](uploads/0076833843da739895f217c8e2df80c8/crosses_map.png)
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-<details>
-  <summary> code </summary>
-    
-```python
-crosses = df_events[df_events["type.secondary"].str.contains('cross')]
-
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-fig, ax = pitch.draw()
-
-for i,shot in crosses.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
-    color = "red"
-    if 'loss' in shot['type.secondary']:
-        color = "white"
-    #plot England
-    if (team_name!='Denmark'):
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
-        ax.add_patch(shotCircle)
-
-#set title
-fig.suptitle("Cross map (red ==> success)", fontsize = 12)
-plt.savefig("plots/crosses_map.png", dpi=400)
-plt.show()
-```
-
-</details>
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 
 #### 3.4.3 Shots 
 
 What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
-![shots_map](uploads/192afb5cc369a2c52711a4cb88d9427c/shots_map.png)
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-<details>
-  <summary> code </summary>
-    
-```python
-shots = df_events[~df_events["shot.isGoal"].isna()]
-
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-fig, ax = pitch.draw()
-
-for i,shot in shots.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
-    #plot England
-    if (team_name!='Denmark'):
-        color = "white"
-        if goal:
-            color = "red"
-
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
-        ax.add_patch(shotCircle)
-
-#set title
-fig.suptitle("Shots map (red ==> goal)", fontsize = 12)
-plt.savefig("plots/shots_map.png", dpi=400)
-plt.show()
-```
-
-</details>
-
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 
 #### 3.4.4 Dribblings
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
 Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
 
-![duels_map](uploads/2fc39c9157c2ac1c56d621fa45b3084c/duels_map.png)
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-<details>
-  <summary> code </summary>
-    
-```python
-duels = df_events[df_events["type.primary"].str.contains('duel')]
-
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-
-fig, ax = pitch.draw()
-
-for i,shot in duels.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
-    color = "red"
-    if 'loss' in shot['type.secondary']:
-        color = "white"
-    #plot England
-    if (team_name!='Denmark'):
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
-        ax.add_patch(shotCircle)
-
-#set title
-fig.suptitle("Dribbles map (red ==> success)", fontsize = 12)
-plt.savefig("plots/duels_map.png", dpi=400)
-plt.show()
-```
-
-</details>
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.5 Interceptions
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
-![interception_map](uploads/012ba0113673167beb5850f8704c82b3/interception_map.png)
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-<details>
-  <summary> code </summary>
-    
-```python
-interceptions = df_events[df_events["type.primary"].str.contains('interception')]
-
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-
-fig, ax = pitch.draw()
-
-for i,shot in interceptions.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
-    color = "red"
-    if 'loss' in shot['type.secondary']:
-        color = "white"
-    #plot England
-    if (team_name!='Denmark'):
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        #plt.text(x/100.0 * pitch_length-4, y/100.0 * pitch_width - 4,shot['player.name'])
-        ax.add_patch(shotCircle)
-
-#set title
-fig.suptitle("Interception map (red ==> success)", fontsize = 12)
-plt.savefig("plots/interception_map.png", dpi=400)
-plt.show()
-```
-
-</details>
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.6 Fouls
 
+| Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+
+| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+
+
 The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
-![foul_map](uploads/c9c55063e36ed5d9f5c967196e3bd961/foul_map.png)
 
 <details>
   <summary> code </summary>
     
 ```python
-fouls = df_events[df_events["type.secondary"].str.contains('foul')]
+def intercept_color_funcion(entry):    
+    color = "red"
+    if 'loss' in entry['type.secondary']:
+        color = "white"
+    return color
 
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
-fig, ax = pitch.draw()
+def duel_color_function(entry):
+    color = "red"
+    if 'loss' in entry['type.secondary']:
+        color = "white"
+    return color
 
-for i,shot in fouls.iterrows():
-    #get the information
-    x=shot['location.x']
-    y=shot['location.y']
-    goal=shot['shot.isGoal']
-    team_name=shot['team.name']
-    #set circlesize
-    circleSize=2
+def long_passes_color_function(entry):
+    color = "red"
+    if 'loss' in entry['type.secondary']:
+        color = "white"
+    return color
+
+def cross_color_function(entry):
+    color = "red"
+    if 'loss' in entry['type.secondary']:
+        color = "white"
+    return color
+
+def shot_color_function(entry):
+    goal=entry['shot.isGoal']
     color = "white"
+    if goal:
+        color = "red"
+    return color
 
-    if 'yellow_card' in shot['type.secondary']:
+def fouls_color_function(entry):
+    color = "white"
+    if 'yellow_card' in entry['type.secondary']:
         color = "yellow"
+    return color
 
-    #plot England
-    if (team_name!='Denmark'):
-        shotCircle=plt.Circle((x/100.0 * pitch_length, y/100.0 * pitch_width),circleSize,color=color)
-        ax.add_patch(shotCircle)
+def plot_values(type, against, values, color_function, plot_text = False):
+    pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe=True)
 
-#set title
-fig.suptitle("Foul map (yellow ==> Yellow Card)", fontsize = 12)
-plt.savefig("plots/foul_map.png", dpi=400)
-plt.show()
+    fig, ax = pitch.draw()
+
+    for i,entry in values.iterrows():
+        #get the information
+        x=entry['location.x']
+        y=entry['location.y']
+        goal=entry['shot.isGoal']
+        team_name=entry['team.name']
+        #set circlesize
+        circleSize=1
+        color = color_function(entry)
+        # Plot England
+        if (team_name=='Slovenia'):
+            shotCircle=plt.Circle((y/100.0 * pitch_width, x/100.0 * pitch_length),circleSize,color=color)
+            if plot_text:
+                plt.text(y/100.0 * pitch_width-4, x/100.0 * pitch_length - 4,entry['player.name'])
+            ax.add_patch(shotCircle)
+
+    plt.savefig(f"plots/3-tactical/{type}_map_{against}.png", dpi=400)
+
+
+data = [("Kazakhstan", "5414324"),("Denmark", "5414324"),("N_Ireland", "5414284"),("Finland", "5414260"),("San_Marino", "5414226")]
+
+for against, match_id in data:
+    # Read data
+    df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
+
+    # Save values
+    plot_values("interception", against, df_events[df_events["type.primary"].str.contains('interception')], intercept_color_funcion)
+    plot_values("duel", against, df_events[df_events["type.primary"].str.contains('duel')], duel_color_function)
+    plot_values("long passes", against, df_events[df_events["type.secondary"].str.contains('long_pass')], long_passes_color_function)
+    plot_values("crosses", against, df_events[df_events["type.secondary"].str.contains('cross')], cross_color_function)
+    plot_values("shots", against, df_events[~df_events["shot.isGoal"].isna()],shot_color_function)
+    plot_values("fouls", against, df_events[df_events["type.secondary"].str.contains('foul')],fouls_color_function)
+
 ```
 
 </details>
@@ -914,7 +869,7 @@ Our analysis of Slovenia's defensive performance in the European Championship qu
 
 The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/defense_statistics.png)
+![defense_statistics](uploads/44c2c922ef5ccc7c3b7af7e21eab02cd/defense_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -959,7 +914,7 @@ Slovenia's defensive efforts were markedly more dominant and effective than thei
 
 In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
 
-![alt text](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/defensive_efficiency_style.png)
+![defensive_efficiency_style](uploads/1865d7c12a80bfcc19763cd4f594f89f/defensive_efficiency_style.png)
 
 <details>
   <summary> code </summary>
@@ -1029,12 +984,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 It's clear to see that the 4-man chain was played consistently throughout the game and that they stayed true to their strategy. In other words, the coach doesn't allow himself to be tempted into plan B, C or D, but draws a clear line. Karnicnik is talented on both feet, which must be taken into account when analyzing the game. In very rare cases, the chain dared to cross the halfway line, but for the majority of the game, it certainly focused solely on defending.
 
-<div style="display:flex;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/E_Janža_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/J_Bijol_Heatmaps.png" alt="Image 2" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/M_Blažič_Heatmaps.png" alt="Image 1" style="width:24%;">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Ž_Karničnik_Heatmaps.png" alt="Image 3" style="width:24%;">
-</div>
+![DefensiveRow](uploads/14120d63275d18a01a50b1db56b398a0/DefensiveRow.png)
 
 <details>
   <summary> code </summary>
@@ -1106,25 +1056,25 @@ In this section the players of the match Denmark-Slovenia on 17.11.2023 are anal
 #### 4.3.1 Total duels and duels won: Slovenia
 The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
 
-![alt text](notebooks/plots/4-defense/duel_performance_svn_final.png)
+![duel_performance_svn_final](uploads/853d576009a2834f0b53a4eb90a09da2/duel_performance_svn_final.png)
 
 #### 4.3.2 Duels won percentage: Slovenia
 It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
 J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
 
-![alt text](notebooks/plots/4-defense/duel_percentage_sorted_svn_final.png)
+![duel_percentage_sorted_svn_final](uploads/cd3e796ac13b153997420196cf02b000/duel_percentage_sorted_svn_final.png)
 
 #### 4.3.3 Total duels and duels won: Denmark
 Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
 
-![alt text](notebooks/plots/4-defense/duel_performance_dnk_final.png)
+![duel_performance_dnk_final](uploads/66b057caa633789604a75eb70511a062/duel_performance_dnk_final.png)
 
 #### 4.3.4 Duels won percentage: Denmark
 With J. Andersen, V. Kristiansen and J. Maehle the defence line of denmark has a percentage of over 65% duels won, which is acceptable but also can be improven.
 It has to be mentioned that Y. Poulsen with a total of 4 duels and 3 duels won has a percentage of won duels of 75%. The help of the strikers in defending mode can have a big impact on whether the game is won or lost.
 In the plot below the stats of Denmark are shown.
 
-![alt text](notebooks/plots/4-defense/duel_percentage_sorted_dnk_final.png)
+![duel_percentage_sorted_dnk_final](uploads/e033f08ba3a262882fabde9b3a3a6784/duel_percentage_sorted_dnk_final.png)
 
 <details>
 <summary> code</summary>
@@ -1153,7 +1103,6 @@ from src.dataloader import dataloader
 match_id = "5414302"
 df_events = dataloader(match_id)
 df_events.columns
-
 
 # duel events
 df_duels = df_events[df_events['type.primary'] == 'duel']
@@ -1238,11 +1187,17 @@ To the analysis of the defense the goal keeper needs also to be considered. He i
 
 #### 4.4.1 Shots parried per goalkeeper
 
-It can be seen in the following plot that Denmark had a total of 8 shot on target and 2 goals scored. For J. Oblak, the goalkeeper of Slovenia, it therefore makes a percentage of parried shots on targets of 75%.
+It can be seen two plot below that Denmark had a total of 8 shot on target and 2 goals scored. For J. Oblak, the goalkeeper of Slovenia, it therefore makes a percentage of parried shots on targets of 75%.
 With a percentage parried of 0% K. Schmeichel the goalkeeper of Denmark does not have a good statistic only regarding the game from November 17, 2023. With a shot on target of 1 and 1 scored goal the Slovenien strikers where 100% effective when the shot was on target.
-The plot below shos cases these stats.
 
-![alt text](notebooks/plots/4-defense/Shots_parried.png)
+By analayzing the goal zone where the shot hit the goal it can be seen which saves the goalkeepers needed to do. In the following picture the goal zones according to Wyscout are shown.
+
+![wyscout_goal](uploads/1fad8af06a7d6a3d097f200d43c1e6ca/wyscout_goal.png)
+
+It can be seen from the chart below that J. Oblak had to parry a lot of low shots in the centre and his left corner.
+The shot from Slovenia, it was a free kick, was shot in the top right corner from striker side of view and K. Schmeichel was not able to parry the shot.
+
+![Shots_parried](uploads/f58574f5296f99418f1f3349f44a6e2d/Shots_parried.png)
 
 <details>
 <summary> code</summary>
@@ -1252,7 +1207,7 @@ The plot below shos cases these stats.
 
 # Goalkeeper events: Shot on Target
 df_goalkeeper = df_events[(df_events['shot.onTarget'] == True)]
-#display(df_goalkeeper)
+display(df_goalkeeper)
 
 # Shot on target from Denmark (In final version the goalkeeper is not hard coded)
 df_ontarget_dnk = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'J. Oblak')]
@@ -1286,16 +1241,70 @@ df_parried_dnk = 100 - (df_isgoal_svn_count / df_ontarget_svn_count * 100)
 df_parried_svn = 100 - (df_isgoal_dnk_count / df_ontarget_dnk_count * 100)
 #print(df_parried_svn)
 
+# Goal zone Shots on target Denmark  GC
+gc_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gc'].shape[0]
+print(gc_dnk)
+# Goal zone Shots on target Slovenia  GC
+gc_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gc'].shape[0]
+print(gc_svn)
+
+# Goal zone Shots on target Denmark  GR
+gr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gr'].shape[0]
+print(gr_dnk)
+# Goal zone Shots on target Slovenia  GR
+gr_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gr'].shape[0]
+print(gr_svn)
+
+# Goal zone Shots on target Denmark  GB
+gb_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gb'].shape[0]
+print(gb_dnk)
+# Goal zone Shots on target Slovenia  GB
+gb_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gb'].shape[0]
+print(gb_svn)
+
+# Goal zone Shots on target Denmark  GBR
+gbr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gbr'].shape[0]
+print(gbr_dnk)
+# Goal zone Shots on target Slovenia  GBR
+gbr_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gbr'].shape[0]
+print(gbr_svn)
+
+# Goal zone Shots on target Denmark  GTR
+gtr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gtr'].shape[0]
+print(gtr_dnk)
+# Goal zone Shots on target Slovenia  GTR
+gtr_svn = df_ontarget_svn[(df_ontarget_svn['shot.goalZone'] == 'gtr') & (df_ontarget_svn['type.primary'] == 'free_kick')].shape[0]
+print("Shot on target was freekick?")
+print(gtr_svn)
+
+# Goal zone Shots on target Denmark  GL
+gl_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gl'].shape[0]
+print(gl_dnk)
+# Goal zone Shots on target Slovenia  GL
+gl_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gl'].shape[0]
+print(gl_svn)
 
 # Create Plots
 # ------------------------------------------------------------------
 dnk_data = {'Shots on Target': df_ontarget_dnk_count,
+            'Shot goal zone: GC': gc_dnk,
+            'Shot goal zone: GR': gr_dnk,
+            'Shot goal zone: GB': gb_dnk,
+            'Shot goal zone: GBR': gbr_dnk,
+            'Shot goal zone: GTR': gtr_dnk,
+            'Shot goal zone: GL': gl_dnk,
             'Shot is Goal': df_isgoal_dnk_count,
-            'Percentage Parried by Opponent Goalkeeper': df_parried_svn,
+            '% Parried by Opp. GK': df_parried_svn,
             }
 svn_data = {'Shots on Target': df_ontarget_svn_count,
+            'Shot goal zone: GC': gc_svn,
+            'Shot goal zone: GR': gr_svn,
+            'Shot goal zone: GB': gb_svn,
+            'Shot goal zone: GBR': gbr_svn,
+            'Shot goal zone: GTR': gtr_svn,
+            'Shot goal zone: GL': gl_svn,
             'Shot is Goal': df_isgoal_svn_count,
-            'Percentage Parried by Opponent Goalkeeper': df_parried_dnk,
+            '% Parried by Opp. GK': df_parried_dnk,
             }
 
 perc_categories = []
@@ -1312,7 +1321,7 @@ Like mentioned above the goalkeeper is a main part of the defense. With the abil
 In the following chart it can be seen that K. Schmeichel had a total of 24 passes. He was often used to calm down the defense and waiting for the right time to launch an attack. Furthermore with a total of 10 high and long passes K. Schmeichel made some passes near and over the own pitch half to start an attack.
 J. Oblak had a total of 18 passes and only 5 high and long passes. This reflects that Slovenia had its main focus on defending and was not often able to get out of their half.
 
-![alt text](notebooks/plots/4-defense/goalkeeper_passes_final.png)
+![goalkeeper_passes](uploads/baf88f90598db23ecdba2e0cad5f1417/goalkeeper_passes.png)
 
 <details>
 <summary> code</summary>
@@ -1385,43 +1394,44 @@ plt.show()
 ```
 </details>
 
+
 ## 5. Set plays
 
 ### 5.1 Corners
 
 This section analyzes the corners of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Corners are a very important part of the game of football as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking opportunities for the defending team. As can be seen from the following graph of corner events, Denmark was the more dominant team, with regards to corners.
 
-![cornerstats](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics.png)
+![corner_statistics](uploads/ea0c3cce26886caefb3f02849a219339/corner_statistics.png)
 
 In total, Denmark received 8 corners and Slovenia only 2. With 8 corners in a match, we can take a closer look at Denmark's offensive tactics and Slovenia's defensive tactics. The statistics of the corners show that 3 of the corners resulted in a shot, 2 of which were on target and 1 was a goal.
 
 If we take a look at the map of the Danes' pass receiver position, we can see more details of their offensive tactics.
 
-![crl_svn](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_DEN.png)
+![corner_recipient_loc_DEN](uploads/acc2d2fb1bc633cc68d582252454a112/corner_recipient_loc_DEN.png)
 
 87.5% of their corners found their target in the middle of the penalty area, while 12.5% were hit far behind the penalty area.
 
 A look at the map of shots after corners shows what happened at the dangerous corners.
 
-![csm_den](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Denmark_shots_corners_map.png)
+![Denmark_shots_corners_map](uploads/991497378c8da09751e25d593d0e6d43/Denmark_shots_corners_map.png)
 
 It is possible to see the shooting positions of the 3 shots after the corners. From this map you can conclude that Denmark is pretty good at generating shooting opportunities after corners if these are whipped into the center of the penalty area. You can also see that Slovenia had trouble defending M. Jensen in aerial duels, as he is their main shot creator from corners with two shots and one goal.
 
 The same analysis can be done for Slovenia as an attacking team. As we can see from the statistics of corner kicks, 1 of the 2 corners resulted in a shot that was not on target.
 
-![crl_svn](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png)
+![corner_recipient_loc_SVN](uploads/e5f63c2932336cc2dc3eee0ce2899d70/corner_recipient_loc_SVN.png)
 
 As Slovenia only had two corner kicks, they could not try multiple corner kick tactics, and as can be seen from the corner kick recipient locations map, all of their corner kick targets were inside the penalty area.
 
 We can get more information from the shots after corner for Slovenia map.
 
-![csm_svn](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Slovenia_shots_corners_map.png)
+![Slovenia_shots_corners_map](uploads/157bdc7c2df9a1e1cc81d41e02e37c7d/Slovenia_shots_corners_map.png)
 
 We see that one of the corners, which was originally targeted at the center of the penalty area, was deflected and immediately taken by M. Zajc as a shot, but not on target and therefore not particularly dangerous.
 
 After corners, there is often an opportunity to launch a counter-attack if they are defended properly. Therefore, we looked at the consecutive counter-attacks after corners for this game, but in this case there were none, as the advanced statistics of corner events show.
 
-![cs_ca](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics_with_ca.png)
+![corner_statistics_with_ca](uploads/d56bf9ef1cf640852c5e9cef5265388c/corner_statistics_with_ca.png)
 
 <details>
 <summary> code</summary>
@@ -1602,31 +1612,31 @@ This section analyzes the free kicks of the match between Denmark and Slovenia o
 
 If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks.
 
-![fk_map](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png)
+![Slovenia_freekick_map](uploads/36588b8d1c739c77db3adafc09e9cc3d/Slovenia_freekick_map.png)
 
 From Slovenia's free-kick map, it can be deduced that Slovenia were pushed back deep into their own half by Denmark's pressing and were sometimes able to get a free-kick out of it. Slovenia also had a direct free-kick from E. Janza, which he was able to convert into a goal. As they are 1 for 1 in goals scored from free kicks, they appear to be very dangerous in this area of the game.
 
-![fk_map](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Denmark_freekick_map.png)
+![Denmark_freekick_map](uploads/f59e996fe396b12027c53bf668ab0c63/Denmark_freekick_map.png)
 
 Denmark's free-kick map shows that the Danes were often stopped by fouls in the build-up to their attacking play, as their free kicks are usually taken at the end of the second third of the pitch. Slovenia also managed to avoid free kicks near their own goal, meaning that Denmark only had one opportunity for an attacking free kick.
 
 It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross.
 
-![fk_avgdst_svn](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png)
+![avg_distance_freekick_slov](uploads/912d9baf2bdba9484f6c3781a1ebb1a4/avg_distance_freekick_slov.png)
 
 With Slovenia, we see that most of the free kicks were around 80 meters, so neither suitable for a cross nor for a direct shot. But as soon as they were closer than 30 meters, they shot directly and were quite efficient in this game. Since they didn't have an offensive free kick cross, we can't say much about that.
 
-![fk_avgdst_den](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_den.png)
+![avg_distance_freekick_den](uploads/a84702827a54b3dc3cf573f59260b869/avg_distance_freekick_den.png)
 
 With Denmark, we see that most of the free kicks were taken around the 70m mark, so they are not suitable for either a cross or a direct shot, but this suggests that they were a bit more offensive than the Slovenians. When they get closer to goal, around the 40-meter mark, they start using the free kicks as crosses. Since they didn't have a direct free kick shot, we can't say much about that.
 
 To see which players shoot free kicks most often, we have listed all players in a diagram.
 
-![fk_player](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png)
+![freekick_takers_slov](uploads/2387a36bb0e4dae0f0df78039217588f/freekick_takers_slov.png)
 
 With Slovenia, you can see that they had a lot of goal kicks and free kicks which defenders like Bijol took, indicating that they were constantly under pressure and in risky situations in their own half around the penalty area.
 
-![fk_player](https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_den.png)
+![freekick_takers_den](uploads/2c52c831c4fb27a3eefe4665bae9b173/freekick_takers_den.png)
 
 Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests that they have been fouled mainly in the build-up to their attacking play.
 
@@ -1890,6 +1900,12 @@ for val in physical_data.keys():
 
 An examination of Slovenia's FIFA ratings over the past four years reveals a small progression. In the most recent year, Slovenia has risen from 64th to 56th place, indicating a correction towards their average rank. Based on their rating, it appears that Slovenia may not pose as formidable a challenge for strong opponents. For instance, we, Denmark,  holds the 22nd position, suggesting that from this standpoint, the match seems to be in our favor.
 
+<details><summary>Sources</summary>
+
+[Fifa ranking](https://inside.fifa.com/fifa-world-ranking/SVN?gender=men)
+
+</details>
+
 ### 7.2 Transfer value
 
 According to the website Transfermarkt, two players hold considerable value for the Slovenian team: Jan Oblak and Benjamin Šeško. 
@@ -1903,6 +1919,12 @@ Jan Oblak, valued at 30€ million, is a standout goalkeeper renowned for his ex
 Benjamin Šeško, valued at 40€ million, is a promising young talent known for his prowess as a forward. Despite his relatively young age, Šeško has shown great potential with his goal-scoring ability and versatility on the field.
 
 Given their significant value and potential impact on the team, Jan Oblak and Benjamin Šeško are expected to be two players to watch closely during Slovenia's matches.
+
+<details><summary>Sources</summary>
+
+[Transfer Markt](https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/155)
+
+</details>
 
 #### Fifa 24 - the video game
 
@@ -1930,13 +1952,19 @@ Sandi Lovrić is an important midfielder in FIFA 24. He's known for his skill an
 
 These six players, each excelling in their respective positions, form the strongest part of the Slovenian team in FIFA 24 and are therefore players to watch.
 
-## 9 Weaknesses & Tactic to adopt
+<details><summary>Sources</summary>
 
-## 9.1 General tactic
+[Fifa video game](https://www.ea.com/games/ea-sports-fc/ratings?gender=0&nationality=44)
+
+</details>
+
+## 8 Weaknesses & Tactic to adopt
+
+### 8.1 General tactic
 
 Slovenia typically adopts a balanced tactical approach, focusing on organized defending while looking to exploit counterattacking opportunities. They often maintain a compact defensive shape, with midfielders dropping deep to provide defensive cover and limit space for the opposition. Quick transitions from defense to attack, utilizing the pace and skill of players like Šeško, are a key aspect of Slovenia's gameplay.
 
-## 9.2 Strengths
+### 8.2 Strengths
 
 **Solid Defense**: Led by the commanding presence of Jan Oblak in goal, Slovenia boasts a resilient defense capable of frustrating opposing attackers and keeping clean sheets.
 
@@ -1944,7 +1972,7 @@ Slovenia typically adopts a balanced tactical approach, focusing on organized de
 
 **Attacking Threat**: With Benjamin Šeško leading the frontline, Slovenia poses a potent attacking threat, capable of scoring goals in many situations.
 
-## 9.3 Weaknesses
+### 8.3 Weaknesses
 
 **Lack of Depth**: While Slovenia possesses quality in key positions, their squad depth may be a concern, especially in midfield and defensive areas.
 
