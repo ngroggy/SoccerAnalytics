@@ -1890,7 +1890,7 @@ for val in physical_data.keys():
 
 </details>
 
-## 7 Goals
+## 7 Goals
 
 
 | Vs : Denmark | Vs : Portugal | Vs : Portugal |
