@@ -1895,12 +1895,12 @@ for val in physical_data.keys():
 
 | Vs : Denmark | Vs : Portugal | Vs : Portugal |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video1.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video2.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video3.mov?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video1.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video2.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video3.mov?raw=true" align="center" height="350" width="600"/>|
 
 
 | Vs : Usa | Vs : Khazakhtan | Vs : Khazakhtan |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video4.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video5.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video6.mov?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video4.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video5.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/video6.mov?raw=true" align="center" height="350" width="600"/>|
 
 ## 8 Fifa ranking, monetary values of the players
 
