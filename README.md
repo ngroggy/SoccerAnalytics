@@ -1890,11 +1890,21 @@ for val in physical_data.keys():
 
 </details>
 
+## 7 Goals
 
 
-## 7 Fifa ranking, monetary values of the players
+| Vs : Denmark | Vs : Portugal | Vs : Portugal |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video1.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video2.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video3.mov?raw=true" align="center" height="350" width="600"/>|
 
-### 7.1 Fifa rating
+
+| Vs : Usa | Vs : Khazakhtan | Vs : Khazakhtan |
+|---|---|---|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video4.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video5.mov?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/video6.mov?raw=true" align="center" height="350" width="600"/>|
+
+## 8 Fifa ranking, monetary values of the players
+
+### 8.1 Fifa rating
 
 ![slovenia](uploads/6fcecaa356e75c1f10dc1366a7fed302/slovenia.png)
 
@@ -1906,7 +1916,7 @@ An examination of Slovenia's FIFA ratings over the past four years reveals a sma
 
 </details>
 
-### 7.2 Transfer value
+### 8.2 Transfer value
 
 According to the website Transfermarkt, two players hold considerable value for the Slovenian team: Jan Oblak and Benjamin Šeško. 
 
@@ -1958,13 +1968,13 @@ These six players, each excelling in their respective positions, form the strong
 
 </details>
 
-## 8 Weaknesses & Tactic to adopt
+## 9 Weaknesses & Tactic to adopt
 
-### 8.1 General tactic
+### 9.1 General tactic
 
 Slovenia typically adopts a balanced tactical approach, focusing on organized defending while looking to exploit counterattacking opportunities. They often maintain a compact defensive shape, with midfielders dropping deep to provide defensive cover and limit space for the opposition. Quick transitions from defense to attack, utilizing the pace and skill of players like Šeško, are a key aspect of Slovenia's gameplay.
 
-### 8.2 Strengths
+### 9.2 Strengths
 
 **Solid Defense**: Led by the commanding presence of Jan Oblak in goal, Slovenia boasts a resilient defense capable of frustrating opposing attackers and keeping clean sheets.
 
@@ -1972,7 +1982,7 @@ Slovenia typically adopts a balanced tactical approach, focusing on organized de
 
 **Attacking Threat**: With Benjamin Šeško leading the frontline, Slovenia poses a potent attacking threat, capable of scoring goals in many situations.
 
-### 8.3 Weaknesses
+### 9.3 Weaknesses
 
 **Lack of Depth**: While Slovenia possesses quality in key positions, their squad depth may be a concern, especially in midfield and defensive areas.
 
