@@ -649,22 +649,106 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the the
 It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
 
 
+### San Marino vs. Slovenia
 
 <table>
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" width="90"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" width="90"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="100"></td>
   </tr>
 </table>
 
-<table>
+<div style="text-align: center;">
+  <table style="margin: auto;">
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/J_Mlakar_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/S_Lovri%C4%8D_Heatmaps.png" alt="Image 4" width="100"></td>
   </tr>
 </table>
+</div>
+
+### Slovenia vs Finnland
+
+<table>
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+  </tr>
+</table>
+
+<div style="text-align: center;">
+  <table style="margin: auto;">
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+  </tr>
+</table>
+</div>
+
+### Northern Island vs. Slovenia
+
+<table>
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+  </tr>
+</table>
+
+<div style="text-align: center;">
+  <table style="margin: auto;">
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+  </tr>
+</table>
+</div>
+
+### Denmark vs. Slovenia
+
+<table>
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+  </tr>
+</table>
+
+<div style="text-align: center;">
+  <table style="margin: auto;">
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+  </tr>
+</table>
+</div>
+
+### Slovenia vs. Kazakhstan
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+  </tr>
+</table>
+
+<div style="text-align: center;">
+  <table style="margin: auto;">
+  <tr>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+  </tr>
+</table>
+</div>
 
 
 ![FrontRow](uploads/b5f78ba57adbbe3d904a1d29f327af50/FrontRow.png)
