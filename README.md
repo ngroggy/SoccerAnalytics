@@ -654,7 +654,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 <table>
   <tr>
     <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C5%A0porar_Heatmaps.png" width="100"></td>
   </tr>
 </table>
 
@@ -673,7 +673,7 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 <table>
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/A_%C5%A0porar_Heatmaps.png" width="100"></td>
     <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
   </tr>
 </table>
@@ -681,10 +681,10 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 <div style="text-align: center;">
   <table style="margin: auto;">
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/J_Mlakar_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="100"></td>
   </tr>
 </table>
 </div>
@@ -693,18 +693,18 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 <table>
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/A_%C5%A0porar_Heatmaps.png" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="100"></td>
   </tr>
 </table>
 
 <div style="text-align: center;">
   <table style="margin: auto;">
   <tr>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
-    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/J_Mlakar_Heatmaps.png" alt="Image 1" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="100"></td>
+    <td><img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="100"></td>
   </tr>
 </table>
 </div>
