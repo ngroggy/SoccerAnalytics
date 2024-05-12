@@ -1502,39 +1502,40 @@ plt.show()
 
 ### 5.1 Corners
 
-This section analyzes the corners of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Corners are a very important part of the game of football as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking opportunities for the defending team. As can be seen from the following graph of corner events, Denmark was the more dominant team, with regards to corners.
+In this section, the corner kicks from Slovenia's last 5 European Championship qualifiers are analyzed. Corners are a very important part of the game of soccer, as they can often lead to scoring opportunities for the attacking team, but also to counter-attacking chances for the defending team. As can be seen from the following graph of corner kicks, Slovenia's opponents were the more dominant teams in terms of the number of corner kicks. 
 
-![corner_statistics](uploads/ea0c3cce26886caefb3f02849a219339/corner_statistics.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics.png?raw=true" align="center"/>
 
-In total, Denmark received 8 corners and Slovenia only 2. With 8 corners in a match, we can take a closer look at Denmark's offensive tactics and Slovenia's defensive tactics. The statistics of the corners show that 3 of the corners resulted in a shot, 2 of which were on target and 1 was a goal.
+In total, the opponents received 21 corners in the 5 matches and Slovenia only 17. We can take a closer look at Slovenia's offensive and defensive tactics. The statistics of the corners show that 7 of the corners resulted in a shot, of which 4 were on target and 1 was a goal. This shows that although Slovenia's opponents convert every 5th corner into a shot on target, goalkeeper Oblak is excellent at saving these shots. We can also see that although Slovenia take as many shots from corners as their opponents, they are not as good at scoring with only one shot on target from 17 corners.
 
-If we take a look at the map of the Danes' pass receiver position, we can see more details of their offensive tactics.
+If we take a look at the map of the opponent's pass receiver position, we can see more details of their offensive tactics.
 
-![corner_recipient_loc_DEN](uploads/acc2d2fb1bc633cc68d582252454a112/corner_recipient_loc_DEN.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_opp.png?raw=true" align="center"/>
 
-87.5% of their corners found their target in the middle of the penalty area, while 12.5% were hit far behind the penalty area.
+95% of the opponents corners found their target in the middle of the penalty area, while only 5% were hit far behind the penalty area.
 
 A look at the map of shots after corners shows what happened at the dangerous corners.
 
-![Denmark_shots_corners_map](uploads/991497378c8da09751e25d593d0e6d43/Denmark_shots_corners_map.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Opponent_shots_corners_map.png?raw=true" align="center"/>
 
-It is possible to see the shooting positions of the 3 shots after the corners. From this map you can conclude that Denmark is pretty good at generating shooting opportunities after corners if these are whipped into the center of the penalty area. You can also see that Slovenia had trouble defending M. Jensen in aerial duels, as he is their main shot creator from corners with two shots and one goal.
+From this map it can be seen that Slovenia had problems defending the penalty area in aerial duels, as 4 corners into the penalty area resulted in shots from corners with 3 shots on target and one goal.
 
-The same analysis can be done for Slovenia as an attacking team. As we can see from the statistics of corner kicks, 1 of the 2 corners resulted in a shot that was not on target.
+The same analysis can be done for Slovenia as an attacking team. As can be seen from the statistics of corner kicks, 7 of the 17 corners resulted in a shot, one of which led to a goal.
 
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png?raw=true" align="center"/>
 ![corner_recipient_loc_SVN](uploads/e5f63c2932336cc2dc3eee0ce2899d70/corner_recipient_loc_SVN.png)
 
-As Slovenia only had two corner kicks, they could not try multiple corner kick tactics, and as can be seen from the corner kick recipient locations map, all of their corner kick targets were inside the penalty area.
+81% of corner kicks were taken inside the penalty area. 19% were taken far behind the penalty area.
 
 We can get more information from the shots after corner for Slovenia map.
 
-![Slovenia_shots_corners_map](uploads/157bdc7c2df9a1e1cc81d41e02e37c7d/Slovenia_shots_corners_map.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/Slovenia_shots_corners_map.png?raw=true" align="center"/>
 
-We see that one of the corners, which was originally targeted at the center of the penalty area, was deflected and immediately taken by M. Zajc as a shot, but not on target and therefore not particularly dangerous.
+We see that their main attacking target after a corner is A. Cerin, who is quite successful in getting a shot off after the corner, but not so successful in hitting the target. Nevertheless, the focus at corners is clearly on him and it is important information for Denmark to know how to defend Cerin in corner situations.
 
-After corners, there is often an opportunity to launch a counter-attack if they are defended properly. Therefore, we looked at the consecutive counter-attacks after corners for this game, but in this case there were none, as the advanced statistics of corner events show.
+After corners, there is often an opportunity to launch a counter-attack if they are defended properly. That's why we looked at the consecutive counter-attacks after corners in this game. It seems that Slovenia is very vulnerable to counter-attacks after a corner kick. This is an indication that the Slovenian defensive movement after a corner kick is not yet fully implemented and can be abused by Denmark.
 
-![corner_statistics_with_ca](uploads/d56bf9ef1cf640852c5e9cef5265388c/corner_statistics_with_ca.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_statistics_with_ca.png?raw=true" align="center"/>
 
 <details>
 <summary> code</summary>
@@ -1644,31 +1645,46 @@ plt.show()
 df_distribution = pd.DataFrame()
 
 # Determine pass types based on recipient location
-pass_short = ((df_corners_svn["pass.endLocation.y"] < 19.0) & (df_corners_svn["location.y"] == 0.0)) | \
-             ((df_corners_svn["pass.endLocation.y"] > 81.0) & (df_corners_svn["location.y"] == 100.0))
+pass_short_1 = ((df_corners_svn["pass.endLocation.y"] < 19.0) & (df_corners_svn["location.y"] == 0.0))
+pass_short_2 = ((df_corners_svn["pass.endLocation.y"] > 81.0) & (df_corners_svn["location.y"] == 100.0))
 pass_parea = (df_corners_svn["pass.endLocation.y"] >= 19.0) & (df_corners_svn["pass.endLocation.y"] <= 81.0)
-pass_long  = ((df_corners_svn["pass.endLocation.y"] < 19.0) & (df_corners_svn["location.y"] == 100.0)) | \
-             ((df_corners_svn["pass.endLocation.y"] > 81.0) & (df_corners_svn["location.y"] == 0.0))
+pass_long_1  = ((df_corners_svn["pass.endLocation.y"] < 19.0) & (df_corners_svn["location.y"] == 100.0))
+pass_long_2  = ((df_corners_svn["pass.endLocation.y"] > 81.0) & (df_corners_svn["location.y"] == 0.0))
 pass_wide  = (df_corners_svn["pass.endLocation.x"] >= 16.0) & (df_corners_svn["pass.endLocation.x"] <= 84.0)
 
 # For every Corner type safe statistics for plotting
-for i, pass_dst in enumerate([pass_short, pass_parea, pass_long, pass_wide]):
+j=0
+for i, pass_dst in enumerate([pass_short_1, pass_short_2, pass_parea, pass_long_1, pass_long_2, pass_wide]):
 
     if df_corners_svn.loc[pass_dst].empty:
-        df_distribution.at[i, "x"] = -1.0
-        df_distribution.at[i, "y"] = -1.0
-        df_distribution.at[i, "amount"] = -1.0
+
+        if pass_dst is not pass_short_2 and pass_dst is not pass_long_2:
+            df_distribution.at[j, "x"] = -1.0
+            df_distribution.at[j, "y"] = -1.0
+            df_distribution.at[j, "amount"] = -1.0
+            j+=1
+
         continue
 
-    df_distribution.at[i, "x"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.x'].to_numpy()).round(1)
-    df_distribution.at[i, "y"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.y'].to_numpy()).round(1)
-    df_distribution.at[i, "amount"] = df_corners_svn.loc[pass_dst]['pass.endLocation.x'].count()
+    if pass_dst is pass_short_2 and pass_dst is pass_long_2:
+        df_distribution.at[j, "x"] = (df_distribution.at[j, "x"] + np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.x'].to_numpy()).round(1))/2.0
+        df_distribution.at[j, "y"] = (df_distribution.at[j, "y"] + 100.0 - np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.y'].to_numpy()).round(1))/2.0
+        df_distribution.at[j, "amount"] += df_corners_svn.loc[pass_dst]['pass.endLocation.x'].count()
+
+    else:
+        df_distribution.at[j, "x"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.x'].to_numpy()).round(1)
+        df_distribution.at[j, "y"] = np.mean(df_corners_svn.loc[pass_dst]['pass.endLocation.y'].to_numpy()).round(1)
+        df_distribution.at[j, "amount"] = df_corners_svn.loc[pass_dst]['pass.endLocation.x'].count()
+        
+    if pass_dst is not pass_short_2 and pass_dst is not pass_long_2:
+        j += 1
+    
 
 # Adjust circle sizes and transparency proportional to the number of passes received in a specific area
 df_distribution['marker_size'] = (df_distribution['amount'] / df_distribution['amount'].max() * 1500)
 df_distribution['marker_size'] = abs((df_distribution['marker_size'] > 0) * df_distribution['marker_size']).round(0)
 df_distribution['alpha'] = abs(df_distribution['marker_size'] / df_distribution['marker_size'].max()).round(2)
-df_distribution['percentage'] = abs(df_distribution['amount'] / df_distribution[df_distribution['amount'] > 0]['amount'].sum() * (df_distribution['amount'] > 0)) * 100
+df_distribution['percentage'] = (abs(df_distribution['amount'] / df_distribution[df_distribution['amount'] > 0]['amount'].sum() * (df_distribution['amount'] > 0)) * 100).round(0)
 
 # Create pitch with certain attributes
 pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
@@ -1700,50 +1716,29 @@ plt.show()
 ```
 </details>
 
-### 5.2 Penalties
+### 5.2 Free kicks
 
-There were no penalties in the match between Denmark and Slovenia on 17.11.2023, which is why this section is not covered in the first draft.
+This section analyzes the free kicks from Slovenia's last 5 European Championship qualifiers and their impact on the game. Free kicks, especially the closer they get to the goal, are a very important part of the game.
 
-<details>
-<summary> code</summary>
+If you look at Slovenia's free kick map, you can see 4 different types of free kicks. Firstly, the goal kick, which we have defined as a free kick inside your own penalty area. Secondly, the shot, i.e. a free kick that is taken directly as a goal kick, regardless of whether it hits the target or not (red indicates a miss and green a goal). Thirdly, the cross, i.e. a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "other" category, which serves as a catch-all for all other types of free kicks.
 
-</details>
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/Slovenia_freekick_map.png?raw=true" align="center"/>
 
-### 5.3 Free kicks
+From Slovenia's free kick map, it can be deduced that their shots on goal are very dangerous when they are close to goal. Two direct free kicks from A. Cerin and E. Janza were converted into a goal. 
 
-This section analyzes the free kicks of the match between Denmark and Slovenia on 17.11.2023 and their impact on the game. Free kicks, especially the closer they get to the goal, are a very important part of the game.
+It is also possible to see when Slovenia considers the distance to goal suitable for an attacking free kick such as a shot or a cross.
 
-If you look at the Slovenia free-kick map, you can see 4 different types of free-kicks. First, the goal kick, which we defined as a free kick inside your own penalty area. Secondly, the shot, which is a free kick that is taken directly as a shot on goal, regardless of whether it is on target or not. Thirdly, the cross, which is a free kick that is used to directly create a promising attacking opportunity by hitting the ball into the penalty area, but is not taken as a shot. And the "Else" category, which serves as a catch-all for all other types of free kicks.
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/avg_distance_freekick_slov.png?raw=true" align="center"/>
 
-![Slovenia_freekick_map](uploads/36588b8d1c739c77db3adafc09e9cc3d/Slovenia_freekick_map.png)
-
-From Slovenia's free-kick map, it can be deduced that Slovenia were pushed back deep into their own half by Denmark's pressing and were sometimes able to get a free-kick out of it. Slovenia also had a direct free-kick from E. Janza, which he was able to convert into a goal. As they are 1 for 1 in goals scored from free kicks, they appear to be very dangerous in this area of the game.
-
-![Denmark_freekick_map](uploads/f59e996fe396b12027c53bf668ab0c63/Denmark_freekick_map.png)
-
-Denmark's free-kick map shows that the Danes were often stopped by fouls in the build-up to their attacking play, as their free kicks are usually taken at the end of the second third of the pitch. Slovenia also managed to avoid free kicks near their own goal, meaning that Denmark only had one opportunity for an attacking free kick.
-
-It is also possible to see when teams consider the distance to goal suitable for an attacking free kick such as a shot or a cross.
-
-![avg_distance_freekick_slov](uploads/912d9baf2bdba9484f6c3781a1ebb1a4/avg_distance_freekick_slov.png)
-
-With Slovenia, we see that most of the free kicks were around 80 meters, so neither suitable for a cross nor for a direct shot. But as soon as they were closer than 30 meters, they shot directly and were quite efficient in this game. Since they didn't have an offensive free kick cross, we can't say much about that.
-
-![avg_distance_freekick_den](uploads/a84702827a54b3dc3cf573f59260b869/avg_distance_freekick_den.png)
-
-With Denmark, we see that most of the free kicks were taken around the 70m mark, so they are not suitable for either a cross or a direct shot, but this suggests that they were a bit more offensive than the Slovenians. When they get closer to goal, around the 40-meter mark, they start using the free kicks as crosses. Since they didn't have a direct free kick shot, we can't say much about that.
+With Slovenia, we see that most of the free kicks were taken from 75 meters, so they were not suitable for either a cross or a direct shot. Around the 40-meter mark, they consider a cross, and once they were closer than 30 meters, they shot directly and were quite efficient. 
 
 To see which players shoot free kicks most often, we have listed all players in a diagram.
 
-![freekick_takers_slov](uploads/2387a36bb0e4dae0f0df78039217588f/freekick_takers_slov.png)
+<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_3-FreeKicks/freekick_takers_slov.png?raw=true" align="center"/>
 
-With Slovenia, you can see that they had a lot of goal kicks and free kicks which defenders like Bijol took, indicating that they were constantly under pressure and in risky situations in their own half around the penalty area.
+For Slovenia, A. Cerin is the most important free kick taker when it comes to offensive free kicks. But they also vary sometimes and let other players like Janza or Lovric shoot/cross when the free kick comes from the right side.
 
-![freekick_takers_den](uploads/2c52c831c4fb27a3eefe4665bae9b173/freekick_takers_den.png)
-
-Denmark's most prominent free kick taker is midfielder P. Hojberg. This suggests that they have been fouled mainly in the build-up to their attacking play.
-
-To summarize, Slovenia doesn't seem to get many dangerous free-kicks, but when they do, they are very dangerous. Slovenia seems to try to disrupt the Danish build-up play by fouling the Danes in midfield in the Slovenian half, but not in the attacking positions around the penalty area. Denmark could exploit this by playing more 1-v-1 situations as Slovenia seems to defend passively and does not try to risk a free kick near the goal.
+To summarize, Slovenia don't seem to get many dangerous free kicks, but when they do, they are very dangerous with A. Cerin as the main free kick taker.
 
 <details>
 <summary> code</summary>
