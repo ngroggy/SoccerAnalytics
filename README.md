@@ -1885,63 +1885,227 @@ Based on the provided data, the most dangerous players can be identified across 
 **Benjamin Šeško**: While not leading in total distance covered, Šeško shines in sprinting distance and max speed. His explosive acceleration and top speed make him a dangerous forward, capable of breaking through defenses and creating scoring opportunities.
 
 #### Overall values
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
-| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
-| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
-| Erik Janža | 6943 | 833 | 363 | 115 | 8 | 28.1 |
-| Jaka Bijol | 9688 | 1061 | 355 | 57 | 6 | 27.1 |
-| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
-| Jasmin Kurtič | 4454 | 922 | 117 | 0 | 2 | 22.9 |
-| Jon Gorenc- tankovič | 2986 | 546 | 185 | 12 | 2 | 24.6 |
-| Miha Blažič | 10579 | 1368 | 333 | 67 | 5 | 25.9 |
-| Miha Zajc | 1266 | 223 | 90 | 6 | 0 | 25.2 |
-| Sandi Lovrič | 2926 | 498 | 153 | 52 | 2 | 29.6 |
-| Timi Max Elšnik | 7857 | 1185 | 367 | 27 | 3 | 25.3 |
-| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
-| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
-| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
-
 
 In examining the top three players across each specific physical aspect, we gain a better insight into the diverse skill sets present in Slovenia:
 
-#### Top 3 Distance
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+#### Top 3 Distance vs Kazakhstan
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Adam Gnezda Čerin    |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
+#### Top 3 Distance vs Denmark
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
-| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
-| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
-#### Top 3 Running Distance
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| Kaan Kairinen     |      11644 |               1843 |            582 |                  103 |               4 |        27   |
+| Adam Gnezda Čerin |      11636 |               1868 |            551 |                   75 |               3 |        26.5 |
+| Žan Karničnik     |      11395 |               1498 |            663 |                  161 |               7 |        28.7 |
+#### Top 3 Distance vs N_Ireland
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
-| Žan Karničnik | 11470 | 1751 | 501 | 129 | 7 | 28.4 |
-| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
-#### Top 3 HSR Distance
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| Adam Gnezda Čerin |      11884 |               2005 |            574 |                  133 |               5 |        27.1 |
+| Benjamin Šeško    |      11690 |               1770 |            786 |                  260 |              13 |        30.6 |
+| Jamal Lewis       |      11367 |               1630 |            811 |                  482 |               6 |        31.3 |
+#### Top 3 Distance vs Finland
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin | 12318 | 2323 | 675 | 118 | 5 | 27.2 |
-| Jan Mlakar | 10772 | 1675 | 590 | 81 | 5 | 26.9 |
-| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
-#### Top 3 Sprinting Distance
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
-| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
-| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
-#### Top 3 Accelerations
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
-|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Žan Vipotnik | 10364 | 1195 | 490 | 149 | 13 | 29.2 |
-| Benjamin Verbič | 8654 | 1350 | 564 | 156 | 11 | 27.5 |
-| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
-#### Top 3 Max speed
-| Player name | Distance | Running Distance | HSR Distance | Sprinting Distance | Accelerations | Max speed |
+| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
+#### Top 3 Distance vs San_Marino
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Ramazan Orazov    |      12473 |               2315 |            898 |                  176 |               5 |        27.7 |
+| Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
+| Maksim Samorodov  |      11937 |               1742 |            658 |                  318 |               4 |        29.7 |
+#### Top 3 Distance vs N_Ireland_2
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Adam Gnezda Čerin    |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
+#### Top 3 Running Distance vs Kazakhstan
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Adam Gnezda Čerin    |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
+| Michael Battistini   |      10079 |               1791 |            418 |                   40 |               5 |        25.9 |
+#### Top 3 Running Distance vs Denmark
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin |      11636 |               1868 |            551 |                   75 |               3 |        26.5 |
+| Kaan Kairinen     |      11644 |               1843 |            582 |                  103 |               4 |        27   |
+| Petar Stojanović  |      11313 |               1740 |            798 |                  168 |               1 |        27.4 |
+#### Top 3 Running Distance vs N_Ireland
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin |      11884 |               2005 |            574 |                  133 |               5 |        27.1 |
+| Benjamin Šeško    |      11690 |               1770 |            786 |                  260 |              13 |        30.6 |
+| Brad Lyons        |      10607 |               1644 |            364 |                  101 |               3 |        28   |
+#### Top 3 Running Distance vs Finland
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Žan Karničnik     |      11470 |               1751 |            501 |                  129 |               7 |        28.4 |
+| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
+#### Top 3 Running Distance vs San_Marino
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Ramazan Orazov    |      12473 |               2315 |            898 |                  176 |               5 |        27.7 |
+| Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
+| Maksim Samorodov  |      11937 |               1742 |            658 |                  318 |               4 |        29.7 |
+#### Top 3 Running Distance vs N_Ireland_2
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Adam Gnezda Čerin    |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
+| Michael Battistini   |      10079 |               1791 |            418 |                   40 |               5 |        25.9 |
+#### Top 3 HSR Distance vs Kazakhstan
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Žan Karničnik        |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
+#### Top 3 HSR Distance vs Denmark
+| Player name      |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:-----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Petar Stojanović |      11313 |               1740 |            798 |                  168 |               1 |        27.4 |
+| Žan Karničnik    |      11395 |               1498 |            663 |                  161 |               7 |        28.7 |
+| Jere Uronen      |      10345 |               1299 |            635 |                  152 |               7 |        27.3 |
+#### Top 3 HSR Distance vs N_Ireland
+| Player name      |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:-----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Jamal Lewis      |      11367 |               1630 |            811 |                  482 |               6 |        31.3 |
+| Benjamin Šeško   |      11690 |               1770 |            786 |                  260 |              13 |        30.6 |
+| Petar Stojanović |      10910 |               1409 |            645 |                  190 |               7 |        27.3 |
+#### Top 3 HSR Distance vs Finland
+| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Adam Gnezda Čerin |      12318 |               2323 |            675 |                  118 |               5 |        27.2 |
+| Jan Mlakar        |      10772 |               1675 |            590 |                   81 |               5 |        26.9 |
+| Benjamin Verbič   |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
+#### Top 3 HSR Distance vs San_Marino
+| Player name      |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:-----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Ramazan Orazov   |      12473 |               2315 |            898 |                  176 |               5 |        27.7 |
+| Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
+| Maksim Samorodov |      11937 |               1742 |            658 |                  318 |               4 |        29.7 |
+#### Top 3 HSR Distance vs N_Ireland_2
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Žan Karničnik        |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
+#### Top 3 Sprinting Distance vs Kazakhstan
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Sandi Lovrič         |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+#### Top 3 Sprinting Distance vs Denmark
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Benjamin Šeško | 9439 | 1226 | 462 | 228 | 11 | 31.1 |
-| Sandi Lovrič | 2926 | 498 | 153 | 52 | 2 | 29.6 |
-| Vanja Drkušić | 3954 | 597 | 264 | 101 | 0 | 29.4 |
+| Teemu Pukki    |      10324 |               1360 |            605 |                  319 |              10 |        29.4 |
+| Jan Mlakar     |       9974 |               1326 |            615 |                  255 |               5 |        29.5 |
+| Benjamin Šeško |       7635 |               1117 |            421 |                  254 |               6 |        31.6 |
+#### Top 3 Sprinting Distance vs N_Ireland
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Jamal Lewis    |      11367 |               1630 |            811 |                  482 |               6 |        31.3 |
+| Benjamin Šeško |      11690 |               1770 |            786 |                  260 |              13 |        30.6 |
+| Dion Charles   |       4100 |                585 |            253 |                  228 |               5 |        31.1 |
+#### Top 3 Sprinting Distance vs Finland
+| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško  |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+| Benjamin Verbič |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
+| Žan Vipotnik    |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+#### Top 3 Sprinting Distance vs San_Marino
+| Player name      |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:-----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
+| Maksim Samorodov |      11937 |               1742 |            658 |                  318 |               4 |        29.7 |
+| Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
+#### Top 3 Sprinting Distance vs N_Ireland_2
+| Player name          |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Alessandro Golinucci |      12168 |               2194 |            652 |                  195 |               4 |        27.7 |
+| Lorenzo Lazzari      |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Sandi Lovrič         |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+#### Top 3 Accelerations vs Kazakhstan
+| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Lorenzo Lazzari |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Andraž Šporar   |       7963 |                969 |            372 |                   64 |               8 |        26.8 |
+| Žan Vipotnik    |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+#### Top 3 Accelerations vs Denmark
+| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Teemu Pukki   |      10324 |               1360 |            605 |                  319 |              10 |        29.4 |
+| Glen Kamara   |      10255 |               1413 |            476 |                  111 |               8 |        28.6 |
+| Leo Väisänen  |       9741 |                961 |            388 |                  129 |               8 |        29.7 |
+#### Top 3 Accelerations vs N_Ireland
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško |      11690 |               1770 |            786 |                  260 |              13 |        30.6 |
+| Erik Janža     |       8944 |               1124 |            381 |                  117 |               9 |        27.8 |
+| Eoin Toal      |      10593 |               1230 |            408 |                  162 |               8 |        29.6 |
+#### Top 3 Accelerations vs Finland
+| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Žan Vipotnik    |      10364 |               1195 |            490 |                  149 |              13 |        29.2 |
+| Benjamin Verbič |       8654 |               1350 |            564 |                  156 |              11 |        27.5 |
+| Benjamin Šeško  |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+#### Top 3 Accelerations vs San_Marino
+| Player name      |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:-----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
+| Erik Janža       |       9769 |               1200 |            480 |                  140 |               9 |        27.2 |
+| Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
+#### Top 3 Accelerations vs N_Ireland_2
+| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Lorenzo Lazzari |      12077 |               1683 |            592 |                  145 |               8 |        28.4 |
+| Andraž Šporar   |       7963 |                969 |            372 |                   64 |               8 |        26.8 |
+| Žan Vipotnik    |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+#### Top 3 Max speed vs Kazakhstan
+| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+| Vanja Drkušić |       8467 |                825 |            207 |                   22 |               2 |        29.3 |
+| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+#### Top 3 Max speed vs Denmark
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško |       7635 |               1117 |            421 |                  254 |               6 |        31.6 |
+| Nikolai Alho   |      10381 |               1387 |            507 |                  230 |               5 |        30.8 |
+| Robert Ivanov  |       8457 |                918 |            394 |                  122 |               6 |        30.6 |
+#### Top 3 Max speed vs N_Ireland
+| Player name     |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:----------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Timi Max Elšnik |      11112 |               1492 |            468 |                  135 |               6 |        31.7 |
+| Andraž Šporar   |       8540 |                941 |            396 |                  219 |               8 |        31.7 |
+| Jamal Lewis     |      11367 |               1630 |            811 |                  482 |               6 |        31.3 |
+#### Top 3 Max speed vs Finland
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Benjamin Šeško |       9439 |               1226 |            462 |                  228 |              11 |        31.1 |
+| Sandi Lovrič   |       2926 |                498 |            153 |                   52 |               2 |        29.6 |
+| Vanja Drkušić  |       3954 |                597 |            264 |                  101 |               0 |        29.4 |
+#### Top 3 Max speed vs San_Marino
+| Player name    |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:---------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Ivan Sviridov  |       1356 |                246 |            133 |                   53 |               2 |        31.9 |
+| Benjamin Šeško |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
+| Andraž Šporar  |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
+#### Top 3 Max speed vs N_Ireland_2
+| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
+|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
+| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+| Vanja Drkušić |       8467 |                825 |            207 |                   22 |               2 |        29.3 |
+| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+
+
 
 <details>
 <summary> code</summary>
