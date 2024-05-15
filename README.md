@@ -1196,7 +1196,7 @@ It can be seen that J. Bijpol has the most duels with a total of 13. That showca
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
 | ------------- | ------------- | ------------- |
-|![plot_duelSlovenia-KazakhstanHOME](uploads/fe22f59a2afdd06065068c6a1706e0ab/plot_duelSlovenia-KazakhstanHOME.png))|![plot_duelDenmark-SloveniaAWAY](uploads/7037ae6da49e35180738dd0c38817ee2/plot_duelDenmark-SloveniaAWAY.png)|![plot_duelNorthern_Ireland-SloveniaAWAY](uploads/30bce9e2e74d42f1a8372126652dc19c/plot_duelNorthern_Ireland-SloveniaAWAY.png)|
+|![plot_duelSlovenia-KazakhstanHOME](uploads/fe22f59a2afdd06065068c6a1706e0ab/plot_duelSlovenia-KazakhstanHOME.png)|![plot_duelDenmark-SloveniaAWAY](uploads/7037ae6da49e35180738dd0c38817ee2/plot_duelDenmark-SloveniaAWAY.png)|![plot_duelNorthern_Ireland-SloveniaAWAY](uploads/30bce9e2e74d42f1a8372126652dc19c/plot_duelNorthern_Ireland-SloveniaAWAY.png)|
 
 |  14 Oct vs Finland | 10 Sep vs San Marino | 07 Sep vs N. Ireland |
 | ------------- | ------------- | ------------- |
