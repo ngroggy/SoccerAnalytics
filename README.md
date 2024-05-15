@@ -354,8 +354,8 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 3.2 Attacking efficiency
 
-![attacking efficiency: SVN agg]()
-![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking efficiency: SVN agg](notebooks/plots/3-attack/attacking_efficiency_SVN_agg.png)
+![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_efficiency_DEN_SVN_agg.png)
 ![attacking_efficiency: SVN vs similar](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_similar.png)
 ![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
 
@@ -969,13 +969,19 @@ for against, match_id in data:
 
 ## 4 Out of possesion - defense of Slovenia
 
+##### text to be updated 
 Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
 
 ### 4.1 Statistics
 
+![defense_statistics: SVN agg](notebooks/plots/4-defense/defense_statistics_SVN_agg.png)
+![defense_statistics: DEN vs SVN agg](notebooks/plots/4-defense/defense_statistics_DEN_SVN_agg.png)
+![defense_statistics: SVN vs similar](notebooks/plots/4-defense/defense_statistics_SVN_vs_similar.png)
+![defense_statistics: DEN vs weak](notebooks/plots/4-defense/defense_statistics_SVN_vs_weak.png)
+
+##### code and text to be updated 
 The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
 
-![defense_statistics](uploads/44c2c922ef5ccc7c3b7af7e21eab02cd/defense_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -1016,11 +1022,16 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 4.2 Defensive efficiency & style
 
+![defensive_efficiency_style: SVN agg](notebooks/plots/4-defense/defensive_efficiency_style_SVN_agg.png)
+![defensive_efficiency_style: DEN vs SVN](notebooks/plots/4-defense/defensive_efficiency_style_DEN_SVN_agg.png)
+![defensive_efficiency_style: SVN vs similar](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_similar.png)
+![defensive_efficiency_style: SVN vs weak](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_weak.png)
+
+##### code and text to be updated 
 Slovenia's defensive efforts were markedly more dominant and effective than their attacking endeavors. They outperformed Denmark in terms of winning defensive duels, with a success rate of nearly 80% in their defensive third. Furthermore, Slovenia made fewer defensive errors compared to their opponents, contributing to their solid defensive performance.
 
 In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
 
-![defensive_efficiency_style](uploads/1865d7c12a80bfcc19763cd4f594f89f/defensive_efficiency_style.png)
 
 <details>
   <summary> code </summary>
