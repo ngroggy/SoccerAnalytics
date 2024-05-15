@@ -653,8 +653,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C5%A0porar_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Vipotnik_Heatmaps.png" width="200">
 </div>
 
 
@@ -668,8 +668,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 ### Slovenia vs Finnland
 
 <div align="center">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/A_%C5%A0porar_Heatmaps.png" width="200">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="200">
 </div>
 
 
@@ -683,8 +683,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 ### Northern Island vs. Slovenia
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/A_%C5%A0porar_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/A_%C5%A0porar_Heatmaps.png" width="200">
 </div>
 
 
@@ -715,8 +715,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/A_%C5%A0porar_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/A_%C5%A0porar_Heatmaps.png" width="200">
 </div>
 
 
