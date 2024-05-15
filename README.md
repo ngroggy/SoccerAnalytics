@@ -652,6 +652,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 
 ### San Marino vs. Slovenia
 
+Slovenia had a lot of possession in the game against San Marino. The Slovenians were aware of this in advance and shaped their game accordingly. However, as Slovenia do not play for possession against better opponents, this game is not very representative. The two strikers Sporar and Vipotnik rarely dropped into midfield. There were very few changes of position or sides and generally very little movement from individual players compared to the rest of the game. Slovenia was rarely defensively oriented.
+
 
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C5%A0porar_Heatmaps.png" width="200">
@@ -668,6 +670,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 
 ### Slovenia vs Finnland
 
+The interplay between Sporar and Stojanovic is very exciting. It seems as if Sporar is dropping back into midfield and Stojanovic is virtually taking his place. But the exact opposite happened on the left. Sesko took over the left midfield position and Mlakar supported the left-back more than he was active offensively.
+
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/A_%C5%A0porar_Heatmaps.png" width="200">
@@ -682,6 +686,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 </div>
 
 ### Northern Island vs. Slovenia
+
+It would appear that Northern Ireland had the full-backs in a strong position, which left Cerin and Elsnik at full-back. It's also not the first time that the outside midfielders have stayed on the sidelines and rarely looked to make their way into midfield.
 
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
@@ -717,6 +723,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 </div>
 
 ### Slovenia vs. Kazakhstan
+
+A pattern that has now been seen several times (e.g. against San Marino): When Slovenia has more possession, the double spike is more focused on the center and less on the sides. This can also be seen on the heat maps against Kazakhstan. The outside midfielders are still mostly on the flanks. In this match, a large part of the game was played down the sides, which is why Elsnik and Cerin had little presence in midfield. 
 
 
 <div align="center">
