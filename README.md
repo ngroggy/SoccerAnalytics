@@ -133,12 +133,17 @@ Images: They are screenshot of Google Chrome output when we type : Last games of
 
 ### 2.2 Key statistics
 
+![key_statistics: SVN agg](notebooks/plots/2-Statistics/key_statistics_SVN_agg.png)
+![key_statistics: DEN vs SVN](notebooks/plots/2-Statistics/key_statistics_DEN_SVN.png)
+![key_statistics: SVN vs similar](notebooks/plots/2-Statistics/key_statistics_SVN_vs_similar.png)
+![key_statistics: SVN vs weak](notebooks/plots/2-Statistics/key_statistics_SVN_vs_weak.png)
 
+
+##### code and text to be updated 
 We start by analyzing the direct qualifier match between Denmark and Slovenia on November 17, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
 
 Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
-![key_statistics](uploads/ad439dbaebe9cea015aefcd5e2bc5c75/key_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -296,13 +301,19 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ## 3. In possesion - attack of Slovenia
 
+##### text to be updated 
 In order to examine the attacking behavior of Denmark's group opponent Slovenia, a statistical analysis is first carried out. In a further chapter, the heat maps of the attack are examined in order to identify possible preferred sides. Key players are identified on the basis of passing patterns. Patterns are recognized with the help of various plots for long passes, crosses and shots.
 
 ### 3.1 Attacking style:
 
+![attacking_style: SVN agg](notebooks/plots/3-attack/attacking_style_SVN_agg.png)
+![attacking_style: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking_style: SVN vs similar](notebooks/plots/3-attack/attacking_style_SVN_vs_similar.png)
+![attacking_style: SVN vs weak](notebooks/plots/3-attack/attacking_style_SVN_vs_weak.png)
+
+##### code and text to be updated 
 Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
-![attacking_style](uploads/5f9291eff54bbfe0fbf6c9cb803f6803/attacking_style.png)
 
 <details>
   <summary> code </summary>
@@ -343,9 +354,14 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 3.2 Attacking efficiency
 
+![attacking efficiency: SVN agg]()
+![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking_efficiency: SVN vs similar](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_similar.png)
+![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
+
+##### code and text to be updated 
 The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
-![attacking_efficiency](uploads/c016c0038385df6ea41ffa43fa14274d/attacking_efficiency.png)
 
 <details>
   <summary> code </summary>
@@ -652,6 +668,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 
 ### San Marino vs. Slovenia
 
+Slovenia had a lot of possession in the game against San Marino. The Slovenians were aware of this in advance and shaped their game accordingly. However, as Slovenia do not play for possession against better opponents, this game is not very representative. The two strikers Sporar and Vipotnik rarely dropped into midfield. There were very few changes of position or sides and generally very little movement from individual players compared to the rest of the game. Slovenia was rarely defensively oriented.
+
 
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C5%A0porar_Heatmaps.png" width="200">
@@ -668,6 +686,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 
 ### Slovenia vs Finnland
 
+The interplay between Sporar and Stojanovic is very exciting. It seems as if Sporar is dropping back into midfield and Stojanovic is virtually taking his place. But the exact opposite happened on the left. Sesko took over the left midfield position and Mlakar supported the left-back more than he was active offensively.
+
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/A_%C5%A0porar_Heatmaps.png" width="200">
@@ -682,6 +702,8 @@ In order to analyze Slovenian's attacking behavior, let's take a look at the Hea
 </div>
 
 ### Northern Island vs. Slovenia
+
+It would appear that Northern Ireland had the full-backs in a strong position, which left Cerin and Elsnik at full-back. It's also not the first time that the outside midfielders have stayed on the sidelines and rarely looked to make their way into midfield.
 
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
@@ -717,6 +739,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 </div>
 
 ### Slovenia vs. Kazakhstan
+
+A pattern that has now been seen several times (e.g. against San Marino): When Slovenia has more possession, the double spike is more focused on the center and less on the sides. This can also be seen on the heat maps against Kazakhstan. The outside midfielders are still mostly on the flanks. In this match, a large part of the game was played down the sides, which is why Elsnik and Cerin had little presence in midfield. 
 
 
 <div align="center">
