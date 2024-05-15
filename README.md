@@ -8,8 +8,8 @@ _Please fill in the following table._
 | @dgregory   | Grégory de Meurichy|
 | @ngrogg     | Nic Grogg          |
 | @grloris    | Loris Griesbaum    |
-| @ygoergen        | Yves Görgen             |
-| @fcosta          | François Costa               |
+| @ygoergen   | Yves Görgen        |
+| @fcosta     | François Costa     |
 </details>
 
 <details>
@@ -1162,36 +1162,172 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 
 
 ### 4.3 Duel defence performance of the players
-In this section the players of the match Denmark-Slovenia on 17.11.2023 are analyzed regarding the duel performance while defending.
+In this section the players of the last five qualifying matches from Slovenia are analyzed regarding the duel performance while defending.
 
 #### 4.3.1 Total duels and duels won: Slovenia
-The plot below shows the duel performance of the players from Slovenia. It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
+The plots below show the duel performance of the players from Slovenia.
+---- ADD RIGHT TEXT -----
+It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
+---- ADD RIGHT TEXT -----
 
-![duel_performance_svn_final](uploads/853d576009a2834f0b53a4eb90a09da2/duel_performance_svn_final.png)
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duelSlovenia-KazakhstanHOME](uploads/fe22f59a2afdd06065068c6a1706e0ab/plot_duelSlovenia-KazakhstanHOME.png))|![plot_duelDenmark-SloveniaAWAY](uploads/7037ae6da49e35180738dd0c38817ee2/plot_duelDenmark-SloveniaAWAY.png)|![plot_duelNorthern_Ireland-SloveniaAWAY](uploads/30bce9e2e74d42f1a8372126652dc19c/plot_duelNorthern_Ireland-SloveniaAWAY.png)|
+
+|  14 Oct vs Finland | 10 Sep vs San Marino | 07 Sep vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duelSlovenia-FinlandHOME](uploads/16932e2a0405019e7b4ce915dda436c2/plot_duelSlovenia-FinlandHOME.png)|![plot_duelSan_Marino-SloveniaAWAY](uploads/7c7f506d73e201ae401f79e5151ff5bd/plot_duelSan_Marino-SloveniaAWAY.png)|![plot_duelSlovenia-Northern_IrelandHOME](uploads/df185c10f72212860f83654b4b5e85f0/plot_duelSlovenia-Northern_IrelandHOME.png)|
+
 
 #### 4.3.2 Duels won percentage: Slovenia
+---- ADD RIGHT TEXT -----
 It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
 J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
+---- ADD RIGHT TEXT -----
 
-![duel_percentage_sorted_svn_final](uploads/cd3e796ac13b153997420196cf02b000/duel_percentage_sorted_svn_final.png)
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duel_percentageSlovenia-KazakhstanHOME](uploads/4807d57b1eb8317d0f044f48c466ba6e/plot_duel_percentageSlovenia-KazakhstanHOME.png)|![plot_duel_percentageDenmark-SloveniaAWAY](uploads/9158940089c42a9f1d8eecf8fe143a9d/plot_duel_percentageDenmark-SloveniaAWAY.png)|![plot_duel_percentageNorthern_Ireland-SloveniaAWAY](uploads/aaddf647c6a8c8e01f917ce5428d4b86/plot_duel_percentageNorthern_Ireland-SloveniaAWAY.png)|
 
-#### 4.3.3 Total duels and duels won: Denmark
+|  14 Oct vs Finland | 10 Sep vs San Marino | 07 Sep vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duel_percentageSlovenia-FinlandHOME](uploads/b76a5d7ca92951cfd9f834775976ad00/plot_duel_percentageSlovenia-FinlandHOME.png)|![plot_duel_percentageSan_Marino-SloveniaAWAY](uploads/0386b84172727bdc70d7156962708490/plot_duel_percentageSan_Marino-SloveniaAWAY.png)|![plot_duel_percentageSlovenia-Northern_IrelandHOME](uploads/88226a7bc9edc9931ea3faeddcc9b219/plot_duel_percentageSlovenia-Northern_IrelandHOME.png)|
+
+#### 4.3.3 Total duels and duels won: Opponents
+---- ADD TEXT ----
+---- MAYBE NOT EVEN NECESSARY ---- ONLY FOR DENMARK OR THE GAMES OF DENMARK??
 Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
+---- ADD RIGHT TEXT -----
 
-![duel_performance_dnk_final](uploads/66b057caa633789604a75eb70511a062/duel_performance_dnk_final.png)
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duelSlovenia-KazakhstanAWAY](uploads/552851ea334b75da2f24f322787480d8/plot_duelSlovenia-KazakhstanAWAY.png)|![plot_duelDenmark-SloveniaHOME](uploads/9a518947c9aca71d952854759729ab1b/plot_duelDenmark-SloveniaHOME.png)|![plot_duelNorthern_Ireland-SloveniaHOME](uploads/a90800de7fd2ca3b7b59e05c9cdff44c/plot_duelNorthern_Ireland-SloveniaHOME.png)|
 
-#### 4.3.4 Duels won percentage: Denmark
+|  14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duelSlovenia-FinlandAWAY](uploads/81e3bf709d043914a844924456265a25/plot_duelSlovenia-FinlandAWAY.png)|![plot_duelSan_Marino-SloveniaHOME](uploads/b75a746ab756ed1ac1268897a846098c/plot_duelSan_Marino-SloveniaHOME.png)|![plot_duelSlovenia-Northern_IrelandAWAY](uploads/6f9602435d5b0242f5f3745a0a141fa4/plot_duelSlovenia-Northern_IrelandAWAY.png)|
+
+
+
+#### 4.3.4 Duels won percentage: Opponents
+---- ADD RIGHT TEXT -----
 With J. Andersen, V. Kristiansen and J. Maehle the defence line of denmark has a percentage of over 65% duels won, which is acceptable but also can be improven.
 It has to be mentioned that Y. Poulsen with a total of 4 duels and 3 duels won has a percentage of won duels of 75%. The help of the strikers in defending mode can have a big impact on whether the game is won or lost.
 In the plot below the stats of Denmark are shown.
+---- ADD RIGHT TEXT -----
 
-![duel_percentage_sorted_dnk_final](uploads/e033f08ba3a262882fabde9b3a3a6784/duel_percentage_sorted_dnk_final.png)
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duel_percentageSlovenia-KazakhstanAWAY](uploads/46cf16dd2d045181daec3ffc70c45b19/plot_duel_percentageSlovenia-KazakhstanAWAY.png)|![plot_duel_percentageDenmark-SloveniaHOME](uploads/1fadcc38d95b6714f2049d9251e7a783/plot_duel_percentageDenmark-SloveniaHOME.png)|![plot_duel_percentageNorthern_Ireland-SloveniaHOME](uploads/49949c23796ccdd207b447c670693eee/plot_duel_percentageNorthern_Ireland-SloveniaHOME.png)|
+
+| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![plot_duel_percentageSlovenia-FinlandAWAY](uploads/6bc990430bc3fe8ad25c5f3c0e56dfb6/plot_duel_percentageSlovenia-FinlandAWAY.png)|![plot_duel_percentageSan_Marino-SloveniaHOME](uploads/ac895c5f09b32382665df09013643d6d/plot_duel_percentageSan_Marino-SloveniaHOME.png)|![plot_duel_percentageSlovenia-Northern_IrelandAWAY](uploads/1bd540ca48716cb6c80eec75faee2d3e/plot_duel_percentageSlovenia-Northern_IrelandAWAY.png)|
+
 
 <details>
 <summary> code</summary>
 
 ```python
-# For simplicitiy the code is given for Slovenia only, by changing Slovenia to Denmark it can be analyzed for Denmark too
+# Function for Duel Performance of the Players
+def dueldefperfomance(teamname, opponentTeamname, df_events):
+
+    df_duels = df_events[df_events['type.primary'] == 'duel']
+
+    # defensive duels HOME
+    df_dduels_home = df_duels[(df_duels['team.name'] == teamname) & (df_duels["groundDuel.duelType"] == "defensive_duel")]
+    # number of duels home
+    ## dduels_home = df_dduels_home.shape[0]
+    # player who had duel
+    ## df_dduels_home_players = df_dduels_home['player.name'].dropna().unique()
+    # number of duels per player
+    df_dduels_home_player_count = df_dduels_home['player.name'].dropna().value_counts()
+    # duels won per player
+    df_dduelswon_home = df_dduels_home[df_dduels_home['player.name'].notna() & ((df_dduels_home["groundDuel.stoppedProgress"] == True) | (df_dduels_home["groundDuel.recoveredPossession"] == True))]
+    # number of duels won per player
+    df_dduelwon_home_player_count = df_dduelswon_home['player.name'].value_counts()
+    # aligned counts
+    aligned_counts_home = pd.concat([df_dduels_home_player_count, df_dduelwon_home_player_count], axis=1, keys=['total_duels', 'duels_won']).fillna(0)
+    aligned_counts_home['percentage_won'] = ((aligned_counts_home['duels_won']) / (aligned_counts_home['total_duels']) * 100).round(0)
+
+
+    # defensive duels AWAY
+    df_dduels_away = df_duels[(df_duels['team.name'] == opponentTeamname) & (df_duels["groundDuel.duelType"] == "defensive_duel")]
+     # number of duels away
+    ## dduels_away = df_dduels_away.shape[0]
+    # player who had duel
+    ##df_dduels_home_players = df_dduels_away['player.name'].dropna().unique()
+    # number of duels per player
+    df_dduels_away_player_count = df_dduels_away['player.name'].dropna().value_counts()
+    # duels won per player
+    df_dduelswon_away = df_dduels_away[df_dduels_away['player.name'].notna() & ((df_dduels_away["groundDuel.stoppedProgress"] == True) | (df_dduels_away["groundDuel.recoveredPossession"] == True))]
+    # number of duels won per player
+    df_dduelwon_away_player_count = df_dduelswon_away['player.name'].value_counts()
+    # aligned counts
+    aligned_counts_away = pd.concat([df_dduels_away_player_count, df_dduelwon_away_player_count], axis=1, keys=['total_duels', 'duels_won']).fillna(0)
+    aligned_counts_away['percentage_won'] = ((aligned_counts_away['duels_won']) / (aligned_counts_away['total_duels']) * 100).round(0)
+    
+    return aligned_counts_home, aligned_counts_away
+
+def plot_duel(aligned_counts_home, aligned_counts_away, teamname, opponentTeamname):
+
+    # Home Plot
+    sns.set_theme(style="darkgrid")
+    palette = sns.color_palette("viridis", len(aligned_counts_home))
+    color1 = palette[3]
+    color2 = palette[9]
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=aligned_counts_home.index, y=aligned_counts_home['total_duels'], color=color1, label='Total Duels')
+    sns.barplot(x=aligned_counts_home.index, y=aligned_counts_home['duels_won'], color=color2, label='Duels Won')
+    plt.xlabel('Player')
+    plt.ylabel('Count')
+    plt.title(f'Duel Performance per Player: {teamname}')
+    plt.xticks(rotation=45, ha='right')
+    plt.legend()
+    save_path = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/plot_duel{teamname}-{opponentTeamname}HOME.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path)
+
+    # Away Plot
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=aligned_counts_away.index, y=aligned_counts_away['total_duels'], color=color1, label='Total Duels')
+    sns.barplot(x=aligned_counts_away.index, y=aligned_counts_away['duels_won'], color=color2, label='Duels Won')
+    plt.xlabel('Player')
+    plt.ylabel('Count')
+    plt.title(f'Duel Performance per Player: {opponentTeamname}')
+    plt.xticks(rotation=45, ha='right')
+    plt.legend()
+    save_path2 = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/plot_duel{teamname}-{opponentTeamname}AWAY.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path2)
+
+    # rerange for percentage won
+    aligned_counts_home_sorted = aligned_counts_home.sort_values(by='percentage_won', ascending=False)
+    aligned_counts_away_sorted = aligned_counts_away.sort_values(by='percentage_won', ascending=False)
+
+    # Home Plot Percentage
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=aligned_counts_home_sorted.index, y=aligned_counts_home_sorted['percentage_won'], color=color1)
+    plt.xlabel('Player')
+    plt.ylabel('Percentage of Duels Won')
+    plt.title(f'Percentage of Duels Won per Player: {teamname}')
+    plt.xticks(rotation=45, ha='right')
+    save_path3 = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/plot_duel_percentage{teamname}-{opponentTeamname}HOME.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path3)
+
+    # Away Plot Percentage
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=aligned_counts_away_sorted.index, y=aligned_counts_away_sorted['percentage_won'], color=color1)
+    plt.xlabel('Player')
+    plt.ylabel('Percentage of Duels Won')
+    plt.title(f'Percentage of Duels Won per Player: {opponentTeamname}')
+    plt.xticks(rotation=45, ha='right')
+    save_path = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/plot_duel_percentage{teamname}-{opponentTeamname}AWAY.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path)
+
+# MAIN
 import pandas as pd
 import json
 from IPython.display import display
@@ -1210,84 +1346,28 @@ from mplsoccer import Pitch
 from src.visualization import *
 from src.dataloader import dataloader
 
-# Load Data from Slovenia-Danemark November 20, 2023
-match_id = "5414302"
-df_events = dataloader(match_id)
-df_events.columns
+match_id1 = "5414226"
+match_id2 = "5414260"
+match_id3 = "5414284"
+match_id4 = "5414302"
+match_id5 = "5414324"
+match_id6 = "5414203"
 
-# duel events
-df_duels = df_events[df_events['type.primary'] == 'duel']
+match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
+# start with the for loops for all matches
+team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
+opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
+goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
+goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
 
-# defensive duels slovenia
-df_dduels_svn = df_duels[(df_duels['team.name'] == 'Slovenia') & (df_duels["groundDuel.duelType"] == "defensive_duel")]
-dduels_svn = df_dduels_svn.shape[0]
+# MAIN
+for i in range(len(match_id)):
 
-# get the players who had a duel in the game
-df_dduels_svn_players = df_dduels_svn['player.name'].dropna().unique()
-
-# get the number of duel per player
-df_dduels_svn_player_count = df_dduels_svn['player.name'].dropna().value_counts()
-
-# get the duels that were won
-df_dduelswon_svn = df_dduels_svn[df_dduels_svn['player.name'].notna() & ((df_dduels_svn["groundDuel.stoppedProgress"] == True) | (df_dduels_svn["groundDuel.recoveredPossession"] == True))]
-# duels won per player
-df_dduelwon_svn_player_count = df_dduelswon_svn['player.name'].value_counts()
-
-
-aligned_counts_svn = pd.concat([df_dduels_svn_player_count, df_dduelwon_svn_player_count], axis=1, keys=['total_duels', 'duels_won']).fillna(0)
-aligned_counts_svn['percentage_won'] = ((aligned_counts_svn['duels_won']) / (aligned_counts_svn['total_duels']) * 100).round(0)
-
-# -------------------------------------------------------------------------------------
-# Plot 1 Slovenia
-# Set Seaborn theme and color palette
-sns.set_theme(style="darkgrid")
-palette = sns.color_palette("viridis", len(aligned_counts_svn))
-
-# Plotting the data using Seaborn and Matplotlib
-plt.figure(figsize=(10, 6))
-
-# Plot total duels
-sns.barplot(x=aligned_counts_svn.index, y=aligned_counts_svn['total_duels'], color=palette[3], label='Total Duels')
-
-# Plot duels won
-sns.barplot(x=aligned_counts_svn.index, y=aligned_counts_svn['duels_won'], color=palette[10], label='Duels Won')
-
-# Annotate bars with percentage of duels won
-#for i, (percentage, player) in enumerate(zip(aligned_counts['percentage_won'], aligned_counts.index)):
-#    plt.text(i, aligned_counts.loc[player, 'duels_won'] + 1, f'{percentage}%', ha='center', color='red' if percentage > 75 else 'black')
-
-# Adding labels and title
-plt.xlabel('Player')
-plt.ylabel('Count')
-plt.title('Duel Performance per Player: Slovenia')
-plt.xticks(rotation=45, ha='right')
-
-# Show legend
-plt.legend()
-
-# Save plot to a specified path
-save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/duel_performance_svn.png'  # Specify your desired save path here
-plt.tight_layout()
-plt.savefig(save_path)
-
-
-# Plot 2 Slovenia Sorted Percentage
-# ---------------------------------------------------------------------------------------
-plt.figure(figsize=(10, 6))
-sns.barplot(x=aligned_counts_svn_sorted.index, y=aligned_counts_svn_sorted['percentage_won'], color=palette[3])
-
-# Adding labels and title
-plt.xlabel('Player')
-plt.ylabel('Percentage of Duels Won')
-plt.title('Percentage of Duels Won per Player: Slovenia')
-
-# Rotate x-axis labels for better readability
-plt.xticks(rotation=45, ha='right')
-
-# Save plot to a specified path
-save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/duel_percentage_sorted_svn.png'  # Specify your desired save path here
-plt.tight_layout()
-plt.savefig(save_path)
+    df_events = dataloader(match_id[i])
+    teamname = team_name_array[i]
+    opponentTeamname = opponentTeam_name_array[i]
+    aligned_counts_home, aligned_counts_away = dueldefperfomance(teamname, opponentTeamname, df_events)
+    plot_duel(aligned_counts_home, aligned_counts_away, teamname, opponentTeamname)
 
 ```
 </details>
@@ -1298,130 +1378,122 @@ To the analysis of the defense the goal keeper needs also to be considered. He i
 
 #### 4.4.1 Shots parried per goalkeeper
 
+---- ADD RIGHT TEXT ----
 It can be seen two plot below that Denmark had a total of 8 shot on target and 2 goals scored. For J. Oblak, the goalkeeper of Slovenia, it therefore makes a percentage of parried shots on targets of 75%.
 With a percentage parried of 0% K. Schmeichel the goalkeeper of Denmark does not have a good statistic only regarding the game from November 17, 2023. With a shot on target of 1 and 1 scored goal the Slovenien strikers where 100% effective when the shot was on target.
+---- ADD RIGHT TEXT ----
 
-By analayzing the goal zone where the shot hit the goal it can be seen which saves the goalkeepers needed to do. In the following picture the goal zones according to Wyscout are shown.
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![Shots_parriedSlovenia-Kazakhstan](uploads/81fbd39d485a2ab5d734f8e1874b2d6e/Shots_parriedSlovenia-Kazakhstan.png)|![Shots_parriedDenmark-Slovenia](uploads/6e87d4dfdd0119c14ddfe697da00bb2b/Shots_parriedDenmark-Slovenia.png)|![Shots_parriedNorthern_Ireland-Slovenia](uploads/02c15e266cfdd050036955853a16753f/Shots_parriedNorthern_Ireland-Slovenia.png)|
 
-![wyscout_goal](uploads/1fad8af06a7d6a3d097f200d43c1e6ca/wyscout_goal.png)
-
-It can be seen from the chart below that J. Oblak had to parry a lot of low shots in the centre and his left corner.
-The shot from Slovenia, it was a free kick, was shot in the top right corner from striker side of view and K. Schmeichel was not able to parry the shot.
-
-![Shots_parried](uploads/f58574f5296f99418f1f3349f44a6e2d/Shots_parried.png)
+| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs San Marino |
+| ------------- | ------------- | ------------- |
+|![Shots_parriedSlovenia-Finland](uploads/9193df48ba1dfd07262fd80de1ce9ae0/Shots_parriedSlovenia-Finland.png)|![Shots_parriedSan_Marino-Slovenia](uploads/2c6a6abcc755f6cffb19b0fdb0e8cfa6/Shots_parriedSan_Marino-Slovenia.png)|![Shots_parriedSlovenia-Northern_Ireland](uploads/3bb418895ec8c3563aab3c5c609bc797/Shots_parriedSlovenia-Northern_Ireland.png)|
 
 <details>
 <summary> code</summary>
 
 ```python
-# The import part is the same as in Section 4.3
+import pandas as pd
+import json
+from IPython.display import display
+import zipfile
+from pathlib import Path
+from datetime import datetime, timedelta
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
-# Goalkeeper events: Shot on Target
-df_goalkeeper = df_events[(df_events['shot.onTarget'] == True)]
-display(df_goalkeeper)
+# specfic soccer analysis packages
+from mplsoccer import Pitch
 
-# Shot on target from Denmark (In final version the goalkeeper is not hard coded)
-df_ontarget_dnk = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'J. Oblak')]
-df_ontarget_dnk_count = df_ontarget_dnk.shape[0]
-#print("Shot on Target from Denmark")
-#print(df_ontarget_dnk_count)
+# load custom functions
+from src.visualization import *
+from src.dataloader import dataloader
 
-# Shot on target from Slovenia
-df_ontarget_svn = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'K. Schmeichel')]
-df_ontarget_svn_count = df_ontarget_svn.shape[0]
-#print("Shot on Target from Slovenia")
-#print(df_ontarget_svn_count)
+# Load Data from AWAY-Danemark November 20, 2023
+match_id1 = "5414226"
+match_id2 = "5414260"
+match_id3 = "5414284"
+match_id4 = "5414302"
+match_id5 = "5414324"
+match_id6 = "5414203"
 
-# Shot is Goal Denmark
-df_isgoal_dnk = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'J. Oblak')]
-df_isgoal_dnk_count = df_isgoal_dnk.shape[0]
-#print("Shot is Goal from Denmark")
-#print(df_isgoal_dnk_count)
+match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
+# start with the for loops for all matches
+team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
+opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
+goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
+goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
+goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy'])
 
-# Shot is Goal Slovenia
-df_isgoal_svn = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == 'K. Schmeichel')]
-df_isgoal_svn_count = df_isgoal_svn.shape[0]
-#print("Shot is Goal from Slovenia")
-#print(df_isgoal_svn_count)
+def plot_shots_parried(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname):
 
-# percentage parried K. Schmeichel
-df_parried_dnk = 100 - (df_isgoal_svn_count / df_ontarget_svn_count * 100)
-#print(df_parried_dnk)
+    df_goalkeeper = df_events[(df_events['shot.onTarget'] == True)]
+    # Shots on Target from Hometeam
+    df_ontarget_home = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == goalkeeper_away)]
+    df_ontarget_home_count = df_ontarget_home.shape[0]
+    df_isgoal_home = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == goalkeeper_away)]
+    df_isgoal_home_count = df_isgoal_home.shape[0]
+    # parried home keeper
+    if df_ontarget_home_count == 0:
+        df_parried_home = 0 #'No Shots on Target'
+    else:
+        df_parried_home = 100 - (df_isgoal_home_count / df_ontarget_home_count * 100)
+    # Shots on Target from Awayteam
+    df_ontarget_away = df_goalkeeper[(df_goalkeeper['shot.onTarget'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == goalkeeper_home)]
+    df_ontarget_away_count = df_ontarget_away.shape[0]
+    df_isgoal_away = df_goalkeeper[(df_goalkeeper['shot.isGoal'] == True) & (df_goalkeeper['shot.goalkeeper.name'] == goalkeeper_home)]
+    df_isgoal_away_count = df_isgoal_away.shape[0]
+    # parried away keeper
+    if df_ontarget_away_count == 0:
+        df_parried_away = 0 #'No Shots on Target'
+    else:
+        df_parried_away = 100 - (df_isgoal_away_count / df_ontarget_away_count * 100)
 
-# percentage parried J. Oblak
-df_parried_svn = 100 - (df_isgoal_dnk_count / df_ontarget_dnk_count * 100)
-#print(df_parried_svn)
+    team_data = {
+    'Team': [(f'{teamname}'), (f'{opponentTeamname}')],
+    'Shots on Target': [df_ontarget_home_count, df_ontarget_away_count],  # Example shots on target data for both teams
+    'Goals Scored': [df_isgoal_home_count, df_isgoal_away_count],      # Example goals scored data for both teams
+    '% Parried by Opp. GK': [df_parried_home, df_parried_away]        # Example possession data for both teams
+    }
+    
+    # Convert data to a DataFrame
+    df = pd.DataFrame(team_data)
+    
+    # Melt the DataFrame to have one column for variable and one column for value
+    melted_df = pd.melt(df, id_vars='Team', var_name='Category', value_name='Value')
+    
+    # Plot
+    plt.figure(figsize=(10, 6))
+    ax = sns.barplot(data=melted_df, x='Value', y='Category', hue='Team', orient='h')
+    
+    # Add value numbers at the end of the bars
+    for p in ax.patches:
+        value = p.get_width()
+        rounded_value = round(value)
+        ax.text(value, p.get_y() + p.get_height() / 2, f'{rounded_value}', ha='left', va='center')
 
-# Goal zone Shots on target Denmark  GC
-gc_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gc'].shape[0]
-print(gc_dnk)
-# Goal zone Shots on target Slovenia  GC
-gc_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gc'].shape[0]
-print(gc_svn)
+    plt.xlabel('Value')
+    plt.ylabel('Category')
+    plt.title(f'Shots parried: {teamname}-{opponentTeamname}')
+    plt.legend(title='Team')
+    save_path = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/Shots_parried{teamname}-{opponentTeamname}.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path)
 
-# Goal zone Shots on target Denmark  GR
-gr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gr'].shape[0]
-print(gr_dnk)
-# Goal zone Shots on target Slovenia  GR
-gr_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gr'].shape[0]
-print(gr_svn)
+# MAIN
 
-# Goal zone Shots on target Denmark  GB
-gb_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gb'].shape[0]
-print(gb_dnk)
-# Goal zone Shots on target Slovenia  GB
-gb_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gb'].shape[0]
-print(gb_svn)
+for i in range(len(match_id)):
 
-# Goal zone Shots on target Denmark  GBR
-gbr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gbr'].shape[0]
-print(gbr_dnk)
-# Goal zone Shots on target Slovenia  GBR
-gbr_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gbr'].shape[0]
-print(gbr_svn)
-
-# Goal zone Shots on target Denmark  GTR
-gtr_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gtr'].shape[0]
-print(gtr_dnk)
-# Goal zone Shots on target Slovenia  GTR
-gtr_svn = df_ontarget_svn[(df_ontarget_svn['shot.goalZone'] == 'gtr') & (df_ontarget_svn['type.primary'] == 'free_kick')].shape[0]
-print("Shot on target was freekick?")
-print(gtr_svn)
-
-# Goal zone Shots on target Denmark  GL
-gl_dnk = df_ontarget_dnk[df_ontarget_dnk['shot.goalZone'] == 'gl'].shape[0]
-print(gl_dnk)
-# Goal zone Shots on target Slovenia  GL
-gl_svn = df_ontarget_svn[df_ontarget_svn['shot.goalZone'] == 'gl'].shape[0]
-print(gl_svn)
-
-# Create Plots
-# ------------------------------------------------------------------
-dnk_data = {'Shots on Target': df_ontarget_dnk_count,
-            'Shot goal zone: GC': gc_dnk,
-            'Shot goal zone: GR': gr_dnk,
-            'Shot goal zone: GB': gb_dnk,
-            'Shot goal zone: GBR': gbr_dnk,
-            'Shot goal zone: GTR': gtr_dnk,
-            'Shot goal zone: GL': gl_dnk,
-            'Shot is Goal': df_isgoal_dnk_count,
-            '% Parried by Opp. GK': df_parried_svn,
-            }
-svn_data = {'Shots on Target': df_ontarget_svn_count,
-            'Shot goal zone: GC': gc_svn,
-            'Shot goal zone: GR': gr_svn,
-            'Shot goal zone: GB': gb_svn,
-            'Shot goal zone: GBR': gbr_svn,
-            'Shot goal zone: GTR': gtr_svn,
-            'Shot goal zone: GL': gl_svn,
-            'Shot is Goal': df_isgoal_svn_count,
-            '% Parried by Opp. GK': df_parried_dnk,
-            }
-
-perc_categories = []
-
-plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denmark', perc_categories=perc_categories, title='EM Qualifier: 2023-11-20 (2:1)',
-                    subtitle='Shots Parried by Goalkeeper', team1_color='blue', team2_color='red',saveplt=True, savepath='C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/Shots_parried.png')
+    df_events = dataloader(match_id[i])
+    goalkeeper_home = goalkeeper_home_array[i]
+    goalkeeper_away = goalkeeper_away_array[i]
+    teamname = team_name_array[i]
+    opponentTeamname = opponentTeam_name_array[i]
+    plot_shots_parried(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname)
 
 ```
 </details>
@@ -1429,78 +1501,118 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 #### 4.4.2 Passes played per goalkeeper
 
 Like mentioned above the goalkeeper is a main part of the defense. With the ability to really take part in the game and create possible pass stations the goalkeeper can be the one additional man in the defense line. It is possible to make changes of side or also launch a quick attack with a long shot of the goalkeeper.
+----- ADD RIGHT TEXT -----
 In the following chart it can be seen that K. Schmeichel had a total of 24 passes. He was often used to calm down the defense and waiting for the right time to launch an attack. Furthermore with a total of 10 high and long passes K. Schmeichel made some passes near and over the own pitch half to start an attack.
 J. Oblak had a total of 18 passes and only 5 high and long passes. This reflects that Slovenia had its main focus on defending and was not often able to get out of their half.
+----- ADD RIGHT TEXT -----
 
-![goalkeeper_passes](uploads/baf88f90598db23ecdba2e0cad5f1417/goalkeeper_passes.png)
+| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![goalkeeper_passes_Slovenia-Kazakhstan](uploads/ad28a68924344f476fa3c6a006290496/goalkeeper_passes_Slovenia-Kazakhstan.png)|![goalkeeper_passes_Denmark-Slovenia](uploads/3e5236efbf48da464e31b495af23c121/goalkeeper_passes_Denmark-Slovenia.png)|![goalkeeper_passes_Northern_Ireland-Slovenia](uploads/650910a67dfbc3c443ce2f36257ad0c6/goalkeeper_passes_Northern_Ireland-Slovenia.png)|
+
+| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
+| ------------- | ------------- | ------------- |
+|![goalkeeper_passes_Slovenia-Finland](uploads/a75efac61fa58b69c652bc051a491630/goalkeeper_passes_Slovenia-Finland.png)|![goalkeeper_passes_San_Marino-Slovenia](uploads/415bb5f6d9195d8b14888af8dd985585/goalkeeper_passes_San_Marino-Slovenia.png)|![goalkeeper_passes_Slovenia-Northern_Ireland](uploads/2b49f77bef9bd9f2a6efe3b817704e80/goalkeeper_passes_Slovenia-Northern_Ireland.png)|
+
 
 <details>
 <summary> code</summary>
 
 ```python
-# The import part is the same as in Section 4.3
+import pandas as pd
+import json
+from IPython.display import display
+import zipfile
+from pathlib import Path
+from datetime import datetime, timedelta
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
-# Passes from Denmark Goalkeeper K. Schmeichel
-passes_goalkeeper_dnk = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'K. Schmeichel')].shape[0]
-print(passes_goalkeeper_dnk)
-long_high_passes_goalkeeper_dnk = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'K. Schmeichel') & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
-print(long_high_passes_goalkeeper_dnk)
+# specfic soccer analysis packages
+from mplsoccer import Pitch
 
-# Passes from Slovenian Goalkeeper J. Oblak
-passes_goalkeeper_svn = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'J. Oblak')].shape[0]
-print(passes_goalkeeper_svn)
-long_high_passes_goalkeeper_svn = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == 'J. Oblak') & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
-print(long_high_passes_goalkeeper_svn)
+# load custom functions
+from src.visualization import *
+from src.dataloader import dataloader
+
+# Load Data from AWAY-Danemark November 20, 2023
+match_id1 = "5414226"
+match_id2 = "5414260"
+match_id3 = "5414284"
+match_id4 = "5414302"
+match_id5 = "5414324"
+match_id6 = "5414203"
+
+match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
+# start with the for loops for all matches
+team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
+opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
+goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
+goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
+
+def plot_passes_goalkeeper(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname):
+    # Home
+    passes_goalkeeper_home = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == goalkeeper_home)].shape[0]
+    long_high_passes_goalkeeper_home = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == goalkeeper_home) & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
+    # Away
+    passes_goalkeeper_away = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == goalkeeper_away)].shape[0]
+    long_high_passes_goalkeeper_away = df_events[(df_events['type.primary'] == 'pass') & (df_events['player.name'] == goalkeeper_away) & (df_events['pass.length'] >= 40) & (df_events['pass.height'] == 'high')].shape[0]
+
+    # Plot
+    df_passes_gk = pd.DataFrame(columns=['name', 'passes'])
+    # Assign names
+    df_passes_gk.at[0, 'name'] = (f'{goalkeeper_home} passes')
+    df_passes_gk.at[1, 'name'] = (f'{goalkeeper_home} high/long passes')
+    df_passes_gk.at[2, 'name'] = (f'{goalkeeper_away} passes')
+    df_passes_gk.at[3, 'name'] = (f'{goalkeeper_away} high/long passes')
 
 
-# Plot Data
-# 1 Prepare Data
-# Create dataframe for goalkeeper name and passes played
-df_passes_gk = pd.DataFrame(columns=['name', 'passes'])
+    # Assign calculated passes
+    df_passes_gk.at[0, 'passes'] = passes_goalkeeper_home
+    df_passes_gk.at[1, 'passes'] = long_high_passes_goalkeeper_home
+    df_passes_gk.at[2, 'passes'] = passes_goalkeeper_away
+    df_passes_gk.at[3, 'passes'] = long_high_passes_goalkeeper_away
 
-# Assign names
-df_passes_gk.at[0, 'name'] = 'K. Schmeichel passes'
-df_passes_gk.at[1, 'name'] = 'K. Schmeichel high/long passes'
-df_passes_gk.at[2, 'name'] = 'J. Oblak passes'
-df_passes_gk.at[3, 'name'] = 'J. Oblak high/long passes'
+    # 2 Plot Data
+    # Set Seaborn theme and color palette
+    sns.set_theme(style="darkgrid")
+    # palette = sns.color_palette("viridis", len(df_passes_gk))
+    palette = sns.color_palette("viridis", len(aligned_counts_away))
 
-# Assign calculated passes
-df_passes_gk.at[0, 'passes'] = passes_goalkeeper_dnk
-df_passes_gk.at[1, 'passes'] = long_high_passes_goalkeeper_dnk
-df_passes_gk.at[2, 'passes'] = passes_goalkeeper_svn
-df_passes_gk.at[3, 'passes'] = long_high_passes_goalkeeper_svn
+    # Plotting the data using Seaborn and Matplotlib
+    plt.figure(figsize=(10, 6))
 
-# 2 Plot Data
-# Set Seaborn theme and color palette
-sns.set_theme(style="darkgrid")
-# palette = sns.color_palette("viridis", len(df_passes_gk))
-palette = sns.color_palette("viridis", len(aligned_counts_svn))
+    # Plot percentage of duels won per player
+    sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[8])
 
-# Plotting the data using Seaborn and Matplotlib
-plt.figure(figsize=(10, 6))
+    ax = sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[8])
+    # Adding labels and title
+    plt.xlabel('Goalkeeper')
+    plt.ylabel('Number of Passes')
+    plt.title('Total Passes per Goalkeepers')
 
-# Plot percentage of duels won per player
-sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[10])
+    # Rotate x-axis labels for better readability
+    plt.xticks(rotation=45, ha='right')
 
-ax = sns.barplot(x='name', y='passes', data=df_passes_gk, color=palette[10])
-# Adding labels and title
-plt.xlabel('Goalkeeper')
-plt.ylabel('Number of Passes')
-plt.title('Total Passes per Goalkeepers')
+    # Customize x-axis labels
+    ax.set_xticklabels([(f'{goalkeeper_home}\nPasses'), (f'{goalkeeper_home}\nHigh/long passes'), (f'{goalkeeper_away}\nPasses'), (f'{goalkeeper_away}\nHigh/long passes')])
 
-# Rotate x-axis labels for better readability
-plt.xticks(rotation=45, ha='right')
+    # Save plot to a specified path
+    save_path = (f'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/goalkeeper_passes_{teamname}-{opponentTeamname}.png')  # Specify your desired save path here
+    plt.tight_layout()
+    plt.savefig(save_path)
 
-# Customize x-axis labels
-ax.set_xticklabels(['K. Schmeichel\nPasses', 'K. Schmeichel\nHigh/long passes', 'J. Oblak\nPasses', 'J. Oblak\nHigh/long passes'])
+# MAIN
+for i in range(len(match_id)):
 
-# Save plot to a specified path
-save_path = 'C:/Users/loris/Documents/ETH Zürich/Master/Soccer Analytics/goalkeeper_passes_final.png'  # Specify your desired save path here
-plt.tight_layout()
-plt.savefig(save_path)
-
-# Show plot
-plt.show()
+    df_events = dataloader(match_id[i])
+    goalkeeper_home = goalkeeper_home_array[i]
+    goalkeeper_away = goalkeeper_away_array[i]
+    teamname = team_name_array[i]
+    opponentTeamname = opponentTeam_name_array[i]
+    plot_passes_goalkeeper(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname)
 
 ```
 </details>
