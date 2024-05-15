@@ -296,7 +296,7 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ## 3. In possesion - attack of Slovenia
 
-Our analysis of Slovenia's attacking performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
+In order to examine the attacking behavior of Denmark's group opponent Slovenia, a statistical analysis is first carried out. In a further chapter, the heat maps of the attack are examined in order to identify possible preferred sides. Key players are identified on the basis of passing patterns. Patterns are recognized with the help of various plots for long passes, crosses and shots.
 
 ### 3.1 Attacking style:
 
@@ -404,11 +404,12 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### Passing network
 
-In the picture you can see the more passes have been played by a player. The bigger his name circle. The position of the circle was determined by taking the average position of all the passes made by a player. 
+Pass network plots are read as follows. The more passes a player has played, the larger his circle is. The position of the circle was determined based on the average position of all passes played by a player.  
 
-A look at Slovenia's passing network mirrors the statistics from chapter 2. Slovenia were pushed in behind and were rarely able to create a successful build-up between defence and midfield, which points to the many passes between the two centre-backs (Bijol and Blazic) and Oblak. Denmark managed to isolate the midfield and attack from the game, leaving the defence with only the pass to the centre-back or goalkeeper.
+A quick look at all the pitches gives us some insights into the Slovenian attacking game. Cerin is clearly a key player. Especially in the game against San Marino, he played the central midfield role. As he is a good attacking and defensive midfielder, he can play both roles, making him a perfect 4-4-2 player. His circle makes him the pivot between defense and attack.
 
-Kranicnik takes on an exciting position in the network. His high pass rate could indicate an inverted right-back. However, it also suggests that the build-up was often attempted via the right flank with Karnicnik and Cerin as the main figures.
+It is striking how closely the full-backs and wingers play together. The duo of Stojanovic and Karnicnik in particular are inseparable. When both are playing, they play an important role in the passing network. Karnicnik in particular distributes a conspicuous number of passes as a full-back. Purely in terms of the passes, they often play via this side, where Karnicnik is positioned. Bijol and Blazic, the central defenders, remain true to their chain and build up play from the back. It is also noticeable that they both look for the flanks rather than playing the pass into the middle. This can be seen in the link-up play.
+
 
 
 |Kazakhstan|Denmark|N_Ireland|
