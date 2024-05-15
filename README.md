@@ -699,32 +699,32 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="200">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Vipotnik_Heatmaps.png" width="200">
 </div>
 
 
 <div align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/B_Verbi%C4%8D_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/T_El%C5%A1nik_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Mlakar_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 ### Slovenia vs. Kazakhstan
 
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="200">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/A_%C5%A0porar_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
 </div>
 
 
 <div align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 1" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/A_%C4%8Cerin_Heatmaps.png" alt="Image 4" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/J_Mlakar_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 
@@ -1061,41 +1061,69 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 It's clear to see that the 4-man chain was played consistently throughout the game and that they stayed true to their strategy. In other words, the coach doesn't allow himself to be tempted into plan B, C or D, but draws a clear line. Karnicnik is talented on both feet, which must be taken into account when analyzing the game. In very rare cases, the chain dared to cross the halfway line, but for the majority of the game, it certainly focused solely on defending.
 
-![DefensiveRow](uploads/14120d63275d18a01a50b1db56b398a0/DefensiveRow.png)
+### San Marino vs. Slovenia
+
+<div align="center">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200"></td>
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/J_Bijol_Heatmaps.png" alt="Image 2" width="200"></td>
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200"></td>
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="200"></td>
+</div>
+
+### Slovenia vs Finnland
+
+<div align="center">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+### Northern Island vs. Slovenia
+
+<div align="center">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/J_Bijol_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/E_Jan%C5%BEa_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+### Denmark vs. Slovenia
+
+
+<div align="center">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Bijol_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+### Slovenia vs. Kazakhstan
+
+
+<div align="center">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+
 
 <details>
   <summary> code </summary>
-  
+
+#### Create an array with players you want to see
+
 ```python
+  player = ['B. Šeško', 'J. Kurtič', 'Ž. Karničnik']
+    for pl in player:
+        df_player = df[df['player.name'] == pl]
 
-import json
-import pandas as pd
-from mplsoccer import Pitch, Sbopen
-from mplsoccer import VerticalPitch,Pitch
-import matplotlib.pyplot as plt
-import seaborn as sns
-from matplotlib.patches import Patch
-from matplotlib.lines import Line2D
-
-
-# Import the dataset
-file_path = 'input/wyscout/5414302.json'
-with open(file_path, 'r', encoding='utf-8') as file:
-    data = json.load(file) 
-    
-df = pd.json_normalize(data, record_path=['events'])
-
-
-# Create an array with players you want to see
-player = ['B. Šeško', 'Ž. Vipotnik', 'J. Mlakar', 'T. Elšnik', 'A. Čerin', 'B. Verbič', 'J. Bijol', 'M. Blažič', 'Ž. Karničnik', 'E. Janža' ]
-for pl in player:
-    df_player = df[df['player.name'] == pl]
-        
-    # Pitch     
-    pitch = VerticalPitch(pitch_color='#2f8c58', 
-                          line_color='white', 
+    pitch = VerticalPitch(pitch_color='#2f8c58',
+                          line_color='white',
                           pitch_type='wyscout')
-    
+
     fig, ax = pitch.grid(grid_height=0.9, title_height=0.06, axis=False,
                          endnote_height=0.04, title_space=0, endnote_space=0)
 
@@ -1113,17 +1141,18 @@ for pl in player:
 
     legend_elements = [Line2D([0], [0], color='w', markerfacecolor='k', marker='o', label=pl)]
 
-    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,  
+    plt.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, 1), bbox_transform=plt.gcf().transFigure,
                handlelength=2, labelspacing=1.2, fontsize=10)
-    
+
     def replace_dot_space_with_underscore(pl):
         return pl.replace(". ", "_")
-    
+
     pl = replace_dot_space_with_underscore(pl)
-    
+
     plt.savefig(f'plots/{pl}_Heatmaps.png', dpi=400)
     plt.show()
 ```
+
 </details>
 
 
