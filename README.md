@@ -133,12 +133,17 @@ Images: They are screenshot of Google Chrome output when we type : Last games of
 
 ### 2.2 Key statistics
 
+![key_statistics: SVN agg](notebooks/plots/2-Statistics/key_statistics_SVN_agg.png)
+![key_statistics: DEN vs SVN](notebooks/plots/2-Statistics/key_statistics_DEN_SVN.png)
+![key_statistics: SVN vs similar](notebooks/plots/2-Statistics/key_statistics_SVN_vs_similar.png)
+![key_statistics: SVN vs weak](notebooks/plots/2-Statistics/key_statistics_SVN_vs_weak.png)
 
+
+##### code and text to be updated 
 We start by analyzing the direct qualifier match between Denmark and Slovenia on November 17, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
 
 Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
 
-![key_statistics](uploads/ad439dbaebe9cea015aefcd5e2bc5c75/key_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -296,13 +301,19 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ## 3. In possesion - attack of Slovenia
 
+##### text to be updated 
 In order to examine the attacking behavior of Denmark's group opponent Slovenia, a statistical analysis is first carried out. In a further chapter, the heat maps of the attack are examined in order to identify possible preferred sides. Key players are identified on the basis of passing patterns. Patterns are recognized with the help of various plots for long passes, crosses and shots.
 
 ### 3.1 Attacking style:
 
+![attacking_style: SVN agg](notebooks/plots/3-attack/attacking_style_SVN_agg.png)
+![attacking_style: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking_style: SVN vs similar](notebooks/plots/3-attack/attacking_style_SVN_vs_similar.png)
+![attacking_style: SVN vs weak](notebooks/plots/3-attack/attacking_style_SVN_vs_weak.png)
+
+##### code and text to be updated 
 Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
-![attacking_style](uploads/5f9291eff54bbfe0fbf6c9cb803f6803/attacking_style.png)
 
 <details>
   <summary> code </summary>
@@ -343,9 +354,14 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 3.2 Attacking efficiency
 
+![attacking efficiency: SVN agg]()
+![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking_efficiency: SVN vs similar](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_similar.png)
+![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
+
+##### code and text to be updated 
 The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
-![attacking_efficiency](uploads/c016c0038385df6ea41ffa43fa14274d/attacking_efficiency.png)
 
 <details>
   <summary> code </summary>
