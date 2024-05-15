@@ -408,7 +408,9 @@ Pass network plots are read as follows. The more passes a player has played, the
 
 A quick look at all the pitches gives us some insights into the Slovenian attacking game. Cerin is clearly a key player. Especially in the game against San Marino, he played the central midfield role. As he is a good attacking and defensive midfielder, he can play both roles, making him a perfect 4-4-2 player. His circle makes him the pivot between defense and attack.
 
-It is striking how closely the full-backs and wingers play together. The duo of Stojanovic and Karnicnik in particular are inseparable. When both are playing, they play an important role in the passing network. Karnicnik in particular distributes a conspicuous number of passes as a full-back. Purely in terms of the passes, they often play via this side, where Karnicnik is positioned. Bijol and Blazic, the central defenders, remain true to their chain and build up play from the back. It is also noticeable that they both look for the flanks rather than playing the pass into the middle. This can be seen in the link-up play.
+It is striking how closely the full-backs and wingers play together. The duo of Stojanovic and Karnicnik in particular are inseparable. When both are playing, they play an important role in the passing network. Karnicnik in particular distributes a conspicuous number of passes as a full-back. Purely in terms of the passes, they often play via this side, where Karnicnik is positioned. Bijol and Blazic, the central defenders, remain true to their chain and build up play from the back. It is also noticeable that they both look for the flanks rather than playing the pass into the middle. This can be seen in the link-up line.
+
+A glance at the two forwards shows that they are not involved in the passing game to any great extent. 
 
 
 
@@ -645,9 +647,7 @@ for val in values:
 
 ### Attacking Players Heatmap
 
-In order to analyze Slovenian's attacking behavior, let's take a look at the thermal images of the attacking and midfield players. From the passing Network from chapter 3.1 and the generated images there is a soft tendency that the attacking play is more developped on the right side, through Vipotnik and Verbic/Mlakar. Mlakar and Verbic kept changing their starting positions during the game. Only on the counterattacks do they act as offensive wingers and only then do they give the strikers the opportunity to move into the center. The outside midfielders are therefore very defensively prepared for this game and help out the full-backs.
-
-It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
+In order to analyze Slovenian's attacking behavior, let's take a look at the Heatmaps of the attacking and midfield players. 
 
 
 ### San Marino vs. Slovenia
@@ -697,6 +697,10 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 </div>
 
 ### Denmark vs. Slovenia
+
+From the passing Network from chapter 3.1 and the generated images there is a soft tendency that the attacking play is more developped on the right side, through Vipotnik and Verbic/Mlakar. Mlakar and Verbic kept changing their starting positions during the game. Only on the counterattacks do they act as offensive wingers and only then do they give the strikers the opportunity to move into the center. The outside midfielders are therefore very defensively prepared for this game and help out the full-backs.
+
+It is also clear that Slovenian were mainly occupied with defending and Sesko and Vipotnik therefore received little support up front. Elsnik and Cerin took over the position of the typical number 8 and rarely dropped deep to the side and kept the center closed.
 
 
 <div align="center">
