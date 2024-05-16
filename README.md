@@ -429,9 +429,9 @@ A glance at the two forwards shows that they are not involved in the passing gam
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-|Finland|San_Marino|N_Ireland_2|
+|Finland|San_Marino|Denmark_2|
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
 <details>
   <summary> code </summary>
