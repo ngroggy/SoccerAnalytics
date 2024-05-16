@@ -17,19 +17,14 @@ _Please fill in the following table._
 
 Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
 
-- [ ] when saving, please indicate what you changed in a meaningful commit messages
-- [x] draft due: **Monday, April 8**
-- Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
-- You make some claims about 442 formations but it is not clear where you are taking this from.
-- Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
-- Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
-- Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
-- Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
-- You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
-- Some of your set piece analysis might be more informative when including other matches (see comment above).
-- Nice that you have a summary at the end of the report with weaknesses and suggested tactics
-- Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
-- [ ] final version due: **Friday, May 24** 
+- [] Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
+- [] Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
+- [] Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
+- [] Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
+- [] You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
+- [] Some of your set piece analysis might be more informative when including other matches (see comment above).
+- [] Nice that you have a summary at the end of the report with weaknesses and suggested tactics
+- []Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
 </details>
 
 
