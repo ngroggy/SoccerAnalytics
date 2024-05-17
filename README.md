@@ -2031,18 +2031,11 @@ plt.show()
 
 ## 6 Physical data
 
-In the Slovenian national team, there are several players who fit this description and deserve close attention from both fans and opponents alike. Here are five key players to watch:
+In the Slovenian national team, there are several players who fit this description and deserve close attention from both fans and opponents alike. Here are two key players that seems to be particularly dangerous based on physical data:
 
-**Adam Gnezda Čerin**: Known for his tireless work rate and ability to cover immense distances on the field, Čerin poses a constant threat with his speed and agility. His versatility allows him to contribute both defensively and offensively, making him a vital player for Slovenia.
+**Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game at any time.
 
-**Žan Karničnik**: A dynamic midfielder with excellent ball control and vision, Karničnik is adept at orchestrating attacks and creating goal-scoring opportunities for his teammates. His ability to drive forward with the ball and deliver precise passes makes him a dangerous presence in the opposition's half.
-
-**Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game with a moment of brilliance.
-
-**Jan Mlakar**: Mlakar's intelligence on the field and knack for finding space in the box make him a constant threat in front of goal. He possesses a natural goal-scoring instinct and is always ready to capitalize on any defensive errors or loose balls in the penalty area.
-
-**Petar Stojanović**: A reliable presence in defense, Stojanović is known for his strong tackling, positional awareness, and ability to read the game. He provides stability at the back and is instrumental in thwarting opposition attacks, making him a crucial player for Slovenia's defensive organization.
-
+**Adam Gnezda Čerin**: He seems to be work at a tireless rate and is able to cover immense distances on the field, Čerin could pose a constant threat with his speed and agility. His moving ability allows him to contribute both defensively and offensively, making him a vital player for Slovenia.
 
 #### Overall data
 
