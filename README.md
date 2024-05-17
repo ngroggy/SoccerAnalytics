@@ -2284,6 +2284,13 @@ for val in physical_data.keys():
 
 ## 7 Goals
 
+As seen from Slovenia's last six goals in previous official matches, two were from set pieces, one resulted from a well-constructed passing play in attack, and the other three came from quick accelerations/counter-attacks. Based on this information, it's important to be cautious of two aspects of Slovenia's play.
+
+Firstly, their proficiency with set pieces indicates the need to avoid giving away unnecessary fouls near the penalty area / corners. Maintaining discipline in defense and ensuring tight marking during corners and free-kicks is important to neutralize threats like Benjamin Šeško, who also excels in aerial duels.
+
+Finally, Slovenia's effectiveness on the counter-attack necessitates vigilance in not over-committing players forward, especially when in possession. Quick defensive transitions are vital to prevent them from exploiting any spaces left behind. Defenders and midfielders should be prepared to track back swiftly and cover any gaps that might appear during attacking phases. Again, Šeško seems to be a dangerous player in those situations. 
+
+If video don't display well, please have a look at our github repo: https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/
 
 | Vs : Denmark | Vs : Portugal | Vs : Portugal |
 |---|---|---|
