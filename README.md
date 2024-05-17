@@ -2076,12 +2076,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
 | Benjamin Šeško    |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Žan Karničnik     |      11287 |               1605 |            526 |                  159 |               6 |        29.6 |
-#### Top 3 Distance vs N_Ireland_2
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
-| Žan Karničnik     |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar        |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Running Distance vs Kazakhstan
 | Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2112,12 +2107,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
 | Timi Max Elšnik   |      11194 |               1703 |            462 |                   59 |               4 |        26   |
 | Žan Karničnik     |      11287 |               1605 |            526 |                  159 |               6 |        29.6 |
-#### Top 3 Running Distance vs N_Ireland_2
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
-| Žan Karničnik     |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar        |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 HSR Distance vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2148,12 +2138,8 @@ In the Slovenian national team, there are several players who fit this descripti
 | Petar Stojanović  |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
 | Benjamin Šeško    |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
-#### Top 3 HSR Distance vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Žan Karničnik |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+
+
 #### Top 3 Sprinting Distance vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2184,12 +2170,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
 | Andraž Šporar    |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
-#### Top 3 Sprinting Distance vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
-| Žan Karničnik |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Accelerations vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2220,12 +2201,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Erik Janža       |       9769 |               1200 |            480 |                  140 |               9 |        27.2 |
 | Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
-#### Top 3 Accelerations vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Andraž Šporar |       7963 |                969 |            372 |                   64 |               8 |        26.8 |
-| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Max speed vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2256,12 +2232,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Andraž Šporar  |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
 | Jan Mlakar     |       8981 |               1232 |            491 |                  166 |               6 |        30.2 |
-#### Top 3 Max speed vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
-| Vanja Drkušić |       8467 |                825 |            207 |                   22 |               2 |        29.3 |
-| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+
 
 
 
