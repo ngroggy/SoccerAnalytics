@@ -309,7 +309,9 @@ In order to examine the attacking behavior of Denmark's group opponent Slovenia,
 ##### code to be updated 
 A look at the statistics on attacking style quickly shows that Slovenia has a very varied attacking game. 53% of all attacks are preceded by a build-up phase, the rest are long switching actions, counter-attacks or long balls to the top to outplay the opponent. The direct comparison with group opponents Denmark is striking. The Slovenians are forced to play high balls due to their high pressing and the tall Danes. This speaks against their ability to play under pressure.
 
-The Slovenians are also worse than their opponents at moving the ball in attack. Especially against weaker teams, the Slovenians seem to have difficulties penetrating the final third. Denmark must be prepared for a Slovenia that does not make the play but often relies on counter-attacks. Against teams of equal strength, there is a good balance between build-up phases and counter-attacks compared to their opponents. In any case, a team that wants to and can play long balls, especially from the two central defenders.  
+The Slovenians are also worse than their opponents at moving the ball in attack. Especially against weaker teams, the Slovenians seem to have difficulties penetrating the final third. Denmark must be prepared for a Slovenia that does not make the play but often relies on counter-attacks. Against teams of equal strength, there is a good balance between build-up phases and counter-attacks compared to their opponents. In any case, a team that wants to and can play long balls, especially from the two central defenders.
+
+Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
 
 <details>
@@ -357,7 +359,10 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 ![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
 
 ##### code and text to be updated 
-The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
+
+On average, the Slovenians attack more from the flanks than their opponents in the European Championship qualifiers, which can be attributed to the height of the double strikers Sesko (1.95 m), Sporar (1.86 m) and Vipotnik (1.85 m). This is also reflected in the dribbling statistics, in which Slovenia performs below average. No strong dribbling forwards. The Slovenians also win more offensive duels on average due to the great physicality and tackling strength of their strikers. Slovenia is also a team that is not afraid to shoot, albeit with average efficiency. 
+
+For the direct comparison with Denmark, the effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
 
 <details>
