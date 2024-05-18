@@ -1236,11 +1236,11 @@ Closing this discussion with Blažič, Bijol and Janža the defense of Slovenia 
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_plot_duel_percentageSlovenia-KazakhstanHOME.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_plot_duel_percentageDenmark-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_plot_duel_percentageNorthern Ireland-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_plot_duel_percentageSlovenia-KazakhstanHOME.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_plot_duel_percentageDenmark-SloveniaAWAY.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_plot_duel_percentageNorthern Ireland-SloveniaAWAY.png?raw=true" align="center"/>|
 
 |  14 Oct vs Finland | 10 Sep vs San Marino | 19 Jun vs Denmark |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/4_plot_duel_percentageSlovenia-FinlandHOME.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/5_plot_duel_percentageSan Marino-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/6_plot_duel_percentageSlovenia-DenmarkHOME.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/4_plot_duel_percentageSlovenia-FinlandHOME.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/5_plot_duel_percentageSan Marino-SloveniaAWAY.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/6_plot_duel_percentageSlovenia-DenmarkHOME.png?raw=true" align="center"/>|
 
 
 <details>
@@ -1414,7 +1414,7 @@ The goal against J. Oblak in the first match against Kazakhstan was a header fro
 
 | 23 Mar vs Kazakhstan | 17 Nov vs Denmark | 20 Nov vs Kazakhstan |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_Shots_parriedKazakhstan-Slovenia.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_Shots_parriedDenmark-Slovenia.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_Shots_parriedSlovenia-Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_Shots_parriedKazakhstan-Slovenia.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_Shots_parriedDenmark-Slovenia.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_Shots_parriedSlovenia-Kazakhstan.png?raw=true" align="center"/>|
 
 
 <details>
@@ -1530,7 +1530,7 @@ In general Slovenia has a solid goalkeeper with J. Oblak who can be taken into a
 
 | 23 Mar vs Kazakhstan | 17 Nov vs Denmark | 20 Nov vs Kazakhstan |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_goalkeeper_passes_Kazakhstan-Slovenia.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_goalkeeper_passes_Denmark-Slovenia.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_goalkeeper_passes_Slovenia-Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_goalkeeper_passes_Kazakhstan-Slovenia.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_goalkeeper_passes_Denmark-Slovenia.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_goalkeeper_passes_Slovenia-Kazakhstan.png?raw=true" align="center"/>|
 
 
 <details>
