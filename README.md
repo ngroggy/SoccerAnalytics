@@ -1217,9 +1217,9 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 In this section the players from Slovenia are analyzed regarding the duel performance while defending. The regarding matches are listed in Section 1.2.
 
 The plots below show the duel performance of the players from Slovenia.\
-The defender of Slovenia are the players with the most duels and also the most duels won. Starting with the game against Northern Ireland, Janza with a total of 13 duels had a big impact for the win. Furthermore in the game against Denmark Bijol with also a total of 13 duels was an important part in keeping the score low although they lost the game. Everytime Bijol plays he wins around 80% of his duels which is a remarkable amount. To finish the discussion about the defender it is looked at Blazic. With a percentage won of 100% against Northern Ireland he shows his importance in the defending line of Slovenia.\
+The defender of Slovenia are the players with the most duels and also the most duels won. Starting with the game against Northern Ireland, Janža with a total of 13 duels had a big impact for the win. Furthermore in the game against Denmark Bijol with also a total of 13 duels was an important part in keeping the score low although they lost the game. Everytime Bijol plays he wins around 80% of his duels which is a remarkable amount. To finish the discussion about the defender it is looked at Blažič. With a percentage won of 100% against Northern Ireland he shows his importance in the defending line of Slovenia.\
 The midfielder of Slovenia do not stand out with the duel performance. Mostly the players have not remarkable stats about their duels. Cérin is the only midfielder that stands out over all games. With mostly over 8 duels and against Kazakhstan with a total of 12 duels he strengthens the midfield remarkable.\
-Closing this discussion with Blazic, Bijol and Janza the defense of Slovenia is ready for the game against Denmark taking into acount that with Cérin an important midfielder will support them.
+Closing this discussion with Blažič, Bijol and Janža the defense of Slovenia is ready for the game against Denmark taking into acount that with Cérin an important midfielder will support them.
 
 #### 4.3.1 Total duels and duels won: Slovenia
 
