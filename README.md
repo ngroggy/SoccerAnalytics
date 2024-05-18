@@ -79,21 +79,22 @@ For the final version, we plan to:
 
 Despite Denmark holding the 21st position in the FIFA rankings, and Slovenia being ranked at 55, overlooking a theoretically weaker opponent is never advisable. During the last game against Slovenia (Qualifiers Euro 23) we won with 2-1 in a complicated game while we got a draw 6 month earlier with 1-1 (Qualifiers Euro 23). In this analysis, we'll provide you with all the essential keys to ensure success against Slovenia in the upcoming match.
 
-Our preparation for the group match of the European Championship consists in a first step of the analysis of the direct encounter between Denmark and Slovenia in the European Championship qualification which took place on 17.11.23. In a further analysis in the next draft, additional meshes will be added to support our statements.
+Our preparation for the group match of the European Championship consists of the analysis of the  6 games in the European Championship qualification of Slovenia. The games are the last 5 games and an additional game against Denmark. They are analysed and patterns are evaluated.
 
 Based on information from multiple sources, it's seems evident that Slovenia's team possesses notable strengths at some positions. Specifically, their goalkeeper, currently playing for Atlético, stands out, alongside midfielders Benjamin Sesko and Jaka Bijol. Given their midfield/attack roles, it's reasonable to anticipate Slovenia boasting a strong midfield/attack presence.
 
-After analyzing their recent matches, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
+After analyzing their recent matches, it's evident that Slovenia employed a traditional 4-4-2 formation with no unexpected variations in player selection. Additionally, one of the standout players we identified, Sesko, managed to score a goal during the game against Denmark on November 17, 2023. We should keep in mind that the 4-4-2 formation brings a central presence that enables counter-attacks.
 
-### 1.2 Last 5 qualifier games slovenia
+### 1.2 Analysed qualifier games Slovenia
 
 | wyscout | skillcorner | date       | home             | away       | Score Home | Score Away |
 | ------: | ----------: | ---------- | ---------------- | ---------- | ---------- | ---------- |
 | 5414226 |     1385659 | 2023-09-10 | San Marino       | Slovenia   | 0          | 4          |
-| 5414260 |     1381446 | 2023-10-14 | Slovenia         | Finland    | 1          | 3          |
+| 5414260 |     1381446 | 2023-10-14 | Slovenia         | Finland    | 3          | 0          |
 | 5414284 |     1381466 | 2023-10-17 | Northern Ireland | Slovenia   | 0          | 1          |
 | 5414302 |     1381485 | 2023-11-17 | Denmark          | Slovenia   | 2          | 1          |
 | 5414324 |     1381505 | 2023-11-20 | Slovenia         | Kazakhstan | 2          | 1          |
+| 5414180 |          -  | 2023-06-19 | Slovenia         | Denmark    | 1          | 1          |
 
 ### 1.3 Injured & suspended players
 
@@ -1186,73 +1187,58 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 
 
 ### 4.3 Duel defence performance of the players
-In this section the players of the last five qualifying matches from Slovenia are analyzed regarding the duel performance while defending.
+In this section the players from Slovenia are analyzed regarding the duel performance while defending. The regarding matches are listed in Section 1.2.
+
+The plots below show the duel performance of the players from Slovenia.\
+The defender of Slovenia are the players with the most duels and also the most duels won. Starting with the game against Northern Ireland, Janza with a total of 13 duels had a big impact for the win. Furthermore in the game against Denmark Bijol with also a total of 13 duels was an important part in keeping the score low although they lost the game. Everytime Bijol plays he wins around 80% of his duels which is a remarkable amount. To finish the discussion about the defender it is looked at Blazic. With a percentage won of 100% against Northern Ireland he shows his importance in the defending line of Slovenia.\
+The midfielder of Slovenia do not stand out with the duel performance. Mostly the players have not remarkable stats about their duels. Cérin is the only midfielder that stands out over all games. With mostly over 8 duels and against Kazakhstan with a total of 12 duels he strengthens the midfield remarkable.\
+Closing this discussion with Blazic, Bijol and Janza the defense of Slovenia is ready for the game against Denmark taking into acount that with Cérin an important midfielder will support them.
 
 #### 4.3.1 Total duels and duels won: Slovenia
-The plots below show the duel performance of the players from Slovenia.
----- ADD RIGHT TEXT -----
-It can be seen that J. Bijpol has the most duels with a total of 13. That showcases that Slovenia had to do a lot of defending and especially J. Bijpol made a big impact in the defending line of Slovenia with 11 duels won. Further more the second CB M. Blažič with a total of 7 duels and 6 won duels strenghted the defense of Slovenia as well. A. Čerin made a lot of work in the defence too with a total of 10 duels. Although with only 5 won duels he has a percentage of won duels of 50%, which is improvable.
----- ADD RIGHT TEXT -----
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
 | ------------- | ------------- | ------------- |
 |![plot_duelSlovenia-KazakhstanHOME](uploads/fe22f59a2afdd06065068c6a1706e0ab/plot_duelSlovenia-KazakhstanHOME.png)|![plot_duelDenmark-SloveniaAWAY](uploads/7037ae6da49e35180738dd0c38817ee2/plot_duelDenmark-SloveniaAWAY.png)|![plot_duelNorthern_Ireland-SloveniaAWAY](uploads/30bce9e2e74d42f1a8372126652dc19c/plot_duelNorthern_Ireland-SloveniaAWAY.png)|
 
-|  14 Oct vs Finland | 10 Sep vs San Marino | 07 Sep vs N. Ireland |
+|  14 Oct vs Finland | 10 Sep vs San Marino | 19 Jun vs Denmark |
 | ------------- | ------------- | ------------- |
-|![plot_duelSlovenia-FinlandHOME](uploads/16932e2a0405019e7b4ce915dda436c2/plot_duelSlovenia-FinlandHOME.png)|![plot_duelSan_Marino-SloveniaAWAY](uploads/7c7f506d73e201ae401f79e5151ff5bd/plot_duelSan_Marino-SloveniaAWAY.png)|![plot_duelSlovenia-Northern_IrelandHOME](uploads/df185c10f72212860f83654b4b5e85f0/plot_duelSlovenia-Northern_IrelandHOME.png)|
+|![plot_duelSlovenia-FinlandHOME](uploads/16932e2a0405019e7b4ce915dda436c2/plot_duelSlovenia-FinlandHOME.png)|![plot_duelSan_Marino-SloveniaAWAY](uploads/7c7f506d73e201ae401f79e5151ff5bd/plot_duelSan_Marino-SloveniaAWAY.png)||
 
 
 #### 4.3.2 Duels won percentage: Slovenia
----- ADD RIGHT TEXT -----
-It can be higlighted here that the percentage won of J. Bijol, M. Blažič, B. Verbič and J. Kurtič is over 75%. Therefore they strenghed the defense of slovenia considerably.
-J. Kurtič has a percentage of 100%. It has to be considered here that J. Kurtič was substituted in minute 62. Therefore the message of the most percentage needs to be analyzed with the minutes played per player as well.
----- ADD RIGHT TEXT -----
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
 | ------------- | ------------- | ------------- |
 |![plot_duel_percentageSlovenia-KazakhstanHOME](uploads/4807d57b1eb8317d0f044f48c466ba6e/plot_duel_percentageSlovenia-KazakhstanHOME.png)|![plot_duel_percentageDenmark-SloveniaAWAY](uploads/9158940089c42a9f1d8eecf8fe143a9d/plot_duel_percentageDenmark-SloveniaAWAY.png)|![plot_duel_percentageNorthern_Ireland-SloveniaAWAY](uploads/aaddf647c6a8c8e01f917ce5428d4b86/plot_duel_percentageNorthern_Ireland-SloveniaAWAY.png)|
 
-|  14 Oct vs Finland | 10 Sep vs San Marino | 07 Sep vs N. Ireland |
+|  14 Oct vs Finland | 10 Sep vs San Marino | 19 Jun vs Denmark |
 | ------------- | ------------- | ------------- |
-|![plot_duel_percentageSlovenia-FinlandHOME](uploads/b76a5d7ca92951cfd9f834775976ad00/plot_duel_percentageSlovenia-FinlandHOME.png)|![plot_duel_percentageSan_Marino-SloveniaAWAY](uploads/0386b84172727bdc70d7156962708490/plot_duel_percentageSan_Marino-SloveniaAWAY.png)|![plot_duel_percentageSlovenia-Northern_IrelandHOME](uploads/88226a7bc9edc9931ea3faeddcc9b219/plot_duel_percentageSlovenia-Northern_IrelandHOME.png)|
-
-#### 4.3.3 Total duels and duels won: Opponents
----- ADD TEXT ----
----- MAYBE NOT EVEN NECESSARY ---- ONLY FOR DENMARK OR THE GAMES OF DENMARK??
-Like mentioned in Section 4.2 Denmark was outperformed regarding the defense statistics. V. Kristiansen, J. Maehle and J. Andersen had a total of 6, 6 and 5 total duels. All of them won 4 duels. Therefore it can be said that the CB and RWB of Denmark defend with effort and win most of their defence duels. In the following plot the statistics of Denmark can be seen with all player that had a duel.
----- ADD RIGHT TEXT -----
-
-| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
-| ------------- | ------------- | ------------- |
-|![plot_duelSlovenia-KazakhstanAWAY](uploads/552851ea334b75da2f24f322787480d8/plot_duelSlovenia-KazakhstanAWAY.png)|![plot_duelDenmark-SloveniaHOME](uploads/9a518947c9aca71d952854759729ab1b/plot_duelDenmark-SloveniaHOME.png)|![plot_duelNorthern_Ireland-SloveniaHOME](uploads/a90800de7fd2ca3b7b59e05c9cdff44c/plot_duelNorthern_Ireland-SloveniaHOME.png)|
-
-|  14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
-| ------------- | ------------- | ------------- |
-|![plot_duelSlovenia-FinlandAWAY](uploads/81e3bf709d043914a844924456265a25/plot_duelSlovenia-FinlandAWAY.png)|![plot_duelSan_Marino-SloveniaHOME](uploads/b75a746ab756ed1ac1268897a846098c/plot_duelSan_Marino-SloveniaHOME.png)|![plot_duelSlovenia-Northern_IrelandAWAY](uploads/6f9602435d5b0242f5f3745a0a141fa4/plot_duelSlovenia-Northern_IrelandAWAY.png)|
-
-
-
-#### 4.3.4 Duels won percentage: Opponents
----- ADD RIGHT TEXT -----
-With J. Andersen, V. Kristiansen and J. Maehle the defence line of denmark has a percentage of over 65% duels won, which is acceptable but also can be improven.
-It has to be mentioned that Y. Poulsen with a total of 4 duels and 3 duels won has a percentage of won duels of 75%. The help of the strikers in defending mode can have a big impact on whether the game is won or lost.
-In the plot below the stats of Denmark are shown.
----- ADD RIGHT TEXT -----
-
-| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
-| ------------- | ------------- | ------------- |
-|![plot_duel_percentageSlovenia-KazakhstanAWAY](uploads/46cf16dd2d045181daec3ffc70c45b19/plot_duel_percentageSlovenia-KazakhstanAWAY.png)|![plot_duel_percentageDenmark-SloveniaHOME](uploads/1fadcc38d95b6714f2049d9251e7a783/plot_duel_percentageDenmark-SloveniaHOME.png)|![plot_duel_percentageNorthern_Ireland-SloveniaHOME](uploads/49949c23796ccdd207b447c670693eee/plot_duel_percentageNorthern_Ireland-SloveniaHOME.png)|
-
-| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
-| ------------- | ------------- | ------------- |
-|![plot_duel_percentageSlovenia-FinlandAWAY](uploads/6bc990430bc3fe8ad25c5f3c0e56dfb6/plot_duel_percentageSlovenia-FinlandAWAY.png)|![plot_duel_percentageSan_Marino-SloveniaHOME](uploads/ac895c5f09b32382665df09013643d6d/plot_duel_percentageSan_Marino-SloveniaHOME.png)|![plot_duel_percentageSlovenia-Northern_IrelandAWAY](uploads/1bd540ca48716cb6c80eec75faee2d3e/plot_duel_percentageSlovenia-Northern_IrelandAWAY.png)|
+|![plot_duel_percentageSlovenia-FinlandHOME](uploads/b76a5d7ca92951cfd9f834775976ad00/plot_duel_percentageSlovenia-FinlandHOME.png)|![plot_duel_percentageSan_Marino-SloveniaAWAY](uploads/0386b84172727bdc70d7156962708490/plot_duel_percentageSan_Marino-SloveniaAWAY.png)||
 
 
 <details>
 <summary> code</summary>
 
 ```python
+# MAIN
+import pandas as pd
+import json
+from IPython.display import display
+import zipfile
+from pathlib import Path
+from datetime import datetime, timedelta
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
+
+# specfic soccer analysis packages
+from mplsoccer import Pitch
+
+# load custom functions
+from src.visualization import *
+from src.dataloader import dataloader
+
 # Function for Duel Performance of the Players
 def dueldefperfomance(teamname, opponentTeamname, df_events):
 
@@ -1352,39 +1338,20 @@ def plot_duel(aligned_counts_home, aligned_counts_away, teamname, opponentTeamna
     plt.savefig(save_path)
 
 # MAIN
-import pandas as pd
-import json
-from IPython.display import display
-import zipfile
-from pathlib import Path
-from datetime import datetime, timedelta
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from matplotlib.patches import Patch
-
-# specfic soccer analysis packages
-from mplsoccer import Pitch
-
-# load custom functions
-from src.visualization import *
-from src.dataloader import dataloader
-
 match_id1 = "5414226"
 match_id2 = "5414260"
 match_id3 = "5414284"
 match_id4 = "5414302"
 match_id5 = "5414324"
-match_id6 = "5414203"
+match_id6 = "5414180"
 
 match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
 # start with the for loops for all matches
 team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
-opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
+opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Denmark'])
 goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
-goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
+goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'K. Schmeichel'])
 
-# MAIN
 for i in range(len(match_id)):
 
     df_events = dataloader(match_id[i])
@@ -1398,22 +1365,30 @@ for i in range(len(match_id)):
 
 ### 4.4 Goalkeeper behaviour
 
-To the analysis of the defense the goal keeper needs also to be considered. He is a main part of the defense not only that he is the last man who can save a shot on target but also for his view over the pitch. He can manage his defense optimal and help the defense to understand the play style of the opponent strikers. In the first part the shot parried per goalkeeper are analysed and in the second part the passes played per goalkeeper.
+To analyse the defense the goal keeper needs also to be considered. He is a main part of the defense not only that he is the last man who can save a shot on target but also for his view over the pitch. He can manage his defense optimal and help the defense to understand the play style of the opponent strikers. In the first part the shots parried per goalkeeper are analysed and in the second part the passes played per goalkeeper.
 
-#### 4.4.1 Shots parried per goalkeeper
+To get a better insight into the performance of J. Oblak the following new set of matches is used. In these matches at least one goal was scored against J. Oblak. Further information about his performance and potential weaknesses is considered.
 
----- ADD RIGHT TEXT ----
-It can be seen two plot below that Denmark had a total of 8 shot on target and 2 goals scored. For J. Oblak, the goalkeeper of Slovenia, it therefore makes a percentage of parried shots on targets of 75%.
-With a percentage parried of 0% K. Schmeichel the goalkeeper of Denmark does not have a good statistic only regarding the game from November 17, 2023. With a shot on target of 1 and 1 scored goal the Slovenien strikers where 100% effective when the shot was on target.
----- ADD RIGHT TEXT ----
+#### 4.4.1 Matches for goalkeeper behaviour
 
-| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+| wyscout | skillcorner | date       | home             | away       | Score Home | Score Away |
+| ------: | ----------: | ---------- | ---------------- | ---------- | ---------- | ---------- |
+| 5414103 |           - | 2023-03-23 | Kazakhstan       | Slovenia   | 1          | 2          |
+| 5414302 |     1381485 | 2023-11-17 | Denmark          | Slovenia   | 2          | 1          |
+| 5414324 |     1381505 | 2023-11-20 | Slovenia         | Kazakhstan | 2          | 1          |
+
+#### 4.4.2 Shots parried per goalkeeper
+
+The shots parried by J. Oblak and the opponent goal keeper are analysed in this Section. The percentage of the parried shots is ploted.
+
+J. Oblak has a percentage of shots parried of over 50% in all matches. With a percentage of 75% against Denmark he keeped the score lower altought the match was lost. In the game against Kazakhstan J. Oblak had a remarkable input for the 2:1 win with a total percentage won of also 75%.\
+The goal against J. Oblak in the first match against Kazakhstan was a header from a cross ball in which Oblak had no chance. During the starting phase of the match against Denmark Oblak already showed that he could keep his sheet clean with a big save from a header at his left corner. Sadly Denmark was still able to score 2 goals but for J. Oblak it was impossible to save them. With 75% parried shots against Kazakhstan on November 20, 2023, J. Oblak had another good match. The only goal that Kazakhstan scored was a side pass into the penalty room and the striker of Kazakhstan could perfectly push the ball into the goal without any disturbance from the defenders from Slovenia, J. Oblak had no chance once more.
+
+
+| 23 Mar vs Kazakhstan | 17 Nov vs Denmark | 20 Nov vs Kazakhstan |
 | ------------- | ------------- | ------------- |
 |![Shots_parriedSlovenia-Kazakhstan](uploads/81fbd39d485a2ab5d734f8e1874b2d6e/Shots_parriedSlovenia-Kazakhstan.png)|![Shots_parriedDenmark-Slovenia](uploads/6e87d4dfdd0119c14ddfe697da00bb2b/Shots_parriedDenmark-Slovenia.png)|![Shots_parriedNorthern_Ireland-Slovenia](uploads/02c15e266cfdd050036955853a16753f/Shots_parriedNorthern_Ireland-Slovenia.png)|
 
-| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs San Marino |
-| ------------- | ------------- | ------------- |
-|![Shots_parriedSlovenia-Finland](uploads/9193df48ba1dfd07262fd80de1ce9ae0/Shots_parriedSlovenia-Finland.png)|![Shots_parriedSan_Marino-Slovenia](uploads/2c6a6abcc755f6cffb19b0fdb0e8cfa6/Shots_parriedSan_Marino-Slovenia.png)|![Shots_parriedSlovenia-Northern_Ireland](uploads/3bb418895ec8c3563aab3c5c609bc797/Shots_parriedSlovenia-Northern_Ireland.png)|
 
 <details>
 <summary> code</summary>
@@ -1437,21 +1412,16 @@ from mplsoccer import Pitch
 from src.visualization import *
 from src.dataloader import dataloader
 
-# Load Data from AWAY-Danemark November 20, 2023
-match_id1 = "5414226"
-match_id2 = "5414260"
-match_id3 = "5414284"
-match_id4 = "5414302"
-match_id5 = "5414324"
-match_id6 = "5414203"
+# Match IDs Goalkeeper Behaviour
+match_id1_gk = "5414103"
+match_id2_gk = "5414302"
+match_id3_gk = "5414324"
 
-match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
-# start with the for loops for all matches
-team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
-opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
-goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
-goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
-goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy'])
+match_id_gk = ([match_id1_gk, match_id2_gk, match_id3_gk])
+team_name_array_gk = (['Kazakhstan', 'Denmark', 'Slovenia'])
+opponentTeam_name_array_gk = (['Slovenia', 'Slovenia', 'Kazakhstan'])
+goalkeeper_home_array_gk = (['I. Shatskiy', 'K. Schmeichel', 'J. Oblak'])
+goalkeeper_away_array_gk = (['J. Oblak', 'J. Oblak', 'I. Shatskiy'])
 
 def plot_shots_parried(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname):
 
@@ -1510,33 +1480,30 @@ def plot_shots_parried(df_events, goalkeeper_home, goalkeeper_away, teamname, op
 
 # MAIN
 
-for i in range(len(match_id)):
+for i in range(len(match_id_gk)):
 
-    df_events = dataloader(match_id[i])
-    goalkeeper_home = goalkeeper_home_array[i]
-    goalkeeper_away = goalkeeper_away_array[i]
-    teamname = team_name_array[i]
-    opponentTeamname = opponentTeam_name_array[i]
+    df_events = dataloader(match_id_gk[i])
+    goalkeeper_home = goalkeeper_home_array_gk[i]
+    goalkeeper_away = goalkeeper_away_array_gk[i]
+    teamname = team_name_array_gk[i]
+    opponentTeamname = opponentTeam_name_array_gk[i]
     plot_shots_parried(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname)
 
 ```
 </details>
 
-#### 4.4.2 Passes played per goalkeeper
+#### 4.4.3 Passes played per goalkeeper
 
-Like mentioned above the goalkeeper is a main part of the defense. With the ability to really take part in the game and create possible pass stations the goalkeeper can be the one additional man in the defense line. It is possible to make changes of side or also launch a quick attack with a long shot of the goalkeeper.
------ ADD RIGHT TEXT -----
-In the following chart it can be seen that K. Schmeichel had a total of 24 passes. He was often used to calm down the defense and waiting for the right time to launch an attack. Furthermore with a total of 10 high and long passes K. Schmeichel made some passes near and over the own pitch half to start an attack.
-J. Oblak had a total of 18 passes and only 5 high and long passes. This reflects that Slovenia had its main focus on defending and was not often able to get out of their half.
------ ADD RIGHT TEXT -----
+Like mentioned above the goalkeeper is a main part of the defense. With the ability to really take part in the game and create possible pass stations the goalkeeper can be the one additional man in the defense line. It is possible to make changes of side or also launch a quick attack with a long shot of the goalkeeper.\
+In the following charts the passes played are shown. The passes are seperated into normal passes and long/high passes. A pass is considered as long pass if the length of the pass is over 40 meters.
 
-| 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
+In the following charts it can be seen that J. Oblak had always at least 15 passes. He was often used to calm down the defense and waiting for the right time to launch an attack. Furthermore with a total of 8 high and long passes J. Oblak made some passes near and over the own pitch half to start an attack in the match against Kazakhstan on march 03, 2023, which resulted in the win for Slovenia.\
+In general Slovenia has a solid goalkeeper with J. Oblak who can be taken into account as a good support player in the defense line regarding the passes played and the impact on calming the game down and switch sides.
+
+
+| 23 Mar vs Kazakhstan | 17 Nov vs Denmark | 20 Nov vs Kazakhstan |
 | ------------- | ------------- | ------------- |
 |![goalkeeper_passes_Slovenia-Kazakhstan](uploads/ad28a68924344f476fa3c6a006290496/goalkeeper_passes_Slovenia-Kazakhstan.png)|![goalkeeper_passes_Denmark-Slovenia](uploads/3e5236efbf48da464e31b495af23c121/goalkeeper_passes_Denmark-Slovenia.png)|![goalkeeper_passes_Northern_Ireland-Slovenia](uploads/650910a67dfbc3c443ce2f36257ad0c6/goalkeeper_passes_Northern_Ireland-Slovenia.png)|
-
-| 14 Oct vs Finland | 10 Sep vs San Marino| 07 Sep vs N. Ireland |
-| ------------- | ------------- | ------------- |
-|![goalkeeper_passes_Slovenia-Finland](uploads/a75efac61fa58b69c652bc051a491630/goalkeeper_passes_Slovenia-Finland.png)|![goalkeeper_passes_San_Marino-Slovenia](uploads/415bb5f6d9195d8b14888af8dd985585/goalkeeper_passes_San_Marino-Slovenia.png)|![goalkeeper_passes_Slovenia-Northern_Ireland](uploads/2b49f77bef9bd9f2a6efe3b817704e80/goalkeeper_passes_Slovenia-Northern_Ireland.png)|
 
 
 <details>
@@ -1561,20 +1528,16 @@ from mplsoccer import Pitch
 from src.visualization import *
 from src.dataloader import dataloader
 
-# Load Data from AWAY-Danemark November 20, 2023
-match_id1 = "5414226"
-match_id2 = "5414260"
-match_id3 = "5414284"
-match_id4 = "5414302"
-match_id5 = "5414324"
-match_id6 = "5414203"
+# Match IDs Goalkeeper Behaviour
+match_id1_gk = "5414103"
+match_id2_gk = "5414302"
+match_id3_gk = "5414324"
 
-match_id = ([match_id1, match_id2, match_id3, match_id4, match_id5, match_id6])
-# start with the for loops for all matches
-team_name_array = (['San Marino', 'Slovenia', 'Northern Ireland', 'Denmark', 'Slovenia', 'Slovenia'])
-opponentTeam_name_array = (['Slovenia', 'Finland', 'Slovenia', 'Slovenia', 'Kazakhstan', 'Northern Ireland'])
-goalkeeper_home_array = (['E. Benedettini', 'J. Oblak', 'B. Peacock-Farrell', 'K. Schmeichel', 'J. Oblak', 'J. Oblak'])
-goalkeeper_away_array = (['J. Oblak', 'L. Hradecky', 'J. Oblak', 'J. Oblak', 'I. Shatskiy', 'B. Peacock-Farrell'])
+match_id_gk = ([match_id1_gk, match_id2_gk, match_id3_gk])
+team_name_array_gk = (['Kazakhstan', 'Denmark', 'Slovenia'])
+opponentTeam_name_array_gk = (['Slovenia', 'Slovenia', 'Kazakhstan'])
+goalkeeper_home_array_gk = (['I. Shatskiy', 'K. Schmeichel', 'J. Oblak'])
+goalkeeper_away_array_gk = (['J. Oblak', 'J. Oblak', 'I. Shatskiy'])
 
 def plot_passes_goalkeeper(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname):
     # Home
@@ -1629,13 +1592,13 @@ def plot_passes_goalkeeper(df_events, goalkeeper_home, goalkeeper_away, teamname
     plt.savefig(save_path)
 
 # MAIN
-for i in range(len(match_id)):
+for i in range(len(match_id_gk)):
 
-    df_events = dataloader(match_id[i])
-    goalkeeper_home = goalkeeper_home_array[i]
-    goalkeeper_away = goalkeeper_away_array[i]
-    teamname = team_name_array[i]
-    opponentTeamname = opponentTeam_name_array[i]
+    df_events = dataloader(match_id_gk[i])
+    goalkeeper_home = goalkeeper_home_array_gk[i]
+    goalkeeper_away = goalkeeper_away_array_gk[i]
+    teamname = team_name_array_gk[i]
+    opponentTeamname = opponentTeam_name_array_gk[i]
     plot_passes_goalkeeper(df_events, goalkeeper_home, goalkeeper_away, teamname, opponentTeamname)
 
 ```
