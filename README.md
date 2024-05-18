@@ -306,8 +306,10 @@ In order to examine the attacking behavior of Denmark's group opponent Slovenia,
 ![attacking_style: SVN vs similar](notebooks/plots/3-attack/attacking_style_SVN_vs_similar.png)
 ![attacking_style: SVN vs weak](notebooks/plots/3-attack/attacking_style_SVN_vs_weak.png)
 
-##### code and text to be updated 
-Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
+##### code to be updated 
+A look at the statistics on attacking style quickly shows that Slovenia has a very varied attacking game. 53% of all attacks are preceded by a build-up phase, the rest are long switching actions, counter-attacks or long balls to the top to outplay the opponent. The direct comparison with group opponents Denmark is striking. The Slovenians are forced to play high balls due to their high pressing and the tall Danes. This speaks against their ability to play under pressure.
+
+The Slovenians are also worse than their opponents at moving the ball in attack. Especially against weaker teams, the Slovenians seem to have difficulties penetrating the final third. Denmark must be prepared for a Slovenia that does not make the play but often relies on counter-attacks. Against teams of equal strength, there is a good balance between build-up phases and counter-attacks compared to their opponents. In any case, a team that wants to and can play long balls, especially from the two central defenders.  
 
 
 <details>
