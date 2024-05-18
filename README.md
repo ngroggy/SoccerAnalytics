@@ -809,7 +809,9 @@ A pattern that has now been seen several times (e.g. against San Marino): When S
 
 #### 3.4.1 Long passes
 
-The Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
+No major patterns can be identified with the long passes. Most long balls are hit by the central defenders with a good success rate. It is interesting to see that in games where Slovenia are under pressure (e.g. Denmark, Northern Ireland), the long balls are often played from the sides, as Slovenia have lost their midfield dominance in these games. Against San Marino, they were much more present in midfield and also had the most possession.
+
+In the direct comparison in the denmark game, the Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
 
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
@@ -825,7 +827,7 @@ The Slovenians' great strength lies in the long passes from their two central de
 
 #### 3.4.2 Crosses
 
-There is no preferred side in the flank play and a clear key player.
+The success rate of Slovenia's crosses is above average, meaning Mlakar and Stojanovic should not be allowed to cross freely, especially with Sesko in the middle. It is difficult to determine a preferred side.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
@@ -840,7 +842,9 @@ There is no preferred side in the flank play and a clear key player.
 
 #### 3.4.3 Shots 
 
-What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
+As soon as Slovenia are confronted with little possession, they only shoot from the second row. In other words: outside the sixteen. However, their long-range shooting efficiency is very modest. Here, too, the presence in the penalty area can be seen from the shots and the goal.
+
+For the direct comparison with the denmark game. What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
@@ -853,7 +857,9 @@ What is striking about this statistic is that only shots were taken from the sec
 
 #### 3.4.4 Dribblings
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
-Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
+Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. Especially for the denmark game.
+
+The only thing that stands out is that there is relatively little dribbling in the penalty area. This has to do with the reasons mentioned in section 3.2.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
