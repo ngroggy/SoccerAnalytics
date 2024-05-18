@@ -873,6 +873,8 @@ The only thing that stands out is that there is relatively little dribbling in t
 
 #### 3.4.5 Interceptions
 
+It is striking how few balls are intercepted in the middle. This extends to the entire midfield.
+
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
@@ -884,6 +886,9 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.6 Fouls
+Most fouls are committed on the flanks. In the last three games in particular, there has been a tendency to play on the right-hand side. This could indicate a weakness in Stojanovic's tackling. But it's difficult to confirm. The team is not prone to yellow cards.
+
+Especially against denmark, the slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
@@ -893,8 +898,6 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
-
-The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
 
 <details>
