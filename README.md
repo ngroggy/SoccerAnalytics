@@ -1225,11 +1225,11 @@ Closing this discussion with Blažič, Bijol and Janža the defense of Slovenia 
 
 | 20 Nov vs Kazakhstan | 17 Nov vs Denmark | 17 Oct vs N. Ireland |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_plot_duelSlovenia-KazakhstanHOME.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_plot_duelDenmark-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_plot_duelNorthern Ireland-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/1_plot_duelSlovenia-KazakhstanHOME.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/2_plot_duelDenmark-SloveniaAWAY.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/3_plot_duelNorthern Ireland-SloveniaAWAY.png?raw=true" align="center"/>|
 
 |  14 Oct vs Finland | 10 Sep vs San Marino | 19 Jun vs Denmark |
 | ------------- | ------------- | ------------- |
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/4_plot_duelSlovenia-FinlandHOME.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/5_plot_duelSan Marino-SloveniaAWAY.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/6_plot_duelSlovenia-DenmarkHOME.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/4_plot_duelSlovenia-FinlandHOME.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/5_plot_duelSan Marino-SloveniaAWAY.png?raw=true" align="center"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/4-defense/6_plot_duelSlovenia-DenmarkHOME.png?raw=true" align="center"/>|
 
 
 #### 4.3.2 Duels won percentage: Slovenia
