@@ -17,19 +17,14 @@ _Please fill in the following table._
 
 Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
 
-- [ ] when saving, please indicate what you changed in a meaningful commit messages
-- [x] draft due: **Monday, April 8**
-- Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
-- You make some claims about 442 formations but it is not clear where you are taking this from.
-- Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
-- Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
-- Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
-- Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
-- You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
-- Some of your set piece analysis might be more informative when including other matches (see comment above).
-- Nice that you have a summary at the end of the report with weaknesses and suggested tactics
-- Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
-- [ ] final version due: **Friday, May 24** 
+- [] Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
+- [] Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
+- [] Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
+- [] Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
+- [] You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
+- [] Some of your set piece analysis might be more informative when including other matches (see comment above).
+- [] Nice that you have a summary at the end of the report with weaknesses and suggested tactics
+- []Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
 </details>
 
 
@@ -312,7 +307,11 @@ In order to examine the attacking behavior of Denmark's group opponent Slovenia,
 ![attacking_style: SVN vs similar](notebooks/plots/3-attack/attacking_style_SVN_vs_similar.png)
 ![attacking_style: SVN vs weak](notebooks/plots/3-attack/attacking_style_SVN_vs_weak.png)
 
-##### code and text to be updated 
+##### code to be updated 
+A look at the statistics on attacking style quickly shows that Slovenia has a very varied attacking game. 53% of all attacks are preceded by a build-up phase, the rest are long switching actions, counter-attacks or long balls to the top to outplay the opponent. The direct comparison with group opponents Denmark is striking. The Slovenians are forced to play high balls due to their high pressing and the tall Danes. This speaks against their ability to play under pressure.
+
+The Slovenians are also worse than their opponents at moving the ball in attack. Especially against weaker teams, the Slovenians seem to have difficulties penetrating the final third. Denmark must be prepared for a Slovenia that does not make the play but often relies on counter-attacks. Against teams of equal strength, there is a good balance between build-up phases and counter-attacks compared to their opponents. In any case, a team that wants to and can play long balls, especially from the two central defenders.
+
 Slovenia's approach to attacking was markedly different from Denmark's, particularly in their avoidance of prolonged build-up plays. Instead, Slovenia's offensive strategy was predominantly characterized by quick counter-attacks and the utilization of long balls to advance up the field swiftly when in possession.
 
 
@@ -355,13 +354,16 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 3.2 Attacking efficiency
 
-![attacking efficiency: SVN agg]()
-![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_style_DEN_SVN_agg.png)
+![attacking efficiency: SVN agg](notebooks/plots/3-attack/attacking_efficiency_SVN_agg.png)
+![attacking_efficiency: DEN vs SVN](notebooks/plots/3-attack/attacking_efficiency_DEN_SVN_agg.png)
 ![attacking_efficiency: SVN vs similar](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_similar.png)
 ![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
 
 ##### code and text to be updated 
-The effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
+
+On average, the Slovenians attack more from the flanks than their opponents in the European Championship qualifiers, which can be attributed to the height of the double strikers Sesko (1.95 m), Sporar (1.86 m) and Vipotnik (1.85 m). This is also reflected in the dribbling statistics, in which Slovenia performs below average. No strong dribbling forwards. The Slovenians also win more offensive duels on average due to the great physicality and tackling strength of their strikers. Slovenia is also a team that is not afraid to shoot, albeit with average efficiency. 
+
+For the direct comparison with Denmark, the effectiveness of Slovenia's attacking maneuvers was notably lacking. A mere 1% of their attacking efforts resulted in a shot, with none of these attempts being on target. The sole goal they managed to score originated from a free kick taken approximately 35 meters from the goal. Additionally, Slovenia's performance in offensive duels and dribbling was significantly inferior to that of Denmark, further highlighting the inefficacies in their attacking play.
 
 
 <details>
@@ -435,9 +437,9 @@ A glance at the two forwards shows that they are not involved in the passing gam
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-|Finland|San_Marino|N_Ireland_2|
+|Finland|San_Marino|Denmark_2|
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
 <details>
   <summary> code </summary>
@@ -808,58 +810,71 @@ A pattern that has now been seen several times (e.g. against San Marino): When S
 
 #### 3.4.1 Long passes
 
-The Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
+No major patterns can be identified with the long passes. Most long balls are hit by the central defenders with a good success rate. It is interesting to see that in games where Slovenia are under pressure (e.g. Denmark, Northern Ireland), the long balls are often played from the sides, as Slovenia have lost their midfield dominance in these games. Against San Marino, they were much more present in midfield and also had the most possession.
+
+In the direct comparison in the denmark game, the Slovenians' great strength lies in the long passes from their two central defenders. The long passes from the full-backs have a high error rate. Especially the right side. Slovenia often need this type of pass to get out of pressure situations. However, with a relatively baleful outcome
 
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+
 
 
 
 #### 3.4.2 Crosses
 
-There is no preferred side in the flank play and a clear key player.
+The success rate of Slovenia's crosses is above average, meaning Mlakar and Stojanovic should not be allowed to cross freely, especially with Sesko in the middle. It is difficult to determine a preferred side.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+
+
 
 
 #### 3.4.3 Shots 
 
-What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
+As soon as Slovenia are confronted with little possession, they only shoot from the second row. In other words: outside the sixteen. However, their long-range shooting efficiency is very modest. Here, too, the presence in the penalty area can be seen from the shots and the goal.
+
+For the direct comparison with the denmark game. What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
 
 #### 3.4.4 Dribblings
 Dribbling has only been implemented for the wingers in Slovenia's game. You can rarely expect dribbling from Elsnik and Cerin from the center.
-Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. 
+Verbic's dribbling strength in particular must be emphasized here. There is an increased number of dribbles on the right-hand side with a high chance of success. Especially for the denmark game.
+
+The only thing that stands out is that there is relatively little dribbling in the penalty area. This has to do with the reasons mentioned in section 3.2.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+
+
 
 #### 3.4.5 Interceptions
+
+It is striking how few balls are intercepted in the middle. This extends to the entire midfield.
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
@@ -867,22 +882,23 @@ Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of 
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.6 Fouls
+Most fouls are committed on the flanks. In the last three games in particular, there has been a tendency to play on the right-hand side. This could indicate a weakness in Stojanovic's tackling. But it's difficult to confirm. The team is not prone to yellow cards.
+
+Especially against denmark, the slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
 |<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
 
-| Vs : Finland | Vs : San_Marino | Vs : N_Ireland_2 |
+| Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
 
-
-The Slovenians are disciplined and there is a high incidence of fouls in Slovenia's defensive central midfield. Despite a period of high pressure throughout the game, the Slovenians were not tempted to commit many tactical fouls, which indicated that the team was deep and therefore did not allow the Danes to counter-attack. The central midfield did not seem insurmountable and the central midfielders were often only able to help themselves with fouls.
 
 
 <details>
@@ -970,13 +986,19 @@ for against, match_id in data:
 
 ## 4 Out of possesion - defense of Slovenia
 
+##### text to be updated 
 Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
 
 ### 4.1 Statistics
 
+![defense_statistics: SVN agg](notebooks/plots/4-defense/defense_statistics_SVN_agg.png)
+![defense_statistics: DEN vs SVN agg](notebooks/plots/4-defense/defense_statistics_DEN_SVN_agg.png)
+![defense_statistics: SVN vs similar](notebooks/plots/4-defense/defense_statistics_SVN_vs_similar.png)
+![defense_statistics: DEN vs weak](notebooks/plots/4-defense/defense_statistics_SVN_vs_weak.png)
+
+##### code and text to be updated 
 The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
 
-![defense_statistics](uploads/44c2c922ef5ccc7c3b7af7e21eab02cd/defense_statistics.png)
 
 <details>
   <summary> code </summary>
@@ -1017,11 +1039,16 @@ plot_stats_barchart(svn_data, dnk_data, team1_name='Slovenia', team2_name='Denma
 
 ### 4.2 Defensive efficiency & style
 
+![defensive_efficiency_style: SVN agg](notebooks/plots/4-defense/defensive_efficiency_style_SVN_agg.png)
+![defensive_efficiency_style: DEN vs SVN](notebooks/plots/4-defense/defensive_efficiency_style_DEN_SVN_agg.png)
+![defensive_efficiency_style: SVN vs similar](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_similar.png)
+![defensive_efficiency_style: SVN vs weak](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_weak.png)
+
+##### code and text to be updated 
 Slovenia's defensive efforts were markedly more dominant and effective than their attacking endeavors. They outperformed Denmark in terms of winning defensive duels, with a success rate of nearly 80% in their defensive third. Furthermore, Slovenia made fewer defensive errors compared to their opponents, contributing to their solid defensive performance.
 
 In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
 
-![defensive_efficiency_style](uploads/1865d7c12a80bfcc19763cd4f594f89f/defensive_efficiency_style.png)
 
 <details>
   <summary> code </summary>
@@ -1983,18 +2010,11 @@ plt.show()
 
 ## 6 Physical data
 
-In the Slovenian national team, there are several players who fit this description and deserve close attention from both fans and opponents alike. Here are five key players to watch:
+In the Slovenian national team, there are several players who fit this description and deserve close attention from both fans and opponents alike. Here are two key players that seems to be particularly dangerous based on physical data:
 
-**Adam Gnezda Čerin**: Known for his tireless work rate and ability to cover immense distances on the field, Čerin poses a constant threat with his speed and agility. His versatility allows him to contribute both defensively and offensively, making him a vital player for Slovenia.
+**Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game at any time.
 
-**Žan Karničnik**: A dynamic midfielder with excellent ball control and vision, Karničnik is adept at orchestrating attacks and creating goal-scoring opportunities for his teammates. His ability to drive forward with the ball and deliver precise passes makes him a dangerous presence in the opposition's half.
-
-**Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game with a moment of brilliance.
-
-**Jan Mlakar**: Mlakar's intelligence on the field and knack for finding space in the box make him a constant threat in front of goal. He possesses a natural goal-scoring instinct and is always ready to capitalize on any defensive errors or loose balls in the penalty area.
-
-**Petar Stojanović**: A reliable presence in defense, Stojanović is known for his strong tackling, positional awareness, and ability to read the game. He provides stability at the back and is instrumental in thwarting opposition attacks, making him a crucial player for Slovenia's defensive organization.
-
+**Adam Gnezda Čerin**: He seems to be work at a tireless rate and is able to cover immense distances on the field, Čerin could pose a constant threat with his speed and agility. His moving ability allows him to contribute both defensively and offensively, making him a vital player for Slovenia.
 
 #### Overall data
 
@@ -2028,12 +2048,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
 | Benjamin Šeško    |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Žan Karničnik     |      11287 |               1605 |            526 |                  159 |               6 |        29.6 |
-#### Top 3 Distance vs N_Ireland_2
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
-| Žan Karničnik     |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar        |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Running Distance vs Kazakhstan
 | Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2064,12 +2079,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
 | Timi Max Elšnik   |      11194 |               1703 |            462 |                   59 |               4 |        26   |
 | Žan Karničnik     |      11287 |               1605 |            526 |                  159 |               6 |        29.6 |
-#### Top 3 Running Distance vs N_Ireland_2
-| Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:------------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Adam Gnezda Čerin |      12072 |               1942 |            414 |                   14 |               4 |        24.4 |
-| Žan Karničnik     |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar        |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 HSR Distance vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2100,12 +2110,8 @@ In the Slovenian national team, there are several players who fit this descripti
 | Petar Stojanović  |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
 | Benjamin Šeško    |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Adam Gnezda Čerin |      12054 |               2109 |            584 |                   52 |               6 |        25.7 |
-#### Top 3 HSR Distance vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Žan Karničnik |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
+
+
 #### Top 3 Sprinting Distance vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2136,12 +2142,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
 | Andraž Šporar    |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
-#### Top 3 Sprinting Distance vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
-| Žan Karničnik |      11724 |               1564 |            538 |                  126 |               5 |        26.7 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Accelerations vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2172,12 +2173,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško   |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Erik Janža       |       9769 |               1200 |            480 |                  140 |               9 |        27.2 |
 | Petar Stojanović |      11089 |               1454 |            793 |                  224 |               8 |        28.9 |
-#### Top 3 Accelerations vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Andraž Šporar |       7963 |                969 |            372 |                   64 |               8 |        26.8 |
-| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
-| Jan Mlakar    |      10855 |               1391 |            509 |                  113 |               5 |        28.2 |
+
 #### Top 3 Max speed vs Kazakhstan
 | Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
 |:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
@@ -2208,12 +2204,7 @@ In the Slovenian national team, there are several players who fit this descripti
 | Benjamin Šeško |      11532 |               1477 |            653 |                  334 |              11 |        31.7 |
 | Andraž Šporar  |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
 | Jan Mlakar     |       8981 |               1232 |            491 |                  166 |               6 |        30.2 |
-#### Top 3 Max speed vs N_Ireland_2
-| Player name   |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
-|:--------------|-----------:|-------------------:|---------------:|---------------------:|----------------:|------------:|
-| Sandi Lovrič  |      10318 |               1287 |            416 |                  142 |               5 |        29.9 |
-| Vanja Drkušić |       8467 |                825 |            207 |                   22 |               2 |        29.3 |
-| Žan Vipotnik  |       7166 |                824 |            264 |                   68 |               6 |        29.2 |
+
 
 
 
@@ -2265,6 +2256,13 @@ for val in physical_data.keys():
 
 ## 7 Goals
 
+As seen from Slovenia's last six goals in previous official matches, two were from set pieces, one resulted from a well-constructed passing play in attack, and the other three came from quick accelerations/counter-attacks. Based on this information, it's important to be cautious of two aspects of Slovenia's play.
+
+Firstly, their proficiency with set pieces indicates the need to avoid giving away unnecessary fouls near the penalty area / corners. Maintaining discipline in defense and ensuring tight marking during corners and free-kicks is important to neutralize threats like Benjamin Šeško, who also excels in aerial duels.
+
+Finally, Slovenia's effectiveness on the counter-attack necessitates vigilance in not over-committing players forward, especially when in possession. Quick defensive transitions are vital to prevent them from exploiting any spaces left behind. Defenders and midfielders should be prepared to track back swiftly and cover any gaps that might appear during attacking phases. Again, Šeško seems to be a dangerous player in those situations. 
+
+If video don't display well, please have a look at our github repo: https://github.com/ngroggy/SoccerAnalytics/blob/main/videos/
 
 | Vs : Denmark | Vs : Portugal | Vs : Portugal |
 |---|---|---|
@@ -2343,11 +2341,8 @@ These six players, each excelling in their respective positions, form the strong
 
 ## 9 Weaknesses & Tactic to adopt
 
-### 9.1 General tactic
 
-Slovenia typically adopts a balanced tactical approach, focusing on organized defending while looking to exploit counterattacking opportunities. They often maintain a compact defensive shape, with midfielders dropping deep to provide defensive cover and limit space for the opposition. Quick transitions from defense to attack, utilizing the pace and skill of players like Šeško, are a key aspect of Slovenia's gameplay.
-
-### 9.2 Strengths
+### 9.1 Strengths
 
 **Solid Defense**: Led by the commanding presence of Jan Oblak in goal, Slovenia boasts a resilient defense capable of frustrating opposing attackers and keeping clean sheets.
 
@@ -2355,7 +2350,7 @@ Slovenia typically adopts a balanced tactical approach, focusing on organized de
 
 **Attacking Threat**: With Benjamin Šeško leading the frontline, Slovenia poses a potent attacking threat, capable of scoring goals in many situations.
 
-### 9.3 Weaknesses
+### 9.2 Weaknesses
 
 **Lack of Depth**: While Slovenia possesses quality in key positions, their squad depth may be a concern, especially in midfield and defensive areas.
 
@@ -2363,5 +2358,15 @@ Slovenia typically adopts a balanced tactical approach, focusing on organized de
 
 **Inexperience in Key Areas**: Despite the presence of talented individuals, Slovenia may lack experience in high-pressure situations, particularly in international competitions, which could affect their decision-making and composure.
 
+### 9.3 Conclusion of the analysis
 
+As we prepare to face Slovenia, we need to be fully aware of their strengths and how we can best counter them. Slovenia seems to be a team that prides itself on a solid and organized defense. They are well-organized and rarely leave gaps at the back, which makes breaking through their lines a significant challenge. Their players are technically good, with excellent passing and ball control, allowing them to maintain possession and build their play with precision. Additionally, they are tactically flexible, capable of shifting between defensive and attacking approaches based on the flow of the game. We must also be wary of their proficiency in set pieces, as they frequently turn these situations into scoring opportunities.
+
+One player who stands out is Benjamin Šeško. He is a formidable force in their attack, known for his physical presence, speed, and ability to finish decisively. His aerial prowess makes him particularly dangerous on set pieces, and his ability to hold up the ball and bring teammates into play adds a significant dimension to their offense. Neutralizing Šeško will be crucial to limiting Slovenia's attacking threat.
+
+However, Slovenia has some vulnerabilities that we can exploit. Their squad lacks depth, so if we can pressure their key players and capitalize on any injuries or suspensions, we can gain an upper hand. Offensively, they can be inconsistent, often struggling to find the back of the net against well-organized defenses. They also don't have the same pace as some of our other opponents, making them susceptible to quick transitions and counter-attacks. Moreover, Slovenia has shown they can falter under intense pressure, which can lead to mistakes and a loss of composure.
+
+To tackle Slovenia effectively, we should implement a high pressing strategy to disrupt their build-up play and force errors in dangerous areas. Utilizing our wingers to stretch their defense and create opportunities from wide positions will be crucial. We need to be sharp in our transitions, moving quickly to exploit any gaps left as they shift between their defensive and attacking phases. Set pieces will be a vital component of our game plan; let's ensure our routines are well organized to exploit any defensive weaknesses they might have.
+
+Controlling the midfield is key. By dominating this area, we can dictate the tempo and cut off their creative players from receiving the ball. We must remain patient and disciplined, especially in defense, avoiding unnecessary fouls and maintaining our shape to prevent them from taking advantage of set pieces. If we focus well on these strategies, we can neutralize Slovenia's strengths and exploit their weaknesses, positioning ourselves for a successful match. Let’s stay focused, execute our plan with precision, and show the determination that defines us as a team.
 
