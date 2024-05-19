@@ -549,151 +549,185 @@ A glance at the two forwards shows that they are not involved in the passing gam
 ``` python
 import pandas as pd
 import numpy as np
+from mplsoccer import VerticalPitch
 
-from mplsoccer import Pitch, Sbopen
-from mplsoccer import VerticalPitch,Pitch
-from mplsoccer import Pitch
+import warnings
+warnings.filterwarnings("ignore")
 
 pitch_length = 120
 pitch_width = 80
 
-data = pd.read_csv(f"results/wyscout/5414302_df_events.csv")
 
-data = data[['location.x', 'location.y', 'pass.endLocation.x', 'pass.endLocation.y', "player.name", "pass.recipient.name","team.name","minute",'player.id']]
+def plot_network(name_other_team, path, links):
 
-df_merged = data.rename(columns={
-'location.x':'x',
-'location.y':'y',
-'pass.endLocation.x':'end_x',
-'pass.endLocation.y':'end_y',
-"player.name":"player_name",
-"pass.recipient.name":"pass_recipient_name",
-"team.name":"team_name",
-"minute":"minute",
-"player.id":'player_id'
-})
+    data = pd.read_csv(f"./results/wyscout/{path}_df_events.csv")
+
+    data = data[['location.x', 'location.y', 'pass.endLocation.x', 'pass.endLocation.y', "player.name", "pass.recipient.name","team.name","minute",'player.id']]
+
+    df_merged = data.rename(columns={
+    'location.x':'x',
+    'location.y':'y',
+    'pass.endLocation.x':'end_x',
+    'pass.endLocation.y':'end_y',
+    "player.name":"player_name",
+    "pass.recipient.name":"pass_recipient_name",
+    "team.name":"team_name",
+    "minute":"minute",
+    "player.id":'player_id'
+    })
 
 
-df_home_pass = df_merged[df_merged.team_name != 'Denmark']
+    df_home_pass = df_merged[df_merged.team_name == 'Slovenia']
 
-# Check player play time
-home_player_df = df_merged[df_merged.team_name != 'Denmark'].groupby('player_name').agg({'minute': [min, max]}).reset_index()
-home_player_df = pd.concat([home_player_df['player_name'], home_player_df['minute']], axis=1)
-home_player_df['minutes_played'] = home_player_df['max'] - home_player_df['min']
-home_player_df = home_player_df.sort_values('minutes_played', ascending=False)
+    # Check player play time
+    home_player_df = df_merged[df_merged.team_name == 'Slovenia'].groupby('player_name').agg({'minute': [min, max]}).reset_index()
+    home_player_df = pd.concat([home_player_df['player_name'], home_player_df['minute']], axis=1)
+    home_player_df['minutes_played'] = home_player_df['max'] - home_player_df['min']
+    home_player_df = home_player_df.sort_values('minutes_played', ascending=False)
 
-home_player_name = home_player_df.player_name[:11].tolist()
-df_home_pass = df_home_pass[df_home_pass.player_name.isin(home_player_name)]
-df_home_pass = df_home_pass[df_home_pass.pass_recipient_name.isin(home_player_name)]
+    home_player_name = home_player_df.player_name[:11].tolist()
+    df_home_pass = df_home_pass[df_home_pass.player_name.isin(home_player_name)]
+    df_home_pass = df_home_pass[df_home_pass.pass_recipient_name.isin(home_player_name)]
 
-scatter_df = pd.DataFrame()
-for i, name in enumerate(df_home_pass["player_name"].unique()):
-    passx = df_home_pass.loc[df_home_pass["player_name"] == name]["x"].to_numpy()
-    recx = df_home_pass.loc[df_home_pass["pass_recipient_name"] == name]["end_x"].to_numpy()
-    passy = df_home_pass.loc[df_home_pass["player_name"] == name]["y"].to_numpy()
-    recy = df_home_pass.loc[df_home_pass["pass_recipient_name"] == name]["end_y"].to_numpy()
-    scatter_df.at[i, "player_name"] = name
+    scatter_df = pd.DataFrame()
+    for i, name in enumerate(df_home_pass["player_name"].unique()):
+        passx = df_home_pass.loc[df_home_pass["player_name"] == name]["x"].to_numpy()
+        recx = df_home_pass.loc[df_home_pass["pass_recipient_name"] == name]["end_x"].to_numpy()
+        passy = df_home_pass.loc[df_home_pass["player_name"] == name]["y"].to_numpy()
+        recy = df_home_pass.loc[df_home_pass["pass_recipient_name"] == name]["end_y"].to_numpy()
+        scatter_df.at[i, "player_name"] = name
 
-    #make sure that x and y location for each circle representing the player is the average of passes and receptions
-    scatter_df.at[i, "x"] = np.mean(np.concatenate([passx, recx]))
-    scatter_df.at[i, "y"] = np.mean(np.concatenate([passy, recy]))
+        #make sure that x and y location for each circle representing the player is the average of passes and receptions
+        scatter_df.at[i, "x"] = np.mean(np.concatenate([passx, recx]))
+        scatter_df.at[i, "y"] = np.mean(np.concatenate([passy, recy]))
 
-    #calculate number of passes
-    scatter_df.at[i, "no"] = df_home_pass.loc[df_home_pass["player_name"] == name].count().iloc[0]
+        #calculate number of passes
+        scatter_df.at[i, "no"] = df_home_pass.loc[df_home_pass["player_name"] == name].count().iloc[0]
+        
+    #adjust the size of a circle so that the player who made more passes
+    scatter_df['marker_size'] = (scatter_df['no'] / scatter_df['no'].max() * 900)
+
+    #Calculate edge width
+    df_home_pass["pair_key"] = df_home_pass.apply(lambda x: "_".join(sorted([x["player_name"], x["pass_recipient_name"]])), axis=1)
+    lines_df = df_home_pass.groupby(["pair_key"]).x.count().reset_index()
+    lines_df.rename({'x':'pass_count'}, axis='columns', inplace=True)
+    #setting a treshold
+    lines_df = lines_df[lines_df['pass_count']> 0]
+
+
+    import matplotlib.pyplot as plt
+    pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe=True)
+
+    fig, ax = pitch.draw()
+
+    pitch.scatter(scatter_df.x / 100 * pitch_length, scatter_df.y / 100 * pitch_width, s=scatter_df.marker_size, color='#272822', edgecolors='#EDBB00', linewidth=3, alpha=1, ax=ax, zorder = 3)
+
+    for i, row in scatter_df.iterrows():
+        pitch.annotate(row.player_name, xy=(row.x/100 * pitch_length +6, row.y/100 * pitch_width), c='white', va='center',
+                    ha='center', size=6, weight = "bold", ax=ax, zorder = 4, 
+                    bbox=dict(facecolor='#272822', alpha=1, edgecolor='#272822', boxstyle='round,pad=0.4'))
     
-#adjust the size of a circle so that the player who made more passes
-scatter_df['marker_size'] = (scatter_df['no'] / scatter_df['no'].max() * 900)
 
-#Calculate edge width
-df_home_pass["pair_key"] = df_home_pass.apply(lambda x: "_".join(sorted([x["player_name"], x["pass_recipient_name"]])), axis=1)
-lines_df = df_home_pass.groupby(["pair_key"]).x.count().reset_index()
-lines_df.rename({'x':'pass_count'}, axis='columns', inplace=True)
-#setting a treshold
-lines_df = lines_df[lines_df['pass_count']> 0]
+    for i, row in lines_df.iterrows():
+            player1 = row["pair_key"].split("_")[0]
+            player2 = row['pair_key'].split("_")[1]
+            #take the average location of players to plot a line between them
+            player1_x = scatter_df.loc[scatter_df["player_name"] == player1]['x'] / 100 * pitch_length
+            player1_y = scatter_df.loc[scatter_df["player_name"] == player1]['y'] / 100 * pitch_width
+            player2_x = scatter_df.loc[scatter_df["player_name"] == player2]['x'] / 100 * pitch_length
+            player2_y = scatter_df.loc[scatter_df["player_name"] == player2]['y'] / 100 * pitch_width
+            num_passes = row["pass_count"]
+            #adjust the line width so that the more passes, the wider the line
+            line_width = (num_passes / lines_df['pass_count'].max() * 8)
+            # adjust the alpha of the lines based on number of passes and set minimum alpha for a fewer pass
+            alpha = 0.5 * num_passes / lines_df['pass_count'].max() + 0.5
+            #plot lines on the pitch
+            pitch.lines(player1_x, player1_y, player2_x, player2_y,
+                            alpha=alpha, lw=line_width, zorder=2, color="#EDBB00", ax = ax)
+
+    plt.savefig(f'plots/3-network/passing_network_{name_other_team}.png', dpi=600,bbox_inches='tight')
 
 
-import matplotlib.pyplot as plt
-pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+    links += f"<img src=\"https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_{name_other_team}.png?raw=true\" align=\"center\" height=\"350\" width=\"600\"/>|"
+    #plt.show()
 
-fig, ax = pitch.draw()
+    return links
 
-pitch.scatter(scatter_df.x / 100 * pitch_length, scatter_df.y / 100 * pitch_width, s=scatter_df.marker_size, color='#272822', edgecolors='#EDBB00', linewidth=3, alpha=1, ax=ax, zorder = 3)
 
-for i, row in scatter_df.iterrows():
-    pitch.annotate(row.player_name, xy=(row.x/100 * pitch_length +6, row.y/100 * pitch_width), c='white', va='center',
-                   ha='center', size=6, weight = "bold", ax=ax, zorder = 4, 
-                   bbox=dict(facecolor='#272822', alpha=1, edgecolor='#272822', boxstyle='round,pad=0.4'))
-    
+data = [("Kazakhstan", "5414324"),("Denmark", "5414302"),("N_Ireland", "5414284")]
+data2 = [("Finland", "5414260"),("San_Marino", "5414226"),("Denmark_2","5414180")]
 
-for i, row in lines_df.iterrows():
-        player1 = row["pair_key"].split("_")[0]
-        player2 = row['pair_key'].split("_")[1]
-        #take the average location of players to plot a line between them
-        player1_x = scatter_df.loc[scatter_df["player_name"] == player1]['x'] / 100 * pitch_length
-        player1_y = scatter_df.loc[scatter_df["player_name"] == player1]['y'] / 100 * pitch_width
-        player2_x = scatter_df.loc[scatter_df["player_name"] == player2]['x'] / 100 * pitch_length
-        player2_y = scatter_df.loc[scatter_df["player_name"] == player2]['y'] / 100 * pitch_width
-        num_passes = row["pass_count"]
-        #adjust the line width so that the more passes, the wider the line
-        line_width = (num_passes / lines_df['pass_count'].max() * 8)
-        # adjust the alpha of the lines based on number of passes and set minimum alpha for a fewer pass
-        alpha = 0.5 * num_passes / lines_df['pass_count'].max() + 0.5
-        #plot lines on the pitch
-        pitch.lines(player1_x, player1_y, player2_x, player2_y,
-                        alpha=alpha, lw=line_width, zorder=2, color="#EDBB00", ax = ax)
+head = "|"
+second = "|"
+links = "|"
+for against, match_id in data:
+    head += f"{against}|"
+    second += "---|"
+    links = plot_network(against, match_id, links)
 
-plt.savefig('plots/passing_network.png', dpi=400)
-plt.show()
+print(head)
+print(second)
+print(links)
 
+head = "|"
+second = "|"
+links = "|"
+for against, match_id in data2:
+    head += f"{against}|"
+    second += "---|"
+    links = plot_network(against, match_id, links)
+
+print(head)
+print(second)
+print(links)
 ```
 </details>
 
 ### Centrality metrics
 
-We analyze key centrality metrics and output the 3 strongest players for each metrics:
+We analyze key centrality metrics and output the 3 strongest players for each metrics for each match:
 
-#### Degree Centrality
+### Degree Centrality
+Against: Kazakhstan --> ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']
+Against: Denmark --> ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']
+Against: N_Ireland --> ['A. Čerin: 1.6923', 'J. Bijol: 1.6923', 'B. Šeško: 1.6154']
+Against: Finland --> ['E. Janža: 1.4286', 'A. Čerin: 1.4286', 'T. Elšnik: 1.4286']
+Against: San_Marino --> ['A. Čerin: 1.8000', 'S. Lovrič: 1.6667', 'Ž. Karničnik: 1.6000']
+Against: Denmark_2 --> ['P. Stojanović: 1.8000', 'Ž. Karničnik: 1.7000', 'J. Bijol: 1.6000']
 
-Quantifies received passes relative to total players. $`C_D(v) = \frac{\text{Number of passes received by } v}{\text{Total number of players}} = \sum_{u \neq v} A_{uv}`$
+### Betweenness Centrality
+Against: Kazakhstan --> ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']
+Against: Denmark --> ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']
+Against: N_Ireland --> ['B. Šeško: 0.0911', 'A. Čerin: 0.0911', 'J. Bijol: 0.0824']
+Against: Finland --> ['E. Janža: 0.1679', 'A. Čerin: 0.1290', 'T. Elšnik: 0.0883']
+Against: San_Marino --> ['A. Čerin: 0.0857', 'J. Bijol: 0.0853', 'S. Lovrič: 0.0639']
+Against: Denmark_2 --> ['D. Brekalo: 0.0620', 'J. Mlakar: 0.0572', 'J. Bijol: 0.0485']
 
-| Player  | Value |
-| ------------- | ------------- |
-| A. Čerin  | 1.5333  |
-| J. Bijol | 1.4667  |
-| Ž. Karničnik  | 1.3333  |
+### Closeness Centrality
+Against: Kazakhstan --> ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']
+Against: Denmark --> ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']
+Against: N_Ireland --> ['A. Čerin: 0.9286', 'B. Šeško: 0.9286', 'J. Bijol: 0.8125']
+Against: Finland --> ['E. Janža: 0.7778', 'Ž. Karničnik: 0.7368', 'M. Blažič: 0.7368']
+Against: San_Marino --> ['A. Čerin: 0.9375', 'J. Bijol: 0.8824', 'S. Lovrič: 0.8824']
+Against: Denmark_2 --> ['J. Bijol: 0.9091', 'D. Brekalo: 0.8333', 'Ž. Karničnik: 0.8333']
 
+### Eigenvector Centrality
+Against: Kazakhstan --> ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']
+Against: Denmark --> ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']
+Against: N_Ireland --> ['A. Čerin: 0.3520', 'B. Šeško: 0.3489', 'M. Blažič: 0.3063']
+Against: Finland --> ['A. Čerin: 0.3436', 'T. Elšnik: 0.3287', 'A. Šporar: 0.3237']
+Against: San_Marino --> ['A. Čerin: 0.3396', 'S. Lovrič: 0.3310', 'J. Bijol: 0.3215']
+Against: Denmark_2 --> ['J. Bijol: 0.3629', 'P. Stojanović: 0.3620', 'Ž. Karničnik: 0.3362']
 
-#### Betweenness Centrality
+### PageRank Centrality
+Against: Kazakhstan --> ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']
+Against: Denmark --> ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']
+Against: N_Ireland --> ['J. Bijol: 0.1531', 'M. Blažič: 0.1464', 'A. Čerin: 0.1347']
+Against: Finland --> ['A. Čerin: 0.1102', 'E. Janža: 0.1058', 'Ž. Karničnik: 0.1035']
+Against: San_Marino --> ['A. Čerin: 0.1396', 'T. Elšnik: 0.1006', 'J. Bijol: 0.0988']
+Against: Denmark_2 --> ['Ž. Karničnik: 0.1330', 'D. Brekalo: 0.1239', 'P. Stojanović: 0.1215']
 
-Identifies players crucial for ball circulation, calculated by their role in shortest paths between others. $`C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}`$
-
-| Player  | Value |
-| ------------- | ------------- |
-| V. Drkušić|  0.1163  |
-| A. Čerin| 0.0945 |
-| Ž. Karničnik| 0.0827  |
-
-
-#### Closeness Centrality
-
-Evaluates proximity to others in the network for efficient pass reception. $`C_C(v) = \frac{1}{\sum_{u} d(u, v)}`$
-
-| Player  | Value |
-| ------------- | ------------- |
-| J. Bijol|  0.7500  |
-| A. Čerin|  0.7500 |
-|B. Šeško| 0.7500 |
-
-#### PageRank Centrality
-
-Assesses a player's influence, considering both connection quantity and quality, akin to Google's PageRank algorithm. $`C_E(v) = \frac{1}{\lambda} \sum_{u} A_{uv} C_E(u)`$
-
-
-| Player  | Value |
-| ------------- | ------------- |
-| Ž. Karničnik|  0.1125  |
-| J. Bijol|  0.0986 |
-|A. Čerin| 0.0949 |
+Identif
 
 <details>
   <summary> code </summary>
@@ -705,6 +739,8 @@ from IPython.display import display
 import networkx as nx
 import matplotlib.pyplot as plt
 from mplsoccer import VerticalPitch, Pitch
+
+
 
 def preprocess_team_pass_data(df_events, team_name):
     df_passes = df_events[df_events['type.primary'] == 'pass']
@@ -754,15 +790,34 @@ def calculate_top_players(G):
     return top_players
 
 
-#example usage
-df_events = pd.read_csv(f"results/wyscout/5414302_df_events.csv")
-filtered_passes_g, average_positions_g = preprocess_team_pass_data(df_events, 'Slovenia')
-G = create_weighted_graph(filtered_passes_g)
-values = calculate_top_players(G)
 
-for val in values:
-    print(f'#### {val}')
-    print(values[val])
+
+data = [("Kazakhstan", "5414324"),("Denmark", "5414324"),("N_Ireland", "5414284"),("Finland", "5414260"),("San_Marino", "5414226"),("Denmark_2","5414180")]
+
+centrality_measures = {
+        "Degree Centrality": [],
+        "Betweenness Centrality": [],
+        "Closeness Centrality": [],
+        "Eigenvector Centrality": [],
+        "PageRank Centrality": [],
+    }
+
+
+for against, match_id in data:
+    #example usage
+    df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv")
+    filtered_passes_g, average_positions_g = preprocess_team_pass_data(df_events, 'Slovenia')
+    G = create_weighted_graph(filtered_passes_g)
+    values = calculate_top_players(G)
+
+    for val in values: 
+        centrality_measures[val].append(f"Against: {against} --> " + str(values[val]))
+
+for val in centrality_measures:
+    print(f"### {val}")
+    for line in centrality_measures[val]:
+        print(line)
+
 ```
 </details>
 
@@ -1084,23 +1139,55 @@ def plot_values(type, against, values, color_function, plot_text = False):
                 plt.text(y/100.0 * pitch_width-4, x/100.0 * pitch_length - 4,entry['player.name'])
             ax.add_patch(shotCircle)
 
-    plt.savefig(f"plots/3-tactical/{type}_map_{against}.png", dpi=400)
+    plt.savefig(f"plots/3-tactical/{type}_map_{against}.png", dpi=400,bbox_inches='tight')
 
 
-data = [("Kazakhstan", "5414324"),("Denmark", "5414324"),("N_Ireland", "5414284"),("Finland", "5414260"),("San_Marino", "5414226")]
+data = [("Kazakhstan", "5414324"),("Denmark", "5414302"),("N_Ireland", "5414284")]
+data2 = [("Finland", "5414260"),("San_Marino", "5414226"),("Denmark_2","5414180")]
 
-for against, match_id in data:
+for against, match_id in data + data2:
     # Read data
     df_events = pd.read_csv(f"./results/wyscout/{match_id}_df_events.csv", index_col=0)
 
     # Save values
     plot_values("interception", against, df_events[df_events["type.primary"].str.contains('interception')], intercept_color_funcion)
     plot_values("duel", against, df_events[df_events["type.primary"].str.contains('duel')], duel_color_function)
-    plot_values("long passes", against, df_events[df_events["type.secondary"].str.contains('long_pass')], long_passes_color_function)
+    plot_values("long_passes", against, df_events[df_events["type.secondary"].str.contains('long_pass')], long_passes_color_function)
     plot_values("crosses", against, df_events[df_events["type.secondary"].str.contains('cross')], cross_color_function)
     plot_values("shots", against, df_events[~df_events["shot.isGoal"].isna()],shot_color_function)
     plot_values("fouls", against, df_events[df_events["type.secondary"].str.contains('foul')],fouls_color_function)
 
+
+
+values = ["long_passes","crosses","shots","duel","interception","fouls"]
+for type in values:
+    head = "|"
+    second = "|"
+    links = "|"
+    for against, match_id in data:
+        head += f" Vs : {against} |"
+        second += "---|"
+        links += f"<img src=\"https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/{type}_map_{against}.png?raw=true\" align=\"center\" height=\"350\" width=\"600\"/>|"
+
+    print(head)
+    print(second)
+    print(links)
+
+    print()
+
+    head = "|"
+    second = "|"
+    links = "|"
+    for against, match_id in data2:
+        head += f" Vs : {against} |"
+        second += "---|"
+        links += f"<img src=\"https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/{type}_map_{against}.png?raw=true\" align=\"center\" height=\"350\" width=\"600\"/>|"
+
+    print(head)
+    print(second)
+    print(links)
+
+    print("\n")
 ```
 
 </details>
@@ -2191,7 +2278,7 @@ plt.show()
 
 ## 6 Physical data
 
-In the Slovenian national team, there are several players who fit this description and deserve close attention from both fans and opponents alike. Here are two key players that seems to be particularly dangerous based on physical data:
+Here are two key players that seems to be particularly dangerous based on physical data:
 
 **Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game at any time.
 
@@ -2394,43 +2481,40 @@ In the Slovenian national team, there are several players who fit this descripti
 <summary> code</summary>
 
 ```python
-# Load data
-metadata_df = pd.read_csv(data_dir / f"{match_id}_metadata.csv")
-play_direction_df = pd.read_csv(data_dir / f"{match_id}_play_direction.csv")
-phase_df = pd.read_csv(data_dir / f"{match_id}_phase.csv")
-lineup_df = pd.read_csv(data_dir / f"{match_id}_lineup.csv")
-tracking_df = pd.read_csv(data_dir / f"{match_id}_tracking.csv")
-visible_area_df = pd.read_csv(data_dir / f"{match_id}_visible_area.csv")
-physical_df = pd.read_csv(data_dir / f"{match_id}_physical.csv")
-passes_df = pd.read_csv(data_dir / f"{match_id}_passes.csv")
-on_ball_pressures_df = pd.read_csv(data_dir / f"{match_id}_on_ball_pressures.csv")
-off_ball_runs_df = pd.read_csv(data_dir / f"{match_id}_off_ball_runs.csv")
-max_ball_z = int(tracking_df.z.max())
+for name, match_id in data:
+    # Define the directories
+    input_dir = Path("input/skillcorner")
 
-# Skillcorner
-physical_data = physical_df[['player_name','player_id', 'Distance','Running Distance', 'HSR Distance', 'Sprinting Distance','Count High Acceleration','PSV-99']]
+    # data_dir is where the processed raw data will be stored in
+    data_dir = Path("data/skillcorner/" + f"{match_id}/")
 
-# Rename some columns
-physical_data = physical_data.rename(columns={
-"player_name": "Player name",
-"Count High Acceleration": "Accelerations",
-"PSV-99": "Max speed"
-})
+    # skillcorner zip file path
+    zip_file = input_dir / f"{match_id}.zip"
+    unzip_dir = input_dir / f"{match_id}"
 
-# Exclude danish team
-valid_players = np.array(lineup_df[lineup_df['team_name'] != "Denmark"]['player_id'])
+    # Create the data_dir if it does not exist
+    if not data_dir.exists():
+        data_dir.mkdir(parents=True, exist_ok=True)
 
-# Sort by values
-physical_data = physical_data.sort_values(by="Player name")
-physical_data = physical_data[physical_data['player_id'].isin(valid_players)].drop(columns=['player_id'])
+    if not unzip_dir.exists():
+        unzip_dir.mkdir(parents=True, exist_ok=True)
 
-# Print players
-print(physical_data.to_markdown(index=False))
+    # Extract the zip file
+    with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+        zip_ref.extractall(unzip_dir)
 
-# Print top 3 each time
-for val in physical_data.keys():
-    print(f'#### Top 3 {val}')
-    print(physical_data.sort_values(by=val, ascending=False).head(3).to_markdown(index=False))
+    # match metadata and tracking data file paths
+    metadata_file = unzip_dir / f"{match_id}.jsonl"
+    tracking_file = unzip_dir / f"{match_id}_tracking_extrapolated.jsonl"
+
+    # game intelligence data file paths
+    physical_file = unzip_dir / f"{match_id}_physical.json"
+    passes_file = unzip_dir / f"{match_id}_passes.json"
+    on_ball_pressures_file = unzip_dir / f"{match_id}_on_ball_pressures.json"
+    off_ball_runs_file = unzip_dir / f"{match_id}_off_ball_runs.json"
+
+    skillcorner = SkillCorner()
+    skillcorner.load(match_id, metadata_file, tracking_file, physical_file, passes_file, on_ball_pressures_file, off_ball_runs_file)
 ```
 
 </details>
