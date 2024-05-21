@@ -135,10 +135,32 @@ Images: They are screenshot of Google Chrome output when we type : Last games of
 ![key_statistics: SVN vs weak](notebooks/plots/2-Statistics/key_statistics_SVN_vs_weak.png)
 
 
-##### text to be updated 
-We start by analyzing the direct qualifier match between Denmark and Slovenia on November 17, 2023. The game was largely dominated by Denmark, as evidenced by their 70% possession and a significant advantage in passes, which was double that of Slovenia's. The dominance was further highlighted by the shots on target, with Denmark having 8 compared to Slovenia's 1.
+We proceed by analyzing key statistics from Slovenia’s European Championship (EM) Qualifiers through four aggregate plots that reveal the average stats per game. These plots cover total stats across all ten qualifiers, a direct comparison with Denmark in two matches, a summary of four games against teams of similar strength (Finland and Northern Ireland), and another summary against weaker teams (San Marino and Kazakhstan).
 
-Despite the apparent control over the game by Denmark, the margin of victory was narrow, with Denmark winning by just one goal. This outcome is further clarified upon examining the expected goals metric. Denmark's expected goals stood at 1.33, indicating that despite their dominance, they struggled to create substantial scoring opportunities. On the other hand, Slovenia's expected goals were at 0.13, suggesting their goal could be attributed to a fortunate strike rather than a consistent offensive effort.
+Strength is measured by the relative position in the FIFA Men’s World Ranking compared to Slovenia (SVN). Denmark is considered a stronger team than Slovenia.
+
+The statistics reveal a clear pattern in game performance based on the strength of the opponent.
+
+**Against weaker teams**, Slovenia dominated the matches, evident by:
+- **74% possession**
+- **Almost 600 passes**
+- **More than 2 goals per game**, aligning with expected goals (opponents averaged 0.5 goals)
+- **Over 6 shots on target per game**
+- **17 total shots**, with opponents averaging 1.75 shots on target and 4.25 total shots
+
+**Against similarly strong teams**, the pattern shifted with less dominance:
+- **54% possession**
+- **430 passes**
+- **Chances created were similar to opponents**, with Slovenia averaging 3.25 shots on target and 9.5 total shots (oponent 3.5 and 8.25 respectively)
+- Despite this, Slovenia won most games, likely due to higher efficiency in goal-scoring (1.75 goals per game vs. opponents' 1.0 goals)
+
+**Against stronger teams like Denmark**, the pattern changed significantly:
+- **33% possession**
+- **300 passes**
+- Slovenia created few chances, averaging **1.5 shots on target and 4 total shots**, compared to Denmark's 5 shots on target and 11 total shots
+- Despite Denmark's control, Slovenia managed to keep the games close, scoring an average of **1 goal per game**, resulting in a 2:1 loss and a 1:1 draw. This outcome might be attributed to some luck, as Slovenia's expected goals were only 0.27.
+
+This analysis demonstrates that Slovenia’s game statistics varied notably based on the strength of their opponents, reflecting their adaptability and strategic adjustments in different competitive contexts.
 
 
 <details>
@@ -311,8 +333,6 @@ plot_stats_barchart(team1_data, team2_data, team1_name=team1, team2_name=team2, 
 
 ## 3. In possesion - attack of Slovenia
 
-##### text to be updated 
-In order to examine the attacking behavior of Denmark's group opponent Slovenia, a statistical analysis is first carried out. In a further chapter, the heat maps of the attack are examined in order to identify possible preferred sides. Key players are identified on the basis of passing patterns. Patterns are recognized with the help of various plots for long passes, crosses and shots.
 
 ### 3.1 Attacking style:
 
@@ -426,7 +446,6 @@ plot_stats_barchart(team1_data, team2_data, team1_name=team1_name, team2_name=te
 ![attacking_efficiency: SVN vs similar](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_similar.png)
 ![attacking_efficiency: SVN vs weak](notebooks/plots/3-attack/attacking_efficiency_SVN_vs_weak.png)
 
-##### code and text to be updated 
 
 On average, the Slovenians attack more from the flanks than their opponents in the European Championship qualifiers, which can be attributed to the height of the double strikers Sesko (1.95 m), Sporar (1.86 m) and Vipotnik (1.85 m). This is also reflected in the dribbling statistics, in which Slovenia performs below average. No strong dribbling forwards. The Slovenians also win more offensive duels on average due to the great physicality and tackling strength of their strikers. Slovenia is also a team that is not afraid to shoot, albeit with average efficiency. 
 
@@ -1069,9 +1088,6 @@ for against, match_id in data:
 
 ## 4 Out of possesion - defense of Slovenia
 
-##### text to be updated 
-Our analysis of Slovenia's defensive performance in the European Championship qualifier against Denmark on November 17, 2023, serves as the initial basis for evaluating their offensive strategy. Future analyses will encompass a broader range of matches to provide a more comprehensive assessment.
-
 ### 4.1 Statistics
 
 ![defense_statistics: SVN agg](notebooks/plots/4-defense/defense_statistics_SVN_agg.png)
@@ -1079,8 +1095,13 @@ Our analysis of Slovenia's defensive performance in the European Championship qu
 ![defense_statistics: SVN vs similar](notebooks/plots/4-defense/defense_statistics_SVN_vs_similar.png)
 ![defense_statistics: DEN vs weak](notebooks/plots/4-defense/defense_statistics_SVN_vs_weak.png)
 
-##### text to be updated 
-The defensive performance of Slovenia in the match clearly illustrates that their primary focus was on maintaining a robust defense, engaging in almost double the number of defensive duels compared to Denmark. Despite the intense defensive activity, the play remained mostly disciplined, with both teams committing 13 fouls each and Slovenia receiving only one yellow card.
+The defensive statistics align mostly with the previously observed patterns in game performance.
+
+**Against Stronger Teams (e.g., Denmark)**: Increased emphasis on maintaining a strong defensive stance against stronger teams like Denmark.
+
+**Against Weak Teams**: Less defensive action required as they dominate the game.
+
+**Against Similarly Strong Teams**: Strong defensive dominance despite equal gameplay: More duels won compared to opponents, higher number of interceptions and more clearances.
 
 
 <details>
@@ -1142,10 +1163,17 @@ plot_stats_barchart(team1_data, team2_data, team1_name=team1, team2_name=team2, 
 ![defensive_efficiency_style: SVN vs similar](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_similar.png)
 ![defensive_efficiency_style: SVN vs weak](notebooks/plots/4-defense/defensive_efficiency_style_SVN_vs_weak.png)
 
-##### text to be updated 
-Slovenia's defensive efforts were markedly more dominant and effective than their attacking endeavors. They outperformed Denmark in terms of winning defensive duels, with a success rate of nearly 80% in their defensive third. Furthermore, Slovenia made fewer defensive errors compared to their opponents, contributing to their solid defensive performance.
+This analysis complements the defensive statistics and provides further insights into Slovenia's defensive strategies, key observations are: 
 
-In terms of their defensive approach, Slovenia opted for a more conservative style. Rather than engaging in aggressive high pressing, they predominantly focused on maintaining a deep defensive line, concentrating their efforts on defending within their own third.
+**Pressing Strategy Based on Opponent Strength**
+
+Against stronger teams like Denmark, Slovenia adopts a “park the bus” strategy, with 70% of their pressing occurring in their own third. This approach emphasizes a strong defensive stance to mitigate the offensive threat posed by stronger opponents.
+
+In contrast, when facing similarly strong and weaker teams, Slovenia shifts to an earlier pressing strategy. This is evident as they press more in the middle of the field or even in the opponent’s half. This adjustment allows them to regain possession higher up the pitch and exert more control over the game.
+
+**Defensive Efficiency**
+
+When examining defensive efficiency, no clear pattern emerges. Slovenia shows high defensive efficiency against weaker teams, which then decreases against similarly strong teams. Interestingly, their efficiency increases again when playing against Denmark. Over the course of 10 games, Slovenia's defensive efficiency is comparable to that of their opponents when aggregated.
 
 
 <details>
