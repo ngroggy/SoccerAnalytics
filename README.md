@@ -1285,6 +1285,8 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 
 ### San Marino vs. Slovenia
 
+The game against San Marino is a good example of how Slovenia behave when they have the majority of the ball. Both central defenders defend at the back and the full-backs take part in the attacking play. Karnicnik can cross with both feet as he was often seen on the right side. A trait that Denmark must keep an eye on.
+
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200"></td>
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414226/J_Bijol_Heatmaps.png" alt="Image 2" width="200"></td>
@@ -1293,6 +1295,8 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 </div>
 
 ### Slovenia vs Finnland
+
+In the game against Finland and Northern Ireland, the back four will be compact. The full-backs will spend most of their time on the halfway line and play a classic 50/50 between defense and attack.
 
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414260/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
@@ -1335,7 +1339,7 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 <div align="center">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/D.Brekalo_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/D_Brekalo_Heatmaps.png" alt="Image 3" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
