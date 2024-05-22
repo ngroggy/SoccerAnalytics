@@ -1839,7 +1839,6 @@ From this map it can be seen that Slovenia had problems defending the penalty ar
 The same analysis can be done for Slovenia as an attacking team. As can be seen from the statistics of corner kicks, 7 of the 17 corners resulted in a shot, one of which led to a goal.
 
 <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/5-SetPieces/5_1-Corners/corner_recipient_loc_SVN.png?raw=true" align="center"/>
-![corner_recipient_loc_SVN](uploads/e5f63c2932336cc2dc3eee0ce2899d70/corner_recipient_loc_SVN.png)
 
 81% of corner kicks were taken inside the penalty area. 19% were taken far behind the penalty area.
 
