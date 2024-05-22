@@ -1328,10 +1328,10 @@ In the game against Finland and Northern Ireland, the back four will be compact.
 
 
 <div align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 ### Slovenia vs. Denmark
