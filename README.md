@@ -687,47 +687,51 @@ print(links)
 
 We analyze key centrality metrics and output the 3 strongest players for each metrics for each match:
 
-### Degree Centrality
-Against: Kazakhstan --> ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']
-Against: Denmark --> ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']
-Against: N_Ireland --> ['A. Čerin: 1.6923', 'J. Bijol: 1.6923', 'B. Šeško: 1.6154']
-Against: Finland --> ['E. Janža: 1.4286', 'A. Čerin: 1.4286', 'T. Elšnik: 1.4286']
-Against: San_Marino --> ['A. Čerin: 1.8000', 'S. Lovrič: 1.6667', 'Ž. Karničnik: 1.6000']
-Against: Denmark_2 --> ['P. Stojanović: 1.8000', 'Ž. Karničnik: 1.7000', 'J. Bijol: 1.6000']
+|Degree Centrality|Top 3|
+|---|---|
+|Against: Kazakhstan | ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']|
+|Against: Denmark | ['T. Elšnik: 1.5000', 'P. Stojanović: 1.4286', 'J. Bijol: 1.3571']|
+|Against: N_Ireland | ['A. Čerin: 1.6923', 'J. Bijol: 1.6923', 'B. Šeško: 1.6154']|
+|Against: Finland | ['E. Janža: 1.4286', 'A. Čerin: 1.4286', 'T. Elšnik: 1.4286']|
+|Against: San_Marino | ['A. Čerin: 1.8000', 'S. Lovrič: 1.6667', 'Ž. Karničnik: 1.6000']|
+|Against: Denmark_2 | ['P. Stojanović: 1.8000', 'Ž. Karničnik: 1.7000', 'J. Bijol: 1.6000']|
 
-### Betweenness Centrality
-Against: Kazakhstan --> ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']
-Against: Denmark --> ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']
-Against: N_Ireland --> ['B. Šeško: 0.0911', 'A. Čerin: 0.0911', 'J. Bijol: 0.0824']
-Against: Finland --> ['E. Janža: 0.1679', 'A. Čerin: 0.1290', 'T. Elšnik: 0.0883']
-Against: San_Marino --> ['A. Čerin: 0.0857', 'J. Bijol: 0.0853', 'S. Lovrič: 0.0639']
-Against: Denmark_2 --> ['D. Brekalo: 0.0620', 'J. Mlakar: 0.0572', 'J. Bijol: 0.0485']
+|Betweenness Centrality|Top 3|
+|---|---|
+|Against: Kazakhstan | ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']|
+|Against: Denmark | ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']|
+|Against: N_Ireland | ['B. Šeško: 0.0911', 'A. Čerin: 0.0911', 'J. Bijol: 0.0824']|
+|Against: Finland | ['E. Janža: 0.1679', 'A. Čerin: 0.1290', 'T. Elšnik: 0.0883']|
+|Against: San_Marino | ['A. Čerin: 0.0857', 'J. Bijol: 0.0853', 'S. Lovrič: 0.0639']|
+|Against: Denmark_2 | ['D. Brekalo: 0.0620', 'J. Mlakar: 0.0572', 'J. Bijol: 0.0485']|
 
-### Closeness Centrality
-Against: Kazakhstan --> ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']
-Against: Denmark --> ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']
-Against: N_Ireland --> ['A. Čerin: 0.9286', 'B. Šeško: 0.9286', 'J. Bijol: 0.8125']
-Against: Finland --> ['E. Janža: 0.7778', 'Ž. Karničnik: 0.7368', 'M. Blažič: 0.7368']
-Against: San_Marino --> ['A. Čerin: 0.9375', 'J. Bijol: 0.8824', 'S. Lovrič: 0.8824']
-Against: Denmark_2 --> ['J. Bijol: 0.9091', 'D. Brekalo: 0.8333', 'Ž. Karničnik: 0.8333']
+|Closeness Centrality|Top 3|
+|---|---|
+|Against: Kazakhstan | ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']|
+|Against: Denmark | ['T. Elšnik: 0.7912', 'J. Bijol: 0.7347', 'B. Šeško: 0.7347']|
+|Against: N_Ireland | ['A. Čerin: 0.9286', 'B. Šeško: 0.9286', 'J. Bijol: 0.8125']|
+|Against: Finland | ['E. Janža: 0.7778', 'Ž. Karničnik: 0.7368', 'M. Blažič: 0.7368']|
+|Against: San_Marino | ['A. Čerin: 0.9375', 'J. Bijol: 0.8824', 'S. Lovrič: 0.8824']|
+|Against: Denmark_2 | ['J. Bijol: 0.9091', 'D. Brekalo: 0.8333', 'Ž. Karničnik: 0.8333']|
 
-### Eigenvector Centrality
-Against: Kazakhstan --> ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']
-Against: Denmark --> ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']
-Against: N_Ireland --> ['A. Čerin: 0.3520', 'B. Šeško: 0.3489', 'M. Blažič: 0.3063']
-Against: Finland --> ['A. Čerin: 0.3436', 'T. Elšnik: 0.3287', 'A. Šporar: 0.3237']
-Against: San_Marino --> ['A. Čerin: 0.3396', 'S. Lovrič: 0.3310', 'J. Bijol: 0.3215']
-Against: Denmark_2 --> ['J. Bijol: 0.3629', 'P. Stojanović: 0.3620', 'Ž. Karničnik: 0.3362']
+|Eigenvector Centrality|Top 3|
+|---|---|
+|Against: Kazakhstan | ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']|
+|Against: Denmark | ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']|
+|Against: N_Ireland | ['A. Čerin: 0.3520', 'B. Šeško: 0.3489', 'M. Blažič: 0.3063']|
+|Against: Finland | ['A. Čerin: 0.3436', 'T. Elšnik: 0.3287', 'A. Šporar: 0.3237']|
+|Against: San_Marino | ['A. Čerin: 0.3396', 'S. Lovrič: 0.3310', 'J. Bijol: 0.3215']|
+|Against: Denmark_2 | ['J. Bijol: 0.3629', 'P. Stojanović: 0.3620', 'Ž. Karničnik: 0.3362']|
 
-### PageRank Centrality
-Against: Kazakhstan --> ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']
-Against: Denmark --> ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']
-Against: N_Ireland --> ['J. Bijol: 0.1531', 'M. Blažič: 0.1464', 'A. Čerin: 0.1347']
-Against: Finland --> ['A. Čerin: 0.1102', 'E. Janža: 0.1058', 'Ž. Karničnik: 0.1035']
-Against: San_Marino --> ['A. Čerin: 0.1396', 'T. Elšnik: 0.1006', 'J. Bijol: 0.0988']
-Against: Denmark_2 --> ['Ž. Karničnik: 0.1330', 'D. Brekalo: 0.1239', 'P. Stojanović: 0.1215']
+|PageRank Centrality|Top 3|
+|---|---|
+|Against: Kazakhstan | ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']|
+|Against: Denmark | ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']|
+|Against: N_Ireland | ['J. Bijol: 0.1531', 'M. Blažič: 0.1464', 'A. Čerin: 0.1347']|
+|Against: Finland | ['A. Čerin: 0.1102', 'E. Janža: 0.1058', 'Ž. Karničnik: 0.1035']|
+|Against: San_Marino | ['A. Čerin: 0.1396', 'T. Elšnik: 0.1006', 'J. Bijol: 0.0988']|
+|Against: Denmark_2 | ['Ž. Karničnik: 0.1330', 'D. Brekalo: 0.1239', 'P. Stojanović: 0.1215']|
 
-Identif
 
 <details>
   <summary> code </summary>
