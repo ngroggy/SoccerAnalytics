@@ -1316,6 +1316,7 @@ In the game against Finland and Northern Ireland, the back four will be compact.
 
 ### Denmark vs. Slovenia
 
+As in the last game, Karnicnik can be seen on both sides of the full-backs. The central defenders rarely cross the halfway line. Otherwise, they remain very compact in their chain.
 
 <div align="center">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
@@ -1326,6 +1327,7 @@ In the game against Finland and Northern Ireland, the back four will be compact.
 
 ### Slovenia vs. Kazakhstan
 
+A pattern that has emerged several times now is that Karnicnik is much more involved in attacking play than the other full-back. In other words, Slovenia prefer to attack down the right flank. The same pattern can be observed in central defense, where Blazic carries the ball into midfield more often than Bijol.   
 
 <div align="center">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
@@ -1335,6 +1337,8 @@ In the game against Finland and Northern Ireland, the back four will be compact.
 </div>
 
 ### Slovenia vs. Denmark
+
+But as soon as Slovenia play against an equally good/better opponent, they very quickly fall back into the compact back four and Karnicnik, who is strong on the flanks, has fewer chances up front.
 
 <div align="center">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
