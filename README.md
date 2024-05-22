@@ -838,8 +838,8 @@ It is also clear that Slovenian were mainly occupied with defending and Sesko an
 
 <div align="center">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/B_Verbi%C4%8D_Heatmaps.png" alt="Image 1" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/A_%C4%8Cerin_Heatmaps.png" alt="Image 2" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/T_El%C5%A1nik_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Mlakar_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
