@@ -864,8 +864,8 @@ A pattern that has now been seen several times (e.g. against San Marino): When S
 ### Slovenia vs. Denmark
 
 <div align="center">
-  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/A_%C5%A0porar_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
 </div>
 
 
