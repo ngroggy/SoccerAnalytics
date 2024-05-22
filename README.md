@@ -863,6 +863,8 @@ A pattern that has now been seen several times (e.g. against San Marino): When S
 
 ### Slovenia vs. Denmark
 
+This game is clearly characterized by an offensive side. Sesko and Sporar were both often on the right flank. This gave Mlakar the opportunity to act as a third striker, so to speak, and he often moved into the middle. As Mlakar played very offensively, Elsnik had to remain a central defensive midfielder and protect behind Mlakar. Cerin, on the other hand, was able to play more offensively. Cerin's heat map confirms the offensive efforts on the right. 
+
 <div align="center">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/A_%C5%A0porar_Heatmaps.png" width="200">
   <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
@@ -1302,20 +1304,20 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
 ### Northern Island vs. Slovenia
 
 <div align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/E_Jan%C5%BEa_Heatmaps.png" alt="Image 4" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414284/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 ### Denmark vs. Slovenia
 
 
 <div align="center">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
-    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/E_Jan%C5%BEa_Heatmaps.png" alt="Image 4" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 ### Slovenia vs. Kazakhstan
