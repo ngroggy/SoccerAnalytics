@@ -861,6 +861,23 @@ A pattern that has now been seen several times (e.g. against San Marino): When S
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414324/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
+### Slovenia vs. Denmark
+
+<div align="center">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/B_%C5%A0e%C5%A1ko_Heatmaps.png" width="200">
+  <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/A_%C5%A0porar_Heatmaps.png" width="200">
+</div>
+
+
+<div align="center">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/J_Mlakar_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/T_El%C5%A1nik_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/A_%C4%8Cerin_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/P_Stojanovi%C4%87_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+
+
 
 
 <details>
@@ -1309,6 +1326,15 @@ It's clear to see that the 4-man chain was played consistently throughout the ga
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/M_Bla%C5%BEi%C4%8D_Heatmaps.png" alt="Image 3" width="200">
     <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414302/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
+</div>
+
+### Slovenia vs. Denmark
+
+<div align="center">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/E_Jan%C5%BEa_Heatmaps.png" alt="Image 1" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/J_Bijol_Heatmaps.png" alt="Image 2" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/D.Brekalo_Heatmaps.png" alt="Image 3" width="200">
+    <img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/Heatmaps/5414180/%C5%BD_Karni%C4%8Dnik_Heatmaps.png" alt="Image 4" width="200">
 </div>
 
 
