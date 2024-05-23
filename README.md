@@ -8,8 +8,8 @@ _Please fill in the following table._
 | @dgregory   | Grégory de Meurichy|
 | @ngrogg     | Nic Grogg          |
 | @grloris    | Loris Griesbaum    |
-| @ygoergen   | Yves Görgen        |
-| @fcosta     | François Costa     |
+| @ygoergen        | Yves Görgen             |
+| @fcosta          | François Costa               |
 </details>
 
 <details>
@@ -17,44 +17,40 @@ _Please fill in the following table._
 
 Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@ethz.ch 
 
-- [] Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
-- [] Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
-- [] Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
-- [] Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
-- [] You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
-- [] Some of your set piece analysis might be more informative when including other matches (see comment above).
-- [] Nice that you have a summary at the end of the report with weaknesses and suggested tactics
-- []Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
+- [ ] when saving, please indicate what you changed in a meaningful commit messages
+- [x] draft due: **Monday, April 8**
+- Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
+- You make some claims about 442 formations but it is not clear where you are taking this from.
+- Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
+- Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
+- Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
+- Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
+- You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
+- Some of your set piece analysis might be more informative when including other matches (see comment above).
+- Nice that you have a summary at the end of the report with weaknesses and suggested tactics
+- Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
+- [ ] final version due: **Friday, May 24** 
 </details>
 
 
+<!---------------- HEADER SECTION -------------------->
+<details><summary>Project Group</summary>
 
+_Please fill in the following table._
 
-### Comments for the TA
+| handle      | name               |
+| ----------- | ------------------ |
+| @dgregory   | Grégory de Meurichy|
+| @ngrogg     | Nic Grogg          |
+| @grloris    | Loris Griesbaum    |
+| @ygoergen   | Yves Görgen        |
+| @fcosta     | François Costa     |
+</details>
 
-Hello Ivana,
+<details>
+<summary>TA Comments :warning: April 19 </summary>
 
-In our preliminary draft, we've chosen to consolidate statistics from a specific previous game in Slovenia, with our main focus on extracting and elucidating the data.
-
-For the final version, we plan to:
-
-1. Gather statistics for all previous matches.
-2. Potentially include more advanced metrics like pitch control.
-3. Not only describe the statistics but also analyze them, illustrating situations in which Slovenia could be strong or expose weaknesses.
-
-
-### TODOs:
-
-- [ ] Good start! Overall you have implemented some nice ideas – would be great if you could extend to include data from other matches to get a feeling of Slovenia’s patterns of play and how Denmark could exploit weaknesses. I see from your message you are already planning to do this, so keep it up!
-- [x] You make some claims about 442 formations but it is not clear where you are taking this from.
-- [ ] Attacking style: you say that Slovenia’s attack is mainly characterized by long balls and counter attacks, but seems that 35% of their attacking style is attributed to build up?
-- [ ] Passing network: nice interpretation (difficulty linking defense and midfield… is this a pattern across games or did Denmark do something special last time?)
-- [ ] Interesting that you look into the centralities of the passing networks, but it is not clear what the centralities can tell us about the passing networks / how we can interpret the results. 
-- [ ] Some heatmaps have some interesting features: concentrations on two opposite sides of the pitch – would be interesting to understand what that means… is it real or consequence of skillcorner’s player detection?
-- [ ] You have a lot of maps showing where certain actions happened, but not clear what we can take from these in terms of preparing Denmark for the match. If you compare across the other qualifying matches, perhaps you see some trends / patterns which can give us a hint of what to expect more concretely?
-- [ ] Some of your set piece analysis might be more informative when including other matches (see comment above).
-- [ ] Nice that you have a summary at the end of the report with weaknesses and suggested tactics
-- [x] Please remember that details of how each piece of analysis / visualization was produced (either by linking to the relevant snippets, online sources, or providing your own source code directly) **MUST** be provided, and we expect each visualization to be accompanied by a meaningful interpretation.
+</details>
 
 # Match \#06 (SVN-DEN): preparing Denmark to play against Slovenia
 
@@ -685,7 +681,26 @@ print(links)
 
 ### Centrality metrics
 
-We analyze key centrality metrics and output the 3 strongest players for each metrics for each match:
+Analyzing the provided data reveals some insights into the passes dynamics of Slovenian players across different matches. Let's delve into each centrality metric and glean more detail
+
+#### Definitions
+
+In graph analysis, several metrics are used to measure the importance or centrality of nodes within a network. Here's a brief explanation of each metric:
+
+Degree Centrality: It measures the number of connections a node has. Nodes with a higher degree centrality are considered more central within the network as they have more connections.
+
+Betweenness Centrality: It quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. Nodes with high betweenness centrality have significant influence over the flow of information in the network.
+
+Closeness Centrality: It measures how close a node is to all other nodes in the network. Nodes with high closeness centrality are able to quickly interact with other nodes in the network.
+
+Eigenvector Centrality: It assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question. It's similar to Google's PageRank algorithm.
+
+PageRank Centrality: It measures the importance of a node based on the number and quality of links to it. It assigns a numerical weighting to each element of a hyperlinked set of documents, such as the World Wide Web, with the purpose of "measuring" its relative importance within the set.
+
+
+#### Degree Centrality
+
+Across various opponents, including Kazakhstan, Denmark, and Northern Ireland, players like T. Elšnik, P. Stojanović, A. Čerin and J. Bijol consistently emerge as top performers. This suggests they maintain a high number of connections within the team's gameplay structure, likely reflecting their engagement in scoring goals or facilitating plays.
 
 |Degree Centrality|Top 3|
 |---|---|
@@ -696,14 +711,23 @@ We analyze key centrality metrics and output the 3 strongest players for each me
 |Against: San_Marino | ['A. Čerin: 1.8000', 'S. Lovrič: 1.6667', 'Ž. Karničnik: 1.6000']|
 |Against: Denmark_2 | ['P. Stojanović: 1.8000', 'Ž. Karničnik: 1.7000', 'J. Bijol: 1.6000']|
 
+#### Betweenness Centrality
+
+Once again, players such as B. Šeško, A. Čerin, M. Blažič, T. Elšnik, and J. Bijol demonstrate significant influence as bridging nodes between other players during matches. Their strategic positioning and ability to link various parts of the team's gameplay contribute crucially to the overall flow and effectiveness of tactics.
+
 |Betweenness Centrality|Top 3|
 |---|---|
-|Against: Kazakhstan | ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']|
-|Against: Denmark | ['M. Blažič: 0.0779', 'nan: 0.0659', 'T. Elšnik: 0.0486']|
+|Against: Kazakhstan | ['M. Blažič: 0.0779', 'S. Lovrič: 0.0659', 'T. Elšnik: 0.0486']|
+|Against: Denmark | ['M. Blažič: 0.0779', 'Ž. Karničnik: 0.0659', 'T. Elšnik: 0.0486']|
 |Against: N_Ireland | ['B. Šeško: 0.0911', 'A. Čerin: 0.0911', 'J. Bijol: 0.0824']|
 |Against: Finland | ['E. Janža: 0.1679', 'A. Čerin: 0.1290', 'T. Elšnik: 0.0883']|
 |Against: San_Marino | ['A. Čerin: 0.0857', 'J. Bijol: 0.0853', 'S. Lovrič: 0.0639']|
 |Against: Denmark_2 | ['D. Brekalo: 0.0620', 'J. Mlakar: 0.0572', 'J. Bijol: 0.0485']|
+
+
+#### Closeness Centrality
+
+While the top performers vary more across different opponents in this metric, players like T. Elšnik, A. Čerin, B. Šeško, and J. Bijol consistently show high closeness centrality. This suggests their adeptness at quickly engaging with teammates on the field, indicating strong strategic positioning and communication skills.
 
 |Closeness Centrality|Top 3|
 |---|---|
@@ -714,6 +738,10 @@ We analyze key centrality metrics and output the 3 strongest players for each me
 |Against: San_Marino | ['A. Čerin: 0.9375', 'J. Bijol: 0.8824', 'S. Lovrič: 0.8824']|
 |Against: Denmark_2 | ['J. Bijol: 0.9091', 'D. Brekalo: 0.8333', 'Ž. Karničnik: 0.8333']|
 
+### Eigenvector Centrality 
+
+Alongside degree centrality, this metric underscores the significance of players like B. Šeško, T. Elšnik, P. Stojanović, and A. Čerin, who not only maintain numerous connections but also have ties to other highly connected players. Their pivotal role in the team's gameplay and overall strategy is emphasized by their high eigenvector centrality scores.
+
 |Eigenvector Centrality|Top 3|
 |---|---|
 |Against: Kazakhstan | ['B. Šeško: 0.3662', 'T. Elšnik: 0.3612', 'P. Stojanović: 0.3549']|
@@ -723,6 +751,10 @@ We analyze key centrality metrics and output the 3 strongest players for each me
 |Against: San_Marino | ['A. Čerin: 0.3396', 'S. Lovrič: 0.3310', 'J. Bijol: 0.3215']|
 |Against: Denmark_2 | ['J. Bijol: 0.3629', 'P. Stojanović: 0.3620', 'Ž. Karničnik: 0.3362']|
 
+#### PageRank Centrality
+
+Similar to other metrics, players such as J. Bijol, M. Blažič, and A. Čerin consistently rank high in terms of their importance within the team's performance against various opponents. Their contributions, whether in terms of scoring goals or orchestrating plays, significantly impact the team's success on the field.
+
 |PageRank Centrality|Top 3|
 |---|---|
 |Against: Kazakhstan | ['M. Blažič: 0.1139', 'J. Bijol: 0.1113', 'P. Stojanović: 0.1023']|
@@ -731,6 +763,24 @@ We analyze key centrality metrics and output the 3 strongest players for each me
 |Against: Finland | ['A. Čerin: 0.1102', 'E. Janža: 0.1058', 'Ž. Karničnik: 0.1035']|
 |Against: San_Marino | ['A. Čerin: 0.1396', 'T. Elšnik: 0.1006', 'J. Bijol: 0.0988']|
 |Against: Denmark_2 | ['Ž. Karničnik: 0.1330', 'D. Brekalo: 0.1239', 'P. Stojanović: 0.1215']|
+
+Based on the provided data and focusing on players who seem important in the passing network, we can examine the top performers across the Degree Centrality, Betweenness Centrality, Closeness Centrality, Eigenvector Centrality, and PageRank Centrality metrics.
+
+#### T. Elšnik
+
+Elšnik consistently emerges as a key player in the passing network across various metrics. With high scores in degree centrality, betweenness centrality, closeness centrality, and eigenvector centrality, Elšnik's presence is pivotal in orchestrating passes and facilitating the team's offensive maneuvers. His ability to connect with teammates efficiently and act as a bridge between different parts of the team's gameplay makes him indispensable in driving the team's passing dynamics forward.
+
+#### M. Blažič
+
+Blažič demonstrates significant influence in the passing network, particularly evident in his high betweenness centrality and PageRank centrality scores. As a bridging node between other players and with a notable ranking in terms of importance within the team's performance, Blažič plays a crucial role in channeling the flow of passes and contributing to strategic plays.
+
+#### B. Šeško
+
+Šeško's involvement in the passing network is underscored by his high scores in degree centrality, betweenness centrality, and eigenvector centrality. His consistent presence among the top performers across different metrics highlights his integral role in maintaining connections and influencing the team's passing strategies. Šeško's ability to effectively link with teammates and contribute to the team's passing dynamics makes him a valuable asset on the field.
+
+#### A. Čerin
+
+Čerin emerges as the last central figure in the passing network, evident from his high scores in degree centrality, betweenness centrality, and closeness centrality. With his adeptness at quickly engaging with teammates and maintaining connections, Čerin plays a crucial role in facilitating passes and driving the team's offensive movements. His significance within the team's passing dynamics is further emphasized by his notable rankings in eigenvector centrality and PageRank centrality, highlighting his importance in the team's overall performance.
 
 
 <details>
@@ -2282,13 +2332,32 @@ plt.show()
 
 ## 6 Physical data
 
+### General comments about physical play
+ 
+Referring to the tables provided in this section, Slovenia's football team seems to demonstrate a strong physical attack and excels in launching quick counter-attacks, powered by the physicality and speed of their players. This allows them to rapidly transition from defense to attack.
+
+In attack, Slovenia leverages their physical presence to create scoring opportunities. Benjamin Šeško exemplifies this approach. Standing at around 6'4" (193 cm), Šeško uses his height and strength effectively. It gives him the ability to win headers and outmuscle defenders makes him particularly dangerous during set-pieces and crosses. According to the data, Šeško has high maximum speeds (max speed: 33.3 km/h), and his frequent accelerations (ACC: 4.3) underline his physical power.
+
+Šeško's physical attributes allow Slovenia to adopt a more direct style of play when necessary. Long balls and crosses into the box are common strategies, with Šeško acting as the target man who can control the ball and bring others into play. His presence forces defenders to pay extra attention to him, creating space and opportunities for his teammates.
+
+Adam Gnezda Čerin exemplifies Slovenia's physical style with his high work rate, physical presence, and intelligent positioning in midfield with the ability to break up opposition play and initiate counter-attacks. This is evident from his high-speed running (HSR: 85m) and overall running distances (TR: 10905m), reflecting his role in Slovenia's strategy.
+
+Žan Karničnik also shows remarkable endurance and speed. His high running distances (TR: 11843m) and impressive HSR distances (HSR: 95m) highlight his ability to cover a lot of ground quickly, making him a versatile player who can contribute effectively in both defense and attack. His frequent accelerations (ACC: 4.4) and consistent high maximum speeds (max speed: 32.5 km/h) further emphasize his athleticism and explosiveness on the field.
+
+Finally, Jan Mlakar is notable for his high-speed running (HSR: 98m) and sprinting distances (TR: 10365m). His pace and agility allow him to make penetrating runs behind defenses, making him a key player in offensive transitions. His consistent performance across different matches shows his reliability and attacking prowess.
+
+Therefore, the Slovenian football team’s physical playing style seems to be a key component of their strategy. They combine aggressive defending with a direct, physically demanding approach in attack. Benjamin Šeško's presence enhances this style, providing a focal point for their offensive play. This blend of physicality and tactical discipline allows Slovenia to control games, disrupt opponents, and create scoring chances.
+
+#### Players to watch
+
 Here are two key players that seems to be particularly dangerous based on physical data:
 
 **Benjamin Šeško**: With his explosive pace and clinical finishing ability, Šeško is a constant menace to opposing defenders. Whether it's making penetrating runs behind the defense or unleashing powerful shots from distance, he has the capability to change the game at any time.
 
 **Adam Gnezda Čerin**: He seems to be work at a tireless rate and is able to cover immense distances on the field, Čerin could pose a constant threat with his speed and agility. His moving ability allows him to contribute both defensively and offensively, making him a vital player for Slovenia.
 
-#### Overall data
+<details>
+<summary> Generated pyhsical values </summary>
 
 #### Top 3 Distance vs Kazakhstan
 | Player name       |   Distance |   Running Distance |   HSR Distance |   Sprinting Distance |   Accelerations |   Max speed |
@@ -2477,7 +2546,7 @@ Here are two key players that seems to be particularly dangerous based on physic
 | Andraž Šporar  |       9815 |               1023 |            442 |                  211 |               4 |        30.7 |
 | Jan Mlakar     |       8981 |               1232 |            491 |                  166 |               6 |        30.2 |
 
-
+</details>
 
 
 
@@ -2629,13 +2698,22 @@ These six players, each excelling in their respective positions, form the strong
 
 ### 9.3 Conclusion of the analysis
 
-As we prepare to face Slovenia, we need to be fully aware of their strengths and how we can best counter them. Slovenia seems to be a team that prides itself on a solid and organized defense. They are well-organized and rarely leave gaps at the back, which makes breaking through their lines a significant challenge. Their players are technically good, with excellent passing and ball control, allowing them to maintain possession and build their play with precision. Additionally, they are tactically flexible, capable of shifting between defensive and attacking approaches based on the flow of the game. We must also be wary of their proficiency in set pieces, as they frequently turn these situations into scoring opportunities.
+As we gear up to face Slovenia, it's important to grasp their strengths and devise effective strategies to counter them. In Section 1, it's evident that Slovenia possesses a solid defense, marshaled by Jan Oblak, a stalwart in goal. Their defensive organization, highlighted in Section 2, presents a strong barrier, making breaching their lines a formidable challenge. Their technical prowess, as discussed in Section 3, particularly in midfield with players like Josip Iličić and Miha Zajc, underscores the need for astute ball control and precise passing to navigate through their ranks.
 
-One player who stands out is Benjamin Šeško. He is a formidable force in their attack, known for his physical presence, speed, and ability to finish decisively. His aerial prowess makes him particularly dangerous on set pieces, and his ability to hold up the ball and bring teammates into play adds a significant dimension to their offense. Neutralizing Šeško will be crucial to limiting Slovenia's attacking threat.
+Section 4 emphasizes Slovenia's tactical flexibility, suggesting the need for adaptability in our approach to counter their shifts between defensive and attacking setups. Furthermore, Section 5 underscores their proficiency in set pieces, indicating the importance of vigilance in defending against such situations, where they often capitalize on scoring opportunities.
 
-However, Slovenia has some vulnerabilities that we can exploit. Their squad lacks depth, so if we can pressure their key players and capitalize on any injuries or suspensions, we can gain an upper hand. Offensively, they can be inconsistent, often struggling to find the back of the net against well-organized defenses. They also don't have the same pace as some of our other opponents, making them susceptible to quick transitions and counter-attacks. Moreover, Slovenia has shown they can falter under intense pressure, which can lead to mistakes and a loss of composure.
+In Section 6, the standout player, Benjamin Šeško, emerges as a key threat, particularly in aerial duels and set-piece scenarios, necessitating special attention in our defensive strategies. Despite their strengths, vulnerabilities outlined in Section 7, such as a lack of squad depth, susceptibility to high-pressure tactics, and inconsistency in offense, offer avenues for exploitation.
+
+To augment our game plan further, dominance in midfield, as discussed in Section 2, becomes imperative to dictate the tempo of the game and stifle Slovenia's creative outlets. Remaining disciplined and organized defensively, as suggested in Section 3, will help nullify their attacking threats and prevent them from exploiting set-piece opportunities.
+
+By getting the insights from Sections 1 to 8, we can craft a comprehensive strategy to neutralize Slovenia's strengths and exploit their weaknesses effectively. Let's execute our plan with precision, demonstrating the resilience and determination that define us as a team. We are now fully aware of their strengths and how we can best counter them. Slovenia is a team that prides itself on a solid and organized defense. They are well-organized and rarely leave gaps at the back, which makes breaking through their lines a significant challenge. Their players are technically good, with excellent passing and ball control, allowing them to maintain possession and build their play with precision. Additionally, they are tactically flexible, capable of shifting between defensive and attacking approaches based on the flow of the game. We must also be wary of their proficiency in set pieces, as they frequently turn these situations into scoring opportunities.
+
+The player who stands out is Benjamin Šeško. He is a formidable force in their attack, known for his physical presence, speed, and ability to finish decisively. His aerial prowess makes him particularly dangerous on set pieces, and his ability to hold up the ball and bring teammates into play adds a significant dimension to their offense. Neutralizing Šeško will be crucial to limiting Slovenia's attacking threat.
+
+However, Slovenia has some vulnerabilities that we can exploit. Their squad lacks depth, so if we can pressure their key players. Offensively, they can be inconsistent, often struggling to find the back of the net against well-organized defenses. They also don't have the same pace as some of our other opponents, making them susceptible to quick transitions and counter-attacks. Moreover, Slovenia has shown they can falter under intense pressure, which can lead to mistakes and a loss of composure.
+
 
 To tackle Slovenia effectively, we should implement a high pressing strategy to disrupt their build-up play and force errors in dangerous areas. Utilizing our wingers to stretch their defense and create opportunities from wide positions will be crucial. We need to be sharp in our transitions, moving quickly to exploit any gaps left as they shift between their defensive and attacking phases. Set pieces will be a vital component of our game plan; let's ensure our routines are well organized to exploit any defensive weaknesses they might have.
 
-Controlling the midfield is key. By dominating this area, we can dictate the tempo and cut off their creative players from receiving the ball. We must remain patient and disciplined, especially in defense, avoiding unnecessary fouls and maintaining our shape to prevent them from taking advantage of set pieces. If we focus well on these strategies, we can neutralize Slovenia's strengths and exploit their weaknesses, positioning ourselves for a successful match. Let’s stay focused, execute our plan with precision, and show the determination that defines us as a team.
+Controlling the midfield is key. The 4-4-2 also has its weaknesses. Its flat midfield can sometimes struggle against systems with an extra midfielder, leading to being outnumbered in the middle of the park. Additionally, if the wide midfielders do not track back effectively, it can leave the full-backs exposed defensively. By dominating this area, we can dictate the tempo and cut off their creative players from receiving the ball. We must remain patient and disciplined, especially in defense, avoiding unnecessary fouls and maintaining our shape to prevent them from taking advantage of set pieces. If we focus well on these strategies, we can neutralize Slovenia's strengths and exploit their weaknesses, positioning ourselves for a successful match. Let’s stay focused, execute our plan with precision, and show the determination that defines us as a team.
 
