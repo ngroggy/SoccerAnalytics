@@ -33,25 +33,6 @@ Your teaching assistant is Ivana (@ismokovic) and can be reached at ismokovic@et
 </details>
 
 
-<!---------------- HEADER SECTION -------------------->
-<details><summary>Project Group</summary>
-
-_Please fill in the following table._
-
-| handle      | name               |
-| ----------- | ------------------ |
-| @dgregory   | Grégory de Meurichy|
-| @ngrogg     | Nic Grogg          |
-| @grloris    | Loris Griesbaum    |
-| @ygoergen   | Yves Görgen        |
-| @fcosta     | François Costa     |
-</details>
-
-<details>
-<summary>TA Comments :warning: April 19 </summary>
-
-</details>
-
 # Match \#06 (SVN-DEN): preparing Denmark to play against Slovenia
 
 
@@ -530,14 +511,13 @@ It is striking how closely the full-backs and wingers play together. The duo of 
 A glance at the two forwards shows that they are not involved in the passing game to any great extent. 
 
 
-
 |Kazakhstan|Denmark|N_Ireland|
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 |Finland|San_Marino|Denmark_2|
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-network/passing_network_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 <details>
   <summary> code </summary>
@@ -1047,29 +1027,24 @@ In the direct comparison in the denmark game, the Slovenians' great strength lie
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
-
-
-
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/long_passes_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.2 Crosses
 
 The success rate of Slovenia's crosses is above average, meaning Mlakar and Stojanovic should not be allowed to cross freely, especially with Sesko in the middle. It is difficult to determine a preferred side.
 
+
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
-
-
-
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/crosses_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.3 Shots 
 
@@ -1077,13 +1052,14 @@ As soon as Slovenia are confronted with little possession, they only shoot from 
 
 For the direct comparison with the denmark game. What is striking about this statistic is that only shots were taken from the second row and therefore from long range. The two strikers did not get a shot on target. Two shots and only one on goal shows how busy Slovenia were defending. Slovenia's efficiency and above all Janza's shooting technique is astonishing. There is a slight tendency to shoot from the right.
 
+
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/shots_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 
 #### 3.4.4 Dribblings
@@ -1094,12 +1070,11 @@ The only thing that stands out is that there is relatively little dribbling in t
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
-
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/duel_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 
 #### 3.4.5 Interceptions
@@ -1108,13 +1083,15 @@ It is striking how few balls are intercepted in the middle. This extends to the 
 
 Surprisingly, in the center of the Slovenian defense there is a 50/50 chance of success from intercepted balls. Certainly a weak point that Denmark can exploit by coming through the middle or from the left. The right side with Verbic and Karnicnik seems to be like a wall that is difficult to overcome and has a 100% rate of interceptions.
 
+
+
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/interception_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 #### 3.4.6 Fouls
 Most fouls are committed on the flanks. In the last three games in particular, there has been a tendency to play on the right-hand side. This could indicate a weakness in Stojanovic's tackling. But it's difficult to confirm. The team is not prone to yellow cards.
@@ -1123,13 +1100,11 @@ Especially against denmark, the slovenians are disciplined and there is a high i
 
 | Vs : Kazakhstan | Vs : Denmark | Vs : N_Ireland |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.png?raw=true" align="center" height="350" width="600"/>|
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Kazakhstan.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_N_Ireland.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 | Vs : Finland | Vs : San_Marino | Vs : Denmark_2 |
 |---|---|---|
-|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.png?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark_2.png?raw=true" align="center" height="350" width="600"/>|
-
-
+|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Finland.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_San_Marino.jpeg?raw=true" align="center" height="350" width="600"/>|<img src="https://github.com/ngroggy/SoccerAnalytics/blob/main/notebooks/plots/3-tactical/fouls_map_Denmark_2.jpeg?raw=true" align="center" height="350" width="600"/>|
 
 <details>
   <summary> code </summary>
